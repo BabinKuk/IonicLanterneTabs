@@ -1,0 +1,41 @@
+<!--
+  This template loads for the 'tab.svjetionicar-detail' state (app.js)
+  'people' is a $scope variable created in the SvjetionicariDetailCtrl controller (controllers.js)
+  The SvjetionicariDetailCtrl pulls data from the SvjetionicariList service (service.js)
+  The SvjetionicariList service returns an array of people data
+-->
+<ion-view>
+	<ion-nav-title>{{people.ime}} {{people.prezime}}</ion-nav-title>
+	<ion-content class="padding">
+		<!--img ng-src="{{chat.face}}" style="width: 64px; height: 64px"-->
+		<p>
+			Godina rođenja i smrti
+		</p>
+		<p>
+			{{people.godRodSmrti}}
+		</p>
+		<p>
+			Mjesto
+		</p>
+		<p>
+			{{people.mjesto}}
+		</p>
+		
+		<p>
+			Karijera
+		</p>
+		<ion-list>
+			<!-- (un)-comment ako bude trebalo (de)aktivirati link-->
+			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionik in karijera track by $index" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.svjetionik}}"-->
+			<!-- without link-->
+			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionik in karijera" type="item-text-wrap"-->
+			<!--ovisno o svjetionik.name definiraj link -->	
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionik in karijera | orderBy : 'id'" type="item-text-wrap"	ng-href="{{svjetionik.svjetionik != '' ? '#/tab/lanterne-list/' + svjetionik.svjetionik : '#/tab/svjetionicari-list/' + people.id}}">
+				<!--img ng-src="{{sort.face}}"-->
+				<h2>{{svjetionik.svjetionik}}</h2>
+				<p>{{svjetionik.period}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

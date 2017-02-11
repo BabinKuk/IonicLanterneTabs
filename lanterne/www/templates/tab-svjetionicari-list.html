@@ -1,0 +1,12 @@
+<ion-view view-title="Svjetioničari">
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
+				<!--img ng-src="{{sort.face}}"-->
+				<h2>{{svjetionicar.ime}} {{svjetionicar.prezime}}</h2>
+				<!--p>{{svjetionicar.prezime}}</p-->
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

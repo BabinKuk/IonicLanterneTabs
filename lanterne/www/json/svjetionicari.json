@@ -1,0 +1,221 @@
+[
+	{
+		"prezime": "BUDIJA",	"ime": "IVAN",	"godRodSmrti": "1935-2012",	"mjesto": "VIR",	"misc": "",	"id": 1,
+		"karijera": [
+			{"svjetionik": "GLAVAT", "period": "18.5.1964.", "id": 1},
+			{"svjetionik": "PORER", "period": "1.8.1966.", "id": 2},
+			{"svjetionik": "PENEDA", "period": "1.9.1970.- 1.11.1978.", "id": 3}
+		]
+	},
+	{
+		"prezime": "BUSSANICH",	"ime": "ROMEO ANDRIJA",	"godRodSmrti": "1875-1957",	"mjesto": "Susak",	"misc": "",	"id": 2,
+		"karijera": [
+			{"svjetionik": "MURVICA", "period": "2.6.1896.", "id": 1},
+			{"svjetionik": "LUCIETA", "period": "oko 1901.", "id": 2},
+			{"svjetionik": "SUŠAC", "period": "30.1.1904.", "id": 3},
+			{"svjetionik": "NERETVA", "period": "15.1.1906.- nakon 1908.", "id": 4},
+			{"svjetionik": "PENEDA", "period": "prije 1912.- nakon 1914.", "id": 5}
+		]
+	},
+	{
+		"prezime": "DESSANTI",
+		"ime": "GIACOMO",
+		"godRodSmrti": "1830",
+		"mjesto": "ROVINJ",
+		"misc": "",
+		"id": 3,
+		"karijera": [
+			{"svjetionik": "LUCIETA", "period": "1873 - 1877", "id": 1},
+			{"svjetionik": "PENEDA", "period": "1878- oko 1885", "id": 2},
+			{"svjetionik": "MARLERA", "period": "oko 1886. - između 1889. i 1991", "id": 3}
+		]
+	},
+	{
+		"prezime": "FATOVIĆ",	"ime": "ZRENKO",	"godRodSmrti": "1929-200",	"mjesto": "SESTRUNJ",	"misc": "",	"id": 4,
+		"karijera": [
+			{"svjetionik": "PELAGO", "period": "24.4.1953.", "id": 1},
+			{"svjetionik": "SUSAK", "period": "21.8.1953.", "id": 2},
+			{"svjetionik": "KOVAČINE", "period": "23.8.1959.", "id": 3},
+			{"svjetionik": "TRSTENIK", "period": "12.7.1960.", "id": 4},
+			{"svjetionik": "PENEDA", "period": "9.10.1962.", "id": 5},
+			{"svjetionik": "SUSAK", "period": "1.9.1970.", "id": 6},
+			{"svjetionik": "VNETAK", "period": "1.10.1977.-03.5.1982.", "id": 7},
+			{"svjetionik": "", "period": "Invalidska mirovina", "id": 8}
+		]
+	},
+	{
+		"prezime": "GAŠPARIĆ",	"ime": "ALBIN",	"godRodSmrti": "1866",	"mjesto": "LJUBLJANA",	"misc": "",	"id": 5,
+		"karijera": [
+			{"svjetionik": "ZADAR", "period": "svjetla 23.12.1901. – 1.1.1904.", "id": 1},
+			{"svjetionik": "PENEDA", "period": "29.1.1904. - 3/1905. otkaz PRELJUB sa Mizi", "id": 2}
+		]
+	},
+	{
+		"prezime": "JURLINA",	"ime": "JURE",	"godRodSmrti": "1896",	"mjesto": "Premantura",	"misc": "J",	"id": 6,
+		"karijera": [
+			{"svjetionik": "PORER", "period": "15.01.1920.", "id": 1},
+			{"svjetionik": "PENEDA", "period": "27.10.1922. - 1943?", "id": 2},
+			{"svjetionik": "PORER", "period": "3.7.1945. - 1947.?", "id": 3}
+		]
+	},
+	{
+		"prezime": "KAIĆ",	"ime": "IVAN",	"godRodSmrti": "oko 1920",	"mjesto": "Valtura",	"misc": "",	"id": 7,
+		"karijera": [
+			{"svjetionik": "PENEDA", "period": "15.6.1951. - 2.7.1953.", "id": 1}
+		]
+	},
+	{
+		"prezime": "KUZMANIĆ",	"ime": "NIKOLA",	"godRodSmrti": "1915",	"mjesto": "Okrug Gornji – Čiovo",	"misc": "M",	"id": 8,
+		"karijera": [
+			{"svjetionik": "PENEDA", "period": "1.10.1947.", "id": 1},
+			{"svjetionik": "MULO", "period": "15.6.1951.", "id": 2},
+			{"svjetionik": "svjet. mj. Vela Luka", "period": "27.07.1953.-1969.?", "id": 3}
+		]
+	},
+	{
+		"prezime": "LAMPALOV",	"ime": "LOVRE",	"godRodSmrti": "1910",	"mjesto": "Lumbarda",	"misc": "",	"id": 9,
+		"karijera": [
+			{"svjetionik": "STONČICA", "period": "10.11.1933.  - nakon  5/1935.", "id": 1},
+			{"svjetionik": "Tisno lukobran svjetlo", "period": "29.2.1940. (preuzeo od okretačice mosta Dobrila Šoda žena Marka", "id": 2},
+			{"svjetionik": "Lučka ispostava", "period": "02.7.1945.", "id": 3},
+			{"svjetionik": "LUKOBRAN SPLIT", "period": "15.9.1947.", "id": 4},
+			{"svjetionik": "PENEDA", "period": "3.7.1953.-1969.?", "id": 5}
+		]
+	},
+	{
+		"prezime": "MAUREL",	"ime": "CHERUBINO",	"godRodSmrti": "1894",	"mjesto": "Savudrija",	"misc": "",	"id": 10,
+		"karijera": [
+			{"svjetionik": "LUCIETA", "period": "19.01.1920.", "id": 1},
+			{"svjetionik": "TRST", "period": "29.05.1921.", "id": 2},
+			{"svjetionik": "PENEDA", "period": "23.6.1921.", "id": 3},
+			{"svjetionik": "PORER", "period": "28.10.1922.", "id": 4}
+		]
+	},
+	{
+		"prezime": "NOVACCO",	"ime": "GIOVANNI",	"godRodSmrti": "1873",	"mjesto": "PULA?",	"misc": "M",	"id": 11,
+		"karijera": [
+			{"svjetionik": "COMPAR", "period": "1890-ih dok je bio na služenju vojnog roka", "id": 1},
+			{"svjetionik": "GALIOLA", "period": "8.8.1900.", "id": 2},
+			{"svjetionik": "PORER", "period": "1902.", "id": 3},
+			{"svjetionik": "PENEDA", "period": "oko 1905.", "id": 4},
+			{"svjetionik": "ZAGLAV", "period": "oko 1908.", "id": 5},
+			{"svjetionik": "SUSAK", "period": "10.3.1912.-15.5.1912. premještaj ili otkaz zbog političkog agitiranj (član je talijanaške stranke), zbog političkih prodika otjeran i sa Zaglava", "id": 6}
+		]
+	},
+	{
+		"prezime": "PICINIĆ",	"ime": "JOSIP",	"godRodSmrti": "1877",	"mjesto": "M. LOŠINJ",	"misc": "",	"id": 12,
+		"karijera": [
+			{"svjetionik": "TRSTENIK", "period": "4.4.1908.", "id": 1},
+			{"svjetionik": "TRST svjetla", "period": "12.11.1912.", "id": 2},
+			{"svjetionik": "PENEDA", "period": "28.3.1913.", "id": 3},
+			{"svjetionik": "UBAS", "period": "20.1.1920. -", "id": 4},
+			{"svjetionik": "", "period": "penzija 1921.", "id": 5}
+		]
+	},
+	{
+		"prezime": "PLESLIĆ",	"ime": "VJEKOSLAV",	"godRodSmrti": "oko 1918",	"mjesto": "Murter?",	"misc": "",	"id": 13,
+		"karijera": [
+			{"svjetionik": "CRNA PUNTA", "period": "1953.", "id": 1},
+			{"svjetionik": "PENEDA", "period": "1959.-60.", "id": 2}
+		]
+	},
+	{
+		"prezime": "PREMATE",	"ime": "IVAN",	"godRodSmrti": "1900",	"mjesto": "Ližnjan",	"misc": "",	"id": 14,
+		"karijera": [
+			{"svjetionik": "PENEDA", "period": "1921.", "id": 1},
+			{"svjetionik": "PELAGO", "period": "1.7.1921.", "id": 2},
+			{"svjetionik": "PORER", "period": "15.7.1922. - 1943.?", "id": 3},
+			{"svjetionik": "PORER", "period": "3.8.1945. upr. na Poreru", "id": 4},
+			{"svjetionik": "PELAGO", "period": "1948.", "id": 5},
+			{"svjetionik": "", "period": "penzija 1955?.", "id": 6}
+		]
+	},
+	{
+		"prezime": "RADONIČIĆ",	"ime": "EUGEN",	"godRodSmrti": "1874",	"mjesto": "DOBROTA-CG",	"misc": "N",	"id": 15,
+		"karijera": [
+			{"svjetionik": "PORER", "period": "6.4.1895.", "id": 1},
+			{"svjetionik": "PENEDA", "period": "25.4.1905.", "id": 2},
+			{"svjetionik": "TRST TELEGRAF", "period": "1.1.1911.", "id": 3},
+			{"svjetionik": "", "period": "1.3.1919. je lučki čuvar u Novigradu", "id": 4}
+		]
+	},
+	{
+		"prezime": "RADONIČIĆ",	"ime": "NIKOLA",	"godRodSmrti": "1843-1916",	"mjesto": "DOBROTA-CG",	"misc": "D",	"id": 16,
+		"karijera": [
+			{"svjetionik": "PENEDA", "period": "9.12.1885.", "id": 1},
+			{"svjetionik": "VERUDELA", "period": "27.1.1904. -31.8.1913.", "id": 2},
+			{"svjetionik": "", "period": "umro 1916. u Istri", "id": 3}
+		]
+	},
+	{
+		"prezime": "SBISA",	"ime": "ANTONIO",	"godRodSmrti": "oko 1865",	"mjesto": "ROVINJ",	"misc": "M",	"id": 17,
+		"karijera": [
+			{"svjetionik": "LUCIETA", "period": "8.7.1890.", "id": 1},
+			{"svjetionik": "PELAGO", "period": "17.3.1898.", "id": 2},
+			{"svjetionik": "DENTE", "period": "1.1.1904.", "id": 3},
+			{"svjetionik": "PENEDA", "period": "oko 1907.", "id": 4},
+			{"svjetionik": "TRSTENIK", "period": "1911.", "id": 5},
+			{"svjetionik": "VERUDELA", "period": "2.10.1913 – 1917.", "id": 6}
+		]
+	},
+	{
+		"prezime": "STUPIN",	"ime": "ANTONIO",	"godRodSmrti": "oko 1880",	"mjesto": "",	"misc": "",	"id": 18,
+		"karijera": [
+			{"svjetionik": "SALVORE", "period": "prije 1912.", "id": 1},
+			{"svjetionik": "PORER", "period": "2.10.1913.", "id": 2},
+			{"svjetionik": "PENEDA", "period": "18.2.1920. - nakon 1923.", "id": 3}
+		]
+	},
+	{
+		"prezime": "VENEZIA",	"ime": "DOMENICO",	"godRodSmrti": "oko 1850",	"mjesto": "",	"misc": "",	"id": 19,
+		"karijera": [
+			{"svjetionik": "PENEDA", "period": "? - 12.12.1885.", "id": 1},
+			{"svjetionik": "MARLERA", "period": "12.12.1885. - ?", "id": 2}
+		]
+	},
+	{	
+		"prezime": "ZAČEVIĆ",	"ime": "GIOVANNI",	"godRodSmrti": "1876",	"mjesto": "M. LOŠINJ",	"misc": "S",	"id": 20,
+		"karijera": [
+			{"svjetionik": "ZAGLAV", "period": "1898.", "id": 1},
+			{"svjetionik": "GALIOLA", "period": "1900.", "id": 2},
+			{"svjetionik": "TRSTENIK", "period": "1902.", "id": 3},
+			{"svjetionik": "PENEDA", "period": "1910.", "id": 4}
+		]
+	},
+	{
+		"prezime": "ZULIANI",	"ime": "GIOVANNI",	"godRodSmrti": "oko 1850",	"mjesto": "ROVINJ",	"misc": "",	"id": 21,
+		"karijera": [
+			{"svjetionik": "", "period": "počeo 15.02.1878.", "id": 1},
+			{"svjetionik": "MARLERA", "period": "krajem 1884. -21.10.1885", "id": 2},
+			{"svjetionik": "PENEDA", "period": "12.12.1885. -", "id": 3},
+			{"svjetionik": "ZAGLAV", "period": "1892.", "id": 4},
+			{"svjetionik": "GRUICA", "period": "1893.", "id": 5},
+			{"svjetionik": "VOŠĆICA", "period": "16.6.1894.-11.11.1898.", "id": 6},
+			{"svjetionik": "SALVORE", "period": "23.12.1898.-", "id": 7},
+			{"svjetionik": "S. ANDREA PULA", "period": "oko 1902.", "id": 8},
+			{"svjetionik": "PENEDA", "period": "1.3.1905.", "id": 9},
+			{"svjetionik": "S. ANDREA PULA", "period": "29.4.1905.", "id": 10},
+			{"svjetionik": "", "period": "1912. PENZIJA", "id": 11}
+		]
+	},
+	{
+		"prezime": "ŽEPINA",	"ime": "MIRO",	"godRodSmrti": "1940",	"mjesto": "VIR",	"misc": "",	"id": 22,
+		"karijera": [
+			{"svjetionik": "SUSAK", "period": "10.7.1964.", "id": 1},
+			{"svjetionik": "PRESTENICE", "period": "1.11.1968.", "id": 2},
+			{"svjetionik": "STRAŽICA", "period": "1.4.1971.", "id": 3},
+			{"svjetionik": "PELAGO", "period": "1.11.1971.", "id": 4},
+			{"svjetionik": "PENEDA", "period": "12.11.1978.", "id": 5},
+			{"svjetionik": "S.S. SV. ANA", "period": "6.10.1984.", "id": 6}
+		]
+	},
+	{
+		"prezime": "ŽERAVICA",	"ime": "ANTE",	"godRodSmrti": "1921-1999",	"mjesto": "Murter",	"misc": "G",	"id": 23,
+		"karijera": [
+			{"svjetionik": "PENEDA", "period": "1947.", "id": 1},
+			{"svjetionik": "MARLERA", "period": "1953-1966.", "id": 2},
+			{"svjetionik": "PORER", "period": "na zamjeni 1966. Plava vrpca!", "id": 3},
+			{"svjetionik": "", "period": "Kasnije mornar na brodu do penzije 1971.", "id": 4}
+		]
+	}
+]

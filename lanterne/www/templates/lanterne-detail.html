@@ -1,0 +1,26 @@
+<!--
+  This template loads for the 'tab.lanterne-detail' state (app.js)
+  'lanterna' is a $scope variable created in the LanterneCtrl controller (controllers.js)
+  The LanterneCtrl pulls data from the LanterneList service (service.js)
+  The LanterneList service returns an array of lanterne and people associated with them
+-->
+<ion-view>
+	<ion-nav-title>{{svjetionik.name}}</ion-nav-title>
+	<ion-content class="padding">
+			
+		<p>
+			Svjetioničari
+		</p>
+		<ion-list>
+			<!-- (un)-comment ako bude trebalo (de)aktivirati link-->
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in people track by $index" type="item-text-wrap" href="#/tab/svjetionicari-list/{{person.id}}">
+			<!-- without link-->
+			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in people" type="item-text-wrap"-->
+				<!--img ng-src="{{sort.face}}"-->
+				<h2>{{person.ime}} {{person.prezime}}</h2>
+				<!--p>{{person.prezime}}</p-->
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item-->
+		</ion-list>
+	</ion-content>
+</ion-view>
