@@ -20,14 +20,33 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 			StatusBar.styleDefault();
 		}
 	});
+	
+	$ionicPlatform.registerBackButtonAction(function (event) {
+		if($state.current.name=="app.home"){
+			console.log('app.home');
+			//navigator.app.exitApp(); //<-- remove this line to disable the exit
+			
+			$ionicPopup.confirm({
+				title: 'System warning',
+				template: 'Are you sure you want to exit?'
+			}).then(function(res) {
+				if (res) {
+					ionic.Platform.exitApp();
+				}
+			})
+		} else {
+			console.log('app.backhistory');
+			navigator.app.backHistory();
+		}
+	}, 100);
 })
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
-	// default: bottom
-	// Place tabs at the top of the screen using ionicConfigProvider
-	//$ionicConfigProvider.tabs.position('top');
-
+	// Place tabs at the top/bottom of the screen using ionicConfigProvider
+	// Android defaults to top and iOS defaults to bottom.
+	$ionicConfigProvider.tabs.position('bottom');
+	
 	// Ionic uses AngularUI Router which uses the concept of states
 	// Learn more here: https://github.com/angular-ui/ui-router
 	// Set up the various states which the app can be in.
