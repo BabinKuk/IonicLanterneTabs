@@ -1,7 +1,64 @@
 angular.module('lanterna.controllers', [])
 
-.controller('MainCtrl', function($scope) {
+.controller('MainCtrl', function($scope, $ionicPopup, $timeout) {
 	//console.log('MainCtrl');
+	
+	// An alert dialog
+	$scope.showPopup = function() {
+		console.log('alert');
+		$scope.data = {};
+
+		// An elaborate, custom popup
+		var myPopup = $ionicPopup.show({
+			template: '<input type="password" ng-model="data.pass">',
+			title: 'Please Enter Password To Exit App',
+			subTitle: 'Please use normal things',
+			scope: $scope,
+			buttons: [
+				{ text: 'Cancel' },
+				{
+					text: '<b>Enter</b>',
+					type: 'button-assertive',
+					onTap: function(e) {
+						if (!$scope.data.pass) {
+							// don't allow the user to close unless he enters password
+							console.log('!');
+							e.preventDefault();
+						} else {
+							console.log('else');
+							return $scope.data.pass;
+						}
+					}
+				}
+			]
+		});
+
+		myPopup.then(function(res) {
+			console.log('Tapped!', res);
+			closeApp(res);
+		});
+
+		$timeout(function() {
+			myPopup.close(); //close the popup after 3 seconds for some reason
+		}, 10000);
+	};
+	
+	// handler function
+	function closeApp(pass) {
+		console.log('closeing app...');
+		if (pass === 'lanterna') {
+			console.log('lanterna');
+			$ionicPopup.confirm({
+				title: 'System warning',
+				template: 'Are you sure you want to exit?'
+			}).then(function(res) {
+				if (res) {
+					ionic.Platform.exitApp();
+				}
+			})
+			
+		}
+	}
 })
 
 .controller('LanterneCtrl', function($scope) {

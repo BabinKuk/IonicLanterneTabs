@@ -22,6 +22,18 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 	});
 	
 	$ionicPlatform.registerBackButtonAction(function (event) {
+		// An alert dialog
+		$scope.showAlert = function() {
+			var alertPopup = $ionicPopup.alert({
+				title: $state.current.name,
+				template: $state.current.name
+			});
+			
+			alertPopup.then(function(res) {
+				console.log($state.current.name);
+			});
+		};
+		
 		if($state.current.name == "tab.home"){
 			console.log('tab.home');
 			//navigator.app.exitApp(); //<-- remove this line to disable the exit
