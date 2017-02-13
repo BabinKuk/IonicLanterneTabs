@@ -22,8 +22,8 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 	});
 	
 	$ionicPlatform.registerBackButtonAction(function (event) {
-		if($state.current.name=="app.home"){
-			console.log('app.home');
+		if($state.current.name=="tab.home"){
+			console.log('tab.home');
 			//navigator.app.exitApp(); //<-- remove this line to disable the exit
 			
 			$ionicPopup.confirm({
@@ -35,7 +35,7 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 				}
 			})
 		} else {
-			console.log('app.backhistory');
+			//console.log('app.backhistory');
 			navigator.app.backHistory();
 		}
 	}, 100);
