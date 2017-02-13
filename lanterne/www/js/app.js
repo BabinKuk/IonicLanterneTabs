@@ -7,7 +7,7 @@
 // 'lanterna.controllers' is found in controllers.js
 angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicPopup) {
 	$ionicPlatform.ready(function() {
 		// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
 		// for form inputs)
@@ -22,7 +22,7 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 	});
 	
 	$ionicPlatform.registerBackButtonAction(function (event) {
-		if($state.current.name=="tab.home"){
+		if($state.current.name == "tab.home"){
 			console.log('tab.home');
 			//navigator.app.exitApp(); //<-- remove this line to disable the exit
 			
