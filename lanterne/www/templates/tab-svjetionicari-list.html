@@ -2,7 +2,7 @@
 	<ion-content>
 		<ion-list>
 			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-				<!--img ng-src="{{sort.face}}"-->
+				<img ng-src="{{svjetionicar.image}}">
 				<h2>{{svjetionicar.ime}} {{svjetionicar.prezime}}</h2>
 				<!--p>{{svjetionicar.prezime}}</p-->
 				<i class="icon ion-chevron-right icon-accessory"></i>

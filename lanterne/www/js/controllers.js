@@ -27,7 +27,7 @@ angular.module('lanterna.controllers', [])
 		var myPopup = $ionicPopup.show({
 			template: '<input type="password" ng-model="data.pass">',
 			title: 'Za izlaz iz aplikacije potrebno je unijeti lozinku',
-			subTitle: 'Vrijeme ograničeno na 10 sekundi',
+			subTitle: 'Vrijeme unosa je ograničeno na 10 sekundi',
 			scope: $scope,
 			buttons: [
 				{ text: 'Cancel' },
@@ -59,12 +59,10 @@ angular.module('lanterna.controllers', [])
 		
 	}
 	function closeApp(pass) {
-		console.log('closeing app...');
+		//console.log('closeing app...');
 		if (pass === 'lanterna') {
 			//console.log('lanterna');
 			ionic.Platform.exitApp();
-		} else {
-			//console.log('wrong pass');
 		}
 	}
 })
