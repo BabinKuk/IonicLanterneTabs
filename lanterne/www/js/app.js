@@ -145,7 +145,15 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 			}
 		}
 	})
-	;
+	.state('tab.biblioteka-detail', {
+		url: '/biblioteka-list/:name',
+		views: {
+			'tab-biblioteka': {
+				templateUrl: 'templates/biblioteka-detail.html',
+				controller: 'BibliotekaDetailCtrl'
+			}
+		}
+	});
 
 	// if none of the above states are matched, use this as the fallback
 	$urlRouterProvider.otherwise('/tab/home');

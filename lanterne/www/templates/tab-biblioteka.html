@@ -1,6 +1,15 @@
 <ion-view view-title="Biblioteka">
 	<ion-content>
 		<h2>Bibilioteka Home</h2>
+		
+		<ion-list>
+			<ion-item class="item-remove-animate item-icon-right" ng-repeat="knjiga in knjige | orderBy: 'name'" type="item-text-wrap" href="#/tab/biblioteka-list/{{knjiga.name}}">
+			<!--ion-item class="item-remove-animate item-icon-right" ng-repeat="knjiga in knjige | orderBy: 'name'" type="item-text-wrap"-->
+				<h2>{{knjiga.name}}</h2>
+				<!--p>{{svjetionicar.prezime}}</p-->
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</ion-item>
+		</ion-list>
 		<!--p>
 			<a class="button icon icon-right ion-chevron-right" href="#/tab/svjetionicari-list">Display All</a>
 		</p-->

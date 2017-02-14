@@ -1,0 +1,22 @@
+<!--
+  This template loads for the 'tab.biblioteka-detail' state (app.js)
+  'knjiga' is a $scope variable created in the BibliotekaCtrl controller (controllers.js)
+  The BibliotekaCtrl pulls data from the BibliotekaList service (service.js)
+  The BibliotekaList service returns an array of knjiga and people associated with them
+-->
+<ion-view>
+	<ion-nav-title>{{knjiga.name}}</ion-nav-title>
+	<ion-content class="padding">
+		
+		<p>
+			Knjiga {{knjiga.name}}
+		</p>
+		<p>
+			Knjiga {{knjiga.source}}
+		</p>
+		
+		<!--pdf-viewer delegate-handle="relativity-special-general-theory" url="pdfUrl" scale="1" show-toolbar="true"></pdf-viewer-->
+		<!--ng-pdf template-url="templates/pdf-viewer.html" scale="page-fit"></ng-pdf-->
+		
+	</ion-content>
+</ion-view>

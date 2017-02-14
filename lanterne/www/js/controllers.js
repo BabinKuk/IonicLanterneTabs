@@ -205,6 +205,45 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('BibliotekaCtrl', function($scope) {
+.controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList) {
 	console.log('BibliotekaCtrl');
+	
+	getAll();
+	
+	// handler function
+	function getAll() {
+		console.log('in getAll');
+		// call service
+		BibliotekaList.all()
+			.then(function(response){
+				$scope.knjige = response; // assign data here to your $scope object
+			},function(error){
+				console.log(error);
+			});
+	}
+})
+
+.controller('BibliotekaDetailCtrl', function($scope, $stateParams, BibliotekaList) {
+	console.log('BibliotekaDetailCtrl ' + $stateParams);
+	
+	$scope.knjiga;
+	
+	// check id first
+	if($stateParams.name != undefined || $stateParams.name != ''){
+		getDetails($stateParams.name);
+	}
+	
+	// handler function
+	function getDetails(name) {
+		console.log('in getDetails ' + name);
+		// call service
+		BibliotekaList.getDetails(name)
+			.then(function(response){
+				$scope.knjiga = response; // assign data here to your $scope object
+				$scope.pdfUrl = $scope.knjiga.source;
+				console.log($scope.pdfUrl);
+			},function(error){
+				console.log(error);
+			});
+	}
 });

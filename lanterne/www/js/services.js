@@ -151,4 +151,50 @@ angular.module('lanterna.services', [])
 		})
         return deffered.promise;
 	}
+})
+
+.factory('BibliotekaList', function($http, $q) {
+	return {
+		// sve knjige
+		all: getAll,
+		// get details
+		getDetails: getDetails
+	}
+	
+	function getAll() {
+		console.log('sve knjige');
+		
+		//async function to know when the data has arrived
+		var deffered = $q.defer();
+		
+		// get data
+		$http.get("json/biblioteka.json").then(function(response) {
+			//console.log(response.data);
+			deffered.resolve(response.data);
+		})
+        return deffered.promise;
+	}
+
+	function getDetails(bookName){
+		//console.log('getDetails ' + bookName);
+		
+		//async function to know when the data has arrived
+		var deffered = $q.defer();
+		
+		//get data
+		$http.get("json/biblioteka.json").then(function(response) {
+			//console.log(response.data);
+			var books = response.data;
+			var book;
+			for (var i = 0; i < books.length; i++) {
+				//console.log(books[i].name);
+				if (books[i].name == bookName) {
+					book = books[i];
+					//return person;
+				}
+			}
+			deffered.resolve(book);
+		})
+        return deffered.promise;
+	}
 });
