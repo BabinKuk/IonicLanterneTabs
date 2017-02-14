@@ -35,7 +35,7 @@
 	},
 	{
 		"prezime": "FATOVIĆ",	"ime": "ZRENKO",	"godRodSmrti": "1929-200",	"mjesto": "SESTRUNJ",	"misc": "",	"id": 4,
-		"image": "img/FATOVIĆ_ZRENKO.jpg",
+		"image": "img/FATOVIC_ZRENKO.jpg",
 		"karijera": [
 			{"svjetionik": "PELAGO", "period": "24.4.1953.", "id": 1},
 			{"svjetionik": "SUSAK", "period": "21.8.1953.", "id": 2},
@@ -49,7 +49,7 @@
 	},
 	{
 		"prezime": "GAŠPARIĆ",	"ime": "ALBIN",	"godRodSmrti": "1866",	"mjesto": "LJUBLJANA",	"misc": "",	"id": 5,
-		"image": "img/GAŠPARIĆ_ALBIN.jpg",
+		"image": "img/GASPARIC_ALBIN.jpg",
 		"karijera": [
 			{"svjetionik": "ZADAR", "period": "svjetla 23.12.1901. – 1.1.1904.", "id": 1},
 			{"svjetionik": "PENEDA", "period": "29.1.1904. - 3/1905. otkaz PRELJUB sa Mizi", "id": 2}
@@ -146,7 +146,7 @@
 	},
 	{
 		"prezime": "RADONIČIĆ",	"ime": "EUGEN",	"godRodSmrti": "1874",	"mjesto": "DOBROTA-CG",	"misc": "N",	"id": 15,
-		"image": "img/RADONIČIĆ_EUGEN.jpg",
+		"image": "img/RADONICIC_EUGEN.jpg",
 		"karijera": [
 			{"svjetionik": "PORER", "period": "6.4.1895.", "id": 1},
 			{"svjetionik": "PENEDA", "period": "25.4.1905.", "id": 2},
@@ -156,7 +156,7 @@
 	},
 	{
 		"prezime": "RADONIČIĆ",	"ime": "NIKOLA",	"godRodSmrti": "1843-1916",	"mjesto": "DOBROTA-CG",	"misc": "D",	"id": 16,
-		"image": "img/RADONIČIĆ_NIKOLA.jpg",
+		"image": "img/RADONICIC_NIKOLA.jpg",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "9.12.1885.", "id": 1},
 			{"svjetionik": "VERUDELA", "period": "27.1.1904. -31.8.1913.", "id": 2},
@@ -193,7 +193,7 @@
 	},
 	{	
 		"prezime": "ZAČEVIĆ",	"ime": "GIOVANNI",	"godRodSmrti": "1876",	"mjesto": "M. LOŠINJ",	"misc": "S",	"id": 20,
-		"image": "img/ZAČEVIĆ_GIOVANNI.jpg",
+		"image": "img/ZACEVIC_GIOVANNI.jpg",
 		"karijera": [
 			{"svjetionik": "ZAGLAV", "period": "1898.", "id": 1},
 			{"svjetionik": "GALIOLA", "period": "1900.", "id": 2},
@@ -232,7 +232,7 @@
 	},
 	{
 		"prezime": "ŽERAVICA",	"ime": "ANTE",	"godRodSmrti": "1921-1999",	"mjesto": "Murter",	"misc": "G",	"id": 23,
-		"image": "img/ŽERAVICA_ANTE.jpg",
+		"image": "img/ZERAVICA_ANTE.jpg",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "1947.", "id": 1},
 			{"svjetionik": "MARLERA", "period": "1953-1966.", "id": 2},
