@@ -136,6 +136,15 @@ angular.module('lanterna', ['ionic', 'lanterna.controllers', 'lanterna.services'
 			}
 		}
 	})
+	.state('tab.biblioteka', {
+		url: '/biblioteka',
+		views: {
+			'tab-biblioteka': {
+				templateUrl: 'templates/tab-biblioteka.html',
+				controller: 'BibliotekaCtrl'
+			}
+		}
+	})
 	;
 
 	// if none of the above states are matched, use this as the fallback

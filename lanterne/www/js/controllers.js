@@ -5,14 +5,29 @@ angular.module('lanterna.controllers', [])
 	
 	// An alert dialog
 	$scope.showPopup = function() {
-		console.log('alert');
+		//console.log('alert');
 		$scope.data = {};
 
 		// An elaborate, custom popup
+		var confirmPopup = $ionicPopup.confirm({
+			title: 'Pozor',
+			template: 'Da li ste sigurni da želite zatvoriti aplikaciju?'
+		}).then(function(res) {
+			if (res) {
+				passwordPopup();
+				//ionic.Platform.exitApp();
+			}
+		});
+	};
+	
+	// handler functions
+	function passwordPopup() {
+		console.log('pass');
+		
 		var myPopup = $ionicPopup.show({
 			template: '<input type="password" ng-model="data.pass">',
-			title: 'Please Enter Password To Exit App',
-			subTitle: 'Please use normal things',
+			title: 'Za izlaz iz aplikacije potrebno je unijeti lozinku',
+			subTitle: 'Vrijeme ograničeno na 10 sekundi',
 			scope: $scope,
 			buttons: [
 				{ text: 'Cancel' },
@@ -22,41 +37,34 @@ angular.module('lanterna.controllers', [])
 					onTap: function(e) {
 						if (!$scope.data.pass) {
 							// don't allow the user to close unless he enters password
-							console.log('!');
+							//console.log('!');
 							e.preventDefault();
 						} else {
-							console.log('else');
+							//console.log('else');
 							return $scope.data.pass;
 						}
 					}
 				}
 			]
 		});
-
+		
 		myPopup.then(function(res) {
-			console.log('Tapped!', res);
+			//console.log('Tapped!', res);
 			closeApp(res);
 		});
 
 		$timeout(function() {
-			myPopup.close(); //close the popup after 3 seconds for some reason
+			myPopup.close(); // close the popup after 10 seconds
 		}, 10000);
-	};
-	
-	// handler function
+		
+	}
 	function closeApp(pass) {
 		console.log('closeing app...');
 		if (pass === 'lanterna') {
-			console.log('lanterna');
-			$ionicPopup.confirm({
-				title: 'System warning',
-				template: 'Are you sure you want to exit?'
-			}).then(function(res) {
-				if (res) {
-					ionic.Platform.exitApp();
-				}
-			})
-			
+			//console.log('lanterna');
+			ionic.Platform.exitApp();
+		} else {
+			//console.log('wrong pass');
 		}
 	}
 })
@@ -197,4 +205,8 @@ angular.module('lanterna.controllers', [])
 			return false;
 		}
 	}
+})
+
+.controller('BibliotekaCtrl', function($scope) {
+	console.log('BibliotekaCtrl');
 });
