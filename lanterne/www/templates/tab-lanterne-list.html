@@ -2,7 +2,7 @@
 	<ion-content>
 		<ion-list>
 			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
-				<!--img ng-src="{{svjetionik.face}}"-->
+				<img ng-src="{{svjetionik.image}}">
 				<h2>{{svjetionik.name}}</h2>
 				<!--p>{{svjetionik.lastText}}</p-->
 				<i class="icon ion-chevron-right icon-accessory"></i>

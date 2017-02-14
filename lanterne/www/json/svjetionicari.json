@@ -1,7 +1,7 @@
 [
 	{
 		"prezime": "BUDIJA",	"ime": "IVAN",	"godRodSmrti": "1935-2012",	"mjesto": "VIR",	"misc": "",	"id": 1,
-		"image": "img/BUDIJA_IVAN.jpg",
+		"image": "img/svjetionicari/BUDIJA_IVAN.jpg",
 		"karijera": [
 			{"svjetionik": "GLAVAT", "period": "18.5.1964.", "id": 1},
 			{"svjetionik": "PORER", "period": "1.8.1966.", "id": 2},
@@ -10,7 +10,7 @@
 	},
 	{
 		"prezime": "BUSSANICH",	"ime": "ROMEO ANDRIJA",	"godRodSmrti": "1875-1957",	"mjesto": "Susak",	"misc": "",	"id": 2,
-		"image": "img/BUSSANICH_ROMEO_ANDRIJA.jpg",
+		"image": "img/svjetionicari/BUSSANICH_ROMEO_ANDRIJA.jpg",
 		"karijera": [
 			{"svjetionik": "MURVICA", "period": "2.6.1896.", "id": 1},
 			{"svjetionik": "LUCIETA", "period": "oko 1901.", "id": 2},
@@ -35,7 +35,7 @@
 	},
 	{
 		"prezime": "FATOVIĆ",	"ime": "ZRENKO",	"godRodSmrti": "1929-200",	"mjesto": "SESTRUNJ",	"misc": "",	"id": 4,
-		"image": "img/FATOVIC_ZRENKO.jpg",
+		"image": "img/svjetionicari/FATOVIC_ZRENKO.jpg",
 		"karijera": [
 			{"svjetionik": "PELAGO", "period": "24.4.1953.", "id": 1},
 			{"svjetionik": "SUSAK", "period": "21.8.1953.", "id": 2},
@@ -49,7 +49,7 @@
 	},
 	{
 		"prezime": "GAŠPARIĆ",	"ime": "ALBIN",	"godRodSmrti": "1866",	"mjesto": "LJUBLJANA",	"misc": "",	"id": 5,
-		"image": "img/GASPARIC_ALBIN.jpg",
+		"image": "img/svjetionicari/GASPARIC_ALBIN.jpg",
 		"karijera": [
 			{"svjetionik": "ZADAR", "period": "svjetla 23.12.1901. – 1.1.1904.", "id": 1},
 			{"svjetionik": "PENEDA", "period": "29.1.1904. - 3/1905. otkaz PRELJUB sa Mizi", "id": 2}
@@ -82,7 +82,7 @@
 	},
 	{
 		"prezime": "LAMPALOV",	"ime": "LOVRE",	"godRodSmrti": "1910",	"mjesto": "Lumbarda",	"misc": "",	"id": 9,
-		"image": "img/LAMPALOV_LOVRE.jpg",
+		"image": "img/svjetionicari/LAMPALOV_LOVRE.jpg",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "10.11.1933.  - nakon  5/1935.", "id": 1},
 			{"svjetionik": "Tisno lukobran svjetlo", "period": "29.2.1940. (preuzeo od okretačice mosta Dobrila Šoda žena Marka", "id": 2},
@@ -93,7 +93,7 @@
 	},
 	{
 		"prezime": "MAUREL",	"ime": "CHERUBINO",	"godRodSmrti": "1894",	"mjesto": "Savudrija",	"misc": "",	"id": 10,
-		"image": "img/MAUREL_CHERUBINO.jpg",
+		"image": "img/svjetionicari/MAUREL_CHERUBINO.jpg",
 		"karijera": [
 			{"svjetionik": "LUCIETA", "period": "19.01.1920.", "id": 1},
 			{"svjetionik": "TRST", "period": "29.05.1921.", "id": 2},
@@ -103,7 +103,7 @@
 	},
 	{
 		"prezime": "NOVACCO",	"ime": "GIOVANNI",	"godRodSmrti": "1873",	"mjesto": "PULA?",	"misc": "M",	"id": 11,
-		"image": "img/NOVACCO_GIOVANNI.jpg",
+		"image": "img/svjetionicari/NOVACCO_GIOVANNI.jpg",
 		"karijera": [
 			{"svjetionik": "COMPAR", "period": "1890-ih dok je bio na služenju vojnog roka", "id": 1},
 			{"svjetionik": "GALIOLA", "period": "8.8.1900.", "id": 2},
@@ -146,7 +146,7 @@
 	},
 	{
 		"prezime": "RADONIČIĆ",	"ime": "EUGEN",	"godRodSmrti": "1874",	"mjesto": "DOBROTA-CG",	"misc": "N",	"id": 15,
-		"image": "img/RADONICIC_EUGEN.jpg",
+		"image": "img/svjetionicari/RADONICIC_EUGEN.jpg",
 		"karijera": [
 			{"svjetionik": "PORER", "period": "6.4.1895.", "id": 1},
 			{"svjetionik": "PENEDA", "period": "25.4.1905.", "id": 2},
@@ -156,7 +156,7 @@
 	},
 	{
 		"prezime": "RADONIČIĆ",	"ime": "NIKOLA",	"godRodSmrti": "1843-1916",	"mjesto": "DOBROTA-CG",	"misc": "D",	"id": 16,
-		"image": "img/RADONICIC_NIKOLA.jpg",
+		"image": "img/svjetionicari/RADONICIC_NIKOLA.jpg",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "9.12.1885.", "id": 1},
 			{"svjetionik": "VERUDELA", "period": "27.1.1904. -31.8.1913.", "id": 2},
@@ -165,7 +165,7 @@
 	},
 	{
 		"prezime": "SBISA",	"ime": "ANTONIO",	"godRodSmrti": "oko 1865",	"mjesto": "ROVINJ",	"misc": "M",	"id": 17,
-		"image": "img/SBISA_ANTONIO.jpg",
+		"image": "img/svjetionicari/SBISA_ANTONIO.jpg",
 		"karijera": [
 			{"svjetionik": "LUCIETA", "period": "8.7.1890.", "id": 1},
 			{"svjetionik": "PELAGO", "period": "17.3.1898.", "id": 2},
@@ -193,7 +193,7 @@
 	},
 	{	
 		"prezime": "ZAČEVIĆ",	"ime": "GIOVANNI",	"godRodSmrti": "1876",	"mjesto": "M. LOŠINJ",	"misc": "S",	"id": 20,
-		"image": "img/ZACEVIC_GIOVANNI.jpg",
+		"image": "img/svjetionicari/ZACEVIC_GIOVANNI.jpg",
 		"karijera": [
 			{"svjetionik": "ZAGLAV", "period": "1898.", "id": 1},
 			{"svjetionik": "GALIOLA", "period": "1900.", "id": 2},
@@ -232,7 +232,7 @@
 	},
 	{
 		"prezime": "ŽERAVICA",	"ime": "ANTE",	"godRodSmrti": "1921-1999",	"mjesto": "Murter",	"misc": "G",	"id": 23,
-		"image": "img/ZERAVICA_ANTE.jpg",
+		"image": "img/svjetionicari/ZERAVICA_ANTE.jpg",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "1947.", "id": 1},
 			{"svjetionik": "MARLERA", "period": "1953-1966.", "id": 2},
