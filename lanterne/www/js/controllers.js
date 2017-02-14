@@ -223,11 +223,9 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('BibliotekaDetailCtrl', function($scope, $stateParams, BibliotekaList) {
-	console.log('BibliotekaDetailCtrl ' + $stateParams);
-	
-	$scope.knjiga;
-	
+.controller('BibliotekaDetailCtrl', function($scope, $stateParams, pdfDelegate, BibliotekaList) {
+	//console.log('BibliotekaDetailCtrl ' + $stateParams);
+	console.log(pdfDelegate)
 	// check id first
 	if($stateParams.name != undefined || $stateParams.name != ''){
 		getDetails($stateParams.name);
@@ -235,12 +233,15 @@ angular.module('lanterna.controllers', [])
 	
 	// handler function
 	function getDetails(name) {
-		console.log('in getDetails ' + name);
+		//console.log('in getDetails ' + name);
 		// call service
 		BibliotekaList.getDetails(name)
 			.then(function(response){
 				$scope.knjiga = response; // assign data here to your $scope object
 				$scope.pdfUrl = $scope.knjiga.source;
+				
+				pdfDelegate.$getByHandle('my-pdf-container').load($scope.pdfUrl);
+				
 				console.log($scope.pdfUrl);
 			},function(error){
 				console.log(error);

@@ -1,7 +1,5 @@
 [
-	{"id": 1, "name": "ECS", "source": "pdf/ECS.pdf"},
-	{"id": 2, "name": "Event Based Charges", "source": "pdf/Event Based Charges.pdf"},
-	{"id": 3, "name": "FAB Installation Document", "source": "pdf/FAB Installation Document.pdf"},
-	{"id": 4, "name": "oracle fundamentals", "source": "pdf/oracle fundamentals.pdf"},
-	{"id": 5, "name": "Proxy Accounts", "source": "pdf/Proxy Accounts.pdf"}
+	{"id": 1, "name": "material-design", "source": "pdf/material-design.pdf"},
+	{"id": 2, "name": "oracle fundamentals", "source": "pdf/oracle fundamentals.pdf"},
+	{"id": 3, "name": "relativity", "source": "pdf/relativity.pdf"}
 ]
