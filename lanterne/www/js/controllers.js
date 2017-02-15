@@ -97,7 +97,7 @@ angular.module('lanterna.controllers', [])
 		// get lantern details
 		getDetails($stateParams.name);
 		// get all people asociated with that particular lantern
-		getPeopleDetails($stateParams.name);
+		//getPeopleDetails($stateParams.name);
 	}
 	
 	// handler functions
