@@ -223,9 +223,9 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('BibliotekaDetailCtrl', function($scope, $stateParams, pdfDelegate, BibliotekaList) {
+.controller('BibliotekaDetailCtrl', function($scope, $stateParams, BibliotekaList) {
 	//console.log('BibliotekaDetailCtrl ' + $stateParams);
-	console.log(pdfDelegate)
+	//console.log(pdfDelegate)
 	// check id first
 	if($stateParams.name != undefined || $stateParams.name != ''){
 		getDetails($stateParams.name);
@@ -239,8 +239,9 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				$scope.knjiga = response; // assign data here to your $scope object
 				$scope.pdfUrl = $scope.knjiga.source;
-				
-				pdfDelegate.$getByHandle('my-pdf-container').load($scope.pdfUrl);
+				$scope.httpHeaders = { Authorization: 'Bearer some-aleatory-token' };
+
+				//pdfDelegate.$getByHandle('my-pdf-container').load($scope.pdfUrl);
 				
 				console.log($scope.pdfUrl);
 			},function(error){
