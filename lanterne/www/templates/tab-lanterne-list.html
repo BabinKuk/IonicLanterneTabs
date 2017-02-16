@@ -1,9 +1,13 @@
 <ion-view view-title="Svjetionici">
 	<ion-content>
 		<ion-list>
-			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
+			<ion-item class="item-remove-animate item-thumbnail-left item-icon-right " ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
 				<img ng-src="{{svjetionik.image}}">
-				<h2>{{svjetionik.name}}</h2>
+				<h2 class="list-item-title-center">
+					<div class="list-item-title">
+						{{svjetionik.name}}
+					</div>
+				</h2>
 				<!--p>{{svjetionik.lastText}}</p-->
 				<i class="icon ion-chevron-right icon-accessory"></i>
 			</ion-item>

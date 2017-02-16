@@ -3,3 +3,72 @@
 	max-width: 100%;
     max-height: 100%;
 }
+.list-item-title{
+	margin: 5px 50px;
+	font-size: 17px;
+    /*font-weight: 500;*/
+}
+.list-item-subtitle{
+}
+.item h2 {
+	vertical-align: middle;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	max-height: 80px;
+	top: 10px;
+	height: 100%;
+}
+.card-table {
+	margin-bottom: 0;
+}
+.home-row {
+	/*height: 100px;*/
+	margin: 5px;
+}
+.home-col{
+	padding: 5px;
+}
+.home-button-lanterne{
+}
+.home-button-people{
+}
+.home-button{
+	/*background-image: url("../img/biblioteka-home.jpg");*/
+	display: block;
+	height: 100%;
+    background-size: cover;
+    background-position: 25% 90%;
+	max-width: 100%;
+	margin: 0;
+	/*margin-bottom: 13rem;*/
+	background-color: #123456;
+	position: relative;
+}
+.home-button p {
+  /*background-color: black;*/
+  color: #fff;
+  bottom: 5%;
+  /*font-family: Roboto;*/
+  /*font-size: 1.25em;*/
+  /*left: 0;*/
+  vertical-align: middle;
+  text-align: center;
+  /*padding: 0.25em 0.75em;*/
+  position: absolute;
+}
+.overlay{
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

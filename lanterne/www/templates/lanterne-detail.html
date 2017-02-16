@@ -7,11 +7,30 @@
 <ion-view>
 	<ion-nav-title>{{svjetionik.name}}</ion-nav-title>
 	<ion-content class="padding">
-		<img class="item-image" ng-src="{{svjetionik.image}}">
 		
-		<p>
-			Svjetioničari
-		</p>
+		<div class="list card">
+			<div class="item item-image">
+				<img class="item-image" ng-src="{{svjetionik.image}}">
+			</div>
+			<div class="card card-table">
+				<div class="row item item-divider">
+					<div class="col">Svjetionik</div>
+					<div class="col">Dolazak</div>
+					<div class="col">Prezime i ime</div>
+					<div class="col">Odlazak</div>
+					<div class="col">Svjetionik</div>
+				</div>
+			
+				<div class="row item item-text-wrap" ng-repeat="person in svjetionik.svjetionicari">
+					<div class="col">{{person.prevSvj}}</div> 
+					<div class="col">{{person.dolazak}}</div>
+					<div class="col">{{person.prezime}} {{person.ime}}</div>
+					<div class="col">{{person.odlazak}}</div>
+					<div class="col">{{person.nextSvj}} {{person.desc}}</div>
+				</div>
+			</div>
+		</div>
+		<!--img class="item-image" ng-src="{{svjetionik.image}}"-->
 		
 		<!--ion-list-->
 			<!-- (un)-comment ako bude trebalo (de)aktivirati link-->
@@ -23,24 +42,5 @@
 				<!--i class="icon ion-chevron-right icon-accessory"></i-->
 			<!--/ion-item-->
 		<!--/ion-list-->
-		
-		<div class="card">
-			<div class="row item item-divider">
-				<div class="col">Prijašnji svjetionik</div>
-				<div class="col">Dolazak</div>
-				<div class="col">Prezime i ime</div>
-				<div class="col">Odlazak</div>
-				<div class="col">Slijedeći svjetionik</div>
-			</div>
-		
-			<div class="row item item-text-wrap" ng-repeat="person in svjetionik.svjetionicari">
-				<div class="col">{{person.prevSvj}}</div> 
-				<div class="col">{{person.dolazak}}</div>
-				<div class="col">{{person.prezime}} {{person.ime}}</div>
-				<div class="col">{{person.odlazak}}</div>
-				<div class="col">{{person.nextSvj}} {{person.desc}}</div>
-			</div>
-			
-		</div>
 	</ion-content>
 </ion-view>
