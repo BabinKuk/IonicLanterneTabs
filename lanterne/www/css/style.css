@@ -15,6 +15,41 @@
 	background: rgba(238, 238, 238,.9);
 	width: 960px;
 }
+div>.row{
+	/*background-color: blue;*/
+}
+
+div>.row:first-child{
+	/*background-color: black;*/
+}
+
+div>.row:last-child{
+	/*background-color:green;*/
+}
+
+/*Flexbox vertical height classes*/
+.fill-vertical-space{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.section{
+	margin: 10px;
+}
+.fill-vertical-space>.row{
+	display: flex;
+	flex: 1;
+}
+
+h2{
+  background-color: white;
+}
+
+.scroll{
+    height: 100%;
+}
 .item-image {
 	max-width: 100%;
     max-height: 100%;
@@ -49,16 +84,21 @@
 .home-button-people{
 }
 .home-button{
-	/*background-image: url("../img/biblioteka-home.jpg");*/
-	display: block;
+	display:flex;
+	justify-content: center;
+	align-items: center;"
+	/*display: block;
 	height: 100%;
     background-size: cover;
     background-position: 25% 90%;
 	max-width: 100%;
 	margin: 0;
-	/*margin-bottom: 13rem;*/
 	background-color: #123456;
-	position: relative;
+	position: relative;*/
+}
+
+.home-button h2{
+	background-color: transparent;
 }
 .home-button p {
   /*background-color: black;*/
