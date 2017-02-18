@@ -1,5 +1,6 @@
 [
 	{"id": 1, "name": "material-design", "source": "pdf/material-design.pdf"},
 	{"id": 2, "name": "oracle fundamentals", "source": "pdf/oracle fundamentals.pdf"},
-	{"id": 3, "name": "relativity", "source": "pdf/relativity.pdf"}
+	{"id": 3, "name": "relativity", "source": "pdf/relativity.pdf"},
+	{"id": 3, "name": "relativity1", "source": "https://localhost:8080/server/pdf/relativity1.pdf"}
 ]
