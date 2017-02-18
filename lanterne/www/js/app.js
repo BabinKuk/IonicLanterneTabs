@@ -7,6 +7,8 @@
 // 'lanterna.controllers' is found in controllers.js
 angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services'])
 
+.value("serverUrl", "http://localhost:8080")
+
 .run(function($ionicPlatform, $ionicPopup) {
 	$ionicPlatform.ready(function() {
 		// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

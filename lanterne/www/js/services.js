@@ -1,6 +1,6 @@
 angular.module('lanterna.services', [])
 
-.factory('SvjetionicariList', function($http, $q) {
+.factory('SvjetionicariList', function($http, $q, serverUrl) {
 	return {
 		// svi svjetionicari
 		all: getAllPeople,
@@ -73,7 +73,7 @@ angular.module('lanterna.services', [])
     }
 })
 
-.factory('LanterneList', function($http, $q) {
+.factory('LanterneList', function($http, $q, serverUrl) {
 	return {
 		// svi svjetionici
 		all: getAll,
@@ -153,7 +153,7 @@ angular.module('lanterna.services', [])
 	}
 })
 
-.factory('BibliotekaList', function($http, $q) {
+.factory('BibliotekaList', function($http, $q, serverUrl) {
 	return {
 		// sve knjige
 		all: getAll,
@@ -168,7 +168,8 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		// get data
-		$http.get("json/biblioteka.json").then(function(response) {
+		//$http.get("json/biblioteka.json").then(function(response) {
+		$http.get(serverUrl + "/json/biblioteka.json").then(function(response) {
 			//console.log(response.data);
 			deffered.resolve(response.data);
 		})
@@ -182,7 +183,7 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		$http.get("json/biblioteka.json").then(function(response) {
+		$http.get(serverUrl + "/json/biblioteka.json").then(function(response) {
 			//console.log(response.data);
 			var books = response.data;
 			var book;
