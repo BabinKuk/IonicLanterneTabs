@@ -5,38 +5,53 @@
   The SvjetionicariList service returns an array of people data
 -->
 <ion-view>
-	<ion-nav-title>{{people.ime}} {{people.prezime}}</ion-nav-title>
+	<ion-nav-title>{{person.ime}} {{person.prezime}}</ion-nav-title>
 	<ion-content class="padding">
 		
 		<div class="item">
-			<img class="image-top" ng-src="{{people.image}}">
+			<img class="image-top" ng-src="{{person.image}}">
 		</div>
 		
 		<div class="item">
 			<p>Godina rođenja i smrti</p>
-			<h2>{{people.godRodSmrti}}</h2>
+			<h2>{{person.godRodSmrti}}</h2>
 		</div>
 		
 		<div class="item">
 			<p>Mjesto</p>
-			<h2>{{people.mjesto}}</h2>
+			<h2>{{person.mjesto}}</h2>
 		</div>
 		
 		<div class="list card card-table">
 			<div class="row item item-divider">
 				<div class="col">Svjetionik</div>
 				<div class="col">Dolazak</div>
+				<div class="col">Svjetionik</div>
 				<div class="col">Odlazak</div>
 				<div class="col">Svjetionik</div>
 			</div>
 		
-			<!--div class="row item item-text-wrap" ng-repeat="person in svjetionik.svjetionicari"-->
-				<!--div class="col"><a ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div-->
-				<!----div class="col"><a ng-href="#/tab/lanterne-list/{{person.prevSvj}}">{{person.prevSvj}}</a></div---->
-				<!--div class="col">{{person.dolazak}}</div>
-				<div class="col"><a ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
-				<div class="col"><a ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div-->
-				<!----div class="col"><a href="#/tab/lanterne-list/{{person.nextSvj}}">{{person.nextSvj}} {{person.desc}}</a></div---->
+			<div class="row item item-text-wrap" ng-repeat="svjetionik in svjetionici track by $index">
+				<div class="col">
+					<a ng-href="{{svjetionik.personDetails.prevSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.prevSvj : '#/tab/svjetionicari-list/' + person.id}}">
+						{{svjetionik.personDetails.prevSvj}}
+					</a>
+				</div>
+				<div class="col">{{svjetionik.personDetails.dolazak}}</div>
+				
+				<div class="col">
+					<a ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">
+						{{svjetionik.name}}
+					</a>
+				</div>
+				
+				<div class="col">{{svjetionik.personDetails.odlazak}}</div>
+				
+				<div class="col">
+					<a ng-href="{{svjetionik.personDetails.nextSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.nextSvj : '#/tab/svjetionicari-list/' + person.id}}">
+						{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} 
+					</a>
+				</div>
 			</div>
 		</div>
 		

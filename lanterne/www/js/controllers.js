@@ -157,7 +157,7 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {
-	//console.log('SvjetionicariCtrlList');
+	console.log('SvjetionicariListCtrl');
 	
 	getAll();
 	
@@ -180,16 +180,31 @@ angular.module('lanterna.controllers', [])
 	// check id first
 	if($stateParams.id != undefined || $stateParams.id != ''){
 		getPersonDetails($stateParams.id);
+		getLanternForPerson($stateParams.id);
 	}
 	
 	// handler function
 	function getPersonDetails(id) {
-		//console.log('in getPersonDetails ' + id);
+		console.log('in getPersonDetails ' + id);
 		// call service
 		SvjetionicariList.getPerson(id)
 			.then(function(response){
-				$scope.people = response; // assign data here to your $scope object
-				$scope.karijera = $scope.people.karijera;
+				$scope.person = response; // assign data here to your $scope object
+				console.log($scope.person);
+				//$scope.karijera = $scope.people.karijera;
+			},function(error){
+				console.log(error);
+			});
+	}
+	
+	function getLanternForPerson(id) {
+		console.log('in getLanternForPerson ' + id);
+		// call service
+		SvjetionicariList.getLanternForPerson(id)
+			.then(function(response){
+				$scope.svjetionici = response; // assign data here to your $scope object
+				console.log($scope.svjetionici);
+				//$scope.karijera = $scope.people.karijera;
 			},function(error){
 				console.log(error);
 			});

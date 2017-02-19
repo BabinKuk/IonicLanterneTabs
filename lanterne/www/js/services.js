@@ -5,7 +5,9 @@ angular.module('lanterna.services', [])
 		// svi svjetionicari
 		all: getAllPeople,
 		// get by Id
-		getPerson: getPerson
+		getPerson: getPerson,
+		// get lanterns for person
+		getLanternForPerson: getLanternForPerson
 		// find by name
 		//find: findByName
 	}
@@ -31,7 +33,7 @@ angular.module('lanterna.services', [])
 	}
 
 	function getPerson(personId) {
-		//console.log('person');
+		console.log('person ' + personId);
 		
 		//async function to know when the data has arrived
 		var deffered = $q.defer();
@@ -45,13 +47,52 @@ angular.module('lanterna.services', [])
 			for (var i = 0; i < people.length; i++) {
 				//console.log(people[i]);
 				if (people[i].id === parseInt(personId)) {
+					console.log(people[i]);
 					person = people[i];
 					//return person;
 				}
 			}
 			deffered.resolve(person);
 		})
-        return deffered.promise;
+		return deffered.promise;
+	}
+	
+	// !!!!!!!!!!!SAMO AKO SE SVI PODACI NALAZE U svjetionicari.json!!!!!!!!!!
+	function getLanternForPerson(personId) {
+		//async function to know when the data has arrived
+		var deffered = $q.defer();
+				
+		//$http.get("json/svjetionici.json").then(function(response) {
+		$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
+			//console.log(response.data);
+			var allLanterne = response.data;
+			//console.log(sviSvjetionici);
+			var lanternArray = [];
+			//loop through svi svjetionici array
+			for (var i = 0; i < allLanterne.length; i++) {
+				//console.log(allLanterne[i]);
+				var lantern = {};
+				var personDetails;
+				//loop through svjetionicari array for each svjetionik
+				for (var j = 0; j < allLanterne[i].svjetionicari.length; j++) {
+					//console.log(allLanterne[i].svjetionicari[j]);
+					// provjeri ako je svjetionicar bio na svjetioniku
+					if (allLanterne[i].svjetionicari[j].id == parseInt(personId)) {
+						console.log(allLanterne[i].svjetionicari[j]);
+						//create object
+						lantern.id = allLanterne[i].id;
+						lantern.name = allLanterne[i].name;
+						lantern.image = allLanterne[i].image;
+						lantern.personDetails = allLanterne[i].svjetionicari[j];
+						console.log(lantern);
+						// push into array
+						lanternArray.push(lantern);
+					}
+				}
+			}
+			deffered.resolve(lanternArray);
+		})
+		return deffered.promise; 
 	}
 	
 	function findByName(name) {
@@ -150,7 +191,6 @@ angular.module('lanterna.services', [])
 						//return person;
 					}
 				}
-				
 			}
 			deffered.resolve(peopleArray);
 		})
