@@ -7,23 +7,42 @@
 <ion-view>
 	<ion-nav-title>{{people.ime}} {{people.prezime}}</ion-nav-title>
 	<ion-content class="padding">
-		<img class="item-image" ng-src="{{people.image}}">
-		<p>
-			Godina rođenja i smrti
-		</p>
-		<p>
-			{{people.godRodSmrti}}
-		</p>
-		<p>
-			Mjesto
-		</p>
-		<p>
-			{{people.mjesto}}
-		</p>
 		
-		<p>
-			Karijera
-		</p>
+		<div class="item">
+			<img class="image-top" ng-src="{{people.image}}">
+		</div>
+		
+		<div class="item">
+			<p>Godina rođenja i smrti</p>
+			<h2>{{people.godRodSmrti}}</h2>
+		</div>
+		
+		<div class="item">
+			<p>Mjesto</p>
+			<h2>{{people.mjesto}}</h2>
+		</div>
+		
+		<div class="list card card-table">
+			<div class="row item item-divider">
+				<div class="col">Svjetionik</div>
+				<div class="col">Dolazak</div>
+				<div class="col">Odlazak</div>
+				<div class="col">Svjetionik</div>
+			</div>
+		
+			<!--div class="row item item-text-wrap" ng-repeat="person in svjetionik.svjetionicari"-->
+				<!--div class="col"><a ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div-->
+				<!----div class="col"><a ng-href="#/tab/lanterne-list/{{person.prevSvj}}">{{person.prevSvj}}</a></div---->
+				<!--div class="col">{{person.dolazak}}</div>
+				<div class="col"><a ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
+				<div class="col"><a ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div-->
+				<!----div class="col"><a href="#/tab/lanterne-list/{{person.nextSvj}}">{{person.nextSvj}} {{person.desc}}</a></div---->
+			</div>
+		</div>
+		
+		
+		
+		
 		<ion-list>
 			<!-- (un)-comment ako bude trebalo (de)aktivirati link-->
 			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="svjetionik in karijera track by $index" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.svjetionik}}"-->
