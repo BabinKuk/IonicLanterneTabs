@@ -1,7 +1,5 @@
 [
 	{"id": 1, "name": "material-design", "source": "pdf/material-design.pdf"},
-	{"id": 2, "name": "oracle fundamentals", "source": "pdf/oracle fundamentals.pdf"},
-	{"id": 3, "name": "relativity", "source": "pdf/relativity.pdf"},
-	{"id": 4, "name": "relativity1", "source": "http://localhost:8080/pdf/relativity1.pdf"},
-	{"id": 5, "name": "relativity2", "source": "http://localhost:8080/pdf/relativity2.pdf"}
+	{"id": 2, "name": "22-single-stroke-seven", "source": "pdf/22-single-stroke-seven.pdf"},
+	{"id": 3, "name": "relativity", "source": "pdf/relativity.pdf"}	
 ]
