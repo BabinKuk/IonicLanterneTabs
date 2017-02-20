@@ -22,7 +22,7 @@ angular.module('lanterna.controllers', [])
 	
 	// handler functions
 	function passwordPopup() {
-		console.log('pass');
+		//console.log('pass');
 		
 		var myPopup = $ionicPopup.show({
 			template: '<input type="password" ng-model="data.pass">',
@@ -128,14 +128,32 @@ angular.module('lanterna.controllers', [])
 			});
 	}
 	
+	/*
+	* if given group is the selected group, deselect it
+	* else, select the given group
+	*/
+	$scope.toggleGroup = function(group) {
+		//console.log('toggleGroup ', group);
+		if ($scope.isGroupShown(group)) {
+			//console.log('shownGroup ', null);
+			$scope.shownGroup = null;
+		} else {
+			//console.log('shownGroup ', group);
+			$scope.shownGroup = group;
+		}
+	};
+	$scope.isGroupShown = function(group) {
+		//console.log('isGroupShown ', group);
+		return $scope.shownGroup === group;
+	};
 })
 
 .controller('SvjetionicariCtrl', function($scope, SvjetionicariList) {
-	console.log('SvjetionicariCtrl');
+	//console.log('SvjetionicariCtrl');
 	
 	// search function
 	$scope.search = function(query) {
-		console.log(query);
+		//console.log(query);
 		doSearch(query);
 	}
 	
@@ -157,7 +175,7 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {
-	console.log('SvjetionicariListCtrl');
+	//console.log('SvjetionicariListCtrl');
 	
 	getAll();
 	
@@ -185,12 +203,12 @@ angular.module('lanterna.controllers', [])
 	
 	// handler function
 	function getPersonDetails(id) {
-		console.log('in getPersonDetails ' + id);
+		//console.log('in getPersonDetails ' + id);
 		// call service
 		SvjetionicariList.getPerson(id)
 			.then(function(response){
 				$scope.person = response; // assign data here to your $scope object
-				console.log($scope.person);
+				//console.log($scope.person);
 				//$scope.karijera = $scope.people.karijera;
 			},function(error){
 				console.log(error);
@@ -198,20 +216,39 @@ angular.module('lanterna.controllers', [])
 	}
 	
 	function getLanternForPerson(id) {
-		console.log('in getLanternForPerson ' + id);
+		//console.log('in getLanternForPerson ' + id);
 		// call service
 		SvjetionicariList.getLanternForPerson(id)
 			.then(function(response){
 				$scope.svjetionici = response; // assign data here to your $scope object
-				console.log($scope.svjetionici);
+				//console.log($scope.svjetionici);
 				//$scope.karijera = $scope.people.karijera;
 			},function(error){
 				console.log(error);
 			});
 	}
 	
+		/*
+	* if given group is the selected group, deselect it
+	* else, select the given group
+	*/
+	$scope.toggleGroup = function(group) {
+		//console.log('toggleGroup ', group);
+		if ($scope.isGroupShown(group)) {
+			//console.log('shownGroup ', null);
+			$scope.shownGroup = null;
+		} else {
+			//console.log('shownGroup ', group);
+			$scope.shownGroup = group;
+		}
+	};
+	$scope.isGroupShown = function(group) {
+		//console.log('isGroupShown ', group);
+		return $scope.shownGroup === group;
+	};
+	
 	function isNull(name){
-		console.log('is null ' + name);
+		//console.log('is null ' + name);
 		if (name.length > 0) {
 			return true;
 		} else {
@@ -221,13 +258,13 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList) {
-	console.log('BibliotekaCtrl');
+	//console.log('BibliotekaCtrl');
 	
 	getAll();
 	
 	// handler function
 	function getAll() {
-		console.log('in getAll');
+		//console.log('in getAll');
 		// call service
 		BibliotekaList.all()
 			.then(function(response){
@@ -255,10 +292,8 @@ angular.module('lanterna.controllers', [])
 				$scope.knjiga = response; // assign data here to your $scope object
 				$scope.pdfUrl = $scope.knjiga.source;
 				$scope.httpHeaders = { Authorization: 'Bearer some-aleatory-token' };
-
 				//pdfDelegate.$getByHandle('my-pdf-container').load($scope.pdfUrl);
-				
-				console.log($scope.pdfUrl);
+				//console.log($scope.pdfUrl);
 			},function(error){
 				console.log(error);
 			});

@@ -106,7 +106,7 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 		url: '/lanterne-list/:name',
 		views: {
 			'tab-lanterne': {
-				templateUrl: 'templates/lanterne-detail.html',
+				templateUrl: 'templates/tab-lanterne-detail.html',
 				controller: 'LanterneDetailCtrl'
 			}
 		}
@@ -133,7 +133,7 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 		url: '/svjetionicari-list/:id',
 		views: {
 			'tab-svjetionicari': {
-				templateUrl: 'templates/svjetionicari-detail.html',
+				templateUrl: 'templates/tab-svjetionicari-detail.html',
 				controller: 'SvjetionicariDetailCtrl'
 			}
 		}
@@ -151,7 +151,7 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 		url: '/biblioteka-list/:name',
 		views: {
 			'tab-biblioteka': {
-				templateUrl: 'templates/biblioteka-detail.html',
+				templateUrl: 'templates/tab-biblioteka-detail.html',
 				controller: 'BibliotekaDetailCtrl'
 			}
 		}

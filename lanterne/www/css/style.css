@@ -20,6 +20,34 @@
 .rotate180 {-webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .rotate270 {-webkit-transform: rotate(270deg); transform: rotate(270deg); }
 
+/* accordion list */
+.list .item.item-accordion {
+	  line-height: 38px;
+	  padding-top: 0;
+	  padding-bottom: 0;
+	  transition: 0.09s all linear;
+	  padding-left: 0px;
+	  padding-right: 0px;
+}
+.list .item.item-stable {
+	  background-color: #fff;
+}
+.card .item:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.list .item.item-accordion.ng-hide {
+	line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
+	display: block !important;
+}
+div>.col>a.button{
+	height: 100%;
+}
+div.col {
+	white-space: nowrap;
+}
 div>.row{
 	/*background-color: blue;*/
 }
