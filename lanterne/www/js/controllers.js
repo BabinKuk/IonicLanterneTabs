@@ -193,27 +193,49 @@ angular.module('lanterna.controllers', [])
 .controller('SvjetionicariCtrl', function($scope, SvjetionicariList) {
 	//console.log('SvjetionicariCtrl');
 	
-	// search function
-	$scope.search = function(query) {
-		//console.log(query);
-		doSearch(query);
+	$scope.svjetionicar = {};
+
+	// search
+	$scope.search = function(){
+		console.log($scope);
+		var ime = $scope.svjetionicar.ime;
+		var prezime = $scope.svjetionicar.prezime;
+		
+		console.log('Searching...', svjetionicar);
+
+		// call service
+		SvjetionicariList.all()
+		//LanterneList.find(svjetionik) SUTRA!!!!!!!!
+			.then(function(response){
+				$scope.lanterne = response; // assign data here to your $scope object
+			},function(error){
+				console.log(error);
+			});
+		
+		// hide latest listings
+		$scope.showAll = false;
+		
+		// show search results
+		$scope.showResults = true;
 	}
 	
-	//handler function
-	var doSearch = ionic.debounce(function(query) {
-		console.log('doSearch ' + query);
-		//Flickr.search(query).then(function(resp) {
-		//	$scope.photos = resp;
-		//});
+	//svi svjetionici
+	$scope.getAll = function() {
+		console.log('in getAll');
 		// call service
-		SvjetionicariList.find(query)
+		SvjetionicariList.all()
 			.then(function(response){
 				$scope.people = response; //assign data here to your $scope object
 			},function(error){
 				console.log(error);
 			});
+			
+		// hide latest listings
+		$scope.showAll = true;
 		
-	}, 200);
+		// show search results
+		$scope.showResults = false;
+	}	
 })
 
 .controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {
