@@ -71,30 +71,27 @@ angular.module('lanterna.controllers', [])
 	console.log('LanterneCtrl');
 
 	$scope.svjetionik = {};
-
+	
+	//svi svjetionici
+	$scope.getAll = function() {
+		doGetAll();
+	}
+	
 	// search
 	$scope.search = function(){
 		console.log($scope);
 		var svjetionik = $scope.svjetionik.name;
 		console.log('Searching...', svjetionik);
-
-		// call service
-		LanterneList.find(svjetionik)
-			.then(function(response){
-				$scope.lanterne = response; // assign data here to your $scope object
-			},function(error){
-				console.log(error);
-			});
 		
-		// hide latest listings
-		$scope.showAll = false;
-		
-		// show search results
-		$scope.showResults = true;
+		if (svjetionik == '' || svjetionik == null) {
+			doGetAll()
+		} else {
+			doSearch(svjetionik);
+		}
 	}
 	
-	//svi svjetionici
-	$scope.getAll = function() {
+	// handler functions
+	function doGetAll() {
 		console.log('in getAll');
 		// call service
 		LanterneList.all()
@@ -111,6 +108,22 @@ angular.module('lanterna.controllers', [])
 		$scope.showResults = false;
 	}
 	
+	function doSearch(svjetionik){
+		console.log('doSearch...', svjetionik);
+		// call service
+		LanterneList.find(svjetionik)
+			.then(function(response){
+				$scope.lanterne = response; // assign data here to your $scope object
+			},function(error){
+				console.log(error);
+			});
+		
+		// hide latest listings
+		$scope.showAll = false;
+		
+		// show search results
+		$scope.showResults = true;
+	}
 })
 
 .controller('LanterneListCtrl', function($scope, $stateParams, LanterneList) {
@@ -194,33 +207,38 @@ angular.module('lanterna.controllers', [])
 	//console.log('SvjetionicariCtrl');
 	
 	$scope.svjetionicar = {};
+	
+	//svi svjetionici
+	$scope.getAll = function(){
+		doGetAll();
+	}
 
 	// search
 	$scope.search = function(){
 		console.log($scope);
 		var ime = $scope.svjetionicar.ime;
 		var prezime = $scope.svjetionicar.prezime;
+		var option;
+		console.log('Searching...', ime , prezime);
 		
-		console.log('Searching...', svjetionicar);
-
-		// call service
-		SvjetionicariList.all()
-		//LanterneList.find(svjetionik) SUTRA!!!!!!!!
-			.then(function(response){
-				$scope.lanterne = response; // assign data here to your $scope object
-			},function(error){
-				console.log(error);
-			});
-		
-		// hide latest listings
-		$scope.showAll = false;
-		
-		// show search results
-		$scope.showResults = true;
+		if ((ime == '' || ime == null) && (prezime == '' || prezime == null)){
+			doGetAll();
+		} else {
+			if ((ime != '' || ime != null) && (prezime != '' || prezime != null)){
+				option = 1;
+			}
+			if ((ime != '' || ime != null) && (prezime == '' || prezime == null)){
+				option = 2;
+			}
+			if ((ime == '' || ime == null) && (prezime != '' || prezime != null)){
+				option = 3;
+			}
+			doSearch(ime, prezime, option);
+		}		
 	}
 	
-	//svi svjetionici
-	$scope.getAll = function() {
+	//handler functions
+	function doGetAll() {
 		console.log('in getAll');
 		// call service
 		SvjetionicariList.all()
@@ -235,7 +253,23 @@ angular.module('lanterna.controllers', [])
 		
 		// show search results
 		$scope.showResults = false;
-	}	
+	}
+	
+	function doSearch(ime, prezime, option){
+		// call service
+		SvjetionicariList.find(ime, prezime, option)
+			.then(function(response){
+				$scope.people = response; // assign data here to your $scope object
+			},function(error){
+				console.log(error);
+			});
+		
+		// hide latest listings
+		$scope.showAll = false;
+		
+		// show search results
+		$scope.showResults = true;
+	}
 })
 
 .controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {

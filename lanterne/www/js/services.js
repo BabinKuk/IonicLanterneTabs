@@ -8,9 +8,9 @@ angular.module('lanterna.services', [])
 		// detalji o svjetionicaru
 		getPerson: getPerson,
 		// lista svjetionika na kojem je svetionicar bio
-		getLanternForPerson: getLanternForPerson
+		getLanternForPerson: getLanternForPerson,
 		// find by name
-		//find: findByName
+		find: findByName
 	}
 
 	/*var svjetionicariArray = $resource('json/svjetionicari.json',
@@ -100,24 +100,36 @@ angular.module('lanterna.services', [])
 		return deffered.promise; 
 	}
 	
-	function findByName(name) {
-		console.log('in findByName ', name);
+	function findByName(ime, prezime, option) {
+		console.log('in findByName ' + ime + ', ' + prezime);
 		
 		//async function to know when the data has arrived
 		var deffered = $q.defer();
-		
-		console.log(svjetionicariArray);
-		/*svjetionicariArray.load({
-			tags: name
-		}, function(response) {
+
+		//get data
+		$http.get("json/svjetionicari.json").then(function(response) {
+		//$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
 			//console.log(response.data);
-			deffered.resolve(response.data);
-		}, function(err) {
-			deffered.reject(err);
-		})*/
-		
+			var svjetionicari = response.data;
+			var svjetionicariFiltered = [];
+			
+			svjetionicariFiltered = svjetionicari.filter(function(el) {
+				//console.log('filtering ' + svjetionikName.toUpperCase());
+				if (option == 1) {
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) && el.prezime.toLowerCase()	.indexOf(prezime.toLowerCase())) > -1;
+				}
+				if (option == 2) {
+					return el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1;
+				}
+				if (option == 3) {
+					return el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1;
+				}
+				//return el.name.toLowerCase().indexOf(svjetionikName.toLowerCase()) > -1;
+			});
+			//console.log(svjetioniciFiltered);
+			deffered.resolve(svjetionicariFiltered);
+		})
         return deffered.promise;
-		
     }
 })
 
