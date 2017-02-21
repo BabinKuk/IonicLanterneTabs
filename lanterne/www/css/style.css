@@ -79,6 +79,17 @@ div>.row:last-child{
 h2{
   background-color: white;
 }
+.width-150px{
+    width: 150px;
+    display: inline-block;
+}
+.left-col-button {
+	padding-right: 30px;
+	margin-right: 30px;
+}
+.right-col-button {
+	margin-left: 30px;
+}
 
 .scroll{
     height: 100%;

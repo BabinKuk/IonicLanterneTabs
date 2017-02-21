@@ -67,8 +67,50 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('LanterneCtrl', function($scope) {
-	//console.log('LanterneCtrl');
+.controller('LanterneCtrl', function($scope, $stateParams, LanterneList) {
+	console.log('LanterneCtrl');
+
+	$scope.svjetionik = {};
+
+	// search
+	$scope.search = function(){
+		console.log($scope);
+		var svjetionik = $scope.svjetionik.name;
+		console.log('Searching...', svjetionik);
+
+		// call service
+		LanterneList.find(svjetionik)
+			.then(function(response){
+				$scope.lanterne = response; // assign data here to your $scope object
+			},function(error){
+				console.log(error);
+			});
+		
+		// hide latest listings
+		$scope.showAll = false;
+		
+		// show search results
+		$scope.showResults = true;
+	}
+	
+	//svi svjetionici
+	$scope.getAll = function() {
+		console.log('in getAll');
+		// call service
+		LanterneList.all()
+			.then(function(response){
+				$scope.lanterne = response; // assign data here to your $scope object
+			},function(error){
+				console.log(error);
+			});
+			
+		// hide latest listings
+		$scope.showAll = true;
+		
+		// show search results
+		$scope.showResults = false;
+	}
+	
 })
 
 .controller('LanterneListCtrl', function($scope, $stateParams, LanterneList) {

@@ -1,9 +1,75 @@
 <ion-view view-title="Lanterne">
 	<ion-content class="padding">
-		<h2>Svjetionici Home</h2>
-    	<p>
-			<a class="button icon icon-right ion-chevron-right" href="#/tab/lanterne-list">Lanterne</a>
-		</p>
+		
+		<div class="list card">
+			<div class="item">
+				<h1>Svjetionici Home</h1>
+				<!--p>Nine Inch Nails</p-->
+			</div>
+
+			<div class="item">
+				<img class="image-top" src="img/svjetionici/PENEDA.jpg">
+			</div>
+			
+			<div class="item item-input-inset">
+				<label class="item-input-wrapper">
+					<input type="text" name="svjetionik" ng-model="svjetionik.name" placeholder="Svjetionik">
+				</label>
+			</div>
+			
+			<div class="item">
+				<div>
+					<center>
+						<div class="">
+							<button class="button con-left ion-search button-calm padding left-col-button width-150px" ng-click="search()">
+								Traži svjetionik
+							</button>
+							<button class="button button-calm padding right-col-button width-150px" ng-click="getAll()">
+								Svi svjetionici
+							</button>
+						</div>
+					</center>
+				</div>
+			</div>
+			
+			<!-- ostavi ako se ipak ide na poswbnu stra nicu s listama p>
+				<a class="button icon icon-right ion-chevron-right" href="#/tab/lanterne-list">Lanterne</a>
+			</p-->
+			
+			<div ng-show="showResults">
+				<h2>Rez pretrage</h2>
+				<ion-list>
+					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right " ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
+						<img ng-src="{{svjetionik.image}}">
+						<h2 class="list-item-title-center">
+							<div class="list-item-title">
+								{{svjetionik.name}}
+							</div>
+						</h2>
+						<!--p>{{svjetionik.lastText}}</p-->
+						<i class="icon ion-chevron-right icon-accessory"></i>
+					</ion-item>
+				</ion-list>
+			</div>
+			
+			<div ng-show="showAll">
+				<h2>Svi svjetionici</h2>
+				<ion-list>
+					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right " ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
+						<img ng-src="{{svjetionik.image}}">
+						<h2 class="list-item-title-center">
+							<div class="list-item-title">
+								{{svjetionik.name}}
+							</div>
+						</h2>
+						<!--p>{{svjetionik.lastText}}</p-->
+						<i class="icon ion-chevron-right icon-accessory"></i>
+					</ion-item>
+				</ion-list>
+				
+			</div>
+
+		</div>
 		
 	</ion-content>
 </ion-view>
