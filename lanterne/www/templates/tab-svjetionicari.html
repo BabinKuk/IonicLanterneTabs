@@ -1,9 +1,9 @@
 <ion-view view-title="Svjetioničari">
-	<ion-content>
-		<h2>Svjetioničari Home</h2>
+	<ion-content class="padding">
+	
 		<div class="list card">
 			<div class="item">
-				<h1>Svjetioničari Home</h1>
+				<h1>Svjetioničari</h1>
 				<!--p>Nine Inch Nails</p-->
 			</div>
 
@@ -12,11 +12,11 @@
 			</div>
 			
 			<div class="item item-input-inset">
-				<label class="item-input-wrapper">
-					<input type="text" name="ime" ng-model="svjetionicar.ime" placeholder="Ime">
+				<label id="ime" name="ime" class="item-input-wrapper">
+					<input type="text" ng-model="svjetionicar.ime" placeholder="Ime">
 				</label>
-				<label class="item-input-wrapper">
-					<input type="text" name="prezime" ng-model="svjetionicar.prezime" placeholder="Prezime">
+				<label id="prezime" name="prezime" class="item-input-wrapper">
+					<input type="text" ng-model="svjetionicar.prezime" placeholder="Prezime">
 				</label>
 			</div>
 			
@@ -35,55 +35,45 @@
 				</div>
 			</div>
 
-			<div ng-show="showResults">
-				<h2>Rez pretrage</h2>
+			<!-- ako se ide na verziju s detals stranicom p>
+				<a class="button icon icon-right ion-chevron-right" href="#/tab/svjetionicari-list">Display All</a>
+			</p-->
+			
+			<div ng-show="showResults" class="clearfix">
+				<div class="item">
+					<h1>Popis svjetioničara</h1>
+					<!--p>Nine Inch Nails</p-->
+				</div>
 				<ion-list>
 					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 						<img ng-src="{{svjetionicar.image}}">
-						<h2 class="list-item-title-center">
-							<div class="list-item-title">
-								{{svjetionicar.ime}} {{svjetionicar.prezime}}
-							</div>
-						</h2>
+						<div id="item-name">
+							{{svjetionicar.ime}} {{svjetionicar.prezime}}
+						</div>
 						<!--p>{{svjetionicar.prezime}}</p-->
 						<i class="icon ion-chevron-right icon-accessory"></i>
 					</ion-item>
 				</ion-list>	
 			</div>
 
-			<div ng-show="showAll">
-				<h2>Svi svjetioničari</h2>
+			<div ng-show="showAll" class="clearfix">
+				<div class="item">
+					<h1>Popis svih svjetioničara</h1>
+					<!--p>Nine Inch Nails</p-->
+				</div>
 				<ion-list>
 					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 						<img ng-src="{{svjetionicar.image}}">
-						<h2 class="list-item-title-center">
-							<div class="list-item-title">
-								{{svjetionicar.ime}} {{svjetionicar.prezime}}
-							</div>
-						</h2>
+						<div id="item-name">
+							{{svjetionicar.ime}} {{svjetionicar.prezime}}
+						</div>
 						<!--p>{{svjetionicar.prezime}}</p-->
 						<i class="icon ion-chevron-right icon-accessory"></i>
 					</ion-item>
 				</ion-list>	
 			</div>
-
-		<!-- ako se ide na verziju s detals stranicom p>
-			<a class="button icon icon-right ion-chevron-right" href="#/tab/svjetionicari-list">Display All</a>
-		</p-->
 		
-		 <!--div id="search-bar">
-			<div class="item item-input-inset">
-				<label class="item-input-wrapper" id="search-input">
-					<i class="icon ion-search placeholder-icon"></i>
-					<input type="text" placeholder="Search" ng-model="query" ng-change="search(query)">
-				</label>
-			</div>
-		</div-->
-		
-		<div id="search-results" class="clearfix">
-			<!--div class="photo" ng-repeat="photo in photos.items">
-				<img ng-src="{{ photo.media.m }}">
-			</div-->
 		</div>
- 	</ion-content>
+		
+	</ion-content>
 </ion-view>

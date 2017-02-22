@@ -3,7 +3,7 @@ angular.module('lanterna.controllers', [])
 .controller('MainCtrl', function($scope, $ionicPopup, $timeout) {
 	//console.log('MainCtrl');
 	
-	// An alert dialog
+	//alert dialog
 	$scope.showPopup = function() {
 		//console.log('alert');
 		$scope.data = {};
@@ -20,7 +20,7 @@ angular.module('lanterna.controllers', [])
 		});
 	};
 	
-	// handler functions
+	//handler functions
 	function passwordPopup() {
 		//console.log('pass');
 		
@@ -49,26 +49,26 @@ angular.module('lanterna.controllers', [])
 		});
 		
 		myPopup.then(function(res) {
-			//console.log('Tapped!', res);
+			//close app
 			closeApp(res);
 		});
 
 		$timeout(function() {
 			myPopup.close(); // close the popup after 10 seconds
 		}, 10000);
-		
 	}
+	
 	function closeApp(pass) {
 		//console.log('closeing app...');
+		//check pass and close
 		if (pass === 'lanterna') {
-			//console.log('lanterna');
 			ionic.Platform.exitApp();
 		}
 	}
 })
 
 .controller('LanterneCtrl', function($scope, $stateParams, LanterneList) {
-	console.log('LanterneCtrl');
+	//console.log('LanterneCtrl');
 
 	$scope.svjetionik = {};
 	
@@ -77,12 +77,13 @@ angular.module('lanterna.controllers', [])
 		doGetAll();
 	}
 	
-	// search
+	//search svjetionik
 	$scope.search = function(){
 		console.log($scope);
 		var svjetionik = $scope.svjetionik.name;
 		console.log('Searching...', svjetionik);
 		
+		//ako je polje prazno, dohvati sve
 		if (svjetionik == '' || svjetionik == null) {
 			doGetAll()
 		} else {
@@ -92,8 +93,8 @@ angular.module('lanterna.controllers', [])
 	
 	// handler functions
 	function doGetAll() {
-		console.log('in getAll');
-		// call service
+		//console.log('in getAll');
+		//call service
 		LanterneList.all()
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
@@ -101,7 +102,7 @@ angular.module('lanterna.controllers', [])
 				console.log(error);
 			});
 			
-		// hide latest listings
+		// hide all listings
 		$scope.showAll = true;
 		
 		// show search results
@@ -109,8 +110,8 @@ angular.module('lanterna.controllers', [])
 	}
 	
 	function doSearch(svjetionik){
-		console.log('doSearch...', svjetionik);
-		// call service
+		//console.log('doSearch...', svjetionik);
+		//call service
 		LanterneList.find(svjetionik)
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
@@ -118,23 +119,25 @@ angular.module('lanterna.controllers', [])
 				console.log(error);
 			});
 		
-		// hide latest listings
+		//hide all listings
 		$scope.showAll = false;
 		
-		// show search results
+		//show search results
 		$scope.showResults = true;
 	}
 })
 
+//ako se nece koristiti list ekran, moze se maknuti
 .controller('LanterneListCtrl', function($scope, $stateParams, LanterneList) {
 	//console.log('LanterneListCtrl');
 	
+	//svi svjetionici
 	getAll();
 	
-	// handler function
+	//handler function
 	function getAll() {
 		//console.log('in getAll');
-		// call service
+		//call service
 		LanterneList.all()
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
@@ -151,19 +154,19 @@ angular.module('lanterna.controllers', [])
 	if($stateParams.name != undefined || $stateParams.name != ''){
 		// get lantern details
 		getDetails($stateParams.name);
-		// get all people asociated with that particular lantern
+		//get all people asociated with that particular lantern
+		//!!!!!ovo se ne koristi jer se podaci nalaze u svjetionici.json!!!!!!
 		//getPeopleDetails($stateParams.name);
 	}
 	
 	// handler functions
 	function getDetails(name) {
 		//console.log('in getDetails ' + name);
-		// call service
+		//call service
 		LanterneList.getDetails(name)
 			.then(function(response){
-				// lanterndetails
+				//detalji o svjetioniku
 				$scope.svjetionik = response; // assign data here to your $scope object
-				//console.log($scope.svjetionik);
 			},function(error){
 				console.log(error);
 			});
@@ -171,34 +174,30 @@ angular.module('lanterna.controllers', [])
 	
 	function getPeopleDetails(name) {
 		//console.log('in getPeopleDetails ' + name);
-		// call service
+		//call service
 		LanterneList.getPeopleOnLanterna(name)
 			.then(function(response){
 				//list of people associated with that particular lantern
 				$scope.people = response; // assign data here to your $scope object
-				//$scope.karijera = $scope.people.karijera;
-				//console.log($scope.people);
 			},function(error){
 				console.log(error);
 			});
 	}
 	
 	/*
+	* toggle functions
 	* if given group is the selected group, deselect it
 	* else, select the given group
 	*/
 	$scope.toggleGroup = function(group) {
-		//console.log('toggleGroup ', group);
 		if ($scope.isGroupShown(group)) {
-			//console.log('shownGroup ', null);
 			$scope.shownGroup = null;
 		} else {
-			//console.log('shownGroup ', group);
 			$scope.shownGroup = group;
 		}
 	};
+	
 	$scope.isGroupShown = function(group) {
-		//console.log('isGroupShown ', group);
 		return $scope.shownGroup === group;
 	};
 })
@@ -206,21 +205,29 @@ angular.module('lanterna.controllers', [])
 .controller('SvjetionicariCtrl', function($scope, SvjetionicariList) {
 	//console.log('SvjetionicariCtrl');
 	
+	//set object
 	$scope.svjetionicar = {};
 	
-	//svi svjetionici
+	//svi svjetionicari
 	$scope.getAll = function(){
 		doGetAll();
 	}
 
-	// search
+	// search svjetionicare
 	$scope.search = function(){
-		console.log($scope);
+		//console.log($scope);
+		//podaci s ekrana
 		var ime = $scope.svjetionicar.ime;
 		var prezime = $scope.svjetionicar.prezime;
-		var option;
-		console.log('Searching...', ime , prezime);
+		//console.log(ime + ' ; ' + prezime);
 		
+		//opcije sto je upisano na ekranu:
+		//1 - uneseno ime i prezime
+		//2 - uneseno samo ime
+		//3 - uneseno samo prezime
+		var option;
+		
+		//ako su polja prazna dohvati sve
 		if ((ime == '' || ime == null) && (prezime == '' || prezime == null)){
 			doGetAll();
 		} else {
@@ -239,32 +246,33 @@ angular.module('lanterna.controllers', [])
 	
 	//handler functions
 	function doGetAll() {
-		console.log('in getAll');
-		// call service
+		//call service
 		SvjetionicariList.all()
 			.then(function(response){
+				//lista svjetionicara
 				$scope.people = response; //assign data here to your $scope object
 			},function(error){
 				console.log(error);
 			});
 			
-		// hide latest listings
+		//hide all listings
 		$scope.showAll = true;
 		
-		// show search results
+		//show search results
 		$scope.showResults = false;
 	}
 	
 	function doSearch(ime, prezime, option){
-		// call service
+		//call service
 		SvjetionicariList.find(ime, prezime, option)
 			.then(function(response){
+				//lista svjetionicara (search)
 				$scope.people = response; // assign data here to your $scope object
 			},function(error){
 				console.log(error);
 			});
 		
-		// hide latest listings
+		//hide all listings
 		$scope.showAll = false;
 		
 		// show search results
@@ -272,17 +280,18 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
+//ako se nece koristiti list ekran, moze se maknuti
 .controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {
 	//console.log('SvjetionicariListCtrl');
 	
 	getAll();
 	
-	// handler function
+	//handler function
 	function getAll() {
-		//console.log('in getAllPeople');
-		// call service
+		//call service
 		SvjetionicariList.all()
 			.then(function(response){
+				//lista svjetionicara
 				$scope.people = response; //assign data here to your $scope object
 			},function(error){
 				console.log(error);
@@ -291,23 +300,20 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList) {
-	//console.log($stateParams);
-	
-	// check id first
+	//check id first
 	if($stateParams.id != undefined || $stateParams.id != ''){
+		//dohvati detalje
 		getPersonDetails($stateParams.id);
 		getLanternForPerson($stateParams.id);
 	}
 	
-	// handler function
+	//handler function
 	function getPersonDetails(id) {
-		//console.log('in getPersonDetails ' + id);
-		// call service
+		//call service
 		SvjetionicariList.getPerson(id)
 			.then(function(response){
+				//detalji o svjetionicaru
 				$scope.person = response; // assign data here to your $scope object
-				//console.log($scope.person);
-				//$scope.karijera = $scope.people.karijera;
 			},function(error){
 				console.log(error);
 			});
@@ -315,57 +321,45 @@ angular.module('lanterna.controllers', [])
 	
 	function getLanternForPerson(id) {
 		//console.log('in getLanternForPerson ' + id);
-		// call service
+		//call service
 		SvjetionicariList.getLanternForPerson(id)
 			.then(function(response){
+				//lista svjetionika povezanih sa svjetionicarem
 				$scope.svjetionici = response; // assign data here to your $scope object
-				//console.log($scope.svjetionici);
-				//$scope.karijera = $scope.people.karijera;
 			},function(error){
 				console.log(error);
 			});
 	}
 	
-		/*
+	/*
+	* toggle functions
 	* if given group is the selected group, deselect it
 	* else, select the given group
 	*/
 	$scope.toggleGroup = function(group) {
-		//console.log('toggleGroup ', group);
 		if ($scope.isGroupShown(group)) {
-			//console.log('shownGroup ', null);
 			$scope.shownGroup = null;
 		} else {
-			//console.log('shownGroup ', group);
 			$scope.shownGroup = group;
 		}
 	};
+	
 	$scope.isGroupShown = function(group) {
-		//console.log('isGroupShown ', group);
 		return $scope.shownGroup === group;
 	};
-	
-	function isNull(name){
-		//console.log('is null ' + name);
-		if (name.length > 0) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 })
 
 .controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList) {
 	//console.log('BibliotekaCtrl');
-	
+	//dohvati knjige
 	getAll();
 	
-	// handler function
+	//handler function
 	function getAll() {
-		//console.log('in getAll');
-		// call service
+		//call service
 		BibliotekaList.all()
 			.then(function(response){
+				//lista knjiga
 				$scope.knjige = response; // assign data here to your $scope object
 			},function(error){
 				console.log(error);
@@ -375,18 +369,18 @@ angular.module('lanterna.controllers', [])
 
 .controller('BibliotekaDetailCtrl', function($scope, $stateParams, BibliotekaList) {
 	//console.log('BibliotekaDetailCtrl ' + $stateParams);
-	//console.log(pdfDelegate)
-	// check id first
+	//check id first
 	if($stateParams.name != undefined || $stateParams.name != ''){
+		//detalji
 		getDetails($stateParams.name);
 	}
 	
-	// handler function
+	//handler function
 	function getDetails(name) {
-		//console.log('in getDetails ' + name);
-		// call service
+		//call service
 		BibliotekaList.getDetails(name)
 			.then(function(response){
+				//knjiga object
 				$scope.knjiga = response; // assign data here to your $scope object
 				$scope.pdfUrl = $scope.knjiga.source;
 				$scope.httpHeaders = { Authorization: 'Bearer some-aleatory-token' };

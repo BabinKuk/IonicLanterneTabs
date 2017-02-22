@@ -111,6 +111,23 @@ h2{
 	max-width: 100%;
 	max-height: 100%;
 }
+#item-name {
+	vertical-align: middle;
+	/*margin-top: 25px;*/
+	/*margin-bottom: 20px;*/
+	margin: 25px 50px;
+	font-size: 18px;
+    /*font-weight: 500;*/
+	max-height: 80px;
+	top: 10px;
+	height: 100%;
+}
+#ime{
+	margin-right: 10px;
+}
+#prezime{
+	margin-left: 10px;
+}
 .item h2 {
 	vertical-align: middle;
 	margin-top: 25px;

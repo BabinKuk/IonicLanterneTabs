@@ -3,11 +3,9 @@
 		<ion-list>
 			<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 				<img ng-src="{{svjetionicar.image}}">
-				<h2 class="list-item-title-center">
-					<div class="list-item-title">
-						{{svjetionicar.ime}} {{svjetionicar.prezime}}
-					</div>
-				</h2>
+				<div id="item-name">
+					{{svjetionicar.ime}} {{svjetionicar.prezime}}
+				</div>
 				<!--p>{{svjetionicar.prezime}}</p-->
 				<i class="icon ion-chevron-right icon-accessory"></i>
 			</ion-item>
