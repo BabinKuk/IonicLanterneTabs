@@ -79,9 +79,8 @@ angular.module('lanterna.controllers', [])
 	
 	//search svjetionik
 	$scope.search = function(){
-		console.log($scope);
+		//console.log($scope);
 		var svjetionik = $scope.svjetionik.name;
-		console.log('Searching...', svjetionik);
 		
 		//ako je polje prazno, dohvati sve
 		if (svjetionik == '' || svjetionik == null) {
@@ -219,7 +218,6 @@ angular.module('lanterna.controllers', [])
 		//podaci s ekrana
 		var ime = $scope.svjetionicar.ime;
 		var prezime = $scope.svjetionicar.prezime;
-		//console.log(ime + ' ; ' + prezime);
 		
 		//opcije sto je upisano na ekranu:
 		//1 - uneseno ime i prezime

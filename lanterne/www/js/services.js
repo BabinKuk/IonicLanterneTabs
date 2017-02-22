@@ -100,7 +100,7 @@ angular.module('lanterna.services', [])
 
 		//get data
 		//$http.get("json/svjetionicari.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
+		$http.get(serverUrl + "/json/svjetionicari.json").then(function(response) {
 			//svi svjetionicari
 			var svjetionicari = response.data;
 			//svjetionicari filtrirano
@@ -110,7 +110,7 @@ angular.module('lanterna.services', [])
 			svjetionicariFiltered = svjetionicari.filter(function(el) {
 				//console.log('filtering ' + svjetionikName.toUpperCase());
 				if (option == 1) {
-					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) && el.prezime.toLowerCase()	.indexOf(prezime.toLowerCase())) > -1;
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
 				}
 				if (option == 2) {
 					return el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1;
@@ -119,7 +119,7 @@ angular.module('lanterna.services', [])
 					return el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1;
 				}
 			});
-			//console.log(svjetioniciFiltered);
+			//console.log(svjetionicariFiltered);
 			deffered.resolve(svjetionicariFiltered);
 		})
         return deffered.promise;
