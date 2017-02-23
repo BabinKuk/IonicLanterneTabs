@@ -203,10 +203,8 @@ h2{
     height: auto;
 }
 
+/* media queries */
 @media only screen and (min-width : 320px) and (max-width: 640px) {
 
-	.article-body div img:not(.logoOP){
-		width: 320px !important;
-		height: auto;
-	}
+	
 }

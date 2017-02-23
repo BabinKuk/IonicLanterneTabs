@@ -2,9 +2,6 @@ angular.module('lanterna.services', [])
 
 .factory('SvjetionicariList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
 	
-	console.log(serverUrl);
-	console.log(svjetionicariFilePath);
-	
 	return {
 		//svi svjetionicari
 		all: getAllPeople,
@@ -24,7 +21,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		//$http.get("json/svjetionicari.json").then(function(response) {
 		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//console.log(response.data);
 			deffered.resolve(response.data);
@@ -39,7 +35,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		//$http.get("json/svjetionicari.json").then(function(response) {
 		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//svi svjetionicari
 			var people = response.data;
@@ -63,7 +58,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 				
 		//get data
-		//$http.get("json/svjetionici.json").then(function(response) {
 		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//svi svjetionici u json fileu
 			var allLanterne = response.data;
@@ -102,7 +96,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 
 		//get data
-		//$http.get("json/svjetionicari.json").then(function(response) {
 		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//svi svjetionicari
 			var svjetionicari = response.data;
@@ -131,10 +124,6 @@ angular.module('lanterna.services', [])
 
 .factory('LanterneList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
 	
-	console.log(serverUrl);
-	console.log(svjetionicariFilePath);
-	console.log(svjetioniciFilePath);
-	
 	return {
 		//svi svjetionici
 		all: getAll,
@@ -154,7 +143,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		// get data
-		//$http.get("json/svjetionici.json").then(function(response) {
 		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//lista svjetionika
 			deffered.resolve(response.data);
@@ -169,7 +157,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		//$http.get("json/svjetionici.json").then(function(response) {
 		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//lista svjetionika
 			var svjetionici = response.data;
@@ -194,7 +181,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		//$http.get("json/svjetionicari.json").then(function(response) {
 		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//lista svih svjetionicara
 			var allPeopleArray = response.data;
@@ -224,7 +210,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 
 		//get data
-		//$http.get("json/svjetionici.json").then(function(response) {
 		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//lista svih svjetionika
 			var svjetionici = response.data;
@@ -244,9 +229,6 @@ angular.module('lanterna.services', [])
 
 .factory('BibliotekaList', function($http, $q, serverUrl, bibliotekaFilePath) {
 	
-	console.log(serverUrl);
-	console.log(bibliotekaFilePath);
-	
 	return {
 		//sve knjige
 		all: getAll,
@@ -262,7 +244,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		// get data
-		//$http.get("json/biblioteka.json").then(function(response) {
 		$http.get(serverUrl + bibliotekaFilePath).then(function(response) {
 			//lista knjiga
 			deffered.resolve(response.data);
@@ -277,7 +258,6 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		//$http.get("json/biblioteka.json").then(function(response) {
 		$http.get(serverUrl + bibliotekaFilePath).then(function(response) {
 			//lista knjiga
 			var books = response.data;
