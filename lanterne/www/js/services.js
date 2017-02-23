@@ -1,6 +1,9 @@
 angular.module('lanterna.services', [])
 
-.factory('SvjetionicariList', function($http, $q, serverUrl) {
+.factory('SvjetionicariList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
+	
+	console.log(serverUrl);
+	console.log(svjetionicariFilePath);
 	
 	return {
 		//svi svjetionicari
@@ -22,7 +25,7 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		//$http.get("json/svjetionicari.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionicari.json").then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//console.log(response.data);
 			deffered.resolve(response.data);
 		})
@@ -37,7 +40,7 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		//$http.get("json/svjetionicari.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionicari.json").then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//svi svjetionicari
 			var people = response.data;
 			var person;
@@ -61,7 +64,7 @@ angular.module('lanterna.services', [])
 				
 		//get data
 		//$http.get("json/svjetionici.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
+		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//svi svjetionici u json fileu
 			var allLanterne = response.data;
 			
@@ -100,7 +103,7 @@ angular.module('lanterna.services', [])
 
 		//get data
 		//$http.get("json/svjetionicari.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionicari.json").then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//svi svjetionicari
 			var svjetionicari = response.data;
 			//svjetionicari filtrirano
@@ -126,7 +129,11 @@ angular.module('lanterna.services', [])
     }
 })
 
-.factory('LanterneList', function($http, $q, serverUrl) {
+.factory('LanterneList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
+	
+	console.log(serverUrl);
+	console.log(svjetionicariFilePath);
+	console.log(svjetioniciFilePath);
 	
 	return {
 		//svi svjetionici
@@ -148,7 +155,7 @@ angular.module('lanterna.services', [])
 		
 		// get data
 		//$http.get("json/svjetionici.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
+		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//lista svjetionika
 			deffered.resolve(response.data);
 		})
@@ -163,7 +170,7 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		//$http.get("json/svjetionici.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
+		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//lista svjetionika
 			var svjetionici = response.data;
 			//object svjetionik
@@ -188,7 +195,7 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		//$http.get("json/svjetionicari.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionicari.json").then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//lista svih svjetionicara
 			var allPeopleArray = response.data;
 			//svjetionicari na svjetioniku array
@@ -218,7 +225,7 @@ angular.module('lanterna.services', [])
 
 		//get data
 		//$http.get("json/svjetionici.json").then(function(response) {
-		$http.get(serverUrl + "/json/svjetionici.json").then(function(response) {
+		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//lista svih svjetionika
 			var svjetionici = response.data;
 			//svjetionicari filtrirano
@@ -235,7 +242,10 @@ angular.module('lanterna.services', [])
     }
 })
 
-.factory('BibliotekaList', function($http, $q, serverUrl) {
+.factory('BibliotekaList', function($http, $q, serverUrl, bibliotekaFilePath) {
+	
+	console.log(serverUrl);
+	console.log(bibliotekaFilePath);
 	
 	return {
 		//sve knjige
@@ -253,7 +263,7 @@ angular.module('lanterna.services', [])
 		
 		// get data
 		//$http.get("json/biblioteka.json").then(function(response) {
-		$http.get(serverUrl + "/json/biblioteka.json").then(function(response) {
+		$http.get(serverUrl + bibliotekaFilePath).then(function(response) {
 			//lista knjiga
 			deffered.resolve(response.data);
 		})
@@ -268,7 +278,7 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		//$http.get("json/biblioteka.json").then(function(response) {
-		$http.get(serverUrl + "/json/biblioteka.json").then(function(response) {
+		$http.get(serverUrl + bibliotekaFilePath).then(function(response) {
 			//lista knjiga
 			var books = response.data;
 			//book object

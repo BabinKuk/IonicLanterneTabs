@@ -7,7 +7,13 @@
 // 'lanterna.controllers' is found in controllers.js
 angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services'])
 
-.value("serverUrl", "http://localhost:8080")
+//dev url
+.value("serverUrl", "http://localhost:8080/")
+//localhost url
+//.value("serverUrl", "")
+.value("svjetionicariFilePath", "json/svjetionicari.json")
+.value("svjetioniciFilePath", "json/svjetionici.json")
+.value("bibliotekaFilePath", "json/biblioteka.json")
 
 .run(function($ionicPlatform, $ionicPopup) {
 	$ionicPlatform.ready(function() {
