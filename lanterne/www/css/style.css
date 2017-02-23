@@ -115,7 +115,7 @@ h2{
 	display: block;
 }
 #image-top-item{
-	background-color: #000;
+	/*background-color:*/ #000; /*black*/
 }
 #item-name {
 	vertical-align: middle;
