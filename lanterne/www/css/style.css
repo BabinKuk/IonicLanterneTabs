@@ -115,6 +115,9 @@ h2{
 	margin-right: auto;
 	display: block;
 }
+#image-top-item{
+	background-color: #000;
+}
 #item-name {
 	vertical-align: middle;
 	/*margin-top: 25px;*/
