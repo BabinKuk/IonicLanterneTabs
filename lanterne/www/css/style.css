@@ -170,14 +170,14 @@ h2{
 }
 #home-div-top>.row{
 	height: 100%;
-	padding: 10px 0;
+	padding: 1% 0;
 }
 #home-div-bottom>.row{
 	height: 100%;
-	padding: 10px 0;
+	padding: 1% 0;
 }
 .home-col{
-	padding: 20px;
+	padding: 2%;
 	width: 100% !important;
 	height: 100% !important;
 	background-repeat: no-repeat;
@@ -206,24 +206,12 @@ h2{
 	height: 100% !important;
 	text-align: center;
 }
-.home-button h2{
+.home-button p{
 	background-color: transparent;
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
 	display: table-cell;
-}
-.home-button p {
-  /*background-color: black;*/
-  color: #fff;
-  bottom: 5%;
-  /*font-family: Roboto;*/
-  /*font-size: 1.25em;*/
-  /*left: 0;*/
-  vertical-align: middle;
-  text-align: center;
-  /*padding: 0.25em 0.75em;*/
-  position: absolute;
 }
 .overlay{
 	height: 100%;
@@ -244,5 +232,10 @@ h2{
 
 /* media queries */
 @media only screen and (min-width : 320px) and (max-width: 640px) {
-	
+	#home-div-top{
+		height: 50%;
+	}
+	#home-div-bottom{
+		height: 50%;
+	}
 }
