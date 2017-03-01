@@ -11,7 +11,8 @@
 		<div id="image-top-item" class="item">
 			<img class="image-top" ng-src="{{svjetionik.image}}">
 		</div>
-		<div class="list card card-table">
+		
+		<!--div class="list card card-table">
 			<div class="row item item-divider">
 				<div class="col col-25">Prezime i ime</div>
 				<div class="col">Svjetionik</div>
@@ -23,13 +24,12 @@
 			<div class="row item item-text-wrap" ng-repeat="person in svjetionik.svjetionicari">
 				<div class="col col-25"><a ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
 				<div class="col"><a ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
-				<!--div class="col"><a ng-href="#/tab/lanterne-list/{{person.prevSvj}}">{{person.prevSvj}}</a></div-->
 				<div class="col">{{person.dolazak}}</div>
 				<div class="col">{{person.odlazak}}</div>
 				<div class="col"><a ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div>
-				<!--div class="col"><a href="#/tab/lanterne-list/{{person.nextSvj}}">{{person.nextSvj}} {{person.desc}}</a></div-->
 			</div>
-		</div>
+		</div-->
+		
 		<div class="list card">
 			<div class="row item item-divider">
 				<div class="col col-25">Prezime i ime</div>
@@ -47,13 +47,6 @@
 						{{person.prezime}} {{person.ime}}
 					</ion-item>
 					<ion-item class="item-accordion" ng-show="isGroupShown(person)">
-						<!--div class="button-bar">
-						  <a class="col col-25 button">{{person.prezime}} {{person.ime}}</a>
-						  <a class="button">{{person.prevSvj}}</a>
-						  <a class="button">{{person.dolazak}}</a>
-						  <a class="button">{{person.odlazak}}</a>
-						  <a class="button">{{person.nextSvj}}</a>
-						</div-->
 						<div class="row item-text-wrap button-bar">
 							<!--div class="col"><a class="button" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
 							<div class="col><a class="button" ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
@@ -75,7 +68,7 @@
 		<!--img class="item-image" ng-src="{{svjetionik.image}}"-->
 		
 		<!--ion-list-->
-			<!-- (un)-comment ako bude trebalo (de)aktivirati link-->
+			<!-- (un)comment ako bude trebalo (de)aktivirati link-->
 			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in people track by $index" type="item-text-wrap" href="#/tab/svjetionicari-list/{{person.id}}"-->
 			<!-- without link-->
 			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in people" type="item-text-wrap"-->
