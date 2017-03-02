@@ -1,16 +1,26 @@
 <ion-view view-title="Svjetioničari">
 	<ion-content class="padding">
-	
-		<div class="list card">
-			<div class="item">
-				<h1>Svjetioničari</h1>
-				<!--p>Nine Inch Nails</p-->
-			</div>
-
-			<div id="image-top-item" class="item">
-				<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
-			</div>
 			
+		<!--div class="item">
+			<h1>Svjetioničari</h1>
+		</div-->
+
+		<!-- style kao na home page div id="image-top-item" class="item">
+			<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
+		</div-->
+		<div id="home-div-top" class="list card">
+			<div class="row responsive-sm">
+				<div class="col">
+					<div class="home-col">
+						<div class="col col-100 image-div">
+							<img src="img/svjetionicari/ZERAVICA_ANTE.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="list card">	
 			<div class="item item-input-inset">
 				<label id="ime" name="ime" class="item-input-wrapper">
 					<input type="text" ng-model="svjetionicar.ime" placeholder="Ime">
@@ -24,10 +34,10 @@
 				<div>
 					<center>
 						<div class="">
-							<button class="button con-left ion-search button-calm padding left-col-button width-150px" ng-click="search()">
+							<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
 								Traži
 							</button>
-							<button class="button button-calm padding right-col-button width-150px" ng-click="getAll()">
+							<button class="button button-calm padding right-col-button cust-button" ng-click="getAll()">
 								Svi svjetioničari
 							</button>
 						</div>

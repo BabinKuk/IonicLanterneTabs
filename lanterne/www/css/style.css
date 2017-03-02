@@ -79,9 +79,11 @@ div>.row:last-child{
 h2{
   background-color: white;
 }
-.width-150px{
-    width: 150px;
+.cust-button{
+    width: 10em;
     display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
 }
 .left-col-button {
 	padding-right: 30px;
@@ -90,7 +92,6 @@ h2{
 .right-col-button {
 	margin-left: 30px;
 }
-
 .scroll{
     height: 100%;
 }
@@ -117,6 +118,7 @@ h2{
 #image-top-item{
 	/*background-color: #000; /*black*/
 	/*max-height: 100%;*/
+	max-height: 30rem;
 }
 #image-home{
 	/*background-color: #000; /*black*/
@@ -163,10 +165,10 @@ h2{
 	margin-bottom: 0;
 }
 #home-div-top{
-	height: 70%;
+	height: 65%;
 }
 #home-div-bottom{
-	height: 30%;
+	height: 25%;
 }
 #home-div-top>.row{
 	height: 100%;
@@ -176,8 +178,11 @@ h2{
 	height: 100%;
 	padding: 1% 0;
 }
-.home-col{
+#home-div-bottom>.row>.col{
 	padding: 2%;
+}
+.home-col{
+	/*padding: 1%;*/
 	width: 100% !important;
 	height: 100% !important;
 	background-repeat: no-repeat;
@@ -231,11 +236,76 @@ h2{
 }
 
 /* media queries */
+/*smaller screens*/
 @media only screen and (min-width : 320px) and (max-width: 640px) {
 	#home-div-top{
 		height: 50%;
 	}
 	#home-div-bottom{
 		height: 50%;
+	}
+}
+/*large screens*/
+@media only screen and (min-width : 799px) and (orientation:portrait) {
+	.cust-nav-bar{
+		height: 60px !important;
+	}
+	.cust-nav-bar div.header-item{
+		text-align: center;
+		margin-top: 10px;
+	}
+	.platform-android .bar .title {
+		font-size: 22px;
+	}
+	.cust-tab .tab-nav{
+		height: 84px;
+	}
+	.tabs a{
+		padding: 10px;
+	}
+	.tabs a> .icon{
+		margin-bottom: 10px;
+	}
+	.tabs a>span{
+		font-size: 18px;
+	}
+	.home-button p{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#home-div-bottom>.row>.col{
+		padding: 3%;
+	}
+}
+
+@media only screen and (min-width : 900px) {
+	.cust-nav-bar{
+		height: 60px !important;
+	}
+	.cust-nav-bar div.header-item{
+		text-align: center;
+		margin-top: 10px;
+	}
+	.platform-android .bar .title {
+		font-size: 22px;
+	}
+	.cust-tab .tab-nav{
+		height: 80px;
+	}
+	.tabs a{
+		padding: 10px;
+	}
+	.tabs a> .icon{
+		margin-bottom: 10px;
+	}
+	.tabs a>span{
+		font-size: 18px;
+	}
+	.home-button p{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#home-div-bottom>.row>.col{
+		/*padding: 2%;*/
 	}
 }
