@@ -388,4 +388,18 @@ angular.module('lanterna.controllers', [])
 				console.log(error);
 			});
 	}
+	
+	$scope.loading = 'Loading...';
+
+	$scope.onLoad = function() {
+		// do something when pdf is fully loaded
+		// $scope.loading = '';
+		console.log('Loaded...');
+		$scope.loading = '';
+	}
+	
+	$scope.onProgress = function (progress) {
+        console.log('Progress...');
+		console.log(progress);
+    };
 });
