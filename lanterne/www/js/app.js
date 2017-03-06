@@ -8,9 +8,9 @@
 angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services'])
 
 //dev url
-.value("serverUrl", "http://localhost:8080/")
+//.value("serverUrl", "http://localhost:8080/")
 //localhost url
-//.value("serverUrl", "")
+.value("serverUrl", "")
 .value("svjetionicariFilePath", "json/svjetionicari.json")
 .value("svjetioniciFilePath", "json/svjetionici.json")
 .value("bibliotekaFilePath", "json/biblioteka.json")
@@ -28,37 +28,6 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 			StatusBar.styleDefault();
 		}
 	});
-	
-	$ionicPlatform.registerBackButtonAction(function (event) {
-		// An alert dialog
-		$scope.showAlert = function() {
-			var alertPopup = $ionicPopup.alert({
-				title: $state.current.name,
-				template: $state.current.name
-			});
-			
-			alertPopup.then(function(res) {
-				console.log($state.current.name);
-			});
-		};
-		
-		if($state.current.name == "tab.home"){
-			console.log('tab.home');
-			//navigator.app.exitApp(); //<-- remove this line to disable the exit
-			
-			$ionicPopup.confirm({
-				title: 'System warning',
-				template: 'Are you sure you want to exit?'
-			}).then(function(res) {
-				if (res) {
-					ionic.Platform.exitApp();
-				}
-			})
-		} else {
-			//console.log('app.backhistory');
-			navigator.app.backHistory();
-		}
-	}, 100);
 })
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {

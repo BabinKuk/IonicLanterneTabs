@@ -1,11 +1,32 @@
 angular.module('lanterna.controllers', [])
 
-.controller('MainCtrl', function($scope, $ionicPopup, $timeout) {
+.controller('MainCtrl', function($scope, $ionicPopup, $timeout, $ionicPlatform, $state) {
 	//console.log('MainCtrl');
+	
+	$ionicPlatform.registerBackButtonAction(function (event) {
+		event.preventDefault();
+		//console.log("back button action handler");
+		console.log($state.current);
+		
+		/*
+		if($state.current.name == "tab.home"){
+			//console.log('home page -> exit app');
+			//exit app popup
+			showExitAppPopup();
+		} else {
+			//console.log('app.backhistory');
+			navigator.app.backHistory();
+		}*/
+	}, 100);
 	
 	//alert dialog
 	$scope.showPopup = function() {
-		//console.log('alert');
+		showExitAppPopup();
+	};
+	
+	//exit app handler functions
+	function showExitAppPopup(){
+		console.log('showExitAppPopup');
 		$scope.data = {};
 
 		// An elaborate, custom popup
@@ -18,9 +39,8 @@ angular.module('lanterna.controllers', [])
 				//ionic.Platform.exitApp();
 			}
 		});
-	};
+	}
 	
-	//handler functions
 	function passwordPopup() {
 		//console.log('pass');
 		
