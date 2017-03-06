@@ -8,7 +8,6 @@ angular.module('lanterna.controllers', [])
 		//console.log("back button action handler");
 		console.log($state.current);
 		
-		/*
 		if($state.current.name == "tab.home"){
 			//console.log('home page -> exit app');
 			//exit app popup
@@ -16,7 +15,7 @@ angular.module('lanterna.controllers', [])
 		} else {
 			//console.log('app.backhistory');
 			navigator.app.backHistory();
-		}*/
+		}
 	}, 100);
 	
 	//alert dialog
