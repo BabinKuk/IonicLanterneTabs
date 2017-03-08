@@ -52,7 +52,7 @@ angular.module('lanterna.services', [])
 		return deffered.promise;
 	}
 	
-	//!!!!!!!!!!!SAMO AKO SE SVI PODACI NALAZE U svjetionicari.json!!!!!!!!!!
+	//!!!!!!!!!!!SAMO AKO SE SVI PODACI NALAZE U svjetionici.json!!!!!!!!!!
 	function getLanternForPerson(personId) {
 		//async function to know when the data has arrived
 		var deffered = $q.defer();

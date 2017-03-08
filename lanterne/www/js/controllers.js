@@ -319,8 +319,9 @@ angular.module('lanterna.controllers', [])
 .controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList) {
 	//check id first
 	if($stateParams.id != undefined || $stateParams.id != ''){
-		//dohvati detalje
+		//dohvati detalje o svjetionicaru
 		getPersonDetails($stateParams.id);
+		//dohvati detalje o svjetionicima
 		getLanternForPerson($stateParams.id);
 	}
 	

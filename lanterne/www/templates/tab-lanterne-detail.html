@@ -31,12 +31,12 @@
 		</div-->
 		
 		<div class="list card">
-			<div class="row item item-divider">
+			<div class="row item item-divider sub-header-detail">
+				<!--div class="col">Prethodni svjetionik</div>
+				<div class="col">Dolazak</div-->
 				<div class="col col-25">Prezime i ime</div>
-				<div class="col">Svjetionik</div>
-				<div class="col">Dolazak</div>
-				<div class="col">Odlazak</div>
-				<div class="col">Svjetionik</div>
+				<!--div class="col">Odlazak</div>
+				<div class="col">Slijedeći svjetionik</div-->
 			</div>
 			<ion-list>
 				<div ng-repeat="person in svjetionik.svjetionicari">
@@ -47,6 +47,13 @@
 						{{person.prezime}} {{person.ime}}
 					</ion-item>
 					<ion-item class="item-accordion" ng-show="isGroupShown(person)">
+						<div class="row item item-divider sub-header-detail">
+							<div class="col">Prethodni svjetionik</div>
+							<div class="col">Dolazak</div>
+							<div class="col col-25">Prezime i ime</div>
+							<div class="col">Odlazak</div>
+							<div class="col">Slijedeći svjetionik</div>
+						</div>
 						<div class="row item-text-wrap button-bar">
 							<!--div class="col"><a class="button" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
 							<div class="col><a class="button" ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
@@ -54,9 +61,9 @@
 							<div class="col">{{person.odlazak}}</div>
 							<div class="col col-25"><a class="button" ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div-->
 							
-							<div class="col col-25"><a class="button button-calm" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
 							<div class="col">{{person.prevSvj}}</div>
 							<div class="col">{{person.dolazak}}</div>
+							<div class="col col-25"><a class="button button-calm" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
 							<div class="col">{{person.odlazak}}</div>
 							<div class="col">{{person.nextSvj}}</div>
 						</div>

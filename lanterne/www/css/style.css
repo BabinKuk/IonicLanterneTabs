@@ -1,3 +1,27 @@
+.background, .background .pane, .background .item, .background .item-complex .item-content, .list .item.item-stable {
+    background-color: #f8f8f8;
+}
+div>.row{
+	background-color: #f8f8f8;
+}
+/*div>.row:first-child{
+	background-color: #bababa;
+}*/
+
+div>.row:last-child{
+	/*background-color:green;*/
+}
+.item > div.sub-header-detail, .card > div.sub-header-detail{
+	background-color: #bababa;
+}
+/* footer */
+/*
+a.tab-item, i.icon.icon, span.tab-title  {
+   background-color: #566196;
+   color: #ffffff;
+}
+*/
+
 /* Empty. Add your own CSS if you like */
 .pdf-controls {
 	width: 100%;
@@ -29,9 +53,12 @@
 	  padding-left: 0px;
 	  padding-right: 0px;
 }
-.list .item.item-stable {
-	  background-color: #fff;
+.row + .row {
+	margin-top: 5px;
 }
+/*.list .item.item-stable {
+	  background-color: #fff;
+}*/
 .card .item:first-child {
     border-top: 1px solid #ddd;
 }
@@ -118,7 +145,7 @@ h2{
 #image-top-item{
 	/*background-color: #000; /*black*/
 	/*max-height: 100%;*/
-	max-height: 30rem;
+	/*max-height: 30rem;*/
 }
 #image-home{
 	/*background-color: #000; /*black*/
