@@ -3,6 +3,7 @@ angular.module('lanterna.controllers', [])
 .controller('MainCtrl', function($scope, $ionicPopup, $timeout, $ionicPlatform, $state) {
 	//console.log('MainCtrl');
 	
+	// back button event handling
 	$ionicPlatform.registerBackButtonAction(function (event) {
 		event.preventDefault();
 		//console.log("back button action handler");
@@ -88,6 +89,26 @@ angular.module('lanterna.controllers', [])
 
 .controller('LanterneCtrl', function($scope, $stateParams, LanterneList) {
 	//console.log('LanterneCtrl');
+	
+	/*
+	// image swiper
+	$scope.swiper = {};
+	
+	// swiper handling
+	$scope.onReadySwiper = function (swiper) {
+	
+		swiper.on('slideChangeStart', function () {
+			console.log('slide start');
+		});
+         
+		swiper.on('onSlideChangeEnd', function () {
+			console.log('slide end');
+		});
+	};
+	
+	//get images for swiper
+	getLanterneImages();
+	*/
 
 	$scope.svjetionik = {};
 	
@@ -142,6 +163,18 @@ angular.module('lanterna.controllers', [])
 		
 		//show search results
 		$scope.showResults = true;
+	}
+	
+	function getLanterneImages() {
+		console.log('in getLanterneImages');
+		//call service
+		LanterneList.all()
+			.then(function(response){
+				$scope.lanterne = response; // assign data here to your $scope object
+				//console.log($scope.lanterne);
+			},function(error){
+				console.log(error);
+			});
 	}
 })
 

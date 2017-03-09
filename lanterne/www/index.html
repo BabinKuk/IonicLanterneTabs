@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">   
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
@@ -17,6 +18,7 @@
     </script>-->
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+	<link href="css/swiper.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -29,6 +31,9 @@
 	<script src="lib/ionic/js/angular/angular-translate.min.js"></script>
 	<!--script src="lib/angular-pdf-viewer/dist/angular-pdf-viewer.min.js"></script-->
 	<script src="lib/angular-pdf/dist/angular-pdf.js"></script>
+	<!--swiper-->
+	<script src="js/swiper.min.js"></script>
+	<script src="lib/angular-swiper-master/dist/angular-swiper.js"></script> 
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>

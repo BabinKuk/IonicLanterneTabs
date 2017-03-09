@@ -1,24 +1,21 @@
 <ion-view view-title="Svjetionici">
 	<ion-content class="padding">
 		
-		<!--div class="item">
-			<h1>Svjetionici</h1>
-		</div-->
-
-		<!-- style kao na home page div id="image-top-item" class="item">
-			<img class="image-top" src="img/svjetionici/PENEDA.jpg">
-		</div-->
-		<div id="home-div-top" class="list card">
-			<div class="row responsive-sm">
-				<div class="col">
-					<div class="home-col">
-						<div class="col col-100 image-div">
-							<img src="img/svjetionici/Punta-Peneda.jpg">
-						</div>
-					</div>
-				</div>
+		<div class="list card">
+			<div id="image-top-item" class="item">
+				<img src="img/svjetionici/Punta-Peneda.jpg">
 			</div>
 		</div>
+		
+		<!--div class="list card">
+			<div id="image-top-item" class="item">
+				<ks-swiper-container initial-slide="1" speed="2000" loop="true" show-nav-buttons="false" slides-per-view="3" space-between="3" pagination-clickable="false" on-ready="onReadySwiper(swiper)">
+					<ks-swiper-slide class="swiper-slide" ng-repeat="lanterna in lanterne">
+						<img ng-src={{lanterna.image}} width="100%">
+					</ks-swiper-slide>
+				</ks-swiper-container>
+			</div>
+		</div-->
 		
 		<div class="list card">	
 			<div class="item item-input-inset">
@@ -46,7 +43,7 @@
 				<a class="button icon icon-right ion-chevron-right" href="#/tab/lanterne-list">Lanterne</a>
 			</p-->
 			
-			<div ng-show="showResults" class="clearfix">
+			<div ng-show="showResults">
 				<div class="item">
 					<h1>Popis svjetionika</h1>
 					<!--p>Nine Inch Nails</p-->
@@ -65,7 +62,7 @@
 				
 			<div ng-show="showAll" class="clearfix">
 				<div class="item">
-					<h1>Popis svih svjetionika</h1>
+					<h1>Popis svjetionika</h1>
 					<!--p>Nine Inch Nails</p-->
 				</div>
 				<ion-list>
