@@ -8,102 +8,108 @@
 	<ion-nav-title>{{person.ime}} {{person.prezime}}</ion-nav-title>
 	<ion-content class="padding">
 		
-		<div class="list card">
-			<div id="image-top-item" class="item">
-				<img class="image-top" ng-src="{{person.image}}">
-			</div>
-		</div>
-		
-		<div class="list card">
-			<div class="item item-divider sub-header-detail">
-				Godina rođenja i smrti
-			</div>
-			<div class="item item-text-wrap">
-				{{person.godRodSmrti}}
-			</div>
-			
-			<div class="item item-divider sub-header-detail">
-				Mjesto
-			</div>
-			<div class="item item-text-wrap">
-				{{person.mjesto}}
-			</div>
-		</div>
-		
-		<!--div class="list card card-table">
-			<div class="row item item-divider">
-				<div class="col">Svjetionik</div>
-				<div class="col">Dolazak</div>
-				<div class="col">Svjetionik</div>
-				<div class="col">Odlazak</div>
-				<div class="col">Svjetionik</div>
-			</div>
-		
-			<div class="row item item-text-wrap" ng-repeat="svjetionik in svjetionici track by $index">
-				<div class="col">
-					<a ng-href="{{svjetionik.personDetails.prevSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.prevSvj : '#/tab/svjetionicari-list/' + person.id}}">
-						{{svjetionik.personDetails.prevSvj}}
-					</a>
-				</div>
-				<div class="col">{{svjetionik.personDetails.dolazak}}</div>
-				
-				<div class="col">
-					<a ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">
-						{{svjetionik.name}}
-					</a>
-				</div>
-				
-				<div class="col">{{svjetionik.personDetails.odlazak}}</div>
-				
-				<div class="col">
-					<a ng-href="{{svjetionik.personDetails.nextSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.nextSvj : '#/tab/svjetionicari-list/' + person.id}}">
-						{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} 
-					</a>
+		<div class="row responsive-lg">
+			<div class="col col-50">
+				<div class="list card">
+					<div id="image-top-item" class="item">
+						<img class="image-top" ng-src="{{person.image}}">
+					</div>
 				</div>
 			</div>
-		</div-->
 		
-		<div class="list card">
-			<div class="row item item-divider sub-header-detail">
-				<div class="col col-25">Svjetionici</div>
-				<!--div class="col">Dolazak</div>
-				<div class="col">Svjetionik</div>
-				<div class="col">Odlazak</div>
-				<div class="col">Svjetionik</div-->
-			</div>
-		
-			<ion-list>
-				<div ng-repeat="svjetionik in svjetionici track by $index">
-					<ion-item class="item item-stable background" ng-click="toggleGroup(svjetionik)">
-						<i class="icon" ng-class="isGroupShown(svjetionik) ? 'ion-minus' : 'ion-plus'"></i>
-						&nbsp;
-						{{svjetionik.name}}
-					</ion-item>
-					<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
-						<div class="row item item-divider sub-header-detail">
-							<div class="col col-25">Svjetionik</div>
-							<div class="col">Dolazak</div>
-							<!--div class="col">Prethodni svjetionik</div-->
-							<div class="col">Odlazak</div>
-							<!--div class="col">Slijedeći svjetionik</div-->
+			<div class="col col-50">
+				<div class="list card">
+					<div class="item item-divider sub-header-detail">
+						Godina rođenja i smrti
+					</div>
+					<div class="item item-text-wrap">
+						{{person.godRodSmrti}}
+					</div>
+					
+					<div class="item item-divider sub-header-detail">
+						Mjesto
+					</div>
+					<div class="item item-text-wrap">
+						{{person.mjesto}}
+					</div>
+				</div>
+				
+				<!--div class="list card card-table">
+					<div class="row item item-divider">
+						<div class="col">Svjetionik</div>
+						<div class="col">Dolazak</div>
+						<div class="col">Svjetionik</div>
+						<div class="col">Odlazak</div>
+						<div class="col">Svjetionik</div>
+					</div>
+				
+					<div class="row item item-text-wrap" ng-repeat="svjetionik in svjetionici track by $index">
+						<div class="col">
+							<a ng-href="{{svjetionik.personDetails.prevSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.prevSvj : '#/tab/svjetionicari-list/' + person.id}}">
+								{{svjetionik.personDetails.prevSvj}}
+							</a>
 						</div>
-						<div class="row item-text-wrap button-bar">
-							<!--div class="col"><a class="button" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
-							<div class="col><a class="button" ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
-							<div class="col">{{person.dolazak}}</div>
-							<div class="col">{{person.odlazak}}</div>
-							<div class="col col-25"><a class="button" ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div-->
-							
-							<div class="col col-25"><a class="button button-calm" ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.name}}</a></div>
-							<div class="col">{{svjetionik.personDetails.dolazak}}</div>
-							<!--div class="col">{{svjetionik.personDetails.prevSvj}}</div-->
-							<div class="col">{{svjetionik.personDetails.odlazak}}</div>
-							<!--div class="col">{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} </div-->
+						<div class="col">{{svjetionik.personDetails.dolazak}}</div>
+						
+						<div class="col">
+							<a ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">
+								{{svjetionik.name}}
+							</a>
 						</div>
-					</ion-item>
+						
+						<div class="col">{{svjetionik.personDetails.odlazak}}</div>
+						
+						<div class="col">
+							<a ng-href="{{svjetionik.personDetails.nextSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.nextSvj : '#/tab/svjetionicari-list/' + person.id}}">
+								{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} 
+							</a>
+						</div>
+					</div>
+				</div-->
+				
+				<div class="list card">
+					<div class="row item item-divider sub-header-detail">
+						<div class="col col-33">Svjetionici</div>
+						<!--div class="col">Dolazak</div>
+						<div class="col">Svjetionik</div>
+						<div class="col">Odlazak</div>
+						<div class="col">Svjetionik</div-->
+					</div>
+				
+					<ion-list>
+						<div ng-repeat="svjetionik in svjetionici track by $index">
+							<ion-item class="item item-stable background" ng-click="toggleGroup(svjetionik)">
+								<i class="icon" ng-class="isGroupShown(svjetionik) ? 'ion-minus' : 'ion-plus'"></i>
+								&nbsp;
+								{{svjetionik.name}}
+							</ion-item>
+							<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
+								<div class="row item item-divider sub-header-detail">
+									<div class="col col-33">Svjetionik</div>
+									<div class="col">Dolazak</div>
+									<!--div class="col">Prethodni svjetionik</div-->
+									<div class="col">Odlazak</div>
+									<!--div class="col">Slijedeći svjetionik</div-->
+								</div>
+								<div class="row item-text-wrap button-bar">
+									<!--div class="col"><a class="button" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
+									<div class="col><a class="button" ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
+									<div class="col">{{person.dolazak}}</div>
+									<div class="col">{{person.odlazak}}</div>
+									<div class="col col-25"><a class="button" ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div-->
+									
+									<div class="col col-33"><a class="button button-calm" ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.name}}</a></div>
+									<div class="col">{{svjetionik.personDetails.dolazak}}</div>
+									<!--div class="col">{{svjetionik.personDetails.prevSvj}}</div-->
+									<div class="col">{{svjetionik.personDetails.odlazak}}</div>
+									<!--div class="col">{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} </div-->
+								</div>
+							</ion-item>
+						</div>
+					</ion-list>
 				</div>
-			</ion-list>
-		</div>
+			</div>
+		</div>		
 				
 		<ion-list>
 			<!-- (un)comment ako bude trebalo (de)aktivirati link-->

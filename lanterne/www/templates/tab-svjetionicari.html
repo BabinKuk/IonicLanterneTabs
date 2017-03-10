@@ -8,81 +8,91 @@
 		<!-- style kao na home page div id="image-top-item" class="item">
 			<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
 		</div-->
-		<div id="home-div-top" class="list card">
-			<div class="row responsive-sm">
-				<div class="col">
-					<div class="home-col">
-						<div class="col col-100 image-div">
-							<img src="img/svjetionicari/ZERAVICA_ANTE.jpg">
+		<div class="row responsive-lg">
+			<div class="col col-50">
+				<!--div id="home-div-top" class="list card">
+					<div class="row responsive-sm">
+						<div class="col">
+							<div class="home-col">
+								<div class="col col-100 image-div">
+									<img src="img/svjetionicari/ZERAVICA_ANTE.jpg">
+								</div>
+							</div>
 						</div>
+					</div>	
+				</div-->
+				<div class="list card">
+					<div id="image-top-item" class="item">
+						<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
 					</div>
 				</div>
 			</div>
-		</div>
-			
-		<div class="list card">	
-			<div class="item item-input-inset">
-				<label id="ime" name="ime" class="item-input-wrapper">
-					<input type="text" ng-model="svjetionicar.ime" placeholder="Ime">
-				</label>
-				<label id="prezime" name="prezime" class="item-input-wrapper">
-					<input type="text" ng-model="svjetionicar.prezime" placeholder="Prezime">
-				</label>
-			</div>
-			
-			<div class="item">
-				<div>
-					<center>
-						<div class="">
-							<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
-								Traži
-							</button>
-							<button class="button button-calm padding right-col-button cust-button" ng-click="getAll()">
-								Svi svjetioničari
-							</button>
+				
+			<div class="col col-50">
+				<div class="list card">	
+					<div class="item item-input-inset">
+						<label id="ime" name="ime" class="item-input-wrapper">
+							<input type="text" ng-model="svjetionicar.ime" placeholder="Ime">
+						</label>
+						<label id="prezime" name="prezime" class="item-input-wrapper">
+							<input type="text" ng-model="svjetionicar.prezime" placeholder="Prezime">
+						</label>
+					</div>
+					
+					<div class="item">
+						<div>
+							<center>
+								<div class="">
+									<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
+										Traži
+									</button>
+									<button class="button button-calm padding right-col-button cust-button" ng-click="getAll()">
+										Svi svjetioničari
+									</button>
+								</div>
+							</center>
 						</div>
-					</center>
-				</div>
-			</div>
+					</div>
 
-			<!-- ako se ide na verziju s detals stranicom p>
-				<a class="button icon icon-right ion-chevron-right" href="#/tab/svjetionicari-list">Display All</a>
-			</p-->
-			
-			<div ng-show="showResults" class="clearfix">
-				<div class="item">
-					<h1>Popis svjetioničara</h1>
-					<!--p>Nine Inch Nails</p-->
-				</div>
-				<ion-list>
-					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-						<img ng-src="{{svjetionicar.image}}">
-						<div id="item-name">
-							{{svjetionicar.ime}} {{svjetionicar.prezime}}
+					<!-- ako se ide na verziju s detals stranicom p>
+						<a class="button icon icon-right ion-chevron-right" href="#/tab/svjetionicari-list">Display All</a>
+					</p-->
+					
+					<div ng-show="showResults" class="clearfix">
+						<div class="item">
+							<h1>Popis svjetioničara</h1>
+							<!--p>Nine Inch Nails</p-->
 						</div>
-						<!--p>{{svjetionicar.prezime}}</p-->
-						<i class="icon ion-chevron-right icon-accessory"></i>
-					</ion-item>
-				</ion-list>	
-			</div>
+						<ion-list>
+							<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
+								<img ng-src="{{svjetionicar.image}}">
+								<div id="item-name">
+									{{svjetionicar.ime}} {{svjetionicar.prezime}}
+								</div>
+								<!--p>{{svjetionicar.prezime}}</p-->
+								<i class="icon ion-chevron-right icon-accessory"></i>
+							</ion-item>
+						</ion-list>	
+					</div>
 
-			<div ng-show="showAll" class="clearfix">
-				<div class="item">
-					<h1>Popis svih svjetioničara</h1>
-					<!--p>Nine Inch Nails</p-->
-				</div>
-				<ion-list>
-					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-						<img ng-src="{{svjetionicar.image}}">
-						<div id="item-name">
-							{{svjetionicar.ime}} {{svjetionicar.prezime}}
+					<div ng-show="showAll" class="clearfix">
+						<div class="item">
+							<h1>Popis svih svjetioničara</h1>
+							<!--p>Nine Inch Nails</p-->
 						</div>
-						<!--p>{{svjetionicar.prezime}}</p-->
-						<i class="icon ion-chevron-right icon-accessory"></i>
-					</ion-item>
-				</ion-list>	
+						<ion-list>
+							<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
+								<img ng-src="{{svjetionicar.image}}">
+								<div id="item-name">
+									{{svjetionicar.ime}} {{svjetionicar.prezime}}
+								</div>
+								<!--p>{{svjetionicar.prezime}}</p-->
+								<i class="icon ion-chevron-right icon-accessory"></i>
+							</ion-item>
+						</ion-list>	
+					</div>
+				</div>
 			</div>
-		
 		</div>
 		
 	</ion-content>

@@ -14,6 +14,14 @@ div>.row:last-child{
 .item > div.sub-header-detail, .card > div.sub-header-detail{
 	background-color: #bababa;
 }
+
+/*override default*/
+.responsive-lg .col{
+	margin-bottom: 0px;
+}
+.list:last-child.card {
+    margin-bottom: 0px;
+}
 /* footer */
 /*
 a.tab-item, i.icon.icon, span.tab-title  {

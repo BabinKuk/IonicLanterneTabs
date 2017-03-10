@@ -1,83 +1,87 @@
 <ion-view view-title="Svjetionici">
 	<ion-content class="padding">
 		
-		<div class="list card">
-			<div id="image-top-item" class="item">
-				<img class="image-top" src="img/svjetionici/Punta-Peneda.jpg">
+		<div class="row responsive-lg">
+			<div class="col col-50">
+				<div class="list card">
+					<div id="image-top-item" class="item">
+						<img class="image-top" src="img/svjetionici/Punta-Peneda.jpg">
+					</div>
+				</div>
+			</div>
+			<!--div class="list card">
+				<div id="image-top-item" class="item">
+					<ks-swiper-container initial-slide="1" speed="2000" loop="true" show-nav-buttons="false" slides-per-view="3" space-between="3" pagination-clickable="false" on-ready="onReadySwiper(swiper)">
+						<ks-swiper-slide class="swiper-slide" ng-repeat="lanterna in lanterne">
+							<img ng-src={{lanterna.image}} width="100%">
+						</ks-swiper-slide>
+					</ks-swiper-container>
+				</div>
+			</div-->
+			
+			<div class="col col-50">
+				<div class="list card">	
+					<div class="item item-input-inset">
+						<label id="svjetionik" name="svjetionik" class="item-input-wrapper">
+							<input type="text" ng-model="svjetionik.name" placeholder="Svjetionik">
+						</label>
+					</div>
+					
+					<div class="item">
+						<div>
+							<center>
+								<div class="">
+									<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
+										Traži svjetionik
+									</button>
+									<button class="button button-calm padding right-col-button cust-button" ng-click="getAll()">
+										Svi svjetionici
+									</button>
+								</div>
+							</center>
+						</div>
+					</div>
+					
+					<!-- ostavi ako se ipak ide na posebnu stra nicu s listama p>
+						<a class="button icon icon-right ion-chevron-right" href="#/tab/lanterne-list">Lanterne</a>
+					</p-->
+					
+					<div ng-show="showResults">
+						<div class="item">
+							<h1>Popis svjetionika</h1>
+							<!--p>Nine Inch Nails</p-->
+						</div>
+						<ion-list>
+							<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
+								<img ng-src="{{svjetionik.image}}">
+								<div id="item-name">
+									{{svjetionik.name}}
+								</div>
+								<!--p>{{svjetionik.lastText}}</p-->
+								<i class="icon ion-chevron-right icon-accessory"></i>
+							</ion-item>
+						</ion-list>
+					</div>
+						
+					<div ng-show="showAll" class="clearfix">
+						<div class="item">
+							<h1>Popis svjetionika</h1>
+							<!--p>Nine Inch Nails</p-->
+						</div>
+						<ion-list>
+							<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
+								<img ng-src="{{svjetionik.image}}">
+								<div id="item-name">
+									{{svjetionik.name}}
+								</div>
+								<!--p>svjetionik.lastText</p-->
+								<i class="icon ion-chevron-right icon-accessory"></i>
+							</ion-item>
+						</ion-list>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		<!--div class="list card">
-			<div id="image-top-item" class="item">
-				<ks-swiper-container initial-slide="1" speed="2000" loop="true" show-nav-buttons="false" slides-per-view="3" space-between="3" pagination-clickable="false" on-ready="onReadySwiper(swiper)">
-					<ks-swiper-slide class="swiper-slide" ng-repeat="lanterna in lanterne">
-						<img ng-src={{lanterna.image}} width="100%">
-					</ks-swiper-slide>
-				</ks-swiper-container>
-			</div>
-		</div-->
-		
-		<div class="list card">	
-			<div class="item item-input-inset">
-				<label id="svjetionik" name="svjetionik" class="item-input-wrapper">
-					<input type="text" ng-model="svjetionik.name" placeholder="Svjetionik">
-				</label>
-			</div>
-			
-			<div class="item">
-				<div>
-					<center>
-						<div class="">
-							<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
-								Traži svjetionik
-							</button>
-							<button class="button button-calm padding right-col-button cust-button" ng-click="getAll()">
-								Svi svjetionici
-							</button>
-						</div>
-					</center>
-				</div>
-			</div>
-			
-			<!-- ostavi ako se ipak ide na posebnu stra nicu s listama p>
-				<a class="button icon icon-right ion-chevron-right" href="#/tab/lanterne-list">Lanterne</a>
-			</p-->
-			
-			<div ng-show="showResults">
-				<div class="item">
-					<h1>Popis svjetionika</h1>
-					<!--p>Nine Inch Nails</p-->
-				</div>
-				<ion-list>
-					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
-						<img ng-src="{{svjetionik.image}}">
-						<div id="item-name">
-							{{svjetionik.name}}
-						</div>
-						<!--p>{{svjetionik.lastText}}</p-->
-						<i class="icon ion-chevron-right icon-accessory"></i>
-					</ion-item>
-				</ion-list>
-			</div>
-				
-			<div ng-show="showAll" class="clearfix">
-				<div class="item">
-					<h1>Popis svjetionika</h1>
-					<!--p>Nine Inch Nails</p-->
-				</div>
-				<ion-list>
-					<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
-						<img ng-src="{{svjetionik.image}}">
-						<div id="item-name">
-							{{svjetionik.name}}
-						</div>
-						<!--p>svjetionik.lastText</p-->
-						<i class="icon ion-chevron-right icon-accessory"></i>
-					</ion-item>
-				</ion-list>
-			</div>
-	
-		</div>	
 		
 	</ion-content>
 </ion-view>
