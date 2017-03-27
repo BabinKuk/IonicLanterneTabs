@@ -87,8 +87,13 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('LanterneCtrl', function($scope, $stateParams, LanterneList) {
+.controller('LanterneCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate) {
 	//console.log('LanterneCtrl');
+	
+	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+		console.log('LanterneCtrl beforeEnter');
+		viewData.enableBack = true;
+	});
 	
 	/*
 	// image swiper
@@ -198,9 +203,14 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('LanterneDetailCtrl', function($scope, $stateParams, LanterneList) {
+.controller('LanterneDetailCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate) {
 	//console.log($stateParams);
 	
+	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+		console.log('LanterneDetailCtrl beforeEnter');
+		viewData.enableBack = true;
+	});
+
 	// check id first
 	if($stateParams.name != undefined || $stateParams.name != ''){
 		// get lantern details
@@ -253,9 +263,14 @@ angular.module('lanterna.controllers', [])
 	};
 })
 
-.controller('SvjetionicariCtrl', function($scope, SvjetionicariList) {
+.controller('SvjetionicariCtrl', function($scope, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {
 	//console.log('SvjetionicariCtrl');
 	
+	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+		console.log('SvjetionicariCtrl beforeEnter');
+		viewData.enableBack = true;
+	});
+
 	//set object
 	$scope.svjetionicar = {};
 	
@@ -349,8 +364,14 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList) {
+.controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {
 	//check id first
+	
+	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+		console.log('SvjetionicariDetailCtrl beforeEnter');
+		viewData.enableBack = true;
+	});
+
 	if($stateParams.id != undefined || $stateParams.id != ''){
 		//dohvati detalje o svjetionicaru
 		getPersonDetails($stateParams.id);
@@ -400,8 +421,14 @@ angular.module('lanterna.controllers', [])
 	};
 })
 
-.controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList) {
+.controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList, $ionicHistory, $ionicNavBarDelegate) {
 	//console.log('BibliotekaCtrl');
+	
+	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
+		console.log('LanterneCtrl beforeEnter');
+		viewData.enableBack = true;
+	});
+
 	//dohvati knjige
 	getAll();
 	
