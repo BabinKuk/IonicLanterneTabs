@@ -95,7 +95,6 @@ angular.module('lanterna.controllers', [])
 		viewData.enableBack = true;
 	});
 	
-
 	$scope.svjetionik = {};
 	
 	//svi svjetionici
@@ -149,6 +148,18 @@ angular.module('lanterna.controllers', [])
 		
 		//show search results
 		$scope.showResults = true;
+	}
+	
+	function getLanterneImages() {
+		console.log('in getLanterneImages');
+		//call service
+		LanterneList.all()
+			.then(function(response){
+				$scope.lanterne = response; // assign data here to your $scope object
+				//console.log($scope.lanterne);
+			},function(error){
+				console.log(error);
+			});
 	}
 })
 
@@ -334,7 +345,7 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {
-	
+
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		console.log('SvjetionicariDetailCtrl beforeEnter');
 		viewData.enableBack = true;
