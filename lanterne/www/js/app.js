@@ -5,12 +5,12 @@
 // the 2nd parameter is an array of 'requires'
 // 'lanterna.services' is found in services.js
 // 'lanterna.controllers' is found in controllers.js
-angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services', 'ksSwiper'])
+angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services'])
 
 //dev url
-//.value("serverUrl", "http://localhost:8080/")
+.value("serverUrl", "http://localhost:8080/")
 //browser testing url
-.value("serverUrl", "")
+//.value("serverUrl", "")
 .value("svjetionicariFilePath", "json/svjetionicari.json")
 .value("svjetioniciFilePath", "json/svjetionici.json")
 .value("bibliotekaFilePath", "json/biblioteka.json")
