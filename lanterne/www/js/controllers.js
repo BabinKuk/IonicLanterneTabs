@@ -95,6 +95,26 @@ angular.module('lanterna.controllers', [])
 		viewData.enableBack = true;
 	});
 	
+	/*
+	// image swiper
+	$scope.swiper = {};
+	
+	// swiper handling
+	$scope.onReadySwiper = function (swiper) {
+	
+		swiper.on('slideChangeStart', function () {
+			console.log('slide start');
+		});
+         
+		swiper.on('onSlideChangeEnd', function () {
+			console.log('slide end');
+		});
+	};
+	
+	//get images for swiper
+	getLanterneImages();
+	*/
+
 	$scope.svjetionik = {};
 	
 	/* ne koristi se
@@ -370,13 +390,13 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {
-
+	//check id first
+	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		console.log('SvjetionicariDetailCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
 
-	//check id first
 	if($stateParams.id != undefined || $stateParams.id != ''){
 		//dohvati detalje o svjetionicaru
 		getPersonDetails($stateParams.id);
