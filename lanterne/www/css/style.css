@@ -183,10 +183,14 @@ h2{
 	height: 100%;
 }
 #ime{
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 }
 #prezime{
 	margin-left: 10px;
+	margin-right: 10px;
+}
+#mjesto{
+	/*margin-left: 10px;*/
 }
 .item h2 {
 	vertical-align: middle;
@@ -325,7 +329,7 @@ h2{
 		font-size: 22px;
 	}
 	.cust-tab .tab-nav{
-		height: 80px;
+		height: 90px;
 	}
 	.tabs a{
 		padding: 10px;
@@ -334,7 +338,10 @@ h2{
 		margin-bottom: 10px;
 	}
 	.tabs a>span{
-		font-size: 18px;
+		font-size: 20px;
+	}
+	.tab-item {
+		max-width: 180x;
 	}
 	.home-button p{
 		font-size: 20px;
@@ -342,5 +349,13 @@ h2{
 	}
 	#home-div-bottom>.row>.col{
 		/*padding: 2%;*/
+	}
+	.item-input-inset .item-input-wrapper input {
+		/*ovo naštimati direktno na tabletu*/
+		/*padding-left: 4px;*/
+		/*height: 40px;/
+		/*background: transparent;*/
+		/*line-height: 30px;*/
+		/*font-size: 14px;*/
 	}
 }

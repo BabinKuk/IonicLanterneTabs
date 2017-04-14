@@ -117,10 +117,12 @@ angular.module('lanterna.controllers', [])
 
 	$scope.svjetionik = {};
 	
+	/* ne koristi se
 	//svi svjetionici
 	$scope.getAll = function() {
 		doGetAll();
 	}
+	*/
 	
 	//search svjetionik
 	$scope.search = function(){
@@ -272,40 +274,63 @@ angular.module('lanterna.controllers', [])
 	});
 
 	//set object
-	$scope.svjetionicar = {};
+	$scope.svjetionicar = {
+		ime: '',
+		prezime: '',
+		mjesto: ''
+	};
 	
+	/* ne koristi se
 	//svi svjetionicari
 	$scope.getAll = function(){
 		doGetAll();
 	}
+	*/
 
-	// search svjetionicare
+	//search svjetionicare
 	$scope.search = function(){
-		//console.log($scope);
+		console.log($scope);
 		//podaci s ekrana
 		var ime = $scope.svjetionicar.ime;
 		var prezime = $scope.svjetionicar.prezime;
-		
-		//opcije sto je upisano na ekranu:
-		//1 - uneseno ime i prezime
-		//2 - uneseno samo ime
-		//3 - uneseno samo prezime
+		var mjesto = $scope.svjetionicar.mjesto;
+		//console.log('ime: ' + ime + '; prezime: ' + prezime + '; mjesto: ' + mjesto);
+		//opcije kako je upisano na ekranu:
+		//1 - uneseno ime i prezime, mjesto prazno
+		//2 - uneseno samo ime, prezime i mjesto prazno
+		//3 - uneseno samo prezime, ime i mjesto prazno
+		//4 - uneseno samo mjesto, ime i prezime prazno
+		//5 - uneseno prezime i mjesto, ime prazno
+		//6 - uneseno ime i mjesto, prezime prazno
+		//7 - uneseno ime, prezime i mjesto
 		var option;
 		
 		//ako su polja prazna dohvati sve
-		if ((ime == '' || ime == null) && (prezime == '' || prezime == null)){
+		if ((ime == '' || ime == null) && (prezime == '' || prezime == null) && (mjesto == '' || mjesto == null)){
 			doGetAll();
 		} else {
-			if ((ime != '' || ime != null) && (prezime != '' || prezime != null)){
+			if ((ime != '') && (prezime != '') && (mjesto == '')){
 				option = 1;
 			}
-			if ((ime != '' || ime != null) && (prezime == '' || prezime == null)){
+			if ((ime != '') && (prezime == '') && (mjesto == '')){
 				option = 2;
 			}
-			if ((ime == '' || ime == null) && (prezime != '' || prezime != null)){
+			if ((ime == '') && (prezime != '') && (mjesto == '')){
 				option = 3;
 			}
-			doSearch(ime, prezime, option);
+			if ((ime == '') && (prezime == '') && (mjesto != '')){
+				option = 4;
+			}
+			if ((ime == '') && (prezime != '') && (mjesto != '')){
+				option = 5;
+			}
+			if ((ime != '') && (prezime == '') && (mjesto != '')){
+				option = 6;
+			}
+			if ((ime != '') && (prezime != '') && (mjesto != '')){
+				option = 7;
+			}
+			doSearch(ime, prezime, mjesto, option);
 		}		
 	}
 	
@@ -327,9 +352,9 @@ angular.module('lanterna.controllers', [])
 		$scope.showResults = false;
 	}
 	
-	function doSearch(ime, prezime, option){
+	function doSearch(ime, prezime, mjesto, option){
 		//call service
-		SvjetionicariList.find(ime, prezime, option)
+		SvjetionicariList.find(ime, prezime, mjesto, option)
 			.then(function(response){
 				//lista svjetionicara (search)
 				$scope.people = response; // assign data here to your $scope object

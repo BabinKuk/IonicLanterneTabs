@@ -89,8 +89,8 @@ angular.module('lanterna.services', [])
 		return deffered.promise; 
 	}
 	
-	function findByName(ime, prezime, option) {
-		//console.log('in findByName ' + ime + ', ' + prezime);
+	function findByName(ime, prezime, mjesto, option) {
+		console.log('in findByName ' + ime + ', ' + prezime + ', ' + mjesto + ', ' + option);
 		
 		//async function to know when the data has arrived
 		var deffered = $q.defer();
@@ -102,7 +102,16 @@ angular.module('lanterna.services', [])
 			//svjetionicari filtrirano
 			var svjetionicariFiltered = [];
 			
-			//u filtrirano idu oni koji zadovoljavaju uvjete sa ekrana (ime, prezime)
+			//opcije kako je upisano na ekranu:
+			//1 - uneseno ime i prezime, mjesto prazno
+			//2 - uneseno samo ime, prezime i mjesto prazno
+			//3 - uneseno samo prezime, ime i mjesto prazno
+			//4 - uneseno samo mjesto, ime i prezime prazno
+			//5 - uneseno prezime i mjesto, ime prazno
+			//6 - uneseno ime i mjesto, prezime prazno
+			//7 - uneseno ime, prezime i mjesto
+			
+			//u filtrirano idu oni koji zadovoljavaju uvjete sa ekrana (ime, prezime, mjesto)
 			svjetionicariFiltered = svjetionicari.filter(function(el) {
 				//console.log('filtering ' + svjetionikName.toUpperCase());
 				if (option == 1) {
@@ -113,6 +122,18 @@ angular.module('lanterna.services', [])
 				}
 				if (option == 3) {
 					return el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1;
+				}
+				if (option == 4) {
+					return el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1;
+				}
+				if (option == 5) {
+					return (el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
+				}
+				if (option == 6) {
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
+				}
+				if (option == 7) {
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1) && (el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
 				}
 			});
 			//console.log(svjetionicariFiltered);
