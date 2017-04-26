@@ -411,6 +411,7 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				//detalji o svjetionicaru
 				$scope.person = response; // assign data here to your $scope object
+				console.log($scope.person);
 			},function(error){
 				console.log(error);
 			});
@@ -423,6 +424,7 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				//lista svjetionika povezanih sa svjetionicarem
 				$scope.svjetionici = response; // assign data here to your $scope object
+				console.log($scope.svjetionici);
 			},function(error){
 				console.log(error);
 			});
