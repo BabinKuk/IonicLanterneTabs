@@ -7,7 +7,7 @@ angular.module('lanterna.controllers', [])
 	$ionicPlatform.registerBackButtonAction(function (event) {
 		event.preventDefault();
 		//console.log("back button action handler");
-		console.log($state.current);
+		//console.log($state.current);
 		
 		if($state.current.name == "tab.home"){
 			//console.log('home page -> exit app');
@@ -26,7 +26,7 @@ angular.module('lanterna.controllers', [])
 	
 	//exit app handler functions
 	function showExitAppPopup(){
-		console.log('showExitAppPopup');
+		//console.log('showExitAppPopup');
 		$scope.data = {};
 
 		// An elaborate, custom popup
@@ -173,7 +173,7 @@ angular.module('lanterna.controllers', [])
 	}
 	
 	function getLanterneImages() {
-		console.log('in getLanterneImages');
+		//console.log('in getLanterneImages');
 		//call service
 		LanterneList.all()
 			.then(function(response){
@@ -209,7 +209,7 @@ angular.module('lanterna.controllers', [])
 	//console.log($stateParams);
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
-		console.log('LanterneDetailCtrl beforeEnter');
+		//console.log('LanterneDetailCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
 
@@ -269,7 +269,7 @@ angular.module('lanterna.controllers', [])
 	//console.log('SvjetionicariCtrl');
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
-		console.log('SvjetionicariCtrl beforeEnter');
+		//console.log('SvjetionicariCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
 
@@ -411,7 +411,7 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				//detalji o svjetionicaru
 				$scope.person = response; // assign data here to your $scope object
-				console.log($scope.person);
+				//console.log($scope.person);
 			},function(error){
 				console.log(error);
 			});
@@ -424,7 +424,7 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				//lista svjetionika povezanih sa svjetionicarem
 				$scope.svjetionici = response; // assign data here to your $scope object
-				console.log($scope.svjetionici);
+				//console.log($scope.svjetionici);
 			},function(error){
 				console.log(error);
 			});
@@ -452,7 +452,7 @@ angular.module('lanterna.controllers', [])
 	//console.log('BibliotekaCtrl');
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
-		console.log('LanterneCtrl beforeEnter');
+		//console.log('LanterneCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
 
@@ -501,12 +501,12 @@ angular.module('lanterna.controllers', [])
 	$scope.onLoad = function() {
 		// do something when pdf is fully loaded
 		// $scope.loading = '';
-		console.log('Loaded...');
+		//console.log('Loaded...');
 		$scope.loading = '';
 	}
 	
 	$scope.onProgress = function (progress) {
-        console.log('Progress...');
-		console.log(progress);
+        //console.log('Progress...');
+		//console.log(progress);
     };
 });

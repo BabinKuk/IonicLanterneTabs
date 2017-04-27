@@ -4,6 +4,12 @@
 div>.row{
 	background-color: #f8f8f8;
 }
+
+/* custom boja za tabove */
+.tabs-striped.tabs-dark .tabs {
+	/*background-color: #657ba4;*/
+}
+
 /*div>.row:first-child{
 	background-color: #bababa;
 }*/
@@ -23,12 +29,6 @@ div>.row:last-child{
     margin-bottom: 0px;
 }
 
-.details-grid {
-	border: 1px solid #000;
-	display: inline-block;
-	word-wrap: break-word;
-    white-space: normal;
-}
 /* footer */
 /*
 a.tab-item, i.icon.icon, span.tab-title  {
@@ -102,6 +102,44 @@ div>.row:last-child{
 	/*background-color:green;*/
 }
 
+/* ne treba, ta test
+#test-table {
+    display: table;
+    border: 2px solid blue;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+#test-table > div {
+    display: table-cell;
+    border: 2px dotted red;
+    padding: 4px 6px;
+    width: 5%;
+    margin-bottom: 0;
+}
+*/
+.details-grid {
+	display: table-cell;
+	/*word-wrap: break-word;*/
+    white-space: normal;
+}
+
+#details-row, #details-sub-header {
+	display: table;
+	padding: 5px;
+	width: 100%;
+	table-layout: fixed;
+	margin-bottom: 5px;
+}
+
+#details-row > div {
+	display: table-cell;
+	/*border: 2px dotted red;*/
+	/*padding: 5px;*/
+	width: 20%;
+	/*margin-bottom: 0;*/
+}
 /*Flexbox vertical height classes*/
 .fill-vertical-space{
 	display: flex;

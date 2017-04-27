@@ -34,39 +34,6 @@
 					</div>
 				</div>
 				
-				<!--div class="list card card-table">
-					<div class="row item item-divider">
-						<div class="col">Svjetionik</div>
-						<div class="col">Dolazak</div>
-						<div class="col">Svjetionik</div>
-						<div class="col">Odlazak</div>
-						<div class="col">Svjetionik</div>
-					</div>
-				
-					<div class="row item item-text-wrap" ng-repeat="svjetionik in svjetionici track by $index">
-						<div class="col">
-							<a ng-href="{{svjetionik.personDetails.prevSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.prevSvj : '#/tab/svjetionicari-list/' + person.id}}">
-								{{svjetionik.personDetails.prevSvj}}
-							</a>
-						</div>
-						<div class="col">{{svjetionik.personDetails.dolazak}}</div>
-						
-						<div class="col">
-							<a ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">
-								{{svjetionik.name}}
-							</a>
-						</div>
-						
-						<div class="col">{{svjetionik.personDetails.odlazak}}</div>
-						
-						<div class="col">
-							<a ng-href="{{svjetionik.personDetails.nextSvj != '' ? '#/tab/lanterne-list/' + svjetionik.personDetails.nextSvj : '#/tab/svjetionicari-list/' + person.id}}">
-								{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} 
-							</a>
-						</div>
-					</div>
-				</div-->
-				
 				<div class="list card">
 					<div class="row item item-divider sub-header-detail">
 						<div class="col col-33">Svjetionici</div>
@@ -84,20 +51,16 @@
 								{{svjetionik.name}}
 							</ion-item>
 							<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
-								<div class="row item item-divider sub-header-detail">
-									<div class="col col-33">Svjetionik</div>
-									<div class="col">Dolazak</div>
-									<!--div class="col">Prethodni svjetionik</div-->
-									<div class="col">Odlazak</div>
-									<!--div class="col">Slijedeći svjetionik</div-->
+								<div id="details-sub-header" class="row row-center item item-divider sub-header-detail">
+									<div class="col col-33 details-grid">Svjetionik</div>
+									<div class="col col-33 details-grid">Dolazak</div>
+									<div class="col col-33 details-grid">Odlazak</div>
 								</div>
-								<div class="row item-text-wrap button-bar">
-									<div class="col col-33 cell-border"><a class="button button-calm" ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.name}}</a></div>
+								<div id="details-row" class="row item-text-wrap button-bar">
+									<div class="col col-33 "><a class="button button-calm" ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.name}}</a></div>
 									<div class="col cell-border">{{svjetionik.personDetails.dolazak}}</div>
-									<!--div class="col">{{svjetionik.personDetails.prevSvj}}</div-->
 									<div class="col cell-border">{{svjetionik.personDetails.odlazak}}</div>
 									<!--div class="col">{{svjetionik.personDetails.nextSvj}} {{svjetionik.personDetails.desc}} </div-->
-									<!--div class="col">{{svjetionik.personDetails.nextSvj}}</div-->
 								</div>
 							</ion-item>
 						</div>
