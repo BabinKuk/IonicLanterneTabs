@@ -388,6 +388,23 @@
 			{"id": 1, "prezime": "BUDIJA", "ime": "IVAN", "prevSvj": "PORER", "dolazak": "1.9.1970", "odlazak": "1976.", "nextSvj": "", "desc": "ostao raditi na Brionima"},
 			{"id": 22, "prezime": "ŽEPINA", "ime": "MIRO", "prevSvj": "SINP", "dolazak": "12.11.1978.", "odlazak": "06.10.1984.", "nextSvj": "S.S. SV. ANA", "desc": ""}
 		]
+	},
+	{
+		"id": 37, "name": "RAŽANJ", "image": "img/svjetionici/Ražanj.jpg",
+		"svjetionicari": [
+			{"id": 24, "prezime": "MARIANI"	, "ime": "FRANE"		,"prevSvj": "TAJER"			, "dolazak": "1886"			,"odlazak": "1919"			, "nextSvj": ""				    , "desc": "penzija"},
+			{"id": 25, "prezime": "BURIĆ"	, "ime": "JOSIP"		,"prevSvj": "MURVICA"       , "dolazak": "1919"         ,"odlazak": "1.3.1923."		, "nextSvj": "SPLIT LUKOBRAN"	, "desc": ""},
+			{"id": 26, "prezime": "LAMPALOV", "ime": "ŠIME"			,"prevSvj": "GLAVAT"       	, "dolazak": "1.3.1923."    ,"odlazak": "nakon 1944."	, "nextSvj": ""					, "desc": "penzija?"},
+			{"id": 27, "prezime": "ZANETIĆ"	, "ime": "JURAJ"		,"prevSvj": ""              , "dolazak": "1944"         ,"odlazak": "1.10.1948."	, "nextSvj": "JADRIJA"          , "desc": ""},
+			{"id": 28, "prezime": "PRIZMIĆ"	, "ime": "PETAR"		,"prevSvj": "TRI SESTRICE"  , "dolazak": "20.7.1953."   ,"odlazak": "31.12.1966."	, "nextSvj": ""					, "desc": "penzija"},
+			{"id": 29, "prezime": "PRIZMIĆ"	, "ime": "FRANKO"		,"prevSvj": "SPLIT POMORAC" , "dolazak": "1.1.1966."    ,"odlazak": "1.2.1969."		, "nextSvj": ""					, "desc": "nepoznato"},
+			{"id": 30, "prezime": "GOLEŠ"	, "ime": "JURE"			,"prevSvj": "GLAVAT"        , "dolazak": "1.2.1969."    ,"odlazak": "20.9.1984."	, "nextSvj": "SPLIT LUKOBRAN"	, "desc": ""},
+			{"id": 31, "prezime": "SMOLJAN"	, "ime": "STJEPAN"		,"prevSvj": "GRUICA"        , "dolazak": "19.9.1984."   ,"odlazak": "15.9.1992."	, "nextSvj": ""					, "desc": "Prebačen u PP Zadar, kao mehaničar"},
+			{"id": 32, "prezime": "KUŠČEVIĆ", "ime": "IVAN"  		,"prevSvj": "OŠTRO"     	, "dolazak": "14.9.1992."   ,"odlazak": ""				, "nextSvj": ""					, "desc": "penzija?"},
+			{"id": 33, "prezime": "BARABA"	, "ime": "PERO"		    ,"prevSvj": ""              , "dolazak": "2002"         ,"odlazak": ""              , "nextSvj": ""                 , "desc": ""},
+			{"id": 34, "prezime": "BAKOTA" 	, "ime": "DUBRAVKO-DUKA","prevSvj": "LUCIETA"       , "dolazak": "kraj 1998."   ,"odlazak": "25.12.2012."	, "nextSvj": ""					, "desc": "umro"},
+			{"id": 35, "prezime": "PRSKALO"	, "ime": "MARIOFIL"		,"prevSvj": "STONČICA"      , "dolazak": "25.12.2012."  ,"odlazak": ""              , "nextSvj": ""                 , "desc": ""}
+		]
 	}
 
 ]
