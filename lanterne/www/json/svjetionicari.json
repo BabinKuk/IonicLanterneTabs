@@ -348,9 +348,309 @@
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "1.10.1983.", "id": 1},
 			{"svjetionik": "TAJER", "period": "14.9.1984.", "id": 2},
-			{"svjetionik": "Sućuraj", "period": "1.7.1990.", "id": 3},
+			{"svjetionik": "SUĆURAJ", "period": "1.7.1990.", "id": 3},
 			{"svjetionik": "STONČICA", "period": "21.9.1992.", "id": 4},
 			{"svjetionik": "RAŽANJ", "period": "", "id": 5}
+		]
+	},
+	{
+		"prezime": "TOMIĆ", "ime": "IVO", "rodjen": "Vis 28.8.1833.", "umro": "14.8.1874. Host", "misc": "", "id": 36,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "STONČICA", "period": "1866", "id": 1},
+			{"svjetionik": "HOST", "period": "6/1873.", "id": 2}
+		]
+	},
+	{
+		"prezime": "ROCCHI", "ime": "DOMENICO", "rodjen": "Vis 19.02.1840.", "umro": "", "misc": "", "id": 37,
+		"image": "img/svjetionicari/Rocchi_Domenico.png",
+		"karijera": [			
+		]
+	},
+	{
+		"prezime": "ILIĆ", "ime": "IVO FANO", "rodjen": "Vis 10.9.1862.", "umro": "", "misc": "", "id": 38,
+		"image": "img/svjetionicari/Ilic_Ivan.png",
+		"karijera": [
+			{"svjetionik": "STONČICA", "period": "prije 1884.", "id": 1},
+			{"svjetionik": "OŠTRO KRALJEVICA", "period": "1891", "id": 2},
+			{"svjetionik": "SUŠAC", "period": "1899", "id": 3},
+			{"svjetionik": "LUKOBRAN SPLIT", "period": "4/1906.", "id": 4},
+			{"svjetionik": "HOST", "period": "", "id": 5},
+			{"svjetionik": "LAZARET MUGGIA", "period": "", "id": 6},
+			{"svjetionik": "VERUDELA", "period": "prije 7/1919-1.6.1923. penzija", "id": 7}
+		]
+	},
+	{
+		"prezime": "USMIANI", "ime": "IVAN", "rodjen": "Rab", "umro": "", "misc": "", "id": 39,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "STONČICA", "period": "prije 1911.", "id": 1},
+			{"svjetionik": "HOST", "period": "1914 - 22.5.1915", "id": 2},
+			{"svjetionik": "TAJER", "period": "prije 6/1920", "id": 3},
+			{"svjetionik": "LUCIETA", "period": "1923 - 1926", "id": 4},
+			{"svjetionik": "VELI RAT", "period": "1928 - između 1934. i 11/1935", "id": 5}
+		]
+	},
+	{
+		"prezime": "SUŠAN", "ime": "NIKOLA", "rodjen": "Makarska 30.11.1869.", "umro": "", "misc": "", "id": 40,
+		"image": "img/svjetionicari/Susan_Nikola.png",
+		"karijera": [
+			{"svjetionik": "NERETVA UŠĆE", "period": "11.5.1895.", "id": 1},
+			{"svjetionik": "SUŠAC", "period": "15.1.1906.", "id": 2},
+			{"svjetionik": "LUCIETA", "period": "prije 7/1908", "id": 3},
+			{"svjetionik": "POKONJI DOL", "period": "prije 6/1910", "id": 4},
+			{"svjetionik": "SUŠAC", "period": "između 1912. i 1914.", "id": 5},
+			{"svjetionik": "HOST", "period": "", "id": 6},
+			{"svjetionik": "MURVICA", "period": "15.6.1918. - nakon 4/1922, penzija", "id": 7}
+		]
+	},
+	{
+		"prezime": "MIHOVILOVIĆ", "ime": "ANTON", "rodjen": "Premantura 12.1.1880.", "umro": "", "misc": "", "id": 41,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "MULO", "period": "1908.", "id": 1},
+			{"svjetionik": "UBAŠ", "period": "3.9.1909.", "id": 2},
+			{"svjetionik": "HOST", "period": "", "id": 3},
+			{"svjetionik": "STONČICA", "period": "prije 6/1910", "id": 4},
+			{"svjetionik": "OLIPA", "period": "nakon 7/1920", "id": 5},
+			{"svjetionik": "GREBENI", "period": "1.10.1923.", "id": 6},
+			{"svjetionik": "SV. ANDRIJA", "period": "16.11.1926.", "id": 7},
+			{"svjetionik": "DAKSA", "period": "1.10.1934. - oko 1936. penzija?", "id": 8}
+		]
+	},
+	{
+		"prezime": "RAGUSIN", "ime": "JOSIP", "rodjen": "Puntanera 26.10.1882.", "umro": "", "misc": "", "id": 42,
+		"image": "img/svjetionicari/Ragusin_Josip.png",
+		"karijera": [
+			{"svjetionik": "GALIOLA", "period": "10.9.1901.", "id": 1},
+			{"svjetionik": "SUŠAC", "period": "15.1.1906.", "id": 2},
+			{"svjetionik": "ZAGLAV", "period": "1.7.1907.", "id": 3},
+			{"svjetionik": "STONČICA", "period": "prije 9/1909", "id": 4},
+			{"svjetionik": "MURVICA", "period": "1910", "id": 5},
+			{"svjetionik": "HOST", "period": "", "id": 6},
+			{"svjetionik": "SUĆURAJ", "period": "", "id": 7},
+			{"svjetionik": "SV. PETAR", "period": "1.10.1923. -1929. penzija?", "id": 8}
+		]
+	},
+	{
+		"prezime": "CAPUZZO", "ime": "ANTONIO", "rodjen": "Pašman?", "umro": "", "misc": "", "id": 43,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "brod N3", "period": "22.2.1910.", "id": 1},
+			{"svjetionik": "SV. ANDRIJA", "period": "2.10.1913.", "id": 2},
+			{"svjetionik": "BABAC", "period": "6.6.1914.", "id": 3},
+			{"svjetionik": "STRUGA", "period": "20.9.1917.", "id": 4},
+			{"svjetionik": "HOST", "period": "", "id": 5},
+			{"svjetionik": "BABAC", "period": "2. put", "id": 6},
+			{"svjetionik": "PULA SVJETLA", "period": "20.10.1922- nakon 1923.", "id": 7}
+		]
+	},
+	{
+		"prezime": "ARMANINI", "ime": "ANTONIO", "rodjen": "Sali 20.2.1872.", "umro": "", "misc": "", "id": 44,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "TAJER", "period": "1.4.1900.", "id": 1},
+			{"svjetionik": "BABAC", "period": "20.9.1917.", "id": 2},
+			{"svjetionik": "HOST", "period": "", "id": 3},
+			{"svjetionik": "SPLIT LUKOBRAN", "period": "nakon 1923.", "id": 4}
+		]
+	},
+	{
+		"prezime": "ZUANIĆ", "ime": "ANTE", "rodjen": "Komiža 1872.", "umro": "", "misc": "", "id": 45,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "SUŠAC", "period": "6.5.1900.", "id": 1},
+			{"svjetionik": "PALAGRUŽA", "period": "1.6.1906.", "id": 2},
+			{"svjetionik": "SV. ANDRIJA", "period": "", "id": 3},
+			{"svjetionik": "SUŠAC", "period": "2. put", "id": 4},
+			{"svjetionik": "PALAGRUŽA", "period": "2.put. 1.5.1913., Zarobljen 22.5.1915.", "id": 5},
+			{"svjetionik": "HOST", "period": "", "id": 6}
+		]
+	},
+	{
+		"prezime": "PUŠIĆ-HERENDA", "ime": "ANTUN", "rodjen": "Vis 7.4.1881.", "umro": "", "misc": "", "id": 46,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "STONČICA", "period": "između 1911. i 1913.", "id": 1},
+			{"svjetionik": "STRUGA", "period": "30.6.1918.", "id": 2},
+			{"svjetionik": "LUCIETA", "period": "", "id": 3},
+			{"svjetionik": "STONČICA", "period": "2. put 20.6.1920.", "id": 4},
+			{"svjetionik": "HOST", "period": "", "id": 5},
+			{"svjetionik": "SUŠAK LUKOBRAN", "period": "15.11.1933. - 1946. penzija", "id": 6}
+		]
+	},
+	{
+		"prezime": "SIMINIATI", "ime": "IVAN", "rodjen": "Vis 1894.", "umro": "", "misc": "", "id": 47,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "STONČICA", "period": "5.6.1913. - rat", "id": 1},
+			{"svjetionik": "JADRIJA", "period": "1922", "id": 2},
+			{"svjetionik": "HOST", "period": "1933", "id": 3}
+		]
+	},
+	{
+		"prezime": "DARLIĆ", "ime": "STJEPAN", "rodjen": "Vis 12.10.1896.", "umro": "ožujak 1944.", "misc": "", "id": 48,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "VELI RAT", "period": "1921", "id": 1},
+			{"svjetionik": "STONČICA", "period": "1928", "id": 2},
+			{"svjetionik": "HOST", "period": "1935-1944", "id": 3}
+		]
+	},
+		{
+		"prezime": "BRALIĆ", "ime": "IVAN", "rodjen": "Rukavac-Vis 2.7.1905.", "umro": "22.1.1995.", "misc": "", "id": 49,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "SV. ANDRIJA", "period": "9.2.1934.", "id": 1},
+			{"svjetionik": "JADRIJA", "period": "1937", "id": 2},
+			{"svjetionik": "STONČICA", "period": "1939", "id": 3},
+			{"svjetionik": "MURVICA", "period": "1941-10.11.1943", "id": 4},
+			{"svjetionik": "HOST", "period": "", "id": 5},
+			{"svjetionik": "STONČICA", "period": "2. put 15.8.1954.", "id": 6},
+			{"svjetionik": "POKONJI DOL", "period": "25.7.1959.", "id": 7},
+			{"svjetionik": "STONČICA", "period": "3. put 5.8.1961. - prije 1969.", "id": 8}
+		]
+	},
+	{
+		"prezime": "STANOJEVIĆ", "ime": "NIKOLA", "rodjen": "", "umro": "", "misc": "", "id": 50,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "PALAGRUŽA", "period": "prije 1953", "id": 1},
+			{"svjetionik": "HOST", "period": "", "id": 2}
+		]
+	},
+	{
+		"prezime": "BOŽIČEVIĆ", "ime": "ANTE", "rodjen": "Sestrunj 1920.", "umro": "", "misc": "", "id": 51,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "POKONJI DOL", "period": "1.8.1948.", "id": 1},
+			{"svjetionik": "TAJER", "period": "15.7.1952.", "id": 2},
+			{"svjetionik": "TRI SESTRICE", "period": "28.11.1959.", "id": 3},
+			{"svjetionik": "HOST", "period": "", "id": 4},
+			{"svjetionik": "S.S. SV. ANA", "period": "1.7.1980. penzija", "id": 5}
+		]
+	},
+	{
+		"prezime": "TONDINI", "ime": "BARTUL", "rodjen": "Starigrad-Hvar 1903.", "umro": "", "misc": "", "id": 52,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "STARIGRAD LI", "period": "1.7.1950.", "id": 1},
+			{"svjetionik": "GLAVAT", "period": "1.9.1952.", "id": 2},
+			{"svjetionik": "POKONJI DOL", "period": "14.2.1956.", "id": 3},
+			{"svjetionik": "STONČICA", "period": "1.1.1961.", "id": 4},
+			{"svjetionik": "HOST", "period": "", "id": 5}
+		]
+	},
+	{
+		"prezime": "NOVACCO",	"ime": "MATTEO",	"rodjen": "",	"umro": "",	"misc": "M",	"id": 53,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "PORER", "period": "16.11.1874.", "id": 1},
+			{"svjetionik": "VERUDELA", "period": "", "id": 2},
+			{"svjetionik": "SAVUDRIJA", "period": "kraj 1894.", "id": 3},
+			{"svjetionik": "VERUDELA", "period": "2. put", "id": 4}
+		]
+	},
+	{
+		"prezime": "MIŠKOVIĆ",	"ime": "GREGORIO",	"rodjen": "Ližnjan 21.2.1856.",	"umro": "",	"misc": "M",	"id": 54,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "MARLERA", "period": "1883", "id": 1},
+			{"svjetionik": "VERUDELA", "period": "", "id": 2}
+		]
+	},
+	{
+		"prezime": "MIKOVILOVIĆ",	"ime": "ANTONIO (Matejev)",	"rodjen": "Premantura",	"umro": "",	"misc": "M",	"id": 55,
+		"image": "img/svjetionicari/Mikovilovich_Antonio.png",
+		"karijera": [
+			{"svjetionik": "MARLERA", "period": "6/1984", "id": 1},
+			{"svjetionik": "PORER", "period": "17.8.1895.", "id": 2},
+			{"svjetionik": "PELAGO", "period": "17.8.1895.", "id": 3},
+			{"svjetionik": "VERUDELA", "period": "", "id": 4},
+			{"svjetionik": "SAVUDRIJA", "period": "27.1.1904.", "id": 5},
+			{"svjetionik": "PORER", "period": "2. put 11.7.1909.", "id": 6},
+			{"svjetionik": "PORER", "period": "2. put 12.8.1911.", "id": 7}
+		]
+	},
+	{
+		"prezime": "LESIĆ",	"ime": "ANTON",	"rodjen": "Lastovo 10.6.1888.",	"umro": "",	"misc": "M",	"id": 56,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "GLAVAT", "period": "20.6.1907.", "id": 1},
+			{"svjetionik": "PORER", "period": "26.7.1908.", "id": 2},
+			{"svjetionik": "TRST SKLADIŠTE", "period": "oko 1910.", "id": 3},
+			{"svjetionik": "VERUDELA", "period": "", "id": 4},
+			{"svjetionik": "GLAVAT", "period": "2. put 2.10.1913.", "id": 5},
+			{"svjetionik": "SUŠAC", "period": "kraj 1919.", "id": 6},
+			{"svjetionik": "LUCIETA", "period": "22.5.1921.", "id": 7},
+			{"svjetionik": "MULO", "period": "1923.", "id": 8},
+			{"svjetionik": "DONJA SLANO", "period": " 31.12.1927. - nakon 1939.", "id": 9}
+		]
+	},
+	{
+		"prezime": "GIRALDI",	"ime": "DOMENICO",	"rodjen": "Piran",	"umro": "",	"misc": "M",	"id": 57,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "STRUGA", "period": "23.12.1910.", "id": 1},
+			{"svjetionik": "PORER", "period": "27.3.1913.", "id": 2},
+			{"svjetionik": "VERUDELA", "period": "zamjena", "id": 3},
+			{"svjetionik": "PORER", "period": "2. put 2.10.1913.", "id": 4},
+			{"svjetionik": "TRST TERESA", "period": "kraj 1919.", "id": 5}
+		]
+	},
+	{
+		"prezime": "PIZZAMUS",	"ime": "ANTONIO",	"rodjen": "Oltra kod Muggia 1871.",	"umro": "",	"misc": "M",	"id": 58,
+		"image": "img/svjetionicari/Pizzamus_Antonio.png",
+		"karijera": [
+			{"svjetionik": "TRSTENIK", "period": "1900", "id": 1},
+			{"svjetionik": "GALIOLA", "period": "8/1902", "id": 2},
+			{"svjetionik": "UBAŠ", "period": "1906.", "id": 3},
+			{"svjetionik": "DENTE", "period": "1907.", "id": 4},
+			{"svjetionik": "TRST TERESA", "period": "kraj 1919.", "id": 5},
+			{"svjetionik": "MARLERA", "period": "2.10.1913.", "id": 6},
+			{"svjetionik": "TRST TERESA", "period": "2. put  8.7.1920.", "id": 7},
+			{"svjetionik": "FAŽANA SVJETLA", "period": "20.7.1921.", "id": 8},
+			{"svjetionik": "VERUDELA", "period": "", "id": 9}
+		]
+	},
+	{
+		"prezime": "PERUŠKO",	"ime": "OSKAR",	"rodjen": "Pula 1908.",	"umro": "",	"misc": "M",	"id": 59,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "VERUDELA", "period": "1947", "id": 1},
+			{"svjetionik": "PORER", "period": "1948", "id": 2}
+		]
+	},
+	{
+		"prezime": "MEZULIĆ",	"ime": "LJUDEVIT",	"rodjen": "Premantura 21.4.1907",	"umro": "26.7.1973. Pula",	"misc": "M",	"id": 60,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "PORER", "period": "27.3.1947", "id": 1},
+			{"svjetionik": "VERUDELA", "period": "1948", "id": 2},
+			{"svjetionik": "PORER", "period": "31.2.1967. penzija", "id": 3}
+		]
+	},
+	{
+		"prezime": "KOSTEŠIĆ",	"ime": "IVAN",	"rodjen": "Ližnjan 1919.",	"umro": "",	"misc": "M",	"id": 61,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "MORTAR", "period": "1.9.1951.", "id": 1},
+			{"svjetionik": "SUSAK", "period": " 3.7.1953.", "id": 2},
+			{"svjetionik": "PUNTANERA", "period": "1.10.1955.", "id": 3},
+			{"svjetionik": "VERUDELA", "period": "penzija", "id": 4}
+		]
+	},
+	{
+		"prezime": "TURČINOV",	"ime": "ŠIME (ŠKODA)",	"rodjen": "Murter 10.10.1919.",	"umro": "Pula 8.11.1985.",	"misc": "M",	"id": 62,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "PALAGRUŽA", "period": " 10.10.1947.", "id": 1},
+			{"svjetionik": "STONČICA", "period": "7.10.1948.", "id": 2},
+			{"svjetionik": "TAJER", "period": "19.9.1952", "id": 3},
+			{"svjetionik": "STRAŽICA", "period": "1.11.1955.", "id": 4},
+			{"svjetionik": "Puntanera", "period": " 31.8.1958.", "id": 5},
+			{"svjetionik": "VERUDELA", "period": "penzija", "id": 6},
+			{"svjetionik": "", "period": "Dobio stan kao prvoborac u Šijani, sin ostao na automatiziranom svjetlu sa obitelji do 1987. g. kad je dobio stan na Stoji.", "id": 7}
 		]
 	}
 ]
