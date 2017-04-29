@@ -392,7 +392,7 @@
 		]
 	},
 	{
-		"id": 37, "name": "RAŽANJ", "image": "img/svjetionici/Ražanj.jpg",
+		"id": 37, "name": "RAŽANJ", "image": "img/svjetionici/Razanj.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 24, "prezime": "MARIANI"	, "ime": "FRANE"		,"prevSvj": "TAJER"			, "dolazak": "1886"			,"odlazak": "1919"			, "nextSvj": ""				    , "desc": "penzija"},
 			{"rbr": 2, "id": 25, "prezime": "BURIĆ"	, "ime": "JOSIP"		,"prevSvj": "MURVICA"       , "dolazak": "1919"         ,"odlazak": "1.3.1923."		, "nextSvj": "SPLIT LUKOBRAN"	, "desc": ""},
