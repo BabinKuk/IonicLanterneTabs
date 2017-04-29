@@ -67,18 +67,25 @@ angular.module('lanterna.services', [])
 			//loop through svi svjetionici array
 			for (var i = 0; i < allLanterne.length; i++) {
 				//create objects
-				var lantern = {};
+				var lantern;
 				var personDetails;
 				
 				//loop through svjetionicari array for each svjetionik
 				for (var j = 0; j < allLanterne[i].svjetionicari.length; j++) {
+					//set lantern
+					lantern = {};
+					
+					//console.log('reset person details');
 					//provjeri ako je svjetionicar bio na svjetioniku
 					if (allLanterne[i].svjetionicari[j].id == parseInt(personId)) {
+						//console.log(j);
+						//console.log('prsndtls ', allLanterne[i].svjetionicari[j]);
 						//object
 						lantern.id = allLanterne[i].id;
 						lantern.name = allLanterne[i].name;
 						lantern.image = allLanterne[i].image;
 						lantern.personDetails = allLanterne[i].svjetionicari[j];
+						//console.log('lantern', lantern);
 						// push into array
 						lanternArray.push(lantern);
 					}
