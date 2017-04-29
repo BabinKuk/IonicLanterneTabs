@@ -648,9 +648,100 @@
 			{"svjetionik": "STONČICA", "period": "7.10.1948.", "id": 2},
 			{"svjetionik": "TAJER", "period": "19.9.1952", "id": 3},
 			{"svjetionik": "STRAŽICA", "period": "1.11.1955.", "id": 4},
-			{"svjetionik": "Puntanera", "period": " 31.8.1958.", "id": 5},
+			{"svjetionik": "PUNTANERA", "period": " 31.8.1958.", "id": 5},
 			{"svjetionik": "VERUDELA", "period": "penzija", "id": 6},
 			{"svjetionik": "", "period": "Dobio stan kao prvoborac u Šijani, sin ostao na automatiziranom svjetlu sa obitelji do 1987. g. kad je dobio stan na Stoji.", "id": 7}
+		]
+	},
+	{
+		"prezime": "PAIĆ",	"ime": "MIHOVIL",	"rodjen": "",	"umro": "",	"misc": "",	"id": 63,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "DRVENIK GREBENI", "period": "1873", "id": 1},
+			{"svjetionik": "MULO", "period": "11/1875", "id": 2},
+			{"svjetionik": "TAJER", "period": "8.8.1876.", "id": 3},
+			{"svjetionik": "PALAGRUŽA", "period": "3/1883", "id": 4},
+			{"svjetionik": "SV. PETAR", "period": "1.9.1884.", "id": 5},
+			{"svjetionik": "POKONJI DOL", "period": "penzija", "id": 6}
+		]
+	},
+	{
+		"prezime": "VLAHOVIĆ",	"ime": "DOMENICO",	"rodjen": "",	"umro": "",	"misc": "",	"id": 64,
+		"image": "img/svjetionicari/Vlahovic_Domenico.png",
+		"karijera": [
+			{"svjetionik": "SV. PETAR", "period": "prije 1892.", "id": 1},
+			{"svjetionik": "PLOČICA", "period": "19.6.1894.", "id": 2},
+			{"svjetionik": "SV. PETAR", "period": "2. put", "id": 3}
+		]
+	},
+	{
+		"prezime": "KOLUDROVIĆ",	"ime": "PETAR",	"rodjen": "Jelsa 1823",	"umro": "Makarska 22.4.1896.",	"misc": "",	"id": 65,
+		"image": "img/svjetionicari/Koludrovic_Petar.png",
+		"karijera": [
+			{"svjetionik": "PLOČICA", "period": "1893.", "id": 1},
+			{"svjetionik": "SV. PETAR", "period": "19.6.1894.", "id": 2}
+		]
+	},
+		{
+		"prezime": "NOVAKOVIĆ",	"ime": "DUJAM",	"rodjen": "Vrlika 1859.",	"umro": "",	"misc": "",	"id": 66,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "LUCIETA", "period": "23.12.1888.", "id": 1},
+			{"svjetionik": "TRST TERESA", "period": "1892.", "id": 2},
+			{"svjetionik": "MURVICA", "period": "1900", "id": 3},
+			{"svjetionik": "DVAINKA", "period": "12.3.1902.", "id": 4},
+			{"svjetionik": "SV. PETAR", "period": "1.9.1884.", "id": 5}
+		]
+	},
+	{
+		"prezime": "BEGOVIĆ",	"ime": "FABIJAN",	"rodjen": "Donje selo Šolta",	"umro": "",	"misc": "",	"id": 67,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "VELI RAT", "period": "1924.", "id": 1},
+			{"svjetionik": "SV. PETAR", "period": "", "id": 2}
+		]
+	},
+	{
+		"prezime": "LOVIĆ",	"ime": "J. ANDRIJA",	"rodjen": "Igrane 1913.",	"umro": "",	"misc": "",	"id": 68,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "HVAR LK", "period": "31.10.1949.", "id": 1},
+			{"svjetionik": "SUŠAC", "period": "25.11.1956.", "id": 2},
+			{"svjetionik": "STONČICA", "period": "25.11.1956.", "id": 3},
+			{"svjetionik": "BLACA", "period": "31.10.1964", "id": 4},
+			{"svjetionik": "PELAGO", "period": "1.11.1966. -1.6.1969. penzija", "id": 5}
+		]
+	},
+	{
+		"prezime": "KAPITELI",	"ime": "LUCIJANO",	"rodjen": "Lastovo 1901.",	"umro": "",	"misc": "",	"id": 69,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "SUŠAC", "period": "1925.", "id": 1},
+			{"svjetionik": "GLAVAT", "period": "1929-1943", "id": 2},
+			{"svjetionik": "STRUGA", "period": "1945.", "id": 3},
+			{"svjetionik": "SV. PETAR", "period": "1950.", "id": 4},
+			{"svjetionik": "TRSTENIK", "period": "1956.", "id": 5},
+			{"svjetionik": "UŽIGAČ 3 LASTOVSKA SJATLA", "period": "1957-1961. penzija", "id": 6}
+		]
+	},
+	{
+		"prezime": "MILOŠEVIĆ",	"ime": "Š. TONČI",	"rodjen": "Gradac 2.11.1919.",	"umro": "Makarska 2002.",	"misc": "",	"id": 70,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "GRUICA", "period": "7/1949", "id": 1},
+			{"svjetionik": "NERETVA UŠĆE", "period": "7.7.1953.", "id": 2},
+			{"svjetionik": "SV. PETAR", "period": "penzija", "id": 3}
+		]
+	},
+	{
+		"prezime": "ANĐELIĆ",	"ime": "S. MIJO",	"rodjen": "Vinišče 1907.",	"umro": "",	"misc": "",	"id": 71,
+		"image": "",
+		"karijera": [
+			{"svjetionik": "MURVICA", "period": "1948", "id": 1},
+			{"svjetionik": "SUŠAC", "period": "1955.", "id": 2},
+			{"svjetionik": "PLOČICA", "period": "1958.", "id": 3},
+			{"svjetionik": "SV. NIKOLA PUČIŠĆE", "period": "20.1.1964.", "id": 4},
+			{"svjetionik": "SV. PETAR", "period": "penzija", "id": 5}
 		]
 	}
 ]

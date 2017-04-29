@@ -429,6 +429,23 @@
 			{"id": 51,"prezime": "BOŽIČEVIĆ" 		,"ime": "ANTE"  	,"prevSvj": "TRI SESTRICE" 	,"dolazak": "28.2.1961."   			,"odlazak": "1.1.1966."   			,"nextSvj": "S.S. SV. ANA"  , "desc": ""},
 			{"id": 52,"prezime": "TONDINI" 			,"ime": "BARTUL"   	,"prevSvj": "STONČICA"   	,"dolazak": "1.10.1965"   			,"odlazak": "prije 1969"   			,"nextSvj": ""        		, "desc": "penzija"}
 		]
+	},
+	{
+		"id": 39, "name": "SV. PETAR", "image": "img/svjetionici/Sv.Petar.jpg",
+		"svjetionicari": [
+			{"id": 63,"prezime": "PAIĆ" 		,"ime": "MIHOVIL"  		,"prevSvj": "PALAGRUŽA"   			,"dolazak": "1.9.1884."   		,"odlazak": "između 1886. i 1892."	,"nextSvj": "POKONJI DOL"        				, "desc": ""},
+			{"id": 64,"prezime": "VLAHOVIĆ"		,"ime": "DOMENICO"  	,"prevSvj": ""   					,"dolazak": "Prije 1892."   	,"odlazak": "19.5.1894."   			,"nextSvj": ""	    							, "desc": ""},
+			{"id": 65,"prezime": "KOLUDROVIĆ"	,"ime": "PETAR"  		,"prevSvj": ""   					,"dolazak": "Prije 1892." 		,"odlazak": "prije 29.11.1896."   	,"nextSvj": "kad već udova Filomena vodi faro"	, "desc": "umro"},
+			{"id": 64,"prezime": "VLAHOVIĆ"		,"ime": "DOMENICO"  	,"prevSvj": "" 						,"dolazak": "7.3.1906."   		,"odlazak": "1.3.1906."   			,"nextSvj": ""        							, "desc": "penzija"},
+			{"id": 0 ,"prezime": "GOJAK"		,"ime": "PETAR"  		,"prevSvj": "" 					  	,"dolazak": "prije 6.11.1902"   ,"odlazak": "zamjenski 17.4.1906."  ,"nextSvj": ""     						   		, "desc": ""},
+			{"id": 0 ,"prezime": "PERANOVIĆ"	,"ime": "D."  			,"prevSvj": ""					   	,"dolazak": "17.4.1906."   		,"odlazak": "zamjenski"   			,"nextSvj": ""        							, "desc": ""},
+			{"id": 66,"prezime": "NOVAKOVIĆ"	,"ime": "DUJAM"  		,"prevSvj": "DVAINKA"   			,"dolazak": "11.4.1906."   		,"odlazak": "1.10.1923."   			,"nextSvj": ""       					 		, "desc": "penzija"},
+			{"id": 42,"prezime": "RAGUSIN"		,"ime": "JOSIP"  		,"prevSvj": "SUĆURAJ"   			,"dolazak": "1.10.1923."   		,"odlazak": "1929"   				,"nextSvj": ""      					  		, "desc": "penzija"},
+			{"id": 67,"prezime": "BEGOVIĆ"		,"ime": "FABIJAN"  		,"prevSvj": "VELI RAT"   			,"dolazak": "1929"   			,"odlazak": "nakon 1939."   		,"nextSvj": ""        							, "desc": ""},
+			{"id": 68,"prezime": "LOVIĆ"		,"ime": "J. ANDRIJA"  	,"prevSvj": ""   					,"dolazak": "30.11.1947."   	,"odlazak": "31.10.1949."   		,"nextSvj": "LK HVAR"      				  		, "desc": "1952 Sušac"},
+			{"id": 69,"prezime": "KAPITELI"		,"ime": "LUCIJANO"  	,"prevSvj": "STRUGA"   				,"dolazak": "1950"   			,"odlazak": "1956"   				,"nextSvj": "TRSTENIK"        					, "desc": ""},
+			{"id": 70,"prezime": "MILOŠEVIĆ"	,"ime": "Š. TONČI"  	,"prevSvj": "NERETVA UŠĆE"   		,"dolazak": "1956"   			,"odlazak": "1.7.1965."   			,"nextSvj": ""       					 		, "desc": "penzija"},
+			{"id": 71,"prezime": "ANĐELIĆ"		,"ime": "S. MIJO"  		,"prevSvj": "SV. NIKOLA PUČIŠĆE"   	,"dolazak": "1.7.1965."  		,"odlazak": "31.6.1971."   			,"nextSvj": ""    					    		, "desc": "penzija"}
+		]
 	}
-
 ]
