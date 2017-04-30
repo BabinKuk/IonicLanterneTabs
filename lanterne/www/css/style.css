@@ -366,7 +366,7 @@ h2{
 /* large screens */
 @media only screen and (min-width : 900px) {
 	#home-div-top{
-		height: 90%;
+		height: 65%;
 	}
 	.cust-nav-bar{
 		height: 60px !important;
