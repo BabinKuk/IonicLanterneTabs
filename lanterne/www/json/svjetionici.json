@@ -1,6 +1,6 @@
 [
 	{
-		"id": 1, "name": "COMPAR", "image": "img/svjetionici/COMPAR.jpg",
+		"id": 1, "name": "COMPAR", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 3, "prezime": "DESSANTI", "ime": "GIACOMO", "prevSvj": "LUCIETA", "dolazak": "između 6/1877 i 1879.", "odlazak": "10.12.1885.", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 19, "prezime": "VENEZIA", "ime": "DOMENICO", "prevSvj": "", "dolazak": "1877.", "odlazak": "27.10.1885.", "nextSvj": "MARLERA", "desc": ""},
@@ -28,7 +28,7 @@
 		]
 	},
 	{
-		"id": 4, "name": "GALIOLA", "image": "img/svjetionici/GALIOLA.jpg",
+		"id": 4, "name": "GALIOLA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 18, "prezime": "STUPIN", "ime": "ANTONIO", "prevSvj": "PORER", "dolazak": "18.2.1920.", "odlazak": "nakon 9/1921.", "nextSvj": "", "desc": ""},
 			{"rbr": 2, "id": 14, "prezime": "PREMATE", "ime": "GIOVANNI", "prevSvj": "", "dolazak": "sredina 1921.", "odlazak": "25.6.1921.", "nextSvj": "SINP", "desc": ""}			
@@ -57,14 +57,14 @@
 		]
 	},
 	{
-		"id": 8, "name": "LUCIETA", "image": "img/svjetionici/LUCIETA-Blitvenica.jpg",
+		"id": 8, "name": "LUCIETA", "image": "img/svjetionici/Lucieta-Blitvenica.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 13, "prezime": "PLESLIĆ", "ime": "VJEKOSLAV", "prevSvj": "CRNA PUNTA", "dolazak": "1959", "odlazak": "1960", "nextSvj": "", "desc": ""},
 			{"rbr": 2, "id": 4, "prezime": "FATOVIĆ", "ime": "ZRENKO", "prevSvj": "TRSTENIK", "dolazak": "9.10.1962.", "odlazak": "01.9.1970.", "nextSvj": "SUSAK", "desc": ""}
 		]
 	},
 	{
-		"id": 9, "name": "Lučka ispostava", "image": "img/svjetionici/ISPOSTAVA.jpg",
+		"id": 9, "name": "LUČKA ISPOSTAVA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 3, "prezime": "DESSANTI", "ime": "GIACOMO", "prevSvj": "LUCIETA", "dolazak": "između 6/1877 i 1879.", "odlazak": "10.12.1885.", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 1, "prezime": "BUDIJA", "ime": "IVAN", "prevSvj": "PORER", "dolazak": "1.9.1970", "odlazak": "1976.", "nextSvj": "", "desc": "ostao raditi na Brionima"},
@@ -98,7 +98,7 @@
 		]
 	},
 	{
-		"id": 13, "name": "MURVICA", "image": "img/svjetionici/MURVICA.jpg",
+		"id": 13, "name": "MURVICA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 21, "prezime": "ZULIANI", "ime": "GIOVANNI", "prevSvj": "PULA SVJETLA", "dolazak": "1.3.1905", "odlazak": "29.4.1905.", "nextSvj": "PULA SVJETLA", "desc": ""},
 			{"rbr": 2, "id": 5, "prezime": "GAŠPARIĆ", "ime": "ALBIN", "prevSvj": "ZADAR SVJETLA", "dolazak": "22.1.1904.", "odlazak": "oko 3/1905.", "nextSvj": "", "desc": "otkaz"},
@@ -108,7 +108,7 @@
 		]
 	},
 	{
-		"id": 14, "name": "NERETVA", "image": "img/svjetionici/Neretva-UŠĆE.jpg",
+		"id": 14, "name": "NERETVA", "image": "img/svjetionici/Neretva-Usce.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 17, "prezime": "SBISA", "ime": "ANTONIO", "prevSvj": "DENTE", "dolazak": "između 8/1906. i 5/1908.", "odlazak": "1911", "nextSvj": "TRSTENIK", "desc": ""},
 			{"rbr": 2, "id": 11, "prezime": "NOVACCO", "ime": "GIOVANNI", "prevSvj": "PORER", "dolazak": "između 1904. i 7/1905.", "odlazak": "između 10/1909. i  6/1910.", "nextSvj": "ZAGLAV", "desc": ""},
@@ -118,7 +118,7 @@
 		]
 	},
 	{
-		"id": 15, "name": "PELAGO", "image": "img/svjetionici/PELAGO.jpg",
+		"id": 15, "name": "PELAGO", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 23, "prezime": "ŽERAVICA", "ime": "ANTE", "prevSvj": "", "dolazak": "1947", "odlazak": "1953", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 8, "prezime": "KUZMANIĆ", "ime": "NIKOLA", "prevSvj": "", "dolazak": "1.10.1947.", "odlazak": "15.6.1951.", "nextSvj": "MULO", "desc": ""}
@@ -135,7 +135,7 @@
 		]
 	},
 	{
-		"id": 17, "name": "PRESTENICE", "image": "img/svjetionici/PRESTENICE.jpg",
+		"id": 17, "name": "PRESTENICE", "image": "img/svjetionici/Prestenice.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 4, "prezime": "FATOVIĆ", "ime": "ZRENKO", "prevSvj": "TRSTENIK", "dolazak": "9.10.1962.", "odlazak": "01.9.1970.", "nextSvj": "SUSAK", "desc": ""},
 			{"rbr": 2, "id": 1, "prezime": "BUDIJA", "ime": "IVAN", "prevSvj": "PORER", "dolazak": "1.9.1970", "odlazak": "1976.", "nextSvj": "", "desc": "ostao raditi na Brionima"},
@@ -143,7 +143,7 @@
 		]
 	},
 	{
-		"id": 18, "name": "S. ANDREA PULA", "image": "img/svjetionici/S_ANDREA.jpg",
+		"id": 18, "name": "S. ANDREA PULA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 14, "prezime": "PREMATE", "ime": "GIOVANNI", "prevSvj": "", "dolazak": "sredina 1921.", "odlazak": "25.6.1921.", "nextSvj": "SINP", "desc": ""},
 			{"rbr": 2, "id": 10, "prezime": "MAUREL", "ime": "CHERUBINO", "prevSvj": "TRST", "dolazak": "23.6.1921.", "odlazak": "27.10.1922.", "nextSvj": "PORER", "desc": ""},
@@ -152,7 +152,7 @@
 		]
 	},
 	{
-		"id": 19, "name": "S.S. SV. ANA", "image": "img/svjetionici/SV_ANA.jpg",
+		"id": 19, "name": "S.S. SV. ANA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 5, "prezime": "GAŠPARIĆ", "ime": "ALBIN", "prevSvj": "ZADAR SVJETLA", "dolazak": "22.1.1904.", "odlazak": "oko 3/1905.", "nextSvj": "", "desc": "otkaz"},
 			{"rbr": 2, "id": 18, "prezime": "STUPIN", "ime": "ANTONIO", "prevSvj": "PORER", "dolazak": "18.2.1920.", "odlazak": "nakon 9/1921.", "nextSvj": "", "desc": ""},
@@ -164,7 +164,7 @@
 		]
 	},
 	{
-		"id": 20, "name": "SALVORE", "image": "img/svjetionici/SALVORE.jpg",
+		"id": 20, "name": "SALVORE", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 20, "prezime": "ZACEVICH", "ime": "GIOVANNI", "prevSvj": "TRSTENIK", "dolazak": "prije 11/1912.", "odlazak": "nakon 8/1920.", "nextSvj": "", "desc": "penzija"},
 			{"rbr": 2, "id": 12, "prezime": "PICINIĆ", "ime": "JOSIP", "prevSvj": "TRST SVJETLA", "dolazak": "28.3.1913.", "odlazak": "21.1.1920.", "nextSvj": "UBAS", "desc": ""},
@@ -202,7 +202,7 @@
 		]
 	},
 	{
-		"id": 23, "name": "SUSAK", "image": "img/svjetionici/Susak.jpg",
+		"id": 23, "name": "SUSAK", "image": "img/svjetionici/SUSAK.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 2, "prezime": "BUSSANICH", "ime": "ROMEO", "prevSvj": "NERETVA UŠĆE", "dolazak": "1910.", "odlazak": "15.12.1913.", "nextSvj": "", "desc": ""},
 			{"rbr": 2, "id": 18, "prezime": "STUPIN", "ime": "ANTONIO", "prevSvj": "PORER", "dolazak": "18.2.1920.", "odlazak": "nakon 9/1921.", "nextSvj": "", "desc": ""},
@@ -216,7 +216,7 @@
 		]
 	},
 	{
-		"id": 24, "name": "svjet. mj. Vela Luka", "image": "img/svjetionici/VELA_LUKA.jpg",
+		"id": 24, "name": "VELA LUKA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 10, "prezime": "MAUREL", "ime": "CHERUBINO", "prevSvj": "TRST", "dolazak": "23.6.1921.", "odlazak": "27.10.1922.", "nextSvj": "PORER", "desc": ""},
 			{"rbr": 2, "id": 6, "prezime": "JURLINA", "ime": "GIORGIO", "prevSvj": "PORER", "dolazak": "27.10.1922.", "odlazak": "", "nextSvj": "", "desc": ""},
@@ -225,7 +225,7 @@
 		]
 	},
 	{
-		"id": 25, "name": "Tisno lukobran svjetlo", "image": "img/svjetionici/TISNO.jpg",
+		"id": 25, "name": "TISNO", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 2, "prezime": "BUSSANICH", "ime": "ROMEO", "prevSvj": "NERETVA UŠĆE", "dolazak": "između 1907. i 1910.", "odlazak": "5.6.1913.", "nextSvj": "", "desc": ""},
 			{"rbr": 2, "id": 20, "prezime": "ZACEVICH", "ime": "GIOVANNI", "prevSvj": "TRSTENIK", "dolazak": "prije 11/1912.", "odlazak": "nakon 8/1920.", "nextSvj": "", "desc": "penzija"},
@@ -239,7 +239,7 @@
 		]
 	},
 	{
-		"id": 26, "name": "TRST", "image": "img/svjetionici/TRST.jpg",
+		"id": 26, "name": "TRST", "image": "img/svjetionici/Trst.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 3, "prezime": "DESSANTI", "ime": "GIACOMO", "prevSvj": "LUCIETA", "dolazak": "između 6/1877 i 1879.", "odlazak": "10.12.1885.", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 19, "prezime": "VENEZIA", "ime": "DOMENICO", "prevSvj": "", "dolazak": "1877.", "odlazak": "27.10.1885.", "nextSvj": "MARLERA", "desc": ""},
@@ -248,7 +248,7 @@
 		]
 	},
 	{
-		"id": 27, "name": "TRST svjetla", "image": "img/svjetionici/TRST_SVJETLA.jpg",
+		"id": 27, "name": "TRST SVJETLA", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 4, "prezime": "FATOVIĆ", "ime": "ZRENKO", "prevSvj": "TRSTENIK", "dolazak": "9.10.1962.", "odlazak": "01.9.1970.", "nextSvj": "SUSAK", "desc": ""},
 			{"rbr": 2, "id": 1, "prezime": "BUDIJA", "ime": "IVAN", "prevSvj": "PORER", "dolazak": "1.9.1970", "odlazak": "1976.", "nextSvj": "", "desc": "ostao raditi na Brionima"},
@@ -256,7 +256,7 @@
 		]
 	},
 	{
-		"id": 28, "name": "TRST TELEGRAF", "image": "img/svjetionici/TRST_TELEGRAF.jpg",
+		"id": 28, "name": "TRST TELEGRAF", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 3, "prezime": "DESSANTI", "ime": "GIACOMO", "prevSvj": "LUCIETA", "dolazak": "između 6/1877 i 1879.", "odlazak": "10.12.1885.", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 19, "prezime": "VENEZIA", "ime": "DOMENICO", "prevSvj": "", "dolazak": "1877.", "odlazak": "27.10.1885.", "nextSvj": "MARLERA", "desc": ""},
@@ -277,7 +277,7 @@
 		]
 	},
 	{
-		"id": 30, "name": "UBAS", "image": "img/svjetionici/UBAS.jpg",
+		"id": 30, "name": "UBAS", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 3, "prezime": "DESSANTI", "ime": "GIACOMO", "prevSvj": "LUCIETA", "dolazak": "između 6/1877 i 1879.", "odlazak": "10.12.1885.", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 19, "prezime": "VENEZIA", "ime": "DOMENICO", "prevSvj": "", "dolazak": "1877.", "odlazak": "27.10.1885.", "nextSvj": "MARLERA", "desc": ""},
@@ -328,7 +328,7 @@
 		]
 	},
 	{
-		"id": 34, "name": "ZADAR", "image": "img/svjetionici/Zadar.jpg",
+		"id": 34, "name": "ZADAR", "image": "",
 		"svjetionicari": [
 			{"rbr": 1, "id": 7, "prezime": "KAIĆ", "ime": "IVAN", "prevSvj": "", "dolazak": "15.6.1951.", "odlazak": "2.7.1953.", "nextSvj": "", "desc": ""},
 			{"rbr": 2, "id": 13, "prezime": "PLESLIĆ", "ime": "VJEKOSLAV", "prevSvj": "CRNA PUNTA", "dolazak": "1959", "odlazak": "1960", "nextSvj": "", "desc": ""},
