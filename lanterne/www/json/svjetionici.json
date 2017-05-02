@@ -86,7 +86,7 @@
 		"svjetionicari": [
 			{"rbr": 1, "id": 17, "prezime": "SBISA", "ime": "ANTONIO", "prevSvj": "DENTE", "dolazak": "između 8/1906. i 5/1908.", "odlazak": "1911", "nextSvj": "TRSTENIK", "desc": ""},
 			{"rbr": 2, "id": 11, "prezime": "NOVACCO", "ime": "GIOVANNI", "prevSvj": "PORER", "dolazak": "između 1904. i 7/1905.", "odlazak": "između 10/1909. i  6/1910.", "nextSvj": "ZAGLAV", "desc": ""},
-			{"rbr": 3, "id": 2, "prezime": "BUSSANICH", "ime": "ROMEO", "prevSvj": "NERETVA", "dolazak": "između 1907. i 1910.", "odlazak": "5.12.1933.", "nextSvj": "", "desc": ""},
+			{"rbr": 3, "id": 2, "prezime": "BUSSANICH", "ime": "ROMEO", "prevSvj": "NERETVA UŠĆE", "dolazak": "između 1907. i 1910.", "odlazak": "5.12.1933.", "nextSvj": "", "desc": ""},
 			{"rbr": 4, "id": 20, "prezime": "ZACEVICH", "ime": "GIOVANNI", "prevSvj": "TRSTENIK", "dolazak": "prije 11/1912.", "odlazak": "nakon 8/1920.", "nextSvj": "", "desc": "penzija"}
 		]
 	},
@@ -108,11 +108,11 @@
 		]
 	},
 	{
-		"id": 14, "name": "NERETVA", "image": "img/svjetionici/Neretva-Usce.jpg",
+		"id": 14, "name": "NERETVA UŠĆE", "image": "img/svjetionici/Neretva-Usce.jpg",
 		"svjetionicari": [
 			{"rbr": 1, "id": 17, "prezime": "SBISA", "ime": "ANTONIO", "prevSvj": "DENTE", "dolazak": "između 8/1906. i 5/1908.", "odlazak": "1911", "nextSvj": "TRSTENIK", "desc": ""},
 			{"rbr": 2, "id": 11, "prezime": "NOVACCO", "ime": "GIOVANNI", "prevSvj": "PORER", "dolazak": "između 1904. i 7/1905.", "odlazak": "između 10/1909. i  6/1910.", "nextSvj": "ZAGLAV", "desc": ""},
-			{"rbr": 3, "id": 2, "prezime": "BUSSANICH", "ime": "ROMEO", "prevSvj": "NERETVAUŠĆE", "dolazak": "između 1917. i 1910.", "odlazak": "15.6.1914.", "nextSvj": "", "desc": ""},
+			{"rbr": 3, "id": 2, "prezime": "BUSSANICH", "ime": "ROMEO", "prevSvj": "NERETVA UŠĆE", "dolazak": "između 1917. i 1910.", "odlazak": "15.6.1914.", "nextSvj": "", "desc": ""},
 			{"rbr": 4, "id": 20, "prezime": "ZACEVICH", "ime": "GIOVANNI", "prevSvj": "TRSTENIK", "dolazak": "prije 11/1912.", "odlazak": "nakon 8/1920.", "nextSvj": "", "desc": "penzija"},
 			{"rbr": 5, "id": 4, "prezime": "FATOVIĆ", "ime": "ZRENKO", "prevSvj": "TRSTENIK", "dolazak": "9.10.1962.", "odlazak": "01.9.1970.", "nextSvj": "SUSAK", "desc": ""}
 		]
