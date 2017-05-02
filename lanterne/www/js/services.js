@@ -110,13 +110,13 @@ angular.module('lanterna.services', [])
 			var svjetionicariFiltered = [];
 			
 			//opcije kako je upisano na ekranu:
-			//1 - uneseno ime i prezime, mjesto prazno
-			//2 - uneseno samo ime, prezime i mjesto prazno
-			//3 - uneseno samo prezime, ime i mjesto prazno
-			//4 - uneseno samo mjesto, ime i prezime prazno
-			//5 - uneseno prezime i mjesto, ime prazno
-			//6 - uneseno ime i mjesto, prezime prazno
-			//7 - uneseno ime, prezime i mjesto
+			//1 - uneseno ime i prezime, mjesto rodjenja prazno
+			//2 - uneseno samo ime, prezime i mjesto rodjenja prazno
+			//3 - uneseno samo prezime, ime i mjesto rodjenja prazno
+			//4 - uneseno samo mjesto rodjenja, ime i prezime prazno
+			//5 - uneseno prezime i mjesto rodjenja, ime prazno
+			//6 - uneseno ime i mjesto rodjenja, prezime prazno
+			//7 - uneseno ime, prezime i mjesto rodjenja
 			
 			//u filtrirano idu oni koji zadovoljavaju uvjete sa ekrana (ime, prezime, mjesto)
 			svjetionicariFiltered = svjetionicari.filter(function(el) {
@@ -131,16 +131,16 @@ angular.module('lanterna.services', [])
 					return el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1;
 				}
 				if (option == 4) {
-					return el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1;
+					return el.rodjen.toLowerCase().indexOf(mjesto.toLowerCase()) > -1;
 				}
 				if (option == 5) {
-					return (el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
+					return (el.rodjen.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
 				}
 				if (option == 6) {
-					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.rodjen.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
 				}
 				if (option == 7) {
-					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1) && (el.mjesto.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1) && (el.rodjen.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
 				}
 			});
 			//console.log(svjetionicariFiltered);
