@@ -139,20 +139,18 @@ angular.module('lanterna.controllers', [])
 	
 	// handler functions
 	function doGetAll() {
-		//console.log('in getAll');
+		console.log('in getAll');
 		//call service
 		LanterneList.all()
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
+				console.log($scope.lanterne);
 			},function(error){
 				console.log(error);
 			});
 			
-		// hide all listings
-		$scope.showAll = true;
-		
-		// show search results
-		$scope.showResults = false;
+		//show search results
+		$scope.showResults = true;
 	}
 	
 	function doSearch(svjetionik){
@@ -164,9 +162,6 @@ angular.module('lanterna.controllers', [])
 			},function(error){
 				console.log(error);
 			});
-		
-		//hide all listings
-		$scope.showAll = false;
 		
 		//show search results
 		$scope.showResults = true;
@@ -345,11 +340,8 @@ angular.module('lanterna.controllers', [])
 				console.log(error);
 			});
 			
-		//hide all listings
-		$scope.showAll = true;
-		
 		//show search results
-		$scope.showResults = false;
+		$scope.showResults = true;
 	}
 	
 	function doSearch(ime, prezime, mjesto, option){
@@ -361,9 +353,6 @@ angular.module('lanterna.controllers', [])
 			},function(error){
 				console.log(error);
 			});
-		
-		//hide all listings
-		$scope.showAll = false;
 		
 		// show search results
 		$scope.showResults = true;

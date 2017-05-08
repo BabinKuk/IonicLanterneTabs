@@ -29,6 +29,17 @@ div>.row:last-child{
     margin-bottom: 0px;
 }
 
+/* custom img aspect ratio for item-thumbnails */
+.item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+	/*position: absolute;*/
+	/*top: 10px;*/
+	/*left: 10px;*/
+	max-width: 100px;
+	/*max-height: 80px;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+}
+
 /* footer */
 /*
 a.tab-item, i.icon.icon, span.tab-title  {
@@ -119,6 +130,7 @@ div>.row:last-child{
     margin-bottom: 0;
 }
 */
+
 .details-grid {
 	display: table-cell;
 	/*word-wrap: break-word;*/
@@ -154,6 +166,15 @@ div>.row:last-child{
 .fill-vertical-space>.row{
 	display: flex;
 	flex: 1;
+}
+
+/* keep image aspect ratio in list items */
+.cover-thumbnail {
+	object-fit: cover;
+}
+
+.contain-thumbnail {
+	object-fit: contain;
 }
 
 h2{

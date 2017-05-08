@@ -1,5 +1,5 @@
 <ion-view view-title="Svjetioničari">
-	<ion-content class="padding">
+	<ion-content class="padding has-tabs-bottom has-footer">
 			
 		<!--div class="item">
 			<h1>Svjetioničari</h1>
@@ -59,7 +59,7 @@
 						</div>
 						<ion-list>
 							<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-								<img ng-src="{{svjetionicar.image}}">
+								<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
 								<div id="item-name">
 									{{svjetionicar.ime}} {{svjetionicar.prezime}}
 								</div>
@@ -69,22 +69,20 @@
 						</ion-list>	
 					</div>
 
-					<div ng-show="showAll" class="clearfix">
+					<!--ne treba div ng-show="showAll" class="clearfix">
 						<div class="item">
 							<h1>Popis svih svjetioničara</h1>
-							<!--p>Nine Inch Nails</p-->
 						</div>
 						<ion-list>
 							<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-								<img ng-src="{{svjetionicar.image}}">
+								<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
 								<div id="item-name">
 									{{svjetionicar.ime}} {{svjetionicar.prezime}}
 								</div>
-								<!--p>{{svjetionicar.prezime}}</p-->
 								<i class="icon ion-chevron-right icon-accessory"></i>
 							</ion-item>
 						</ion-list>	
-					</div>
+					</div-->
 				</div>
 			</div>
 		</div>

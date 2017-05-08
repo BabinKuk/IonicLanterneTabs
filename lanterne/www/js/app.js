@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'lanterna.services' is found in services.js
 // 'lanterna.controllers' is found in controllers.js
-angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services'])
+angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services','angular.filter'])
 
 //dev url
 //.value("serverUrl", "http://localhost:8080/")
