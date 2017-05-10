@@ -1,6 +1,6 @@
 [
 	{
-		"prezime": "BUDIJA",	"ime": "IVAN",	"rodjen": "Vir 1935",	"umro": "2012",	"misc": "",	"id": 1,
+		"prezime": "BUDIJA",	"ime": "IVAN",	"mjestoRod": "Vir", "godRod": "1935", "mjestoPrem": "", "godPrem": "2012",	"misc": "",	"id": 1,
 		"image": "img/svjetionicari/BUDIJA_IVAN.jpg",
 		"karijera": [
 			{"svjetionik": "GLAVAT", "period": "18.5.1964.", "rbr": 1},
@@ -9,7 +9,7 @@
 		]
 	},
 	{
-		"prezime": "BUSSANICH",	"ime": "ROMEO ANDRIJA",	"rodjen": "Susak 1875",	"umro": "1957",	"misc": "",	"id": 2,
+		"prezime": "BUSSANICH",	"ime": "ROMEO ANDRIJA",	"mjestoRod": "Susak", "godRod": "1875",	"mjestoPrem": "", "godPrem": "1957", "misc": "",	"id": 2,
 		"image": "img/svjetionicari/BUSSANICH_ROMEO_ANDRIJA.jpg",
 		"karijera": [
 			{"svjetionik": "MURVICA", "period": "2.6.1896.", "rbr": 1},
@@ -22,8 +22,8 @@
 	{
 		"prezime": "DESSANTI",
 		"ime": "GIACOMO",
-		"rodjen": "ROVINJ 1830",
-		"umro": "",
+		"mjestoRod": "ROVINJ", "godRod": "1830",
+		"mjestoPrem": "", "godPrem": "",
 		"misc": "",
 		"id": 3,
 		"image": "",
@@ -34,7 +34,7 @@
 		]
 	},
 	{
-		"prezime": "FATOVIĆ",	"ime": "ZRENKO",	"rodjen": "SESTRUNJ 1929",	"umro": "2000",	"misc": "",	"id": 4,
+		"prezime": "FATOVIĆ",	"ime": "ZRENKO",	"mjestoRod": "SESTRUNJ", "godRod": "1929",	"mjestoPrem": "", "godPrem": "2000",	"misc": "",	"id": 4,
 		"image": "img/svjetionicari/FATOVIC_ZRENKO.jpg",
 		"karijera": [
 			{"svjetionik": "PELAGO", "period": "24.4.1953.", "rbr": 1},
@@ -48,7 +48,7 @@
 		]
 	},
 	{
-		"prezime": "GAŠPARIĆ",	"ime": "ALBIN",	"rodjen": "LJUBLJANA 1866",	"umro": "",	"misc": "",	"id": 5,
+		"prezime": "GAŠPARIĆ",	"ime": "ALBIN",	"mjestoRod": "LJUBLJANA", "godRod": "1866",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 5,
 		"image": "img/svjetionicari/GASPARIC_ALBIN.jpg",
 		"karijera": [
 			{"svjetionik": "ZADAR", "period": "svjetla 23.12.1901. – 1.1.1904.", "rbr": 1},
@@ -56,7 +56,7 @@
 		]
 	},
 	{
-		"prezime": "JURLINA",	"ime": "JURE",	"rodjen": "Premantura 1896",	"umro": "",	"misc": "J",	"id": 6,
+		"prezime": "JURLINA",	"ime": "JURE",	"mjestoRod": "Premantura", "godRod": "1896",	"mjestoPrem": "", "godPrem": "",	"misc": "J",	"id": 6,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PORER", "period": "15.01.1920.", "rbr": 1},
@@ -65,14 +65,14 @@
 		]
 	},
 	{
-		"prezime": "KAIĆ",	"ime": "IVAN",	"rodjen": "Valtura, oko 1920",	"umro": "",	"misc": "",	"id": 7,
+		"prezime": "KAIĆ",	"ime": "IVAN",	"mjestoRod": "Valtura", "godRod": "oko 1920",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 7,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "15.6.1951. - 2.7.1953.", "rbr": 1}
 		]
 	},
 	{
-		"prezime": "KUZMANIĆ",	"ime": "NIKOLA",	"rodjen": "Okrug Gornji–Čiovo, 1915",	"umro": "",	"misc": "M",	"id": 8,
+		"prezime": "KUZMANIĆ",	"ime": "NIKOLA",	"mjestoRod": "Okrug Gornji–Čiovo", "godRod": "1915",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 8,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "1.10.1947.", "rbr": 1},
@@ -81,7 +81,7 @@
 		]
 	},
 	{
-		"prezime": "LAMPALOV",	"ime": "LOVRE",	"rodjen": "Lumbarda 1910",	"umro": "",	"misc": "",	"id": 9,
+		"prezime": "LAMPALOV",	"ime": "LOVRE",	"mjestoRod": "Lumbarda", "godRod": "1910",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 9,
 		"image": "img/svjetionicari/LAMPALOV_LOVRE.jpg",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "10.11.1933.  - nakon  5/1935.", "rbr": 1},
@@ -92,7 +92,7 @@
 		]
 	},
 	{
-		"prezime": "MAUREL",	"ime": "CHERUBINO",	"rodjen": "Savudrija 1894",	"umro": "",	"misc": "",	"id": 10,
+		"prezime": "MAUREL",	"ime": "CHERUBINO",	"mjestoRod": "Savudrija", "godRod": "1894",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 10,
 		"image": "img/svjetionicari/MAUREL_CHERUBINO.jpg",
 		"karijera": [
 			{"svjetionik": "LUCIETA", "period": "19.01.1920.", "rbr": 1},
@@ -102,7 +102,7 @@
 		]
 	},
 	{
-		"prezime": "NOVACCO",	"ime": "GIOVANNI",	"rodjen": "PULA? 1873",	"umro": "",	"misc": "M",	"id": 11,
+		"prezime": "NOVACCO",	"ime": "GIOVANNI",	"mjestoRod": "PULA", "godRod": "1873",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 11,
 		"image": "img/svjetionicari/NOVACCO_GIOVANNI.jpg",
 		"karijera": [
 			{"svjetionik": "COMPAR", "period": "1890-ih dok je bio na služenju vojnog roka", "rbr": 1},
@@ -114,7 +114,7 @@
 		]
 	},
 	{
-		"prezime": "PICINIĆ",	"ime": "JOSIP",	"rodjen": "M. LOŠINJ 1877",	"umro": "",	"misc": "",	"id": 12,
+		"prezime": "PICINIĆ",	"ime": "JOSIP",	"mjestoRod": "M. LOŠINJ", "godRod": "1877",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 12,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "TRSTENIK", "period": "4.4.1908.", "rbr": 1},
@@ -125,7 +125,7 @@
 		]
 	},
 	{
-		"prezime": "PLESLIĆ",	"ime": "VJEKOSLAV",	"rodjen": "Murter?, oko 1918",	"umro": "",	"misc": "",	"id": 13,
+		"prezime": "PLESLIĆ",	"ime": "VJEKOSLAV",	"mjestoRod": "Murter", "godRod": "oko 1918",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 13,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "CRNA PUNTA", "period": "1953.", "rbr": 1},
@@ -133,7 +133,7 @@
 		]
 	},
 	{
-		"prezime": "PREMATE",	"ime": "IVAN",	"rodjen": "Ližnjan 1900",	"umro": "",	"misc": "",	"id": 14,
+		"prezime": "PREMATE",	"ime": "IVAN",	"mjestoRod": "Ližnjan", "godRod": "1900",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 14,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "1921.", "rbr": 1},
@@ -145,7 +145,7 @@
 		]
 	},
 	{
-		"prezime": "RADONIČIĆ",	"ime": "EUGEN",	"rodjen": "DOBROTA-CG 1874",	"umro": "",	"misc": "N",	"id": 15,
+		"prezime": "RADONIČIĆ",	"ime": "EUGEN",	"mjestoRod": "DOBROTA-CG", "godRod": "1874",	"mjestoPrem": "", "godPrem": "",	"misc": "N",	"id": 15,
 		"image": "img/svjetionicari/RADONICIC_EUGEN.jpg",
 		"karijera": [
 			{"svjetionik": "PORER", "period": "6.4.1895.", "rbr": 1},
@@ -155,7 +155,7 @@
 		]
 	},
 	{
-		"prezime": "RADONIČIĆ",	"ime": "NIKOLA",	"rodjen": "DOBROTA-CG 1843",	"umro": "1916",	"misc": "D",	"id": 16,
+		"prezime": "RADONIČIĆ",	"ime": "NIKOLA",	"mjestoRod": "DOBROTA-CG", "godRod": "1843",	"mjestoPrem": "", "godPrem": "1916",	"misc": "D",	"id": 16,
 		"image": "img/svjetionicari/RADONICIC_NIKOLA.jpg",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "9.12.1885.", "rbr": 1},
@@ -164,7 +164,7 @@
 		]
 	},
 	{
-		"prezime": "SBISA",	"ime": "ANTONIO",	"rodjen": "ROVINJ, oko 1865",	"umro": "",	"misc": "M",	"id": 17,
+		"prezime": "SBISA",	"ime": "ANTONIO",	"mjestoRod": "ROVINJ", "godRod": "oko 1865",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 17,
 		"image": "img/svjetionicari/SBISA_ANTONIO.jpg",
 		"karijera": [
 			{"svjetionik": "LUCIETA", "period": "8.7.1890.", "rbr": 1},
@@ -176,7 +176,7 @@
 		]
 	},
 	{
-		"prezime": "STUPIN",	"ime": "ANTONIO",	"rodjen": "oko 1880",	"umro": "",	"misc": "",	"id": 18,
+		"prezime": "STUPIN",	"ime": "ANTONIO",	"mjestoRod": "", "godRod": "oko 1880",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 18,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "SALVORE", "period": "prije 1912.", "rbr": 1},
@@ -185,14 +185,14 @@
 		]
 	},
 	{
-		"prezime": "VENEZIA",	"ime": "DOMENICO",	"rodjen": "oko 1850",	"umro": "",	"misc": "",	"id": 19,
+		"prezime": "VENEZIA",	"ime": "DOMENICO",	"mjestoRod": "", "godRod": "oko 1850",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 19,
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "? - 12.12.1885.", "rbr": 1},
 			{"svjetionik": "MARLERA", "period": "12.12.1885. - ?", "rbr": 2}
 		]
 	},
 	{	
-		"prezime": "ZAČEVIĆ",	"ime": "GIOVANNI",	"rodjen": "M. LOŠINJ 1876",	"umro": "",	"misc": "S",	"id": 20,
+		"prezime": "ZAČEVIĆ",	"ime": "GIOVANNI",	"mjestoRod": "M. LOŠINJ", "godRod": "1876",	"mjestoPrem": "", "godPrem": "",	"misc": "S",	"id": 20,
 		"image": "img/svjetionicari/ZACEVIC_GIOVANNI.jpg",
 		"karijera": [
 			{"svjetionik": "ZAGLAV", "period": "1898.", "rbr": 1},
@@ -202,7 +202,7 @@
 		]
 	},
 	{
-		"prezime": "ZULIANI",	"ime": "GIOVANNI",	"rodjen": "ROVINJ oko 1850",	"umro": "",	"misc": "",	"id": 21,
+		"prezime": "ZULIANI",	"ime": "GIOVANNI",	"mjestoRod": "ROVINJ", "godRod": "oko 1850",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 21,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "", "period": "počeo 15.02.1878.", "rbr": 1},
@@ -219,7 +219,7 @@
 		]
 	},
 	{
-		"prezime": "ŽEPINA",	"ime": "MIRO",	"rodjen": "VIR 1940",	"umro": "",	"misc": "",	"id": 22,
+		"prezime": "ŽEPINA",	"ime": "MIRO",	"mjestoRod": "VIR", "godRod": "1940",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 22,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "SUSAK", "period": "10.7.1964.", "rbr": 1},
@@ -231,7 +231,7 @@
 		]
 	},
 	{
-		"prezime": "ŽERAVICA",	"ime": "ANTE",	"rodjen": "Murter 1921",	"umro": "1999",	"misc": "G",	"id": 23,
+		"prezime": "ŽERAVICA",	"ime": "ANTE",	"mjestoRod": "Murter", "godRod": "1921",	"mjestoPrem": "", "godPrem": "1999",	"misc": "G",	"id": 23,
 		"image": "img/svjetionicari/ZERAVICA_ANTE.jpg",
 		"karijera": [
 			{"svjetionik": "PENEDA", "period": "1947.", "rbr": 1},
@@ -241,16 +241,16 @@
 		]
 	},
 	{
-		"prezime": "MARIANI",	"ime": "FRANE",	"rodjen": "Komiža 23.11.1842",	"umro": "10.10.1918.",	"misc": "G",	"id": 24,
+		"prezime": "MARIANI",	"ime": "FRANE",	"mjestoRod": "Komiža", "godRod": "23.11.1842",	"mjestoPrem": "", "godPrem": "10.10.1918.",	"misc": "G",	"id": 24,
 		"image": "img/svjetionicari/Mariani_Frane.png",
 		"karijera": [
 			{"svjetionik": "PALAGRUŽA", "period": "16.5.1875.", "rbr": 1},
 			{"svjetionik": "TAJER", "period": "1883", "rbr": 2},
-			{"svjetionik": "RAŽANJ", "period": "umro", "rbr": 3}
+			{"svjetionik": "RAŽANJ", "period": "1886 - umro", "rbr": 3}
 		]
 	},
 	{
-		"prezime": "BURIĆ",	"ime": "JOSIP",	"rodjen": "Donje selo Šolta 1.3.1875.",	"umro": "",	"misc": "G",	"id": 25,
+		"prezime": "BURIĆ",	"ime": "JOSIP",	"mjestoRod": "Donje selo Šolta", "godRod": "1.3.1875.",	"mjestoPrem": "", "godPrem": "",	"misc": "G",	"id": 25,
 		"image": "img/svjetionicari/Buric_Josip.png",
 		"karijera": [
 			{"svjetionik": "PALAGRUŽA", "period": "27.9.1906.", "rbr": 1},
@@ -260,7 +260,7 @@
 		]
 	},
 	{
-		"prezime": "LAMPALOV",	"ime": "ŠIME",	"rodjen": "Tisno 28.10.1881.",	"umro": "",	"misc": "",	"id": 26,
+		"prezime": "LAMPALOV",	"ime": "ŠIME",	"mjestoRod": "Tisno", "godRod": "28.10.1881.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 26,
 		"image": "img/svjetionicari/Lampalov_Sime.png",
 		"karijera": [
 			{"svjetionik": "GLAVAT", "period": "5/1908.", "rbr": 1},
@@ -269,7 +269,7 @@
 		]
 	},
 	{
-		"prezime": "ZANETIĆ",	"ime": "JURAJ",	"rodjen": "Tisno 28.10.1881.",	"umro": "",	"misc": "",	"id": 27,
+		"prezime": "ZANETIĆ",	"ime": "JURAJ",	"mjestoRod": "Tisno", "godRod": "28.10.1881.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 27,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "RAŽANJ", "period": "", "rbr": 1},
@@ -278,7 +278,7 @@
 		]
 	},
 	{
-		"prezime": "PRIZMIĆ",	"ime": "PETAR",	"rodjen": "Vela Luka 1907.",	"umro": "",	"misc": "",	"id": 28,
+		"prezime": "PRIZMIĆ",	"ime": "PETAR",	"mjestoRod": "Vela Luka", "godRod": "1907",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 28,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "TRI SESTRICE", "period": "29.8.1949.", "rbr": 1},
@@ -286,7 +286,7 @@
 		]
 	},
 	{
-		"prezime": "PRIZMIĆ",	"ime": "FRANKO",	"rodjen": "Vela Luka 1934.",	"umro": "",	"misc": "",	"id": 29,
+		"prezime": "PRIZMIĆ",	"ime": "FRANKO",	"mjestoRod": "Vela Luka", "godRod": "1934",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 29,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "SPLIT POMORAC", "period": "1962.", "rbr": 1},
@@ -294,7 +294,7 @@
 		]
 	},
 	{
-		"prezime": "GOLEŠ",	"ime": "JURE",	"rodjen": "Smokvica kod Šibenika 1931.",	"umro": "",	"misc": "",	"id": 30,
+		"prezime": "GOLEŠ",	"ime": "JURE",	"mjestoRod": "Smokvica kod Šibenika", "godRod": "1931",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 30,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "LUCIETA", "period": "1.5.1963.", "rbr": 1},
@@ -305,7 +305,7 @@
 		]
 	},
 	{
-		"prezime": "SMOLJAN",	"ime": "STJEPAN",	"rodjen": "Tkon 1954.",	"umro": "",	"misc": "",	"id": 31,
+		"prezime": "SMOLJAN",	"ime": "STJEPAN",	"mjestoRod": "Tkon", "godRod": "1954",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 31,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "Gruica", "period": "15.10.1976.", "rbr": 1},
@@ -313,7 +313,7 @@
 		]
 	},
 	{
-		"prezime": "KUŠČEVIĆ",	"ime": "IVAN",	"rodjen": "Milna 1941.",	"umro": "",	"misc": "",	"id": 32,
+		"prezime": "KUŠČEVIĆ",	"ime": "IVAN",	"mjestoRod": "Milna", "godRod": "1941",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 32,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "MULO", "period": "1.10.1965.", "rbr": 1},
@@ -326,7 +326,7 @@
 		]
 	},
 	{
-		"prezime": "BARABA",	"ime": "PERO",	"rodjen": "",	"umro": "",	"misc": "",	"id": 33,
+		"prezime": "BARABA",	"ime": "PERO",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 33,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PLOVPUT", "period": "", "rbr": 1},
@@ -334,7 +334,7 @@
 		]
 	},
 	{
-		"prezime": "BAKOTA",	"ime": "DUBRAVKO-DUKA",	"rodjen": "Dubrovnik 14.1.1954.",	"umro": "Ražanj 25.12.2012",	"misc": "",	"id": 34,
+		"prezime": "BAKOTA",	"ime": "DUBRAVKO-DUKA",	"mjestoRod": "Dubrovnik", "godRod": "14.1.1954.",	"mjestoPrem": "Ražanj", "godPrem": "25.12.2012",	"misc": "",	"id": 34,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "TAJER", "period": "12/1994", "rbr": 1},
@@ -343,7 +343,7 @@
 		]
 	},
 	{
-		"prezime": "PRSKALO",	"ime": "MARIOFIL",	"rodjen": "Čapljina (BiH) 29.11.1956.",	"umro": "",	"misc": "",	"id": 35,
+		"prezime": "PRSKALO",	"ime": "MARIOFIL",	"mjestoRod": "Čapljina (BiH)", "godRod": "29.11.1956.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 35,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "1.10.1983.", "rbr": 1},
@@ -354,7 +354,7 @@
 		]
 	},
 	{
-		"prezime": "TOMIĆ", "ime": "IVO", "rodjen": "Vis 28.8.1833.", "umro": "14.8.1874. Host", "misc": "", "id": 36,
+		"prezime": "TOMIĆ", "ime": "IVO", "mjestoRod": "Vis", "godRod": "28.8.1833.", "mjestoPrem": "Host", "godPrem": "14.8.1874.", "misc": "", "id": 36,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "1866", "rbr": 1},
@@ -362,13 +362,13 @@
 		]
 	},
 	{
-		"prezime": "ROCCHI", "ime": "DOMENICO", "rodjen": "Vis 19.02.1840.", "umro": "", "misc": "", "id": 37,
+		"prezime": "ROCCHI", "ime": "DOMENICO", "mjestoRod": "Vis", "godRod": "19.02.1840.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 37,
 		"image": "img/svjetionicari/Rocchi_Domenico.png",
 		"karijera": [			
 		]
 	},
 	{
-		"prezime": "ILIĆ", "ime": "IVO FANO", "rodjen": "Vis 10.9.1862.", "umro": "", "misc": "", "id": 38,
+		"prezime": "ILIĆ", "ime": "IVO FANO", "mjestoRod": "Vis", "godRod": "10.9.1862.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 38,
 		"image": "img/svjetionicari/Ilic_Ivan.png",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "prije 1884.", "rbr": 1},
@@ -381,7 +381,7 @@
 		]
 	},
 	{
-		"prezime": "USMIANI", "ime": "IVAN", "rodjen": "Rab", "umro": "", "misc": "", "id": 39,
+		"prezime": "USMIANI", "ime": "IVAN", "mjestoRod": "Rab", "godRod": "", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 39,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "prije 1911.", "rbr": 1},
@@ -392,7 +392,7 @@
 		]
 	},
 	{
-		"prezime": "SUŠAN", "ime": "NIKOLA", "rodjen": "Makarska 30.11.1869.", "umro": "", "misc": "", "id": 40,
+		"prezime": "SUŠAN", "ime": "NIKOLA", "mjestoRod": "Makarska", "godRod": "30.11.1869.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 40,
 		"image": "img/svjetionicari/Susan_Nikola.png",
 		"karijera": [
 			{"svjetionik": "NERETVA UŠĆE", "period": "11.5.1895.", "rbr": 1},
@@ -405,7 +405,7 @@
 		]
 	},
 	{
-		"prezime": "MIHOVILOVIĆ", "ime": "ANTON", "rodjen": "Premantura 12.1.1880.", "umro": "", "misc": "", "id": 41,
+		"prezime": "MIHOVILOVIĆ", "ime": "ANTON", "mjestoRod": "Premantura", "godRod": "12.1.1880.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 41,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "MULO", "period": "1908.", "rbr": 1},
@@ -419,7 +419,7 @@
 		]
 	},
 	{
-		"prezime": "RAGUSIN", "ime": "JOSIP", "rodjen": "Puntanera 26.10.1882.", "umro": "", "misc": "", "id": 42,
+		"prezime": "RAGUSIN", "ime": "JOSIP", "mjestoRod": "Puntanera", "godRod": "26.10.1882.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 42,
 		"image": "img/svjetionicari/Ragusin_Josip.png",
 		"karijera": [
 			{"svjetionik": "GALIOLA", "period": "10.9.1901.", "rbr": 1},
@@ -433,7 +433,7 @@
 		]
 	},
 	{
-		"prezime": "CAPUZZO", "ime": "ANTONIO", "rodjen": "Pašman?", "umro": "", "misc": "", "id": 43,
+		"prezime": "CAPUZZO", "ime": "ANTONIO", "mjestoRod": "Pašman", "godRod": "", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 43,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "brod N3", "period": "22.2.1910.", "rbr": 1},
@@ -446,7 +446,7 @@
 		]
 	},
 	{
-		"prezime": "ARMANINI", "ime": "ANTONIO", "rodjen": "Sali 20.2.1872.", "umro": "", "misc": "", "id": 44,
+		"prezime": "ARMANINI", "ime": "ANTONIO", "mjestoRod": "Sali", "godRod": "20.2.1872.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 44,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "TAJER", "period": "1.4.1900.", "rbr": 1},
@@ -456,7 +456,7 @@
 		]
 	},
 	{
-		"prezime": "ZUANIĆ", "ime": "ANTE", "rodjen": "Komiža 1872.", "umro": "", "misc": "", "id": 45,
+		"prezime": "ZUANIĆ", "ime": "ANTE", "mjestoRod": "Komiža", "godRod": "1872.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 45,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "SUŠAC", "period": "6.5.1900.", "rbr": 1},
@@ -468,7 +468,7 @@
 		]
 	},
 	{
-		"prezime": "PUŠIĆ-HERENDA", "ime": "ANTUN", "rodjen": "Vis 7.4.1881.", "umro": "", "misc": "", "id": 46,
+		"prezime": "PUŠIĆ-HERENDA", "ime": "ANTUN", "mjestoRod": "Vis", "godRod": "7.4.1881.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 46,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "između 1911. i 1913.", "rbr": 1},
@@ -480,7 +480,7 @@
 		]
 	},
 	{
-		"prezime": "SIMINIATI", "ime": "IVAN", "rodjen": "Vis 1894.", "umro": "", "misc": "", "id": 47,
+		"prezime": "SIMINIATI", "ime": "IVAN", "mjestoRod": "Vis", "godRod": "1894.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 47,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STONČICA", "period": "5.6.1913. - rat", "rbr": 1},
@@ -489,7 +489,7 @@
 		]
 	},
 	{
-		"prezime": "DARLIĆ", "ime": "STJEPAN", "rodjen": "Vis 12.10.1896.", "umro": "ožujak 1944.", "misc": "", "id": 48,
+		"prezime": "DARLIĆ", "ime": "STJEPAN", "mjestoRod": "Vis", "godRod": "12.10.1896.", "mjestoPrem": "", "godPrem": "ožujak 1944.", "misc": "", "id": 48,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "VELI RAT", "period": "1921", "rbr": 1},
@@ -498,7 +498,7 @@
 		]
 	},
 		{
-		"prezime": "BRALIĆ", "ime": "IVAN", "rodjen": "Rukavac-Vis 2.7.1905.", "umro": "22.1.1995.", "misc": "", "id": 49,
+		"prezime": "BRALIĆ", "ime": "IVAN", "mjestoRod": "Rukavac-Vis", "godRod": "2.7.1905.", "mjestoPrem": "", "godPrem": "22.1.1995.", "misc": "", "id": 49,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "SV. ANDRIJA", "period": "9.2.1934.", "rbr": 1},
@@ -512,7 +512,7 @@
 		]
 	},
 	{
-		"prezime": "STANOJEVIĆ", "ime": "NIKOLA", "rodjen": "", "umro": "", "misc": "", "id": 50,
+		"prezime": "STANOJEVIĆ", "ime": "NIKOLA", "mjestoRod": "", "godRod": "", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 50,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PALAGRUŽA", "period": "prije 1953", "rbr": 1},
@@ -520,7 +520,7 @@
 		]
 	},
 	{
-		"prezime": "BOŽIČEVIĆ", "ime": "ANTE", "rodjen": "Sestrunj 1920.", "umro": "", "misc": "", "id": 51,
+		"prezime": "BOŽIČEVIĆ", "ime": "ANTE", "mjestoRod": "Sestrunj", "godRod": "1920.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 51,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "POKONJI DOL", "period": "1.8.1948.", "rbr": 1},
@@ -531,7 +531,7 @@
 		]
 	},
 	{
-		"prezime": "TONDINI", "ime": "BARTUL", "rodjen": "Starigrad-Hvar 1903.", "umro": "", "misc": "", "id": 52,
+		"prezime": "TONDINI", "ime": "BARTUL", "mjestoRod": "Starigrad-Hvar", "godRod": "1903.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 52,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STARIGRAD LI", "period": "1.7.1950.", "rbr": 1},
@@ -542,7 +542,7 @@
 		]
 	},
 	{
-		"prezime": "NOVACCO",	"ime": "MATTEO",	"rodjen": "",	"umro": "",	"misc": "M",	"id": 53,
+		"prezime": "NOVACCO",	"ime": "MATTEO",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 53,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PORER", "period": "16.11.1874.", "rbr": 1},
@@ -552,7 +552,7 @@
 		]
 	},
 	{
-		"prezime": "MIŠKOVIĆ",	"ime": "GREGORIO",	"rodjen": "Ližnjan 21.2.1856.",	"umro": "",	"misc": "M",	"id": 54,
+		"prezime": "MIŠKOVIĆ",	"ime": "GREGORIO",	"mjestoRod": "Ližnjan", "godRod": "21.2.1856.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 54,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "MARLERA", "period": "1883", "rbr": 1},
@@ -560,7 +560,7 @@
 		]
 	},
 	{
-		"prezime": "MIKOVILOVIĆ",	"ime": "ANTONIO (Matejev)",	"rodjen": "Premantura",	"umro": "",	"misc": "M",	"id": 55,
+		"prezime": "MIKOVILOVIĆ",	"ime": "ANTONIO (Matejev)",	"mjestoRod": "Premantura", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 55,
 		"image": "img/svjetionicari/Mikovilovich_Antonio.png",
 		"karijera": [
 			{"svjetionik": "MARLERA", "period": "6/1984", "rbr": 1},
@@ -573,7 +573,7 @@
 		]
 	},
 	{
-		"prezime": "LESIĆ",	"ime": "ANTON",	"rodjen": "Lastovo 10.6.1888.",	"umro": "",	"misc": "M",	"id": 56,
+		"prezime": "LESIĆ",	"ime": "ANTON",	"mjestoRod": "Lastovo", "godRod": "10.6.1888.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 56,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "GLAVAT", "period": "20.6.1907.", "rbr": 1},
@@ -588,7 +588,7 @@
 		]
 	},
 	{
-		"prezime": "GIRALDI",	"ime": "DOMENICO",	"rodjen": "Piran",	"umro": "",	"misc": "M",	"id": 57,
+		"prezime": "GIRALDI",	"ime": "DOMENICO",	"mjestoRod": "Piran", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 57,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "STRUGA", "period": "23.12.1910.", "rbr": 1},
@@ -599,7 +599,7 @@
 		]
 	},
 	{
-		"prezime": "PIZZAMUS",	"ime": "ANTONIO",	"rodjen": "Oltra kod Muggia 1871.",	"umro": "",	"misc": "M",	"id": 58,
+		"prezime": "PIZZAMUS",	"ime": "ANTONIO",	"mjestoRod": "Oltra kod Muggia", "godRod": "1871.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 58,
 		"image": "img/svjetionicari/Pizzamus_Antonio.png",
 		"karijera": [
 			{"svjetionik": "TRSTENIK", "period": "1900", "rbr": 1},
@@ -614,7 +614,7 @@
 		]
 	},
 	{
-		"prezime": "PERUŠKO",	"ime": "OSKAR",	"rodjen": "Pula 1908.",	"umro": "",	"misc": "M",	"id": 59,
+		"prezime": "PERUŠKO",	"ime": "OSKAR",	"mjestoRod": "Pula", "godRod": "1908.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 59,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "VERUDELA", "period": "1947", "rbr": 1},
@@ -622,7 +622,7 @@
 		]
 	},
 	{
-		"prezime": "MEZULIĆ",	"ime": "LJUDEVIT",	"rodjen": "Premantura 21.4.1907",	"umro": "26.7.1973. Pula",	"misc": "M",	"id": 60,
+		"prezime": "MEZULIĆ",	"ime": "LJUDEVIT",	"mjestoRod": "Premantura", "godRod": "21.4.1907",	"mjestoPrem": "Pula", "godPrem": "26.7.1973.",	"misc": "M",	"id": 60,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PORER", "period": "27.3.1947", "rbr": 1},
@@ -631,7 +631,7 @@
 		]
 	},
 	{
-		"prezime": "KOSTEŠIĆ",	"ime": "IVAN",	"rodjen": "Ližnjan 1919.",	"umro": "",	"misc": "M",	"id": 61,
+		"prezime": "KOSTEŠIĆ",	"ime": "IVAN",	"mjestoRod": "Ližnjan", "godRod": "1919.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 61,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "MORTAR", "period": "1.9.1951.", "rbr": 1},
@@ -641,7 +641,7 @@
 		]
 	},
 	{
-		"prezime": "TURČINOV",	"ime": "ŠIME (ŠKODA)",	"rodjen": "Murter 10.10.1919.",	"umro": "Pula 8.11.1985.",	"misc": "M",	"id": 62,
+		"prezime": "TURČINOV",	"ime": "ŠIME (ŠKODA)",	"mjestoRod": "Murter", "godRod": "10.10.1919.",	"mjestoPrem": "Pula", "godPrem": "8.11.1985.",	"misc": "M",	"id": 62,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "PALAGRUŽA", "period": " 10.10.1947.", "rbr": 1},
@@ -654,7 +654,7 @@
 		]
 	},
 	{
-		"prezime": "PAIĆ",	"ime": "MIHOVIL",	"rodjen": "",	"umro": "",	"misc": "",	"id": 63,
+		"prezime": "PAIĆ",	"ime": "MIHOVIL",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 63,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "DRVENIK GREBENI", "period": "1873", "rbr": 1},
@@ -666,7 +666,7 @@
 		]
 	},
 	{
-		"prezime": "VLAHOVIĆ",	"ime": "DOMENICO",	"rodjen": "",	"umro": "",	"misc": "",	"id": 64,
+		"prezime": "VLAHOVIĆ",	"ime": "DOMENICO",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 64,
 		"image": "img/svjetionicari/Vlahovic_Domenico.png",
 		"karijera": [
 			{"svjetionik": "SV. PETAR", "period": "prije 1892.", "rbr": 1},
@@ -675,7 +675,7 @@
 		]
 	},
 	{
-		"prezime": "KOLUDROVIĆ",	"ime": "PETAR",	"rodjen": "Jelsa 1823",	"umro": "Makarska 22.4.1896.",	"misc": "",	"id": 65,
+		"prezime": "KOLUDROVIĆ",	"ime": "PETAR",	"mjestoRod": "Jelsa", "godRod": "1823",	"mjestoPrem": "Makarska", "godPrem": "22.4.1896.",	"misc": "",	"id": 65,
 		"image": "img/svjetionicari/Koludrovic_Petar.png",
 		"karijera": [
 			{"svjetionik": "PLOČICA", "period": "1893.", "rbr": 1},
@@ -683,7 +683,7 @@
 		]
 	},
 		{
-		"prezime": "NOVAKOVIĆ",	"ime": "DUJAM",	"rodjen": "Vrlika 1859.",	"umro": "",	"misc": "",	"id": 66,
+		"prezime": "NOVAKOVIĆ",	"ime": "DUJAM",	"mjestoRod": "Vrlika", "godRod": "1859.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 66,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "LUCIETA", "period": "23.12.1888.", "rbr": 1},
@@ -694,7 +694,7 @@
 		]
 	},
 	{
-		"prezime": "BEGOVIĆ",	"ime": "FABIJAN",	"rodjen": "Donje selo Šolta",	"umro": "",	"misc": "",	"id": 67,
+		"prezime": "BEGOVIĆ",	"ime": "FABIJAN",	"mjestoRod": "Donje selo Šolta", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 67,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "VELI RAT", "period": "1924.", "rbr": 1},
@@ -702,7 +702,7 @@
 		]
 	},
 	{
-		"prezime": "LOVIĆ",	"ime": "J. ANDRIJA",	"rodjen": "Igrane 1913.",	"umro": "",	"misc": "",	"id": 68,
+		"prezime": "LOVIĆ",	"ime": "J. ANDRIJA",	"mjestoRod": "Igrane", "godRod": "1913.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 68,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "HVAR LK", "period": "31.10.1949.", "rbr": 1},
@@ -713,7 +713,7 @@
 		]
 	},
 	{
-		"prezime": "KAPITELI",	"ime": "LUCIJANO",	"rodjen": "Lastovo 1901.",	"umro": "",	"misc": "",	"id": 69,
+		"prezime": "KAPITELI",	"ime": "LUCIJANO",	"mjestoRod": "Lastovo", "godRod": "1901.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 69,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "SUŠAC", "period": "1925.", "rbr": 1},
@@ -725,7 +725,7 @@
 		]
 	},
 	{
-		"prezime": "MILOŠEVIĆ",	"ime": "Š. TONČI",	"rodjen": "Gradac 2.11.1919.",	"umro": "Makarska 2002.",	"misc": "",	"id": 70,
+		"prezime": "MILOŠEVIĆ",	"ime": "Š. TONČI",	"mjestoRod": "Gradac", "godRod": "2.11.1919.",	"mjestoPrem": "Makarska", "godPrem": "2002.",	"misc": "",	"id": 70,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "GRUICA", "period": "7/1949", "rbr": 1},
@@ -734,7 +734,7 @@
 		]
 	},
 	{
-		"prezime": "ANĐELIĆ",	"ime": "S. MIJO",	"rodjen": "Vinišče 1907.",	"umro": "",	"misc": "",	"id": 71,
+		"prezime": "ANĐELIĆ",	"ime": "S. MIJO",	"mjestoRod": "Vinišče", "godRod": "1907.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 71,
 		"image": "",
 		"karijera": [
 			{"svjetionik": "MURVICA", "period": "1948", "rbr": 1},

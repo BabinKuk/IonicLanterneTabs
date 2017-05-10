@@ -1,6 +1,9 @@
 .background, .background .pane, .background .item, .background .item-complex .item-content, .list .item.item-stable {
     background-color: #f8f8f8;
 }
+.background .item-divider{
+	background-color: #eeeeee;
+}
 div>.row{
 	background-color: #f8f8f8;
 }
@@ -130,6 +133,13 @@ div>.row:last-child{
     margin-bottom: 0;
 }
 */
+
+.custom-divider{
+	font-size: 24px;
+	text-transform: capitalize;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
 .details-grid {
 	display: table-cell;
