@@ -382,7 +382,7 @@ angular.module('lanterna.controllers', [])
 	//check id first
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
-		console.log('SvjetionicariDetailCtrl beforeEnter');
+		//console.log('SvjetionicariDetailCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
 
@@ -419,20 +419,30 @@ angular.module('lanterna.controllers', [])
 			});
 	}
 	
+	//display details in outside ng-repeat markup
+	$scope.itemToDisplay = null;
+	
 	/*
 	* toggle functions
 	* if given group is the selected group, deselect it
 	* else, select the given group
 	*/
 	$scope.toggleGroup = function(group) {
+		console.log('in toggle ', group);
 		if ($scope.isGroupShown(group)) {
+			console.log('close');
 			$scope.shownGroup = null;
+			$scope.itemToDisplay = null;
 		} else {
+			console.log('open');
 			$scope.shownGroup = group;
+			$scope.itemToDisplay = group;
 		}
+		console.log($scope.itemToDisplay);
 	};
 	
 	$scope.isGroupShown = function(group) {
+		//console.log('isGroupShown', group);
 		return $scope.shownGroup === group;
 	};
 })

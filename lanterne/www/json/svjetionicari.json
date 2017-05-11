@@ -43,8 +43,7 @@
 			{"svjetionik": "TRSTENIK", "period": "12.7.1960.", "rbr": 4},
 			{"svjetionik": "PENEDA", "period": "9.10.1962.", "rbr": 5},
 			{"svjetionik": "SUSAK", "period": "1.9.1970.", "rbr": 6},
-			{"svjetionik": "VNETAK", "period": "1.10.1977.-03.5.1982.", "rbr": 7},
-			{"svjetionik": "", "period": "Invalidska mirovina", "rbr": 8}
+			{"svjetionik": "VNETAK", "period": "1.10.1977.-03.5.1982., invalidska mirovina", "rbr": 7}
 		]
 	},
 	{
@@ -110,7 +109,7 @@
 			{"svjetionik": "PORER", "period": "1902.", "rbr": 3},
 			{"svjetionik": "PENEDA", "period": "oko 1905.", "rbr": 4},
 			{"svjetionik": "ZAGLAV", "period": "oko 1908.", "rbr": 5},
-			{"svjetionik": "SUSAK", "period": "10.3.1912.-15.5.1912. premještaj ili otkaz zbog političkog agitiranj (član je talijanaške stranke), zbog političkih prodika otjeran i sa Zaglava", "rbr": 6}
+			{"svjetionik": "SUSAK", "period": "10.3.1912.-15.5.1912. premještaj ili otkaz zbog političkog agitiranja (član je talijanaške stranke), zbog političkih prodika otjeran i sa Zaglava", "rbr": 6}
 		]
 	},
 	{

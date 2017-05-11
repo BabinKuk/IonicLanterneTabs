@@ -97,7 +97,7 @@ angular.module('lanterna.services', [])
 	}
 	
 	function findByName(ime, prezime, mjesto, option) {
-		console.log('in findByName ' + ime + ', ' + prezime + ', ' + mjesto + ', ' + option);
+		//console.log('in findByName ' + ime + ', ' + prezime + ', ' + mjesto + ', ' + option);
 		
 		//async function to know when the data has arrived
 		var deffered = $q.defer();
