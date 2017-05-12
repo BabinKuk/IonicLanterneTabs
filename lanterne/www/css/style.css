@@ -13,6 +13,7 @@ ion-scroll[direction=y] {
 	height: calc(100vh - 33px - 33px - 90px - 15px);
 	padding: 10px;
 	padding-top: 0;
+	padding-bottom: 10px;
 }
 
 /* custom boja za tabove */
@@ -51,7 +52,7 @@ div>.row:last-child{
 	margin-bottom: 0px;
 }
 .list:last-child.card {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 /* custom img aspect ratio for item-thumbnails */
