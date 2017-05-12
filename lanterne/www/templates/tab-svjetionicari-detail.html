@@ -6,7 +6,7 @@
 -->
 <ion-view>
 	<ion-nav-title>{{person.ime}} {{person.prezime}}</ion-nav-title>
-	<ion-content class="padding has-tabs-bottom has-footer">
+	<ion-content class="padding has-tabs-bottom has-footer" scroll="false">
 		
 		<div class="row responsive-lg">
 			<div class="col col-50">
@@ -23,77 +23,84 @@
 			</div>
 		
 			<div class="col col-50">
-				<div class="list card">
-					<div class="item item-divider cust-item-divider sub-header-detail">
-						Mjesto i godina rođenja
-					</div>
-					<div class="item item-text-wrap sub-detail">
-						{{person.mjestoRod}} {{person.godRod}}
+				<ion-scroll delegate-handle="taskScroll" direction="y">
+					<div class="list card">
+						<div class="item item-divider cust-item-divider sub-header-detail">
+							Mjesto i godina rođenja
+						</div>
+						<div class="item item-text-wrap sub-detail">
+							{{person.mjestoRod}} {{person.godRod}}
+						</div>
+						
+						<div class="item item-divider cust-item-divider sub-header-detail">
+							Mjesto i godina smrti
+						</div>
+						<div class="item item-text-wrap sub-detail">
+							{{person.mjestoPrem}} {{person.godPrem}}
+						</div>
 					</div>
 					
-					<div class="item item-divider cust-item-divider sub-header-detail">
-						Mjesto i godina smrti
-					</div>
-					<div class="item item-text-wrap sub-detail">
-						{{person.mjestoPrem}} {{person.godPrem}}
-					</div>
-				</div>
-				
-				<div class="list card">
-					<div class="row item item-divider cust-item-divider sub-header-detail">
-						<div class="col col-33">Svjetionici</div>
-						<!--div class="col">Dolazak</div>
-						<div class="col">Svjetionik</div>
-						<div class="col">Odlazak</div>
-						<div class="col">Svjetionik</div-->
-					</div>
-				
-					<!-- START KOMENT ova tabela se koristi samo uz getLanternForPerson($stateParams.id) -->
-					<!-- podaci se dohvacaju iz svjetionici.json -->
-					<!-- START KOMENT ion-list>
-						<div ng-repeat="svjetionik in svjetionici track by $index">
-							<ion-item class="item item-stable background" ng-click="toggleGroup(svjetionik)">
-								<i class="icon" ng-class="isGroupShown(svjetionik) ? 'ion-minus' : 'ion-plus'"></i>
-								&nbsp;
-								{{svjetionik.name}}
-							</ion-item>
-							<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
-								
-								<div id="details-sub-header" class="row row-center item item-divider sub-header-detail">
-									<div class="col col-33 details-grid">Svjetionik</div>
-									<div class="col col-33 details-grid">Dolazak</div>
-									<div class="col col-33 details-grid">Odlazak</div>
-								</div>
-								<div id="details-row" class="row item-text-wrap button-bar">
-									<div class="col col-33 "><a class="button button-calm" ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.name}}</a></div>
-									<div class="col cell-border">{{svjetionik.personDetails.dolazak}}</div>
-									<div class="col cell-border">{{svjetionik.personDetails.odlazak}}</div>
-								</div>
-							</ion-item>
+					<div class="list card">
+						<div class="row item item-divider cust-item-divider sub-header-detail">
+							<div class="col col-33">Svjetionici</div>
+							<!--div class="col">Dolazak</div>
+							<div class="col">Svjetionik</div>
+							<div class="col">Odlazak</div>
+							<div class="col">Svjetionik</div-->
 						</div>
-					</ion-list  END KOMENT -->
 					
-					<!-- podaci se dohvacaju iz svjetionicari.json -->					
-					<ion-list>
-						<div ng-repeat="svjetionik in person.karijera track by $index">
-							<ion-item class="item item-stable background item-details-padding" ng-click="toggleGroup(svjetionik)">
-								<i class="icon" ng-class="isGroupShown(svjetionik) ? 'ion-minus' : 'ion-plus'"></i>
-								&nbsp;
-								{{svjetionik.svjetionik}}
-							</ion-item>
-							<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
-								<div id="details-sub-header" class="row row-center item item-divider sub-header-detail">
-									<div class="col col-33 details-grid">Svjetionik</div>
-									<div class="col col-67 details-grid">Vrijeme</div>
-								</div>
-								<div id="details-row" class="row item-text-wrap button-bar">
-									<div class="col col-33"><a class="button button-calm" ng-href="{{svjetionik.svjetionik != '' ? '#/tab/lanterne-list/' + svjetionik.svjetionik : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.svjetionik}}</a></div>
-									<div class="col col-67 cell-border">{{svjetionik.period}}</div>
-								</div>
-							</ion-item>
-						</div>
-					</ion-list>
-				</div>
+						<!-- START KOMENT ova tabela se koristi samo uz getLanternForPerson($stateParams.id) -->
+						<!-- podaci se dohvacaju iz svjetionici.json -->
+						<!-- START KOMENT ion-list>
+							<div ng-repeat="svjetionik in svjetionici track by $index">
+								<ion-item class="item item-stable background" ng-click="toggleGroup(svjetionik)">
+									<i class="icon" ng-class="isGroupShown(svjetionik) ? 'ion-minus' : 'ion-plus'"></i>
+									&nbsp;
+									{{svjetionik.name}}
+								</ion-item>
+								<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
+									
+									<div id="details-sub-header" class="row row-center item item-divider sub-header-detail">
+										<div class="col col-33 details-grid">Svjetionik</div>
+										<div class="col col-33 details-grid">Dolazak</div>
+										<div class="col col-33 details-grid">Odlazak</div>
+									</div>
+									<div id="details-row" class="row item-text-wrap button-bar">
+										<div class="col col-33 "><a class="button button-calm" ng-href="{{svjetionik.id != '' ? '#/tab/lanterne-list/' + svjetionik.name : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.name}}</a></div>
+										<div class="col cell-border">{{svjetionik.personDetails.dolazak}}</div>
+										<div class="col cell-border">{{svjetionik.personDetails.odlazak}}</div>
+									</div>
+								</ion-item>
+							</div>
+						</ion-list  END KOMENT -->
+						
+						<!-- podaci se dohvacaju iz svjetionicari.json -->					
+						<ion-list>
+							<div ng-repeat="svjetionik in person.karijera track by $index">
+								<ion-item class="item item-stable background item-details-padding" ng-click="toggleGroup(svjetionik)">
+									<i class="icon" ng-class="isGroupShown(svjetionik) ? 'ion-minus' : 'ion-plus'"></i>
+									&nbsp;
+									{{svjetionik.svjetionik}}
+								</ion-item>
+								<ion-item class="item-accordion" ng-show="isGroupShown(svjetionik)">
+									<div id="details-sub-header" class="row row-center item item-divider sub-header-detail">
+										<div class="col col-33 details-grid">Svjetionik</div>
+										<div class="col col-67 details-grid">Vrijeme</div>
+									</div>
+									<div id="details-row" class="row item-text-wrap button-bar">
+										<div class="width-33" ng-if="svjetionik.svjetionik != ''">
+											<div class="col col-33"><a class="button button-calm" ng-href="{{svjetionik.svjetionik != '' ? '#/tab/lanterne-list/' + svjetionik.svjetionik : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.svjetionik}}</a></div>
+										</div>
+										<div class="width-33" ng-if="svjetionik.svjetionik == ''">
+											<div class="col col-33">{{svjetionik.svjetionik}}</div>
+										</div>
+										<div class="col col-67 cell-border">{{svjetionik.period}}</div>
+									</div>
+								</ion-item>
+							</div>
+						</ion-list>
+					</div>
+				</ion-scroll>
 			</div>
 		</div>		
 				

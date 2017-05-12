@@ -9,6 +9,12 @@ div>.row{
 	background-color: #f8f8f8;
 }
 
+ion-scroll[direction=y] {
+	height: calc(100vh - 33px - 33px - 90px - 15px);
+	padding: 10px;
+	padding-top: 0;
+}
+
 /* custom boja za tabove */
 .tabs-striped.tabs-dark .tabs {
 	/*background-color: #657ba4;*/
@@ -183,11 +189,17 @@ div>.row:last-child{
 	margin-bottom: 5px;
 }
 
-#details-row > div {
+#details-row > div.width-20 {
 	display: table-cell;
-	/*border: 2px dotted red;*/
 	/*padding: 5px;*/
 	width: 20%;
+	/*margin-bottom: 0;*/
+}
+
+#details-row > div.width-33 {
+	display: table-cell;
+	/*padding: 5px;*/
+	width: 33%;
 	/*margin-bottom: 0;*/
 }
 /*Flexbox vertical height classes*/
