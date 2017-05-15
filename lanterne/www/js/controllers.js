@@ -359,16 +359,22 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-//ako se nece koristiti list ekran, moze se maknuti
+
 .controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {
 	//console.log('SvjetionicariListCtrl');
+	//console.log($stateParams);
 	
-	getAll();
+	if($stateParams.name != undefined || $stateParams.name != ''){
+		//dohvati listu svjetionicara
+		getPersonList($stateParams.id, $stateParams.name);
+	}
 	
 	//handler function
-	function getAll() {
+	function getPersonList(id, mjesto) {
 		//call service
-		SvjetionicariList.all()
+		//console.log('getPersonList ' + id + ' ' + mjesto);
+		// pretraga samo po mjestu (vidi u SvjetionicariCtrl, option 4)
+		SvjetionicariList.find('', '', mjesto, 4)
 			.then(function(response){
 				//lista svjetionicara
 				$scope.people = response; //assign data here to your $scope object
@@ -376,6 +382,7 @@ angular.module('lanterna.controllers', [])
 				console.log(error);
 			});
 	}
+
 })
 
 .controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {

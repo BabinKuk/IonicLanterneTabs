@@ -1,14 +1,45 @@
 <ion-view view-title="Svjetioničari">
 	<ion-content class="padding has-tabs-bottom has-footer">
-		<ion-list>
-			<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-				<img ng-src="{{svjetionicar.image}}">
-				<div id="item-name">
-					{{svjetionicar.ime}} {{svjetionicar.prezime}}
-				</div>
-				<!--p>{{svjetionicar.prezime}}</p-->
-				<i class="icon ion-chevron-right icon-accessory"></i>
-			</ion-item>
-		</ion-list>
+			
+		<!--div class="item">
+			<h1>Svjetioničari</h1>
+		</div-->
+
+		<!-- style kao na home page div id="image-top-item" class="item">
+			<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
+		</div-->
+		<div class="row">
+			<div class="col col-50">
+				<ion-scroll delegate-handle="taskScroll" direction="y">
+					<div class="list card">
+						<div id="image-top-item" class="item">
+							<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
+						</div>
+					</div>
+				</ion-scroll>
+			</div>
+				
+			<div class="col col-50">
+				<ion-scroll delegate-handle="taskScroll" direction="y">
+					<div class="list card">	
+						<div class="clearfix">
+							<div class="item item-divider custom-divider">
+								Svjetioničari
+							</div>
+							<ion-list>
+								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
+									<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
+									<div id="item-name">
+										{{svjetionicar.ime}} {{svjetionicar.prezime}}
+									</div>
+									<i class="icon ion-chevron-right icon-accessory"></i>
+								</ion-item>
+							</ion-list>	
+						</div>
+					</div>
+				</ion-scroll>
+			</div>
+		</div>
+		
 	</ion-content>
 </ion-view>

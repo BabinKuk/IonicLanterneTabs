@@ -16,9 +16,12 @@
 							<img class="image-top" ng-src="{{person.image}}">
 						</div>
 					</div>
-					<div class="list card" ng-show="itemToDisplay">
-						<div id="image-top-item" class="item">
-							{{itemToDisplay}}
+					<div ng-show="itemToDisplay">
+						<!--{{itemToDisplay}}-->
+						<div class="list card" ng-if="itemToDisplay.image != ''">
+							<div id="image-top-item" class="item">
+								<img class="image-top" ng-src="{{itemToDisplay.image}}">
+							</div>
 						</div>
 					</div>
 				</ion-scroll>	
@@ -26,22 +29,73 @@
 		
 			<div class="col col-50">
 				<ion-scroll delegate-handle="taskScroll" direction="y">
+					<!-- MJESTO/GODINA RODJENJA/SMRTI -->
 					<div class="list card">
-						<div class="item item-divider cust-item-divider sub-header-detail">
-							Mjesto i godina rođenja
+						<!-- podaci s linkovima-->
+						<div class="row item item-divider cust-item-divider sub-header-detail">
+							<div class="col col-50 details-grid">Mjesto rođenja</div>
+							<div class="col col-50 details-grid">Godina rođenja</div>
 						</div>
-						<div class="item item-text-wrap sub-detail">
-							{{person.mjestoRod}} {{person.godRod}}
+						<ion-list>
+							<ion-item class="item-accordion">
+								<div id="birth-row" class="row item-text-wrap button-bar">
+									<div class="width-50" ng-if="person.mjestoRod != ''">
+										<div class="col col-50"><a class="button button-calm" ng-href="{{person.mjestoRod != '' ? '#/tab/svjetionicari-list/list/1/' + person.mjestoRod : '#/tab/svjetionicari-list/' + person.id}}">{{person.mjestoRod}}</a></div>
+									</div>
+									<div class="width-50" ng-if="person.mjestoRod == ''">
+										<div class="col col-50">{{person.mjestoRod}}</div>
+									</div>
+									<div class="col col-50 cell-border">{{person.godRod}}</div>
+								</div>
+							</ion-item>
+						</ion-list>
+						<div class="row item item-divider cust-item-divider sub-header-detail">
+							<div class="col col-50 details-grid">Mjesto smrti</div>
+							<div class="col col-50 details-grid">Godina smrti</div>
 						</div>
+						<ion-list>
+							<ion-item class="item-accordion">
+								<div id="birth-row" class="row item-text-wrap button-bar">
+									<div class="width-50" ng-if="person.mjestoPrem != ''">
+										<div class="col col-50"><a class="button button-calm" ng-href="{{person.mjestoPrem != '' ? '#/tab/svjetionicari-list/list/2/' + person.mjestoPrem : '#/tab/svjetionicari-list/' + person.id}}">{{person.mjestoPrem}}</a></div>
+									</div>
+									<div class="width-50" ng-if="person.mjestoPrem == ''">
+										<div class="col col-50">{{person.mjestoPrem}}</div>
+									</div>
+									<div class="col col-50 cell-border">{{person.godPrem}}</div>
+								</div>
+							</ion-item>
+						</ion-list>
 						
-						<div class="item item-divider cust-item-divider sub-header-detail">
-							Mjesto i godina smrti
+						<!--bez linkova samo podaci-->
+						<!--div class="row item item-divider cust-item-divider sub-header-detail">
+							<div class="col col-50 details-grid">Mjesto rođenja</div>
+							<div class="col col-50 details-grid">Godina rođenja</div>
 						</div>
-						<div class="item item-text-wrap sub-detail">
-							{{person.mjestoPrem}} {{person.godPrem}}
+						<ion-list>
+							<ion-item class="item-accordion">
+								<div id="birth-row" class="row item-text-wrap button-bar">
+									<div class="col col-50">{{person.mjestoRod}}</div>
+									<div class="col col-50 cell-border">{{person.godRod}}</div>
+								</div>
+							</ion-item>
+						</ion-list>
+						
+						<div class="row item item-divider cust-item-divider sub-header-detail">
+							<div class="col col-50 details-grid">Mjesto smrti</div>
+							<div class="col col-50 details-grid">Godina smrti</div>
 						</div>
+						<ion-list>
+							<ion-item class="item-accordion">
+								<div id="birth-row" class="row item-text-wrap button-bar">
+									<div class="col col-50">{{person.mjestoPrem}}</div>
+									<div class="col col-50 cell-border">{{person.godPrem}}</div>
+								</div>
+							</ion-item>
+						</ion-list-->
 					</div>
 					
+					<!-- SVJETIONICI -->
 					<div class="list card">
 						<div class="row item item-divider cust-item-divider sub-header-detail">
 							<div class="col col-33">Svjetionici</div>

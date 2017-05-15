@@ -30,7 +30,7 @@
 								<input type="text" ng-model="svjetionicar.prezime" placeholder="Prezime">
 							</label>
 							<label id="mjesto" name="mjesto" class="item-input-wrapper">
-								<input type="text" ng-model="svjetionicar.mjesto" placeholder="Mjesto rođenja">
+								<input type="text" ng-model="svjetionicar.mjesto" placeholder="Mjesto rođenja/smrti">
 							</label>
 						</div>
 						
@@ -56,10 +56,12 @@
 						</p-->
 						
 						<div ng-show="showResults" class="clearfix">
-							<div class="item">
-								<h1>Popis svjetioničara</h1>
-								<!--p>Nine Inch Nails</p-->
+							<div class="item item-divider custom-divider">
+								Svjetioničari
 							</div>
+							<!--div class="item">
+								<h1>Popis svjetioničara</h1>
+							</div-->
 							<ion-list>
 								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 									<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">

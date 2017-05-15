@@ -96,7 +96,7 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 		}
 	})
 	.state('tab.svjetionicari-list', {
-		url: '/svjetionicari-list',
+		url: '/svjetionicari-list/list/:id/:name',
 		views: {
 			'tab-svjetionicari': {
 				templateUrl: 'templates/tab-svjetionicari-list.html',

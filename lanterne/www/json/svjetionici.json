@@ -160,7 +160,7 @@
 	},
 	{
 		"id": 18, "name": "S. ANDREA PULA", "image": "",
-		"categoryId": "2", "categoryDesc": "Signalna svjetla",
+		"categoryId": "3", "categoryDesc": "Signalna svjetla",
 		"svjetionicari": [
 			{"rbr": 1, "id": 14, "prezime": "PREMATE", "ime": "GIOVANNI", "prevSvj": "", "dolazak": "sredina 1921.", "odlazak": "25.6.1921.", "nextSvj": "SINP", "desc": ""},
 			{"rbr": 2, "id": 10, "prezime": "MAUREL", "ime": "CHERUBINO", "prevSvj": "TRST", "dolazak": "23.6.1921.", "odlazak": "27.10.1922.", "nextSvj": "PORER", "desc": ""},
@@ -170,7 +170,7 @@
 	},
 	{
 		"id": 19, "name": "S.S. SV. ANA", "image": "",
-		"categoryId": "2", "categoryDesc": "Signalna svjetla",
+		"categoryId": "3", "categoryDesc": "Signalna svjetla",
 		"svjetionicari": [
 			{"rbr": 1, "id": 5, "prezime": "GAŠPARIĆ", "ime": "ALBIN", "prevSvj": "ZADAR SVJETLA", "dolazak": "22.1.1904.", "odlazak": "oko 3/1905.", "nextSvj": "", "desc": "otkaz"},
 			{"rbr": 2, "id": 18, "prezime": "STUPIN", "ime": "ANTONIO", "prevSvj": "PORER", "dolazak": "18.2.1920.", "odlazak": "nakon 9/1921.", "nextSvj": "", "desc": ""},
@@ -239,7 +239,7 @@
 	},
 	{
 		"id": 24, "name": "VELA LUKA", "image": "",
-		"categoryId": "3", "categoryDesc": "Lazareti",
+		"categoryId": "2", "categoryDesc": "Lazareti",
 		"svjetionicari": [
 			{"rbr": 1, "id": 10, "prezime": "MAUREL", "ime": "CHERUBINO", "prevSvj": "TRST", "dolazak": "23.6.1921.", "odlazak": "27.10.1922.", "nextSvj": "PORER", "desc": ""},
 			{"rbr": 2, "id": 6, "prezime": "JURLINA", "ime": "GIORGIO", "prevSvj": "PORER", "dolazak": "27.10.1922.", "odlazak": "", "nextSvj": "", "desc": ""},
@@ -274,7 +274,7 @@
 	},
 	{
 		"id": 27, "name": "TRST SVJETLA", "image": "",
-		"categoryId": "2", "categoryDesc": "Signalna svjetla",
+		"categoryId": "3", "categoryDesc": "Signalna svjetla",
 		"svjetionicari": [
 			{"rbr": 1, "id": 4, "prezime": "FATOVIĆ", "ime": "ZRENKO", "prevSvj": "TRSTENIK", "dolazak": "9.10.1962.", "odlazak": "01.9.1970.", "nextSvj": "SUSAK", "desc": ""},
 			{"rbr": 2, "id": 1, "prezime": "BUDIJA", "ime": "IVAN", "prevSvj": "PORER", "dolazak": "1.9.1970", "odlazak": "1976.", "nextSvj": "", "desc": "ostao raditi na Brionima"},
@@ -306,7 +306,7 @@
 	},
 	{
 		"id": 30, "name": "UBAS", "image": "",
-		"categoryId": "3", "categoryDesc": "Lazareti",
+		"categoryId": "2", "categoryDesc": "Lazareti",
 		"svjetionicari": [
 			{"rbr": 1, "id": 3, "prezime": "DESSANTI", "ime": "GIACOMO", "prevSvj": "LUCIETA", "dolazak": "između 6/1877 i 1879.", "odlazak": "10.12.1885.", "nextSvj": "MARLERA", "desc": ""},
 			{"rbr": 2, "id": 19, "prezime": "VENEZIA", "ime": "DOMENICO", "prevSvj": "", "dolazak": "1877.", "odlazak": "27.10.1885.", "nextSvj": "MARLERA", "desc": ""},

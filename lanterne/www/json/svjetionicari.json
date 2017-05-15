@@ -3,20 +3,20 @@
 		"prezime": "BUDIJA",	"ime": "IVAN",	"mjestoRod": "Vir", "godRod": "1935", "mjestoPrem": "", "godPrem": "2012",	"misc": "",	"id": 1,
 		"image": "img/svjetionicari/BUDIJA_IVAN.jpg",
 		"karijera": [
-			{"svjetionik": "GLAVAT", "period": "18.5.1964.", "rbr": 1},
-			{"svjetionik": "PORER", "period": "1.8.1966.", "rbr": 2},
-			{"svjetionik": "PENEDA", "period": "1.9.1970.- 1.11.1978.", "rbr": 3}
+			{"svjetionik": "GLAVAT", "period": "18.5.1964.", "image": "img/svjetionicari/BUDIJA_IVAN.jpg", "rbr": 1},
+			{"svjetionik": "PORER", "period": "1.8.1966.", "image": "img/svjetionicari/BUDIJA_IVAN.jpg", "rbr": 2},
+			{"svjetionik": "PENEDA", "period": "1.9.1970.- 1.11.1978.", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "BUSSANICH",	"ime": "ROMEO ANDRIJA",	"mjestoRod": "Susak", "godRod": "1875",	"mjestoPrem": "", "godPrem": "1957", "misc": "",	"id": 2,
 		"image": "img/svjetionicari/BUSSANICH_ROMEO_ANDRIJA.jpg",
 		"karijera": [
-			{"svjetionik": "MURVICA", "period": "2.6.1896.", "rbr": 1},
-			{"svjetionik": "LUCIETA", "period": "oko 1901.", "rbr": 2},
-			{"svjetionik": "SUŠAC", "period": "30.1.1904.", "rbr": 3},
-			{"svjetionik": "NERETVA", "period": "15.1.1906.- nakon 1908.", "rbr": 4},
-			{"svjetionik": "PENEDA", "period": "prije 1912.- nakon 1914.", "rbr": 5}
+			{"svjetionik": "MURVICA", "period": "2.6.1896.", "image": "img/svjetionicari/BUSSANICH_ROMEO_ANDRIJA.jpg", "rbr": 1},
+			{"svjetionik": "LUCIETA", "period": "oko 1901.", "image": "", "rbr": 2},
+			{"svjetionik": "SUŠAC", "period": "30.1.1904.", "image": "", "rbr": 3},
+			{"svjetionik": "NERETVA", "period": "15.1.1906.- nakon 1908.", "image": "img/svjetionicari/BUSSANICH_ROMEO_ANDRIJA.jpg", "rbr": 4},
+			{"svjetionik": "PENEDA", "period": "prije 1912.- nakon 1914.", "image": "", "rbr": 5}
 		]
 	},
 	{
@@ -28,336 +28,336 @@
 		"id": 3,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "LUCIETA", "period": "1873 - 1877", "rbr": 1},
-			{"svjetionik": "PENEDA", "period": "1878- oko 1885", "rbr": 2},
-			{"svjetionik": "MARLERA", "period": "oko 1886. - između 1889. i 1991", "rbr": 3}
+			{"svjetionik": "LUCIETA", "period": "1873 - 1877", "image": "", "rbr": 1},
+			{"svjetionik": "PENEDA", "period": "1878- oko 1885", "image": "img/svjetionicari/BUDIJA_IVAN.jpg", "rbr": 2},
+			{"svjetionik": "MARLERA", "period": "oko 1886. - između 1889. i 1991", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "FATOVIĆ",	"ime": "ZRENKO",	"mjestoRod": "SESTRUNJ", "godRod": "1929",	"mjestoPrem": "", "godPrem": "2000",	"misc": "",	"id": 4,
 		"image": "img/svjetionicari/FATOVIC_ZRENKO.jpg",
 		"karijera": [
-			{"svjetionik": "PELAGO", "period": "24.4.1953.", "rbr": 1},
-			{"svjetionik": "SUSAK", "period": "21.8.1953.", "rbr": 2},
-			{"svjetionik": "KOVAČINE", "period": "23.8.1959.", "rbr": 3},
-			{"svjetionik": "TRSTENIK", "period": "12.7.1960.", "rbr": 4},
-			{"svjetionik": "PENEDA", "period": "9.10.1962.", "rbr": 5},
-			{"svjetionik": "SUSAK", "period": "1.9.1970.", "rbr": 6},
-			{"svjetionik": "VNETAK", "period": "1.10.1977.-03.5.1982., invalidska mirovina", "rbr": 7}
+			{"svjetionik": "PELAGO", "period": "24.4.1953.", "image": "img/svjetionicari/FATOVIC_ZRENKO.jpg", "rbr": 1},
+			{"svjetionik": "SUSAK", "period": "21.8.1953.", "image": "", "rbr": 2},
+			{"svjetionik": "KOVAČINE", "period": "23.8.1959.", "image": "img/svjetionicari/FATOVIC_ZRENKO.jpg", "rbr": 3},
+			{"svjetionik": "TRSTENIK", "period": "12.7.1960.", "image": "", "rbr": 4},
+			{"svjetionik": "PENEDA", "period": "9.10.1962.", "image": "", "rbr": 5},
+			{"svjetionik": "SUSAK", "period": "1.9.1970.", "image": "img/svjetionicari/FATOVIC_ZRENKO.jpg", "rbr": 6},
+			{"svjetionik": "VNETAK", "period": "1.10.1977.-03.5.1982., invalidska mirovina", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "GAŠPARIĆ",	"ime": "ALBIN",	"mjestoRod": "LJUBLJANA", "godRod": "1866",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 5,
 		"image": "img/svjetionicari/GASPARIC_ALBIN.jpg",
 		"karijera": [
-			{"svjetionik": "ZADAR", "period": "svjetla 23.12.1901. – 1.1.1904.", "rbr": 1},
-			{"svjetionik": "PENEDA", "period": "29.1.1904. - 3/1905. otkaz PRELJUB sa Mizi", "rbr": 2}
+			{"svjetionik": "ZADAR", "period": "svjetla 23.12.1901. – 1.1.1904.", "image": "", "rbr": 1},
+			{"svjetionik": "PENEDA", "period": "29.1.1904. - 3/1905. otkaz PRELJUB sa Mizi", "image": "img/svjetionicari/GASPARIC_ALBIN.jpg", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "JURLINA",	"ime": "JURE",	"mjestoRod": "Premantura", "godRod": "1896",	"mjestoPrem": "", "godPrem": "",	"misc": "J",	"id": 6,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PORER", "period": "15.01.1920.", "rbr": 1},
-			{"svjetionik": "PENEDA", "period": "27.10.1922. - 1943?", "rbr": 2},
-			{"svjetionik": "PORER", "period": "3.7.1945. - 1947.?", "rbr": 3}
+			{"svjetionik": "PORER", "period": "15.01.1920.", "image": "", "rbr": 1},
+			{"svjetionik": "PENEDA", "period": "27.10.1922. - 1943?", "image": "", "rbr": 2},
+			{"svjetionik": "PORER", "period": "3.7.1945. - 1947.?", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "KAIĆ",	"ime": "IVAN",	"mjestoRod": "Valtura", "godRod": "oko 1920",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 7,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PENEDA", "period": "15.6.1951. - 2.7.1953.", "rbr": 1}
+			{"svjetionik": "PENEDA", "period": "15.6.1951. - 2.7.1953.", "image": "", "rbr": 1}
 		]
 	},
 	{
 		"prezime": "KUZMANIĆ",	"ime": "NIKOLA",	"mjestoRod": "Okrug Gornji–Čiovo", "godRod": "1915",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 8,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PENEDA", "period": "1.10.1947.", "rbr": 1},
-			{"svjetionik": "MULO", "period": "15.6.1951.", "rbr": 2},
-			{"svjetionik": "svjet. mj. Vela Luka", "period": "27.07.1953.-1969.?", "rbr": 3}
+			{"svjetionik": "PENEDA", "period": "1.10.1947.", "image": "", "rbr": 1},
+			{"svjetionik": "MULO", "period": "15.6.1951.", "image": "", "rbr": 2},
+			{"svjetionik": "svjet. mj. Vela Luka", "period": "27.07.1953.-1969.?", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "LAMPALOV",	"ime": "LOVRE",	"mjestoRod": "Lumbarda", "godRod": "1910",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 9,
 		"image": "img/svjetionicari/LAMPALOV_LOVRE.jpg",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "10.11.1933.  - nakon  5/1935.", "rbr": 1},
-			{"svjetionik": "Tisno lukobran svjetlo", "period": "29.2.1940. (preuzeo od okretačice mosta Dobrila Šoda žena Marka", "rbr": 2},
-			{"svjetionik": "Lučka ispostava", "period": "02.7.1945.", "rbr": 3},
-			{"svjetionik": "LUKOBRAN SPLIT", "period": "15.9.1947.", "rbr": 4},
-			{"svjetionik": "PENEDA", "period": "3.7.1953.-1969.?", "rbr": 5}
+			{"svjetionik": "STONČICA", "period": "10.11.1933.  - nakon  5/1935.", "image": "", "rbr": 1},
+			{"svjetionik": "Tisno lukobran svjetlo", "period": "29.2.1940. (preuzeo od okretačice mosta Dobrila Šoda žena Marka", "image": "", "rbr": 2},
+			{"svjetionik": "Lučka ispostava", "period": "02.7.1945.", "image": "", "rbr": 3},
+			{"svjetionik": "LUKOBRAN SPLIT", "period": "15.9.1947.", "image": "img/svjetionicari/LAMPALOV_LOVRE.jpg", "rbr": 4},
+			{"svjetionik": "PENEDA", "period": "3.7.1953.-1969.?", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "MAUREL",	"ime": "CHERUBINO",	"mjestoRod": "Savudrija", "godRod": "1894",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 10,
 		"image": "img/svjetionicari/MAUREL_CHERUBINO.jpg",
 		"karijera": [
-			{"svjetionik": "LUCIETA", "period": "19.01.1920.", "rbr": 1},
-			{"svjetionik": "TRST", "period": "29.05.1921.", "rbr": 2},
-			{"svjetionik": "PENEDA", "period": "23.6.1921.", "rbr": 3},
-			{"svjetionik": "PORER", "period": "28.10.1922.", "rbr": 4}
+			{"svjetionik": "LUCIETA", "period": "19.01.1920.", "image": "img/svjetionicari/MAUREL_CHERUBINO.jpg", "rbr": 1},
+			{"svjetionik": "TRST", "period": "29.05.1921.", "image": "img/svjetionicari/MAUREL_CHERUBINO.jpg", "rbr": 2},
+			{"svjetionik": "PENEDA", "period": "23.6.1921.", "image": "", "rbr": 3},
+			{"svjetionik": "PORER", "period": "28.10.1922.", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "NOVACCO",	"ime": "GIOVANNI",	"mjestoRod": "PULA", "godRod": "1873",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 11,
 		"image": "img/svjetionicari/NOVACCO_GIOVANNI.jpg",
 		"karijera": [
-			{"svjetionik": "COMPAR", "period": "1890-ih dok je bio na služenju vojnog roka", "rbr": 1},
-			{"svjetionik": "GALIOLA", "period": "8.8.1900.", "rbr": 2},
-			{"svjetionik": "PORER", "period": "1902.", "rbr": 3},
-			{"svjetionik": "PENEDA", "period": "oko 1905.", "rbr": 4},
-			{"svjetionik": "ZAGLAV", "period": "oko 1908.", "rbr": 5},
-			{"svjetionik": "SUSAK", "period": "10.3.1912.-15.5.1912. premještaj ili otkaz zbog političkog agitiranja (član je talijanaške stranke), zbog političkih prodika otjeran i sa Zaglava", "rbr": 6}
+			{"svjetionik": "COMPAR", "period": "1890-ih dok je bio na služenju vojnog roka", "image": "", "rbr": 1},
+			{"svjetionik": "GALIOLA", "period": "8.8.1900.", "image": "", "rbr": 2},
+			{"svjetionik": "PORER", "period": "1902.", "image": "img/svjetionicari/NOVACCO_GIOVANNI.jpg", "rbr": 3},
+			{"svjetionik": "PENEDA", "period": "oko 1905.", "image": "img/svjetionicari/NOVACCO_GIOVANNI.jpg", "rbr": 4},
+			{"svjetionik": "ZAGLAV", "period": "oko 1908.", "image": "", "rbr": 5},
+			{"svjetionik": "SUSAK", "period": "10.3.1912.-15.5.1912. premještaj ili otkaz zbog političkog agitiranja (član je talijanaške stranke), zbog političkih prodika otjeran i sa Zaglava", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "PICINIĆ",	"ime": "JOSIP",	"mjestoRod": "M. LOŠINJ", "godRod": "1877",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 12,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "TRSTENIK", "period": "4.4.1908.", "rbr": 1},
-			{"svjetionik": "TRST svjetla", "period": "12.11.1912.", "rbr": 2},
-			{"svjetionik": "PENEDA", "period": "28.3.1913.", "rbr": 3},
-			{"svjetionik": "UBAS", "period": "20.1.1920. -", "rbr": 4},
-			{"svjetionik": "", "period": "penzija 1921.", "rbr": 5}
+			{"svjetionik": "TRSTENIK", "period": "4.4.1908.", "image": "", "rbr": 1},
+			{"svjetionik": "TRST svjetla", "period": "12.11.1912.", "image": "", "rbr": 2},
+			{"svjetionik": "PENEDA", "period": "28.3.1913.", "image": "", "rbr": 3},
+			{"svjetionik": "UBAS", "period": "20.1.1920. -", "image": "", "rbr": 4},
+			{"svjetionik": "", "period": "penzija 1921.", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "PLESLIĆ",	"ime": "VJEKOSLAV",	"mjestoRod": "Murter", "godRod": "oko 1918",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 13,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "CRNA PUNTA", "period": "1953.", "rbr": 1},
-			{"svjetionik": "PENEDA", "period": "1959.-60.", "rbr": 2}
+			{"svjetionik": "CRNA PUNTA", "period": "1953.", "image": "", "rbr": 1},
+			{"svjetionik": "PENEDA", "period": "1959.-60.", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "PREMATE",	"ime": "IVAN",	"mjestoRod": "Ližnjan", "godRod": "1900",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 14,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PENEDA", "period": "1921.", "rbr": 1},
-			{"svjetionik": "PELAGO", "period": "1.7.1921.", "rbr": 2},
-			{"svjetionik": "PORER", "period": "15.7.1922. - 1943.?", "rbr": 3},
-			{"svjetionik": "PORER", "period": "3.8.1945. upr. na Poreru", "rbr": 4},
-			{"svjetionik": "PELAGO", "period": "1948.", "rbr": 5},
-			{"svjetionik": "", "period": "penzija 1955?.", "rbr": 6}
+			{"svjetionik": "PENEDA", "period": "1921.", "image": "", "rbr": 1},
+			{"svjetionik": "PELAGO", "period": "1.7.1921.", "image": "", "rbr": 2},
+			{"svjetionik": "PORER", "period": "15.7.1922. - 1943.?", "image": "", "rbr": 3},
+			{"svjetionik": "PORER", "period": "3.8.1945. upr. na Poreru", "image": "", "rbr": 4},
+			{"svjetionik": "PELAGO", "period": "1948.", "image": "", "rbr": 5},
+			{"svjetionik": "", "period": "penzija 1955?.", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "RADONIČIĆ",	"ime": "EUGEN",	"mjestoRod": "DOBROTA-CG", "godRod": "1874",	"mjestoPrem": "", "godPrem": "",	"misc": "N",	"id": 15,
 		"image": "img/svjetionicari/RADONICIC_EUGEN.jpg",
 		"karijera": [
-			{"svjetionik": "PORER", "period": "6.4.1895.", "rbr": 1},
-			{"svjetionik": "PENEDA", "period": "25.4.1905.", "rbr": 2},
-			{"svjetionik": "TRST TELEGRAF", "period": "1.1.1911.", "rbr": 3},
-			{"svjetionik": "", "period": "1.3.1919. je lučki čuvar u Novigradu", "rbr": 4}
+			{"svjetionik": "PORER", "period": "6.4.1895.", "image": "", "rbr": 1},
+			{"svjetionik": "PENEDA", "period": "25.4.1905.", "image": "img/svjetionicari/RADONICIC_EUGEN.jpg", "rbr": 2},
+			{"svjetionik": "TRST TELEGRAF", "period": "1.1.1911.", "image": "", "rbr": 3},
+			{"svjetionik": "", "period": "1.3.1919. je lučki čuvar u Novigradu", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "RADONIČIĆ",	"ime": "NIKOLA",	"mjestoRod": "DOBROTA-CG", "godRod": "1843",	"mjestoPrem": "", "godPrem": "1916",	"misc": "D",	"id": 16,
 		"image": "img/svjetionicari/RADONICIC_NIKOLA.jpg",
 		"karijera": [
-			{"svjetionik": "PENEDA", "period": "9.12.1885.", "rbr": 1},
-			{"svjetionik": "VERUDELA", "period": "27.1.1904. -31.8.1913.", "rbr": 2},
-			{"svjetionik": "", "period": "umro 1916. u Istri", "rbr": 3}
+			{"svjetionik": "PENEDA", "period": "9.12.1885.", "image": "", "rbr": 1},
+			{"svjetionik": "VERUDELA", "period": "27.1.1904. -31.8.1913.", "image": "img/svjetionicari/RADONICIC_EUGEN.jpg", "rbr": 2},
+			{"svjetionik": "", "period": "umro 1916. u Istri", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "SBISA",	"ime": "ANTONIO",	"mjestoRod": "ROVINJ", "godRod": "oko 1865",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 17,
 		"image": "img/svjetionicari/SBISA_ANTONIO.jpg",
 		"karijera": [
-			{"svjetionik": "LUCIETA", "period": "8.7.1890.", "rbr": 1},
-			{"svjetionik": "PELAGO", "period": "17.3.1898.", "rbr": 2},
-			{"svjetionik": "DENTE", "period": "1.1.1904.", "rbr": 3},
-			{"svjetionik": "PENEDA", "period": "oko 1907.", "rbr": 4},
-			{"svjetionik": "TRSTENIK", "period": "1911.", "rbr": 5},
-			{"svjetionik": "VERUDELA", "period": "2.10.1913 – 1917.", "rbr": 6}
+			{"svjetionik": "LUCIETA", "period": "8.7.1890.", "image": "img/svjetionicari/RADONICIC_EUGEN.jpg", "rbr": 1},
+			{"svjetionik": "PELAGO", "period": "17.3.1898.", "image": "", "rbr": 2},
+			{"svjetionik": "DENTE", "period": "1.1.1904.", "image": "", "rbr": 3},
+			{"svjetionik": "PENEDA", "period": "oko 1907.", "image": "", "rbr": 4},
+			{"svjetionik": "TRSTENIK", "period": "1911.", "image": "", "rbr": 5},
+			{"svjetionik": "VERUDELA", "period": "2.10.1913 – 1917.", "image": "img/svjetionicari/RADONICIC_EUGEN.jpg", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "STUPIN",	"ime": "ANTONIO",	"mjestoRod": "", "godRod": "oko 1880",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 18,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "SALVORE", "period": "prije 1912.", "rbr": 1},
-			{"svjetionik": "PORER", "period": "2.10.1913.", "rbr": 2},
-			{"svjetionik": "PENEDA", "period": "18.2.1920. - nakon 1923.", "rbr": 3}
+			{"svjetionik": "SALVORE", "period": "prije 1912.", "image": "", "rbr": 1},
+			{"svjetionik": "PORER", "period": "2.10.1913.", "image": "", "rbr": 2},
+			{"svjetionik": "PENEDA", "period": "18.2.1920. - nakon 1923.", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "VENEZIA",	"ime": "DOMENICO",	"mjestoRod": "", "godRod": "oko 1850",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 19,
 		"karijera": [
-			{"svjetionik": "PENEDA", "period": "? - 12.12.1885.", "rbr": 1},
-			{"svjetionik": "MARLERA", "period": "12.12.1885. - ?", "rbr": 2}
+			{"svjetionik": "PENEDA", "period": "? - 12.12.1885.", "image": "", "rbr": 1},
+			{"svjetionik": "MARLERA", "period": "12.12.1885. - ?", "image": "", "rbr": 2}
 		]
 	},
 	{	
 		"prezime": "ZAČEVIĆ",	"ime": "GIOVANNI",	"mjestoRod": "M. LOŠINJ", "godRod": "1876",	"mjestoPrem": "", "godPrem": "",	"misc": "S",	"id": 20,
 		"image": "img/svjetionicari/ZACEVIC_GIOVANNI.jpg",
 		"karijera": [
-			{"svjetionik": "ZAGLAV", "period": "1898.", "rbr": 1},
-			{"svjetionik": "GALIOLA", "period": "1900.", "rbr": 2},
-			{"svjetionik": "TRSTENIK", "period": "1902.", "rbr": 3},
-			{"svjetionik": "PENEDA", "period": "1910.", "rbr": 4}
+			{"svjetionik": "ZAGLAV", "period": "1898.", "image": "img/svjetionicari/ZACEVIC_GIOVANNI.jpg", "rbr": 1},
+			{"svjetionik": "GALIOLA", "period": "1900.", "image": "", "rbr": 2},
+			{"svjetionik": "TRSTENIK", "period": "1902.", "image": "", "rbr": 3},
+			{"svjetionik": "PENEDA", "period": "1910.", "image": "img/svjetionicari/ZACEVIC_GIOVANNI.jpg", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "ZULIANI",	"ime": "GIOVANNI",	"mjestoRod": "ROVINJ", "godRod": "oko 1850",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 21,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "", "period": "počeo 15.02.1878.", "rbr": 1},
-			{"svjetionik": "MARLERA", "period": "krajem 1884. -21.10.1885", "rbr": 2},
-			{"svjetionik": "PENEDA", "period": "12.12.1885. -", "rbr": 3},
-			{"svjetionik": "ZAGLAV", "period": "1892.", "rbr": 4},
-			{"svjetionik": "GRUICA", "period": "1893.", "rbr": 5},
-			{"svjetionik": "VOŠĆICA", "period": "16.6.1894.-11.11.1898.", "rbr": 6},
-			{"svjetionik": "SALVORE", "period": "23.12.1898.-", "rbr": 7},
-			{"svjetionik": "S. ANDREA PULA", "period": "oko 1902.", "rbr": 8},
-			{"svjetionik": "PENEDA", "period": "1.3.1905.", "rbr": 9},
-			{"svjetionik": "S. ANDREA PULA", "period": "29.4.1905.", "rbr": 10},
-			{"svjetionik": "", "period": "1912. PENZIJA", "rbr": 11}
+			{"svjetionik": "", "period": "počeo 15.02.1878.", "image": "", "rbr": 1},
+			{"svjetionik": "MARLERA", "period": "krajem 1884. -21.10.1885", "image": "", "rbr": 2},
+			{"svjetionik": "PENEDA", "period": "12.12.1885. -", "image": "", "rbr": 3},
+			{"svjetionik": "ZAGLAV", "period": "1892.", "image": "", "rbr": 4},
+			{"svjetionik": "GRUICA", "period": "1893.", "image": "", "rbr": 5},
+			{"svjetionik": "VOŠĆICA", "period": "16.6.1894.-11.11.1898.", "image": "", "rbr": 6},
+			{"svjetionik": "SALVORE", "period": "23.12.1898.-", "image": "", "rbr": 7},
+			{"svjetionik": "S. ANDREA PULA", "period": "oko 1902.", "image": "", "rbr": 8},
+			{"svjetionik": "PENEDA", "period": "1.3.1905.", "image": "", "rbr": 9},
+			{"svjetionik": "S. ANDREA PULA", "period": "29.4.1905.", "image": "", "rbr": 10},
+			{"svjetionik": "", "period": "1912. PENZIJA", "image": "", "rbr": 11}
 		]
 	},
 	{
 		"prezime": "ŽEPINA",	"ime": "MIRO",	"mjestoRod": "VIR", "godRod": "1940",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 22,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "SUSAK", "period": "10.7.1964.", "rbr": 1},
-			{"svjetionik": "PRESTENICE", "period": "1.11.1968.", "rbr": 2},
-			{"svjetionik": "STRAŽICA", "period": "1.4.1971.", "rbr": 3},
-			{"svjetionik": "PELAGO", "period": "1.11.1971.", "rbr": 4},
-			{"svjetionik": "PENEDA", "period": "12.11.1978.", "rbr": 5},
-			{"svjetionik": "S.S. SV. ANA", "period": "6.10.1984.", "rbr": 6}
+			{"svjetionik": "SUSAK", "period": "10.7.1964.", "image": "", "rbr": 1},
+			{"svjetionik": "PRESTENICE", "period": "1.11.1968.", "image": "", "rbr": 2},
+			{"svjetionik": "STRAŽICA", "period": "1.4.1971.", "image": "", "rbr": 3},
+			{"svjetionik": "PELAGO", "period": "1.11.1971.", "image": "", "rbr": 4},
+			{"svjetionik": "PENEDA", "period": "12.11.1978.", "image": "", "rbr": 5},
+			{"svjetionik": "S.S. SV. ANA", "period": "6.10.1984.", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "ŽERAVICA",	"ime": "ANTE",	"mjestoRod": "Murter", "godRod": "1921",	"mjestoPrem": "", "godPrem": "1999",	"misc": "G",	"id": 23,
 		"image": "img/svjetionicari/ZERAVICA_ANTE.jpg",
 		"karijera": [
-			{"svjetionik": "PENEDA", "period": "1947.", "rbr": 1},
-			{"svjetionik": "MARLERA", "period": "1953-1966.", "rbr": 2},
-			{"svjetionik": "PORER", "period": "na zamjeni 1966. Plava vrpca!", "rbr": 3},
-			{"svjetionik": "", "period": "Kasnije mornar na brodu do penzije 1971.", "rbr": 4}
+			{"svjetionik": "PENEDA", "period": "1947.", "image": "", "rbr": 1},
+			{"svjetionik": "MARLERA", "period": "1953-1966.", "image": "", "rbr": 2},
+			{"svjetionik": "PORER", "period": "na zamjeni 1966. Plava vrpca!", "image": "", "rbr": 3},
+			{"svjetionik": "", "period": "Kasnije mornar na brodu do penzije 1971.", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "MARIANI",	"ime": "FRANE",	"mjestoRod": "Komiža", "godRod": "23.11.1842",	"mjestoPrem": "", "godPrem": "10.10.1918.",	"misc": "G",	"id": 24,
 		"image": "img/svjetionicari/Mariani_Frane.png",
 		"karijera": [
-			{"svjetionik": "PALAGRUŽA", "period": "16.5.1875.", "rbr": 1},
-			{"svjetionik": "TAJER", "period": "1883", "rbr": 2},
-			{"svjetionik": "RAŽANJ", "period": "1886 - umro", "rbr": 3}
+			{"svjetionik": "PALAGRUŽA", "period": "16.5.1875.", "image": "", "rbr": 1},
+			{"svjetionik": "TAJER", "period": "1883", "image": "img/svjetionicari/Mariani_Frane.png", "rbr": 2},
+			{"svjetionik": "RAŽANJ", "period": "1886 - umro", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "BURIĆ",	"ime": "JOSIP",	"mjestoRod": "Donje selo Šolta", "godRod": "1.3.1875.",	"mjestoPrem": "", "godPrem": "",	"misc": "G",	"id": 25,
 		"image": "img/svjetionicari/Buric_Josip.png",
 		"karijera": [
-			{"svjetionik": "PALAGRUŽA", "period": "27.9.1906.", "rbr": 1},
-			{"svjetionik": "MURVICA", "period": "2.10.1913.", "rbr": 2},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 3},
-			{"svjetionik": "SPLIT LUKOBRAN", "period": "", "rbr": 4}
+			{"svjetionik": "PALAGRUŽA", "period": "27.9.1906.", "image": "img/svjetionicari/Buric_Josip.png", "rbr": 1},
+			{"svjetionik": "MURVICA", "period": "2.10.1913.", "image": "img/svjetionicari/Buric_Josip.png", "rbr": 2},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "img/svjetionicari/Buric_Josip.png", "rbr": 3},
+			{"svjetionik": "SPLIT LUKOBRAN", "period": "", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "LAMPALOV",	"ime": "ŠIME",	"mjestoRod": "Tisno", "godRod": "28.10.1881.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 26,
 		"image": "img/svjetionicari/Lampalov_Sime.png",
 		"karijera": [
-			{"svjetionik": "GLAVAT", "period": "5/1908.", "rbr": 1},
-			{"svjetionik": "LUCIETA", "period": "1.8.1920.", "rbr": 2},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 3}
+			{"svjetionik": "GLAVAT", "period": "5/1908.", "image": "", "rbr": 1},
+			{"svjetionik": "LUCIETA", "period": "1.8.1920.", "image": "", "rbr": 2},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "ZANETIĆ",	"ime": "JURAJ",	"mjestoRod": "Tisno", "godRod": "28.10.1881.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 27,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 1},
-			{"svjetionik": "JADRIJA", "period": "1.10.1948.", "rbr": 2},
-			{"svjetionik": "VNETAK", "period": "1.9.1955.- 1974. penzija", "rbr": 3}
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 1},
+			{"svjetionik": "JADRIJA", "period": "1.10.1948.", "image": "", "rbr": 2},
+			{"svjetionik": "VNETAK", "period": "1.9.1955.- 1974. penzija", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "PRIZMIĆ",	"ime": "PETAR",	"mjestoRod": "Vela Luka", "godRod": "1907",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 28,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "TRI SESTRICE", "period": "29.8.1949.", "rbr": 1},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 2}
+			{"svjetionik": "TRI SESTRICE", "period": "29.8.1949.", "image": "", "rbr": 1},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "PRIZMIĆ",	"ime": "FRANKO",	"mjestoRod": "Vela Luka", "godRod": "1934",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 29,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "SPLIT POMORAC", "period": "1962.", "rbr": 1},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 2}
+			{"svjetionik": "SPLIT POMORAC", "period": "1962.", "image": "", "rbr": 1},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "GOLEŠ",	"ime": "JURE",	"mjestoRod": "Smokvica kod Šibenika", "godRod": "1931",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 30,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "LUCIETA", "period": "1.5.1963.", "rbr": 1},
-			{"svjetionik": "TRSTENIK", "period": "30.9.1965.", "rbr": 2},
-			{"svjetionik": "GLAVAT", "period": "7.8.1969.", "rbr": 3},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 4},
-			{"svjetionik": "SPLIT LUKOBRAN", "period": "29.2.1992.", "rbr": 5}
+			{"svjetionik": "LUCIETA", "period": "1.5.1963.", "image": "", "rbr": 1},
+			{"svjetionik": "TRSTENIK", "period": "30.9.1965.", "image": "", "rbr": 2},
+			{"svjetionik": "GLAVAT", "period": "7.8.1969.", "image": "", "rbr": 3},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 4},
+			{"svjetionik": "SPLIT LUKOBRAN", "period": "29.2.1992.", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "SMOLJAN",	"ime": "STJEPAN",	"mjestoRod": "Tkon", "godRod": "1954",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 31,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "Gruica", "period": "15.10.1976.", "rbr": 1},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 2}
+			{"svjetionik": "Gruica", "period": "15.10.1976.", "image": "", "rbr": 1},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "KUŠČEVIĆ",	"ime": "IVAN",	"mjestoRod": "Milna", "godRod": "1941",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 32,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "MULO", "period": "1.10.1965.", "rbr": 1},
-			{"svjetionik": "GRUICA", "period": "12.9.1967.", "rbr": 2},
-			{"svjetionik": "STONČICA", "period": "1.2.1971.", "rbr": 3},
-			{"svjetionik": "SV. ANDRIJA", "period": "1.9.1972.", "rbr": 4},
-			{"svjetionik": "GOMENA", "period": "1.10.1975.", "rbr": 5},
-			{"svjetionik": "OŠTRO KRALJEVICA", "period": "1.2.1981.", "rbr": 6},
-			{"svjetionik": "RAŽANJ", "period": "penzija", "rbr": 7}
+			{"svjetionik": "MULO", "period": "1.10.1965.", "image": "", "rbr": 1},
+			{"svjetionik": "GRUICA", "period": "12.9.1967.", "image": "", "rbr": 2},
+			{"svjetionik": "STONČICA", "period": "1.2.1971.", "image": "", "rbr": 3},
+			{"svjetionik": "SV. ANDRIJA", "period": "1.9.1972.", "image": "", "rbr": 4},
+			{"svjetionik": "GOMENA", "period": "1.10.1975.", "image": "", "rbr": 5},
+			{"svjetionik": "OŠTRO KRALJEVICA", "period": "1.2.1981.", "image": "", "rbr": 6},
+			{"svjetionik": "RAŽANJ", "period": "penzija", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "BARABA",	"ime": "PERO",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 33,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PLOVPUT", "period": "", "rbr": 1},
-			{"svjetionik": "RAŽANJ", "period": "2002", "rbr": 2}
+			{"svjetionik": "PLOVPUT", "period": "", "image": "", "rbr": 1},
+			{"svjetionik": "RAŽANJ", "period": "2002", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "BAKOTA",	"ime": "DUBRAVKO-DUKA",	"mjestoRod": "Dubrovnik", "godRod": "14.1.1954.",	"mjestoPrem": "Ražanj", "godPrem": "25.12.2012",	"misc": "",	"id": 34,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "TAJER", "period": "12/1994", "rbr": 1},
-			{"svjetionik": "LUCIETA", "period": "3/1995", "rbr": 2},
-			{"svjetionik": "RAŽANJ", "period": "kraj 1998", "rbr": 3}
+			{"svjetionik": "TAJER", "period": "12/1994", "image": "", "rbr": 1},
+			{"svjetionik": "LUCIETA", "period": "3/1995", "image": "", "rbr": 2},
+			{"svjetionik": "RAŽANJ", "period": "kraj 1998", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "PRSKALO",	"ime": "MARIOFIL",	"mjestoRod": "Čapljina (BiH)", "godRod": "29.11.1956.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 35,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "1.10.1983.", "rbr": 1},
-			{"svjetionik": "TAJER", "period": "14.9.1984.", "rbr": 2},
-			{"svjetionik": "SUĆURAJ", "period": "1.7.1990.", "rbr": 3},
-			{"svjetionik": "STONČICA", "period": "21.9.1992.", "rbr": 4},
-			{"svjetionik": "RAŽANJ", "period": "", "rbr": 5}
+			{"svjetionik": "STONČICA", "period": "1.10.1983.", "image": "", "rbr": 1},
+			{"svjetionik": "TAJER", "period": "14.9.1984.", "image": "", "rbr": 2},
+			{"svjetionik": "SUĆURAJ", "period": "1.7.1990.", "image": "", "rbr": 3},
+			{"svjetionik": "STONČICA", "period": "21.9.1992.", "image": "", "rbr": 4},
+			{"svjetionik": "RAŽANJ", "period": "", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "TOMIĆ", "ime": "IVO", "mjestoRod": "Vis", "godRod": "28.8.1833.", "mjestoPrem": "Host", "godPrem": "14.8.1874.", "misc": "", "id": 36,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "1866", "rbr": 1},
-			{"svjetionik": "HOST", "period": "6/1873.", "rbr": 2}
+			{"svjetionik": "STONČICA", "period": "1866", "image": "", "rbr": 1},
+			{"svjetionik": "HOST", "period": "6/1873.", "image": "", "rbr": 2}
 		]
 	},
 	{
@@ -370,377 +370,377 @@
 		"prezime": "ILIĆ", "ime": "IVO FANO", "mjestoRod": "Vis", "godRod": "10.9.1862.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 38,
 		"image": "img/svjetionicari/Ilic_Ivan.png",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "prije 1884.", "rbr": 1},
-			{"svjetionik": "OŠTRO KRALJEVICA", "period": "1891", "rbr": 2},
-			{"svjetionik": "SUŠAC", "period": "1899", "rbr": 3},
-			{"svjetionik": "LUKOBRAN SPLIT", "period": "4/1906.", "rbr": 4},
-			{"svjetionik": "HOST", "period": "", "rbr": 5},
-			{"svjetionik": "LAZARET MUGGIA", "period": "", "rbr": 6},
-			{"svjetionik": "VERUDELA", "period": "prije 7/1919-1.6.1923. penzija", "rbr": 7}
+			{"svjetionik": "STONČICA", "period": "prije 1884.", "image": "", "rbr": 1},
+			{"svjetionik": "OŠTRO KRALJEVICA", "period": "1891", "image": "", "rbr": 2},
+			{"svjetionik": "SUŠAC", "period": "1899", "image": "", "rbr": 3},
+			{"svjetionik": "LUKOBRAN SPLIT", "period": "4/1906.", "image": "", "rbr": 4},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 5},
+			{"svjetionik": "LAZARET MUGGIA", "period": "", "image": "", "rbr": 6},
+			{"svjetionik": "VERUDELA", "period": "prije 7/1919-1.6.1923. penzija", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "USMIANI", "ime": "IVAN", "mjestoRod": "Rab", "godRod": "", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 39,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "prije 1911.", "rbr": 1},
-			{"svjetionik": "HOST", "period": "1914 - 22.5.1915", "rbr": 2},
-			{"svjetionik": "TAJER", "period": "prije 6/1920", "rbr": 3},
-			{"svjetionik": "LUCIETA", "period": "1923 - 1926", "rbr": 4},
-			{"svjetionik": "VELI RAT", "period": "1928 - između 1934. i 11/1935", "rbr": 5}
+			{"svjetionik": "STONČICA", "period": "prije 1911.", "image": "", "rbr": 1},
+			{"svjetionik": "HOST", "period": "1914 - 22.5.1915", "image": "", "rbr": 2},
+			{"svjetionik": "TAJER", "period": "prije 6/1920", "image": "", "rbr": 3},
+			{"svjetionik": "LUCIETA", "period": "1923 - 1926", "image": "", "rbr": 4},
+			{"svjetionik": "VELI RAT", "period": "1928 - između 1934. i 11/1935", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "SUŠAN", "ime": "NIKOLA", "mjestoRod": "Makarska", "godRod": "30.11.1869.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 40,
 		"image": "img/svjetionicari/Susan_Nikola.png",
 		"karijera": [
-			{"svjetionik": "NERETVA UŠĆE", "period": "11.5.1895.", "rbr": 1},
-			{"svjetionik": "SUŠAC", "period": "15.1.1906.", "rbr": 2},
-			{"svjetionik": "LUCIETA", "period": "prije 7/1908", "rbr": 3},
-			{"svjetionik": "POKONJI DOL", "period": "prije 6/1910", "rbr": 4},
-			{"svjetionik": "SUŠAC", "period": "između 1912. i 1914.", "rbr": 5},
-			{"svjetionik": "HOST", "period": "", "rbr": 6},
-			{"svjetionik": "MURVICA", "period": "15.6.1918. - nakon 4/1922, penzija", "rbr": 7}
+			{"svjetionik": "NERETVA UŠĆE", "period": "11.5.1895.", "image": "", "rbr": 1},
+			{"svjetionik": "SUŠAC", "period": "15.1.1906.", "image": "", "rbr": 2},
+			{"svjetionik": "LUCIETA", "period": "prije 7/1908", "image": "", "rbr": 3},
+			{"svjetionik": "POKONJI DOL", "period": "prije 6/1910", "image": "", "rbr": 4},
+			{"svjetionik": "SUŠAC", "period": "između 1912. i 1914.", "image": "", "rbr": 5},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 6},
+			{"svjetionik": "MURVICA", "period": "15.6.1918. - nakon 4/1922, penzija", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "MIHOVILOVIĆ", "ime": "ANTON", "mjestoRod": "Premantura", "godRod": "12.1.1880.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 41,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "MULO", "period": "1908.", "rbr": 1},
-			{"svjetionik": "UBAŠ", "period": "3.9.1909.", "rbr": 2},
-			{"svjetionik": "HOST", "period": "", "rbr": 3},
-			{"svjetionik": "STONČICA", "period": "prije 6/1910", "rbr": 4},
-			{"svjetionik": "OLIPA", "period": "nakon 7/1920", "rbr": 5},
-			{"svjetionik": "GREBENI", "period": "1.10.1923.", "rbr": 6},
-			{"svjetionik": "SV. ANDRIJA", "period": "16.11.1926.", "rbr": 7},
-			{"svjetionik": "DAKSA", "period": "1.10.1934. - oko 1936. penzija?", "rbr": 8}
+			{"svjetionik": "MULO", "period": "1908.", "image": "", "rbr": 1},
+			{"svjetionik": "UBAŠ", "period": "3.9.1909.", "image": "", "rbr": 2},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 3},
+			{"svjetionik": "STONČICA", "period": "prije 6/1910", "image": "", "rbr": 4},
+			{"svjetionik": "OLIPA", "period": "nakon 7/1920", "image": "", "rbr": 5},
+			{"svjetionik": "GREBENI", "period": "1.10.1923.", "image": "", "rbr": 6},
+			{"svjetionik": "SV. ANDRIJA", "period": "16.11.1926.", "image": "", "rbr": 7},
+			{"svjetionik": "DAKSA", "period": "1.10.1934. - oko 1936. penzija?", "image": "", "rbr": 8}
 		]
 	},
 	{
 		"prezime": "RAGUSIN", "ime": "JOSIP", "mjestoRod": "Puntanera", "godRod": "26.10.1882.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 42,
 		"image": "img/svjetionicari/Ragusin_Josip.png",
 		"karijera": [
-			{"svjetionik": "GALIOLA", "period": "10.9.1901.", "rbr": 1},
-			{"svjetionik": "SUŠAC", "period": "15.1.1906.", "rbr": 2},
-			{"svjetionik": "ZAGLAV", "period": "1.7.1907.", "rbr": 3},
-			{"svjetionik": "STONČICA", "period": "prije 9/1909", "rbr": 4},
-			{"svjetionik": "MURVICA", "period": "1910", "rbr": 5},
-			{"svjetionik": "HOST", "period": "", "rbr": 6},
-			{"svjetionik": "SUĆURAJ", "period": "", "rbr": 7},
-			{"svjetionik": "SV. PETAR", "period": "1.10.1923. -1929. penzija?", "rbr": 8}
+			{"svjetionik": "GALIOLA", "period": "10.9.1901.", "image": "", "rbr": 1},
+			{"svjetionik": "SUŠAC", "period": "15.1.1906.", "image": "", "rbr": 2},
+			{"svjetionik": "ZAGLAV", "period": "1.7.1907.", "image": "", "rbr": 3},
+			{"svjetionik": "STONČICA", "period": "prije 9/1909", "image": "", "rbr": 4},
+			{"svjetionik": "MURVICA", "period": "1910", "image": "", "rbr": 5},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 6},
+			{"svjetionik": "SUĆURAJ", "period": "", "image": "", "rbr": 7},
+			{"svjetionik": "SV. PETAR", "period": "1.10.1923. -1929. penzija?", "image": "", "rbr": 8}
 		]
 	},
 	{
 		"prezime": "CAPUZZO", "ime": "ANTONIO", "mjestoRod": "Pašman", "godRod": "", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 43,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "brod N3", "period": "22.2.1910.", "rbr": 1},
-			{"svjetionik": "SV. ANDRIJA", "period": "2.10.1913.", "rbr": 2},
-			{"svjetionik": "BABAC", "period": "6.6.1914.", "rbr": 3},
-			{"svjetionik": "STRUGA", "period": "20.9.1917.", "rbr": 4},
-			{"svjetionik": "HOST", "period": "", "rbr": 5},
-			{"svjetionik": "BABAC", "period": "2. put", "rbr": 6},
-			{"svjetionik": "PULA SVJETLA", "period": "20.10.1922- nakon 1923.", "rbr": 7}
+			{"svjetionik": "brod N3", "period": "22.2.1910.", "image": "", "rbr": 1},
+			{"svjetionik": "SV. ANDRIJA", "period": "2.10.1913.", "image": "", "rbr": 2},
+			{"svjetionik": "BABAC", "period": "6.6.1914.", "image": "", "rbr": 3},
+			{"svjetionik": "STRUGA", "period": "20.9.1917.", "image": "", "rbr": 4},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 5},
+			{"svjetionik": "BABAC", "period": "2. put", "image": "", "rbr": 6},
+			{"svjetionik": "PULA SVJETLA", "period": "20.10.1922- nakon 1923.", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "ARMANINI", "ime": "ANTONIO", "mjestoRod": "Sali", "godRod": "20.2.1872.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 44,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "TAJER", "period": "1.4.1900.", "rbr": 1},
-			{"svjetionik": "BABAC", "period": "20.9.1917.", "rbr": 2},
-			{"svjetionik": "HOST", "period": "", "rbr": 3},
-			{"svjetionik": "SPLIT LUKOBRAN", "period": "nakon 1923.", "rbr": 4}
+			{"svjetionik": "TAJER", "period": "1.4.1900.", "image": "", "rbr": 1},
+			{"svjetionik": "BABAC", "period": "20.9.1917.", "image": "", "rbr": 2},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 3},
+			{"svjetionik": "SPLIT LUKOBRAN", "period": "nakon 1923.", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "ZUANIĆ", "ime": "ANTE", "mjestoRod": "Komiža", "godRod": "1872.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 45,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "SUŠAC", "period": "6.5.1900.", "rbr": 1},
-			{"svjetionik": "PALAGRUŽA", "period": "1.6.1906.", "rbr": 2},
-			{"svjetionik": "SV. ANDRIJA", "period": "", "rbr": 3},
-			{"svjetionik": "SUŠAC", "period": "2. put", "rbr": 4},
-			{"svjetionik": "PALAGRUŽA", "period": "2.put. 1.5.1913., Zarobljen 22.5.1915.", "rbr": 5},
-			{"svjetionik": "HOST", "period": "", "rbr": 6}
+			{"svjetionik": "SUŠAC", "period": "6.5.1900.", "image": "", "rbr": 1},
+			{"svjetionik": "PALAGRUŽA", "period": "1.6.1906.", "image": "", "rbr": 2},
+			{"svjetionik": "SV. ANDRIJA", "period": "", "image": "", "rbr": 3},
+			{"svjetionik": "SUŠAC", "period": "2. put", "image": "", "rbr": 4},
+			{"svjetionik": "PALAGRUŽA", "period": "2.put. 1.5.1913., Zarobljen 22.5.1915.", "image": "", "rbr": 5},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "PUŠIĆ-HERENDA", "ime": "ANTUN", "mjestoRod": "Vis", "godRod": "7.4.1881.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 46,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "između 1911. i 1913.", "rbr": 1},
-			{"svjetionik": "STRUGA", "period": "30.6.1918.", "rbr": 2},
-			{"svjetionik": "LUCIETA", "period": "", "rbr": 3},
-			{"svjetionik": "STONČICA", "period": "2. put 20.6.1920.", "rbr": 4},
-			{"svjetionik": "HOST", "period": "", "rbr": 5},
-			{"svjetionik": "SUŠAK LUKOBRAN", "period": "15.11.1933. - 1946. penzija", "rbr": 6}
+			{"svjetionik": "STONČICA", "period": "između 1911. i 1913.", "image": "", "rbr": 1},
+			{"svjetionik": "STRUGA", "period": "30.6.1918.", "image": "", "rbr": 2},
+			{"svjetionik": "LUCIETA", "period": "", "image": "", "rbr": 3},
+			{"svjetionik": "STONČICA", "period": "2. put 20.6.1920.", "image": "", "rbr": 4},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 5},
+			{"svjetionik": "SUŠAK LUKOBRAN", "period": "15.11.1933. - 1946. penzija", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "SIMINIATI", "ime": "IVAN", "mjestoRod": "Vis", "godRod": "1894.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 47,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STONČICA", "period": "5.6.1913. - rat", "rbr": 1},
-			{"svjetionik": "JADRIJA", "period": "1922", "rbr": 2},
-			{"svjetionik": "HOST", "period": "1933", "rbr": 3}
+			{"svjetionik": "STONČICA", "period": "5.6.1913. - rat", "image": "", "rbr": 1},
+			{"svjetionik": "JADRIJA", "period": "1922", "image": "", "rbr": 2},
+			{"svjetionik": "HOST", "period": "1933", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "DARLIĆ", "ime": "STJEPAN", "mjestoRod": "Vis", "godRod": "12.10.1896.", "mjestoPrem": "", "godPrem": "ožujak 1944.", "misc": "", "id": 48,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "VELI RAT", "period": "1921", "rbr": 1},
-			{"svjetionik": "STONČICA", "period": "1928", "rbr": 2},
-			{"svjetionik": "HOST", "period": "1935-1944", "rbr": 3}
+			{"svjetionik": "VELI RAT", "period": "1921", "image": "", "rbr": 1},
+			{"svjetionik": "STONČICA", "period": "1928", "image": "", "rbr": 2},
+			{"svjetionik": "HOST", "period": "1935-1944", "image": "", "rbr": 3}
 		]
 	},
 		{
 		"prezime": "BRALIĆ", "ime": "IVAN", "mjestoRod": "Rukavac-Vis", "godRod": "2.7.1905.", "mjestoPrem": "", "godPrem": "22.1.1995.", "misc": "", "id": 49,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "SV. ANDRIJA", "period": "9.2.1934.", "rbr": 1},
-			{"svjetionik": "JADRIJA", "period": "1937", "rbr": 2},
-			{"svjetionik": "STONČICA", "period": "1939", "rbr": 3},
-			{"svjetionik": "MURVICA", "period": "1941-10.11.1943", "rbr": 4},
-			{"svjetionik": "HOST", "period": "", "rbr": 5},
-			{"svjetionik": "STONČICA", "period": "2. put 15.8.1954.", "rbr": 6},
-			{"svjetionik": "POKONJI DOL", "period": "25.7.1959.", "rbr": 7},
-			{"svjetionik": "STONČICA", "period": "3. put 5.8.1961. - prije 1969.", "rbr": 8}
+			{"svjetionik": "SV. ANDRIJA", "period": "9.2.1934.", "image": "", "rbr": 1},
+			{"svjetionik": "JADRIJA", "period": "1937", "image": "", "rbr": 2},
+			{"svjetionik": "STONČICA", "period": "1939", "image": "", "rbr": 3},
+			{"svjetionik": "MURVICA", "period": "1941-10.11.1943", "image": "", "rbr": 4},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 5},
+			{"svjetionik": "STONČICA", "period": "2. put 15.8.1954.", "image": "", "rbr": 6},
+			{"svjetionik": "POKONJI DOL", "period": "25.7.1959.", "image": "", "rbr": 7},
+			{"svjetionik": "STONČICA", "period": "3. put 5.8.1961. - prije 1969.", "image": "", "rbr": 8}
 		]
 	},
 	{
 		"prezime": "STANOJEVIĆ", "ime": "NIKOLA", "mjestoRod": "", "godRod": "", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 50,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PALAGRUŽA", "period": "prije 1953", "rbr": 1},
-			{"svjetionik": "HOST", "period": "", "rbr": 2}
+			{"svjetionik": "PALAGRUŽA", "period": "prije 1953", "image": "", "rbr": 1},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "BOŽIČEVIĆ", "ime": "ANTE", "mjestoRod": "Sestrunj", "godRod": "1920.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 51,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "POKONJI DOL", "period": "1.8.1948.", "rbr": 1},
-			{"svjetionik": "TAJER", "period": "15.7.1952.", "rbr": 2},
-			{"svjetionik": "TRI SESTRICE", "period": "28.11.1959.", "rbr": 3},
-			{"svjetionik": "HOST", "period": "", "rbr": 4},
-			{"svjetionik": "S.S. SV. ANA", "period": "1.7.1980. penzija", "rbr": 5}
+			{"svjetionik": "POKONJI DOL", "period": "1.8.1948.", "image": "", "rbr": 1},
+			{"svjetionik": "TAJER", "period": "15.7.1952.", "image": "", "rbr": 2},
+			{"svjetionik": "TRI SESTRICE", "period": "28.11.1959.", "image": "", "rbr": 3},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 4},
+			{"svjetionik": "S.S. SV. ANA", "period": "1.7.1980. penzija", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "TONDINI", "ime": "BARTUL", "mjestoRod": "Starigrad-Hvar", "godRod": "1903.", "mjestoPrem": "", "godPrem": "", "misc": "", "id": 52,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STARIGRAD LI", "period": "1.7.1950.", "rbr": 1},
-			{"svjetionik": "GLAVAT", "period": "1.9.1952.", "rbr": 2},
-			{"svjetionik": "POKONJI DOL", "period": "14.2.1956.", "rbr": 3},
-			{"svjetionik": "STONČICA", "period": "1.1.1961.", "rbr": 4},
-			{"svjetionik": "HOST", "period": "", "rbr": 5}
+			{"svjetionik": "STARIGRAD LI", "period": "1.7.1950.", "image": "", "rbr": 1},
+			{"svjetionik": "GLAVAT", "period": "1.9.1952.", "image": "", "rbr": 2},
+			{"svjetionik": "POKONJI DOL", "period": "14.2.1956.", "image": "", "rbr": 3},
+			{"svjetionik": "STONČICA", "period": "1.1.1961.", "image": "", "rbr": 4},
+			{"svjetionik": "HOST", "period": "", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "NOVACCO",	"ime": "MATTEO",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 53,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PORER", "period": "16.11.1874.", "rbr": 1},
-			{"svjetionik": "VERUDELA", "period": "", "rbr": 2},
-			{"svjetionik": "SAVUDRIJA", "period": "kraj 1894.", "rbr": 3},
-			{"svjetionik": "VERUDELA", "period": "2. put", "rbr": 4}
+			{"svjetionik": "PORER", "period": "16.11.1874.", "image": "", "rbr": 1},
+			{"svjetionik": "VERUDELA", "period": "", "image": "", "rbr": 2},
+			{"svjetionik": "SAVUDRIJA", "period": "kraj 1894.", "image": "", "rbr": 3},
+			{"svjetionik": "VERUDELA", "period": "2. put", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "MIŠKOVIĆ",	"ime": "GREGORIO",	"mjestoRod": "Ližnjan", "godRod": "21.2.1856.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 54,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "MARLERA", "period": "1883", "rbr": 1},
-			{"svjetionik": "VERUDELA", "period": "", "rbr": 2}
+			{"svjetionik": "MARLERA", "period": "1883", "image": "", "rbr": 1},
+			{"svjetionik": "VERUDELA", "period": "", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "MIKOVILOVIĆ",	"ime": "ANTONIO (Matejev)",	"mjestoRod": "Premantura", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 55,
 		"image": "img/svjetionicari/Mikovilovich_Antonio.png",
 		"karijera": [
-			{"svjetionik": "MARLERA", "period": "6/1984", "rbr": 1},
-			{"svjetionik": "PORER", "period": "17.8.1895.", "rbr": 2},
-			{"svjetionik": "PELAGO", "period": "17.8.1895.", "rbr": 3},
-			{"svjetionik": "VERUDELA", "period": "", "rbr": 4},
-			{"svjetionik": "SAVUDRIJA", "period": "27.1.1904.", "rbr": 5},
-			{"svjetionik": "PORER", "period": "2. put 11.7.1909.", "rbr": 6},
-			{"svjetionik": "PORER", "period": "2. put 12.8.1911.", "rbr": 7}
+			{"svjetionik": "MARLERA", "period": "6/1984", "image": "", "rbr": 1},
+			{"svjetionik": "PORER", "period": "17.8.1895.", "image": "", "rbr": 2},
+			{"svjetionik": "PELAGO", "period": "17.8.1895.", "image": "", "rbr": 3},
+			{"svjetionik": "VERUDELA", "period": "", "image": "", "rbr": 4},
+			{"svjetionik": "SAVUDRIJA", "period": "27.1.1904.", "image": "", "rbr": 5},
+			{"svjetionik": "PORER", "period": "2. put 11.7.1909.", "image": "", "rbr": 6},
+			{"svjetionik": "PORER", "period": "2. put 12.8.1911.", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "LESIĆ",	"ime": "ANTON",	"mjestoRod": "Lastovo", "godRod": "10.6.1888.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 56,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "GLAVAT", "period": "20.6.1907.", "rbr": 1},
-			{"svjetionik": "PORER", "period": "26.7.1908.", "rbr": 2},
-			{"svjetionik": "TRST SKLADIŠTE", "period": "oko 1910.", "rbr": 3},
-			{"svjetionik": "VERUDELA", "period": "", "rbr": 4},
-			{"svjetionik": "GLAVAT", "period": "2. put 2.10.1913.", "rbr": 5},
-			{"svjetionik": "SUŠAC", "period": "kraj 1919.", "rbr": 6},
-			{"svjetionik": "LUCIETA", "period": "22.5.1921.", "rbr": 7},
-			{"svjetionik": "MULO", "period": "1923.", "rbr": 8},
-			{"svjetionik": "DONJA SLANO", "period": " 31.12.1927. - nakon 1939.", "rbr": 9}
+			{"svjetionik": "GLAVAT", "period": "20.6.1907.", "image": "", "rbr": 1},
+			{"svjetionik": "PORER", "period": "26.7.1908.", "image": "", "rbr": 2},
+			{"svjetionik": "TRST SKLADIŠTE", "period": "oko 1910.", "image": "", "rbr": 3},
+			{"svjetionik": "VERUDELA", "period": "", "image": "", "rbr": 4},
+			{"svjetionik": "GLAVAT", "period": "2. put 2.10.1913.", "image": "", "rbr": 5},
+			{"svjetionik": "SUŠAC", "period": "kraj 1919.", "image": "", "rbr": 6},
+			{"svjetionik": "LUCIETA", "period": "22.5.1921.", "image": "", "rbr": 7},
+			{"svjetionik": "MULO", "period": "1923.", "image": "", "rbr": 8},
+			{"svjetionik": "DONJA SLANO", "period": " 31.12.1927. - nakon 1939.", "image": "", "rbr": 9}
 		]
 	},
 	{
 		"prezime": "GIRALDI",	"ime": "DOMENICO",	"mjestoRod": "Piran", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 57,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "STRUGA", "period": "23.12.1910.", "rbr": 1},
-			{"svjetionik": "PORER", "period": "27.3.1913.", "rbr": 2},
-			{"svjetionik": "VERUDELA", "period": "zamjena", "rbr": 3},
-			{"svjetionik": "PORER", "period": "2. put 2.10.1913.", "rbr": 4},
-			{"svjetionik": "TRST TERESA", "period": "kraj 1919.", "rbr": 5}
+			{"svjetionik": "STRUGA", "period": "23.12.1910.", "image": "", "rbr": 1},
+			{"svjetionik": "PORER", "period": "27.3.1913.", "image": "", "rbr": 2},
+			{"svjetionik": "VERUDELA", "period": "zamjena", "image": "", "rbr": 3},
+			{"svjetionik": "PORER", "period": "2. put 2.10.1913.", "image": "", "rbr": 4},
+			{"svjetionik": "TRST TERESA", "period": "kraj 1919.", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "PIZZAMUS",	"ime": "ANTONIO",	"mjestoRod": "Oltra kod Muggia", "godRod": "1871.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 58,
 		"image": "img/svjetionicari/Pizzamus_Antonio.png",
 		"karijera": [
-			{"svjetionik": "TRSTENIK", "period": "1900", "rbr": 1},
-			{"svjetionik": "GALIOLA", "period": "8/1902", "rbr": 2},
-			{"svjetionik": "UBAŠ", "period": "1906.", "rbr": 3},
-			{"svjetionik": "DENTE", "period": "1907.", "rbr": 4},
-			{"svjetionik": "TRST TERESA", "period": "kraj 1919.", "rbr": 5},
-			{"svjetionik": "MARLERA", "period": "2.10.1913.", "rbr": 6},
-			{"svjetionik": "TRST TERESA", "period": "2. put  8.7.1920.", "rbr": 7},
-			{"svjetionik": "FAŽANA SVJETLA", "period": "20.7.1921.", "rbr": 8},
-			{"svjetionik": "VERUDELA", "period": "", "rbr": 9}
+			{"svjetionik": "TRSTENIK", "period": "1900", "image": "", "rbr": 1},
+			{"svjetionik": "GALIOLA", "period": "8/1902", "image": "", "rbr": 2},
+			{"svjetionik": "UBAŠ", "period": "1906.", "image": "", "rbr": 3},
+			{"svjetionik": "DENTE", "period": "1907.", "image": "", "rbr": 4},
+			{"svjetionik": "TRST TERESA", "period": "kraj 1919.", "image": "", "rbr": 5},
+			{"svjetionik": "MARLERA", "period": "2.10.1913.", "image": "", "rbr": 6},
+			{"svjetionik": "TRST TERESA", "period": "2. put  8.7.1920.", "image": "", "rbr": 7},
+			{"svjetionik": "FAŽANA SVJETLA", "period": "20.7.1921.", "image": "", "rbr": 8},
+			{"svjetionik": "VERUDELA", "period": "", "image": "", "rbr": 9}
 		]
 	},
 	{
 		"prezime": "PERUŠKO",	"ime": "OSKAR",	"mjestoRod": "Pula", "godRod": "1908.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 59,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "VERUDELA", "period": "1947", "rbr": 1},
-			{"svjetionik": "PORER", "period": "1948", "rbr": 2}
+			{"svjetionik": "VERUDELA", "period": "1947", "image": "", "rbr": 1},
+			{"svjetionik": "PORER", "period": "1948", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "MEZULIĆ",	"ime": "LJUDEVIT",	"mjestoRod": "Premantura", "godRod": "21.4.1907",	"mjestoPrem": "Pula", "godPrem": "26.7.1973.",	"misc": "M",	"id": 60,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PORER", "period": "27.3.1947", "rbr": 1},
-			{"svjetionik": "VERUDELA", "period": "1948", "rbr": 2},
-			{"svjetionik": "PORER", "period": "31.2.1967. penzija", "rbr": 3}
+			{"svjetionik": "PORER", "period": "27.3.1947", "image": "", "rbr": 1},
+			{"svjetionik": "VERUDELA", "period": "1948", "image": "", "rbr": 2},
+			{"svjetionik": "PORER", "period": "31.2.1967. penzija", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "KOSTEŠIĆ",	"ime": "IVAN",	"mjestoRod": "Ližnjan", "godRod": "1919.",	"mjestoPrem": "", "godPrem": "",	"misc": "M",	"id": 61,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "MORTAR", "period": "1.9.1951.", "rbr": 1},
-			{"svjetionik": "SUSAK", "period": " 3.7.1953.", "rbr": 2},
-			{"svjetionik": "PUNTANERA", "period": "1.10.1955.", "rbr": 3},
-			{"svjetionik": "VERUDELA", "period": "penzija", "rbr": 4}
+			{"svjetionik": "MORTAR", "period": "1.9.1951.", "image": "", "rbr": 1},
+			{"svjetionik": "SUSAK", "period": " 3.7.1953.", "image": "", "rbr": 2},
+			{"svjetionik": "PUNTANERA", "period": "1.10.1955.", "image": "", "rbr": 3},
+			{"svjetionik": "VERUDELA", "period": "penzija", "image": "", "rbr": 4}
 		]
 	},
 	{
 		"prezime": "TURČINOV",	"ime": "ŠIME (ŠKODA)",	"mjestoRod": "Murter", "godRod": "10.10.1919.",	"mjestoPrem": "Pula", "godPrem": "8.11.1985.",	"misc": "M",	"id": 62,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "PALAGRUŽA", "period": " 10.10.1947.", "rbr": 1},
-			{"svjetionik": "STONČICA", "period": "7.10.1948.", "rbr": 2},
-			{"svjetionik": "TAJER", "period": "19.9.1952", "rbr": 3},
-			{"svjetionik": "STRAŽICA", "period": "1.11.1955.", "rbr": 4},
-			{"svjetionik": "PUNTANERA", "period": " 31.8.1958.", "rbr": 5},
-			{"svjetionik": "VERUDELA", "period": "penzija", "rbr": 6},
-			{"svjetionik": "", "period": "Dobio stan kao prvoborac u Šijani, sin ostao na automatiziranom svjetlu sa obitelji do 1987. g. kad je dobio stan na Stoji.", "rbr": 7}
+			{"svjetionik": "PALAGRUŽA", "period": " 10.10.1947.", "image": "", "rbr": 1},
+			{"svjetionik": "STONČICA", "period": "7.10.1948.", "image": "", "rbr": 2},
+			{"svjetionik": "TAJER", "period": "19.9.1952", "image": "", "rbr": 3},
+			{"svjetionik": "STRAŽICA", "period": "1.11.1955.", "image": "", "rbr": 4},
+			{"svjetionik": "PUNTANERA", "period": " 31.8.1958.", "image": "", "rbr": 5},
+			{"svjetionik": "VERUDELA", "period": "penzija", "image": "", "rbr": 6},
+			{"svjetionik": "", "period": "Dobio stan kao prvoborac u Šijani, sin ostao na automatiziranom svjetlu sa obitelji do 1987. g. kad je dobio stan na Stoji.", "image": "", "rbr": 7}
 		]
 	},
 	{
 		"prezime": "PAIĆ",	"ime": "MIHOVIL",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 63,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "DRVENIK GREBENI", "period": "1873", "rbr": 1},
-			{"svjetionik": "MULO", "period": "11/1875", "rbr": 2},
-			{"svjetionik": "TAJER", "period": "8.8.1876.", "rbr": 3},
-			{"svjetionik": "PALAGRUŽA", "period": "3/1883", "rbr": 4},
-			{"svjetionik": "SV. PETAR", "period": "1.9.1884.", "rbr": 5},
-			{"svjetionik": "POKONJI DOL", "period": "penzija", "rbr": 6}
+			{"svjetionik": "DRVENIK GREBENI", "period": "1873", "image": "", "rbr": 1},
+			{"svjetionik": "MULO", "period": "11/1875", "image": "", "rbr": 2},
+			{"svjetionik": "TAJER", "period": "8.8.1876.", "image": "", "rbr": 3},
+			{"svjetionik": "PALAGRUŽA", "period": "3/1883", "image": "", "rbr": 4},
+			{"svjetionik": "SV. PETAR", "period": "1.9.1884.", "image": "", "rbr": 5},
+			{"svjetionik": "POKONJI DOL", "period": "penzija", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "VLAHOVIĆ",	"ime": "DOMENICO",	"mjestoRod": "", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 64,
 		"image": "img/svjetionicari/Vlahovic_Domenico.png",
 		"karijera": [
-			{"svjetionik": "SV. PETAR", "period": "prije 1892.", "rbr": 1},
-			{"svjetionik": "PLOČICA", "period": "19.6.1894.", "rbr": 2},
-			{"svjetionik": "SV. PETAR", "period": "2. put", "rbr": 3}
+			{"svjetionik": "SV. PETAR", "period": "prije 1892.", "image": "img/svjetionicari/Vlahovic_Domenico.png", "rbr": 1},
+			{"svjetionik": "PLOČICA", "period": "19.6.1894.", "image": "", "rbr": 2},
+			{"svjetionik": "SV. PETAR", "period": "2. put", "image": "img/svjetionicari/Vlahovic_Domenico.png", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "KOLUDROVIĆ",	"ime": "PETAR",	"mjestoRod": "Jelsa", "godRod": "1823",	"mjestoPrem": "Makarska", "godPrem": "22.4.1896.",	"misc": "",	"id": 65,
 		"image": "img/svjetionicari/Koludrovic_Petar.png",
 		"karijera": [
-			{"svjetionik": "PLOČICA", "period": "1893.", "rbr": 1},
-			{"svjetionik": "SV. PETAR", "period": "19.6.1894.", "rbr": 2}
+			{"svjetionik": "PLOČICA", "period": "1893.", "image": "", "rbr": 1},
+			{"svjetionik": "SV. PETAR", "period": "19.6.1894.", "image": "img/svjetionicari/Koludrovic_Petar.png", "rbr": 2}
 		]
 	},
 		{
 		"prezime": "NOVAKOVIĆ",	"ime": "DUJAM",	"mjestoRod": "Vrlika", "godRod": "1859.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 66,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "LUCIETA", "period": "23.12.1888.", "rbr": 1},
-			{"svjetionik": "TRST TERESA", "period": "1892.", "rbr": 2},
-			{"svjetionik": "MURVICA", "period": "1900", "rbr": 3},
-			{"svjetionik": "DVAINKA", "period": "12.3.1902.", "rbr": 4},
-			{"svjetionik": "SV. PETAR", "period": "1.9.1884.", "rbr": 5}
+			{"svjetionik": "LUCIETA", "period": "23.12.1888.", "image": "", "rbr": 1},
+			{"svjetionik": "TRST TERESA", "period": "1892.", "image": "", "rbr": 2},
+			{"svjetionik": "MURVICA", "period": "1900", "image": "", "rbr": 3},
+			{"svjetionik": "DVAINKA", "period": "12.3.1902.", "image": "", "rbr": 4},
+			{"svjetionik": "SV. PETAR", "period": "1.9.1884.", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "BEGOVIĆ",	"ime": "FABIJAN",	"mjestoRod": "Donje selo Šolta", "godRod": "",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 67,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "VELI RAT", "period": "1924.", "rbr": 1},
-			{"svjetionik": "SV. PETAR", "period": "", "rbr": 2}
+			{"svjetionik": "VELI RAT", "period": "1924.", "image": "", "rbr": 1},
+			{"svjetionik": "SV. PETAR", "period": "", "image": "", "rbr": 2}
 		]
 	},
 	{
 		"prezime": "LOVIĆ",	"ime": "J. ANDRIJA",	"mjestoRod": "Igrane", "godRod": "1913.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 68,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "HVAR LK", "period": "31.10.1949.", "rbr": 1},
-			{"svjetionik": "SUŠAC", "period": "25.11.1956.", "rbr": 2},
-			{"svjetionik": "STONČICA", "period": "25.11.1956.", "rbr": 3},
-			{"svjetionik": "BLACA", "period": "31.10.1964", "rbr": 4},
-			{"svjetionik": "PELAGO", "period": "1.11.1966. -1.6.1969. penzija", "rbr": 5}
+			{"svjetionik": "HVAR LK", "period": "31.10.1949.", "image": "", "rbr": 1},
+			{"svjetionik": "SUŠAC", "period": "25.11.1956.", "image": "", "rbr": 2},
+			{"svjetionik": "STONČICA", "period": "25.11.1956.", "image": "", "rbr": 3},
+			{"svjetionik": "BLACA", "period": "31.10.1964", "image": "", "rbr": 4},
+			{"svjetionik": "PELAGO", "period": "1.11.1966. -1.6.1969. penzija", "image": "", "rbr": 5}
 		]
 	},
 	{
 		"prezime": "KAPITELI",	"ime": "LUCIJANO",	"mjestoRod": "Lastovo", "godRod": "1901.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 69,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "SUŠAC", "period": "1925.", "rbr": 1},
-			{"svjetionik": "GLAVAT", "period": "1929-1943", "rbr": 2},
-			{"svjetionik": "STRUGA", "period": "1945.", "rbr": 3},
-			{"svjetionik": "SV. PETAR", "period": "1950.", "rbr": 4},
-			{"svjetionik": "TRSTENIK", "period": "1956.", "rbr": 5},
-			{"svjetionik": "UŽIGAČ 3 LASTOVSKA SJATLA", "period": "1957-1961. penzija", "rbr": 6}
+			{"svjetionik": "SUŠAC", "period": "1925.", "image": "", "rbr": 1},
+			{"svjetionik": "GLAVAT", "period": "1929-1943", "image": "", "rbr": 2},
+			{"svjetionik": "STRUGA", "period": "1945.", "image": "", "rbr": 3},
+			{"svjetionik": "SV. PETAR", "period": "1950.", "image": "", "rbr": 4},
+			{"svjetionik": "TRSTENIK", "period": "1956.", "image": "", "rbr": 5},
+			{"svjetionik": "UŽIGAČ 3 LASTOVSKA SJATLA", "period": "1957-1961. penzija", "image": "", "rbr": 6}
 		]
 	},
 	{
 		"prezime": "MILOŠEVIĆ",	"ime": "Š. TONČI",	"mjestoRod": "Gradac", "godRod": "2.11.1919.",	"mjestoPrem": "Makarska", "godPrem": "2002.",	"misc": "",	"id": 70,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "GRUICA", "period": "7/1949", "rbr": 1},
-			{"svjetionik": "NERETVA UŠĆE", "period": "7.7.1953.", "rbr": 2},
-			{"svjetionik": "SV. PETAR", "period": "penzija", "rbr": 3}
+			{"svjetionik": "GRUICA", "period": "7/1949", "image": "", "rbr": 1},
+			{"svjetionik": "NERETVA UŠĆE", "period": "7.7.1953.", "image": "", "rbr": 2},
+			{"svjetionik": "SV. PETAR", "period": "penzija", "image": "", "rbr": 3}
 		]
 	},
 	{
 		"prezime": "ANĐELIĆ",	"ime": "S. MIJO",	"mjestoRod": "Vinišče", "godRod": "1907.",	"mjestoPrem": "", "godPrem": "",	"misc": "",	"id": 71,
 		"image": "",
 		"karijera": [
-			{"svjetionik": "MURVICA", "period": "1948", "rbr": 1},
-			{"svjetionik": "SUŠAC", "period": "1955.", "rbr": 2},
-			{"svjetionik": "PLOČICA", "period": "1958.", "rbr": 3},
-			{"svjetionik": "SV. NIKOLA PUČIŠĆE", "period": "20.1.1964.", "rbr": 4},
-			{"svjetionik": "SV. PETAR", "period": "penzija", "rbr": 5}
+			{"svjetionik": "MURVICA", "period": "1948", "image": "", "rbr": 1},
+			{"svjetionik": "SUŠAC", "period": "1955.", "image": "", "rbr": 2},
+			{"svjetionik": "PLOČICA", "period": "1958.", "image": "", "rbr": 3},
+			{"svjetionik": "SV. NIKOLA PUČIŠĆE", "period": "20.1.1964.", "image": "", "rbr": 4},
+			{"svjetionik": "SV. PETAR", "period": "penzija", "image": "", "rbr": 5}
 		]
 	}
 ]
