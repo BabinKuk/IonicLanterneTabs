@@ -364,6 +364,9 @@ angular.module('lanterna.controllers', [])
 	//console.log('SvjetionicariListCtrl');
 	//console.log($stateParams);
 	
+	//mjesto
+	$scope.mjesto = $stateParams.name;
+	
 	if($stateParams.name != undefined || $stateParams.name != ''){
 		//dohvati listu svjetionicara
 		getPersonList($stateParams.id, $stateParams.name);

@@ -13,7 +13,7 @@
 		</button>
 	</ion-nav-buttons-->
 
-	<ion-content class="padding has-tabs-bottom has-footer" scroll="false">
+	<ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false">
 		
 		<div class="row">
 			<div class="col col-50">
@@ -54,29 +54,21 @@
 									</div>
 									<div id="details-row" class="row item-text-wrap button-bar">
 										<div class="width-20" ng-if="person.prevSvj != ''">
-											<div class="col col-20"><a class="button button-calm" ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
+											<div class="col col-20"><a class="button button-calm cust-color-button" ng-href="{{person.prevSvj != '' ? '#/tab/lanterne-list/' + person.prevSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prevSvj}}</a></div>
 										</div>
 										<div class="width-20" ng-if="person.prevSvj == ''">
 											<div class="col col-20">{{person.prevSvj}}</div>
 										</div>
 										<div class="col col-20">{{person.dolazak}}</div>
-										<div class="col col-20"><a class="button button-calm" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
+										<div class="col col-20"><a class="button button-calm cust-color-button" ng-href="{{person.id != '' ? '#/tab/svjetionicari-list/' + person.id : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.prezime}} {{person.ime}}</a></div>
 										<div class="col col-20">{{person.odlazak}}</div>
 										<div class="width-20" ng-if="person.nextSvj != ''">
-											<div class="col col-20"><a class="button button-calm" ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div>
+											<div class="col col-20"><a class="button button-calm cust-color-button" ng-href="{{person.nextSvj != '' ? '#/tab/lanterne-list/' + person.nextSvj : '#/tab/lanterne-list/' + svjetionik.name}}">{{person.nextSvj}}</a></div>
 										</div>
 										<div class="width-20" ng-if="person.nextSvj == ''">
 											<div class="col col-20">{{person.nextSvj}}</div>
 										</div>
 									</div>
-									
-									<!-- ne treba, za test div id="test-table">
-										<div>cell lorem ipsum</div>
-										<div></div>
-										<div>c</div>
-										<div>cell</div>
-										<div>c</div>
-									</div-->
 								</ion-item>
 							</div>
 						</ion-list>
@@ -84,16 +76,5 @@
 				</ion-scroll>
 			</div>
 		</div>
-		
-		<!--ion-list-->
-			<!-- (un)comment ako bude trebalo (de)aktivirati link-->
-			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in people track by $index" type="item-text-wrap" href="#/tab/svjetionicari-list/{{person.id}}"-->
-			<!-- without link-->
-			<!--ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="person in people" type="item-text-wrap"-->
-				<!--img ng-src="{{sort.face}}"-->
-				<!--h2>{{person.ime}} {{person.prezime}}</h2-->
-				<!--i class="icon ion-chevron-right icon-accessory"></i-->
-			<!--/ion-item-->
-		<!--/ion-list-->
 	</ion-content>
 </ion-view>

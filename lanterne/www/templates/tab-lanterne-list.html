@@ -1,12 +1,12 @@
-<ion-view view-title="Svjetionici">
-	<ion-content class="padding has-tabs-bottom has-footer">
+<ion-view>
+	<ion-nav-title>Svjetionici</ion-nav-title>
+	<ion-content class="padding has-tabs-bottom has-footer screen-background">
 		<ion-list>
 			<ion-item class="item-remove-animate item-thumbnail-left item-icon-right " ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
 				<img ng-src="{{svjetionik.image}}">
 				<div id="item-name">
 					{{svjetionik.name}}
 				</div>
-				<!--p>{{svjetionik.lastText}}</p-->
 				<i class="icon ion-chevron-right icon-accessory"></i>
 			</ion-item>
 		</ion-list>

@@ -6,7 +6,7 @@
 -->
 <ion-view>
 	<ion-nav-title>{{person.ime}} {{person.prezime}}</ion-nav-title>
-	<ion-content class="padding has-tabs-bottom has-footer" scroll="false">
+	<ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false">
 		
 		<div class="row">
 			<div class="col col-50">
@@ -40,7 +40,7 @@
 							<ion-item class="item-accordion">
 								<div id="birth-row" class="row item-text-wrap button-bar">
 									<div class="width-50" ng-if="person.mjestoRod != ''">
-										<div class="col col-50"><a class="button button-calm" ng-href="{{person.mjestoRod != '' ? '#/tab/svjetionicari-list/list/1/' + person.mjestoRod : '#/tab/svjetionicari-list/' + person.id}}">{{person.mjestoRod}}</a></div>
+										<div class="col col-50"><a class="button button-calm cust-color-button" ng-href="{{person.mjestoRod != '' ? '#/tab/svjetionicari-list/list/1/' + person.mjestoRod : '#/tab/svjetionicari-list/' + person.id}}">{{person.mjestoRod}}</a></div>
 									</div>
 									<div class="width-50" ng-if="person.mjestoRod == ''">
 										<div class="col col-50">{{person.mjestoRod}}</div>
@@ -56,8 +56,10 @@
 						<ion-list>
 							<ion-item class="item-accordion">
 								<div id="birth-row" class="row item-text-wrap button-bar">
+									<!-- nema pretrage po mjestu smrti-->
 									<div class="width-50" ng-if="person.mjestoPrem != ''">
-										<div class="col col-50"><a class="button button-calm" ng-href="{{person.mjestoPrem != '' ? '#/tab/svjetionicari-list/list/2/' + person.mjestoPrem : '#/tab/svjetionicari-list/' + person.id}}">{{person.mjestoPrem}}</a></div>
+										<!--div class="col col-50"><a class="button button-calm cust-color-button" ng-href="{{person.mjestoPrem != '' ? '#/tab/svjetionicari-list/list/2/' + person.mjestoPrem : '#/tab/svjetionicari-list/' + person.id}}">{{person.mjestoPrem}}</a></div-->
+										<div class="col col-50">{{person.mjestoPrem}}</div>
 									</div>
 									<div class="width-50" ng-if="person.mjestoPrem == ''">
 										<div class="col col-50">{{person.mjestoPrem}}</div>
@@ -99,10 +101,6 @@
 					<div class="list card">
 						<div class="row item item-divider cust-item-divider sub-header-detail">
 							<div class="col col-33">Svjetionici</div>
-							<!--div class="col">Dolazak</div>
-							<div class="col">Svjetionik</div>
-							<div class="col">Odlazak</div>
-							<div class="col">Svjetionik</div-->
 						</div>
 					
 						<!-- START KOMENT ova tabela se koristi samo uz getLanternForPerson($stateParams.id) -->
@@ -128,7 +126,7 @@
 									</div>
 								</ion-item>
 							</div>
-						</ion-list  END KOMENT -->
+						</ion-list END KOMENT -->
 						
 						<!-- podaci se dohvacaju iz svjetionicari.json -->					
 						<ion-list>
@@ -145,7 +143,7 @@
 									</div>
 									<div id="details-row" class="row item-text-wrap button-bar">
 										<div class="width-33" ng-if="svjetionik.svjetionik != ''">
-											<div class="col col-33"><a class="button button-calm" ng-href="{{svjetionik.svjetionik != '' ? '#/tab/lanterne-list/' + svjetionik.svjetionik : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.svjetionik}}</a></div>
+											<div class="col col-33"><a class="button button-calm cust-color-button" ng-href="{{svjetionik.svjetionik != '' ? '#/tab/lanterne-list/' + svjetionik.svjetionik : '#/tab/svjetionicari-list/' + person.id}}">{{svjetionik.svjetionik}}</a></div>
 										</div>
 										<div class="width-33" ng-if="svjetionik.svjetionik == ''">
 											<div class="col col-33">{{svjetionik.svjetionik}}</div>

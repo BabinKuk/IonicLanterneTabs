@@ -1,12 +1,40 @@
+/* custom font */
+@font-face {
+	font-family: "Caslon Antique";
+	src: url("../fonts/CaslonAntique.ttf") format("opentype");
+}
+
 .background, .background .pane, .background .item, .background .item-complex .item-content, .list .item.item-stable {
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
+	background-color: transparent;
+	font-family: "Caslon Antique"; /*custom font*/
 }
+
 .background .item-divider{
-	background-color: #eeeeee; /*svjetlo siva*/
-	/*background-color: #bababa; tamno siva*/
+	/*background-color: #eeeeee; /*svjetlo siva*/
+	background-color: #fff3a1; /*zuta*/
 }
+
 div>.row{
-	background-color: #f8f8f8;
+	/*background-color: #f8f8f8;*/
+	background-color: transparent;
+}
+
+input, button, select, textarea, span, div {
+	font-family: "Caslon Antique"; /*custom font*/
+}
+
+/*customize card class */
+.card {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	background-color: transparent;
+}
+
+/* customize buttons */
+.button.cust-color-button {
+    border-color: transparent;
+    background-color: #743000;
+    color: #fff;
 }
 
 ion-scroll[direction=y] {
@@ -14,6 +42,25 @@ ion-scroll[direction=y] {
 	padding: 10px;
 	padding-top: 0;
 	padding-bottom: 10px;
+}
+
+/* homescreen background image */
+.home-background.scroll-content {
+    background: url('../img/home_background.jpg') no-repeat;
+    background-size: cover;
+}
+
+/* other screens background image */
+.screen-background.scroll-content {
+    background: url('../img/screen_background.jpg') no-repeat;
+    background-size: cover;
+}
+
+/* transparent items */
+.item.item-trns, #home-div-bottom>.row.trns {
+	border-color: rgba(0, 0, 0, 0);
+	/*background-color: rgba(0, 0, 0, 0);*/
+	/*color: white;*/
 }
 
 /* custom boja za tabove */
@@ -35,8 +82,8 @@ div>.row:last-child{
 }
 
 .item > div.sub-header-detail, .card > div.sub-header-detail{
-	background-color: #eeeeee; /*svjetlo siva*/
-	/*background-color: #bababa; tamno siva*/
+	/*background-color: #eeeeee; /*svjetlo siva*/
+	background-color: #fff3a1; /* zuta*/
 	padding-left: 20px;
 }
 
@@ -65,6 +112,10 @@ div>.row:last-child{
     margin-bottom: 20px;
 }
 
+/*  coustom item content padding*/
+.item-content {
+	padding-top: 16px;
+}
 /* custom img aspect ratio for item-thumbnails */
 .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
 	/*position: absolute;*/
@@ -180,7 +231,8 @@ div>.row:last-child{
 
 .custom-divider{
 	font-size: 24px;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	/*font-weight: bold;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -251,7 +303,8 @@ h2{
 .cust-button{
     width: 10em;
     display: inline-block;
-	font-size: 20px;
+	font-size: 22px;
+	text-transform: uppercase;
 	font-weight: bold;
 }
 .left-col-button {
@@ -271,6 +324,7 @@ h2{
 .list-item-title{
 	margin: 5px 50px;
 	font-size: 17px;
+	text-transform: uppercase;
     /*font-weight: 500;*/
 }
 .list-item-subtitle{
@@ -310,8 +364,11 @@ h2{
 }
 #item-name {
 	vertical-align: middle;
+	padding-top: 8px;
 	margin: 25px 50px;
-	font-size: 18px;
+	font-family: "Caslon Antique"; /*custom font*/
+	font-size: 22px;
+	text-transform: uppercase;
     max-height: 80px;
 	top: 10px;
 	height: 100%;
@@ -342,6 +399,7 @@ h2{
 	/*height: 95%;*/
 }
 #home-div-bottom{
+	top: 73%; /*position*/
 	height: 25%;
 }
 #home-div-top>.row{
@@ -353,7 +411,7 @@ h2{
 	padding: 1% 0;
 }
 #home-div-bottom>.row>.col{
-	padding: 2%;
+	padding: 1% 2% 1% 2%; /*top right bottom left*/
 }
 .home-col{
 	/*padding: 1%;*/
@@ -430,6 +488,7 @@ h2{
 	}
 	.platform-android .bar .title {
 		font-size: 22px;
+		text-transform: uppercase;
 	}
 	.cust-tab .tab-nav{
 		height: 84px;
@@ -442,10 +501,12 @@ h2{
 	}
 	.tabs a>span{
 		font-size: 18px;
+		text-transform: uppercase;
 	}
 	.home-button p{
 		font-size: 20px;
 		font-weight: bold;
+		text-transform: uppercase;
 	}
 	#home-div-bottom>.row>.col{
 		padding: 3%;
@@ -465,7 +526,8 @@ h2{
 		margin-top: 10px;
 	}
 	.platform-android .bar .title {
-		font-size: 22px;
+		font-size: 30px;
+		text-transform: uppercase;
 	}
 	.cust-tab .tab-nav{
 		height: 90px;
@@ -478,13 +540,15 @@ h2{
 	}
 	.tabs a>span{
 		font-size: 20px;
+		text-transform: uppercase;
 	}
 	.tab-item {
 		max-width: 180px;
 	}
 	.home-button p{
-		font-size: 20px;
+		font-size: 34px;
 		font-weight: bold;
+		text-transform: uppercase;
 	}
 	#home-div-bottom>.row>.col{
 		/*padding: 2%;*/
@@ -495,6 +559,6 @@ h2{
 		/*height: 40px;/
 		/*background: transparent;*/
 		/*line-height: 30px;*/
-		/*font-size: 14px;*/
+		font-size: 18px;
 	}
 }

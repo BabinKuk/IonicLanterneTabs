@@ -5,7 +5,7 @@
 		</button>
 	</ion-nav-buttons-->
 	
-	<ion-content class="padding has-tabs-bottom has-footer" scroll="false">
+	<ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false">
 		
 		<div class="row">
 			<div class="col col-50">
@@ -31,7 +31,7 @@
 							<div>
 								<center>
 									<div class="">
-										<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
+										<button class="button ion-search button-calm padding left-col-button cust-color-button cust-button" ng-click="search()">
 											Traži
 										</button>
 										<!-- ne koristi se 
@@ -43,10 +43,6 @@
 								</center>
 							</div>
 						</div>
-						
-						<!-- ostavi ako se ipak ide na posebnu stra nicu s listama p>
-							<a class="button icon icon-right ion-chevron-right" href="#/tab/lanterne-list">Lanterne</a>
-						</p-->
 						
 						<div ng-show="showResults">
 							<!--div class="item">
@@ -78,21 +74,7 @@
 								
 							</ion-list>
 						</div>
-							
-						<!--ne treba div ng-show="showAll" class="clearfix">
-							<div class="item">
-								<h1>Popis svjetionika</h1>
-							</div>
-							<ion-list>
-								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy : 'name'" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
-									<img class="cover-thumbnail" ng-src="{{svjetionik.image}}">
-									<div id="item-name">
-										{{svjetionik.name}}
-									</div>
-									<i class="icon ion-chevron-right icon-accessory"></i>
-								</ion-item>
-							</ion-list>
-						</div-->
+						
 					</div>
 				</ion-scroll>
 			</div>

@@ -1,13 +1,6 @@
 <ion-view view-title="Svjetioničari">
-	<ion-content class="padding has-tabs-bottom has-footer">
+	<ion-content class="padding has-tabs-bottom has-footer screen-background">
 			
-		<!--div class="item">
-			<h1>Svjetioničari</h1>
-		</div-->
-
-		<!-- style kao na home page div id="image-top-item" class="item">
-			<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
-		</div-->
 		<div class="row">
 			<div class="col col-50">
 				<ion-scroll delegate-handle="taskScroll" direction="y">
@@ -30,7 +23,7 @@
 								<input type="text" ng-model="svjetionicar.prezime" placeholder="Prezime">
 							</label>
 							<label id="mjesto" name="mjesto" class="item-input-wrapper">
-								<input type="text" ng-model="svjetionicar.mjesto" placeholder="Mjesto rođenja/smrti">
+								<input type="text" ng-model="svjetionicar.mjesto" placeholder="Mjesto rođenja">
 							</label>
 						</div>
 						
@@ -38,7 +31,7 @@
 							<div>
 								<center>
 									<div class="">
-										<button class="button ion-search button-calm padding left-col-button cust-button" ng-click="search()">
+										<button class="button ion-search button-calm padding left-col-button cust-color-button cust-button" ng-click="search()">
 											Traži
 										</button>
 										<!-- ne koristi se 
@@ -51,24 +44,16 @@
 							</div>
 						</div>
 
-						<!-- ako se ide na verziju s detals stranicom p>
-							<a class="button icon icon-right ion-chevron-right" href="#/tab/svjetionicari-list">Display All</a>
-						</p-->
-						
 						<div ng-show="showResults" class="clearfix">
 							<div class="item item-divider custom-divider">
 								Svjetioničari
 							</div>
-							<!--div class="item">
-								<h1>Popis svjetioničara</h1>
-							</div-->
 							<ion-list>
 								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 									<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
 									<div id="item-name">
 										{{svjetionicar.ime}} {{svjetionicar.prezime}}
 									</div>
-									<!--p>{{svjetionicar.prezime}}</p-->
 									<i class="icon ion-chevron-right icon-accessory"></i>
 								</ion-item>
 							</ion-list>	

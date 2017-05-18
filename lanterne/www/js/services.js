@@ -110,13 +110,13 @@ angular.module('lanterna.services', [])
 			var svjetionicariFiltered = [];
 			
 			//opcije kako je upisano na ekranu:
-			//1 - uneseno ime i prezime, mjesto rodjenja/smrti prazno
-			//2 - uneseno samo ime, prezime i mjesto rodjenja/smrti prazno
-			//3 - uneseno samo prezime, ime i mjesto rodjenja/smrti prazno
-			//4 - uneseno samo mjesto rodjenja/smrti, ime i prezime prazno
-			//5 - uneseno prezime i mjesto rodjenja/smrti, ime prazno
-			//6 - uneseno ime i mjesto rodjenja/smrti, prezime prazno
-			//7 - uneseno ime, prezime i mjesto rodjenja/smrti
+			//1 - uneseno ime i prezime, mjesto prazno
+			//2 - uneseno samo ime, prezime i mjesto prazno
+			//3 - uneseno samo prezime, ime i mjesto prazno
+			//4 - uneseno samo mjesto, ime i prezime prazno
+			//5 - uneseno prezime i mjesto, ime prazno
+			//6 - uneseno ime i mjesto, prezime prazno
+			//7 - uneseno ime, prezime i mjesto
 			
 			//u filtrirano idu oni koji zadovoljavaju uvjete sa ekrana (ime, prezime, mjesto)
 			svjetionicariFiltered = svjetionicari.filter(function(el) {
@@ -131,16 +131,24 @@ angular.module('lanterna.services', [])
 					return el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1;
 				}
 				if (option == 4) {
-					return ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1));
+					//samo mjestoRod
+					//return ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1));
+					return (el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
 				}
 				if (option == 5) {
-					return ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1)) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
+					//samo mjestoRod
+					//return ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1)) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
+					return (el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
 				}
 				if (option == 6) {
-					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1));
+					//samo mjestoRod
+					//return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1));
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
 				}
 				if (option == 7) {
-					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1) && ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1));
+					//samo mjestoRod
+					//return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1) && ((el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1) || (el.mjestoPrem.toLowerCase().indexOf(mjesto.toLowerCase()) > -1));
+					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1) && (el.mjestoRod.toLowerCase().indexOf(mjesto.toLowerCase()) > -1);
 				}
 			});
 			//console.log(svjetionicariFiltered);
