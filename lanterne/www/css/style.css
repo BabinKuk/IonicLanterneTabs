@@ -48,6 +48,24 @@ ion-scroll[direction=y] {
 .home-background.scroll-content {
     background: url('../img/home_background.jpg') no-repeat;
     background-size: cover;
+	display:inline-block;
+    text-align:center;
+	/* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
 
 /* other screens background image */
@@ -85,6 +103,8 @@ div>.row:last-child{
 	/*background-color: #eeeeee; /*svjetlo siva*/
 	background-color: #fff3a1; /* zuta*/
 	padding-left: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .item > div.sub-detail, .card > div.sub-detail{
@@ -398,10 +418,18 @@ h2{
 #home-div-top{
 	/*height: 95%;*/
 }
+
 #home-div-bottom{
-	top: 73%; /*position*/
+	/*top: 73%; /*position*/
+	/*position*/
+	position: relative;
+    top: 35%;
 	height: 25%;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 #home-div-top>.row{
 	max-height: 100%;
 	padding: 1% 0;
