@@ -388,7 +388,7 @@ angular.module('lanterna.controllers', [])
 
 })
 
-.controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {
+.controller('SvjetionicariDetailCtrl', function($scope, $stateParams, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate, $ionicModal) {
 	//check id first
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
@@ -454,6 +454,28 @@ angular.module('lanterna.controllers', [])
 	$scope.isGroupShown = function(group) {
 		//console.log('isGroupShown', group);
 		return $scope.shownGroup === group;
+	};
+	
+	//openModal
+	$scope.openModal = function() {
+		console.log('openModal');
+		//$scope.photos = $scope.cultivar.imageArray;
+		//$ionicSlideBoxDelegate.slide(slide);
+		//console.log($scope.photos);
+		$scope.modal.show();
+	};
+	
+	// modal handler
+	$ionicModal.fromTemplateUrl('templates/modal.html', {
+		scope: $scope,
+		animation: 'slide-in-up'
+	}).then(function(modal) {
+		console.log('modal', $scope);
+		$scope.modal = modal;
+	});
+	
+	$scope.closeModal = function() {
+		$scope.modal.hide();
 	};
 })
 

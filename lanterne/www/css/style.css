@@ -20,7 +20,19 @@ div>.row{
 	background-color: transparent;
 }
 
-input, button, select, textarea, span, div {
+.item {
+	background-color: transparent;
+}
+
+.modal-title {
+	background-color: transparent;
+	color: #fff;
+}
+
+.bar-dark .button {
+	border-color: transparent;
+}
+input, button, select, textarea, span, div, h1, h2, h3, h4 {
 	font-family: "Caslon Antique"; /*custom font*/
 }
 
@@ -270,6 +282,13 @@ div>.row:last-child{
 	width: 100%;
 	table-layout: fixed;
 	margin-bottom: 5px;
+}
+
+#details-row > div.width-10 {
+	display: table-cell;
+	/*padding: 5px;*/
+	width: 10%;
+	/*margin-bottom: 0;*/
 }
 
 #details-row > div.width-20 {

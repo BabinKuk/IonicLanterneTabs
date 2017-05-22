@@ -1,10 +1,13 @@
 <ion-view>
 	<ion-nav-title>{{mjesto}}</ion-nav-title>
-	<ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false" overflow-scroll:"false">
+	
+	<!--TEST scroll false-->
+	<!--ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false" overflow-scroll:"false"-->
+	<ion-content class="padding has-tabs-bottom has-footer screen-background">
 			
 		<div class="row">
 			<div class="col col-50">
-				<ion-scroll delegate-handle="taskScroll" direction="y">
+				<ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false">
 					<div class="list card">
 						<div id="image-top-item" class="item">
 							<img class="image-top" src="img/svjetionicari/ZERAVICA_ANTE.jpg">
@@ -14,7 +17,7 @@
 			</div>
 				
 			<div class="col col-50">
-				<ion-scroll delegate-handle="taskScroll" direction="y">
+				<ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false">
 					<div class="list card">	
 						<div class="clearfix">
 							<div class="item item-divider custom-divider">
