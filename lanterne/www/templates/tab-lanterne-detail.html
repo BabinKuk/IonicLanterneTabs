@@ -7,29 +7,23 @@
 <ion-view>
 	<ion-nav-title>{{svjetionik.name}}</ion-nav-title>
 	
-	<!--ion-nav-buttons side="left">
-		<button class="button back-button buttons button-clear header-item" ng-click="goBack()">
-			<i class="icon ion-android-arrow-back"></i> 
-		</button>
-	</ion-nav-buttons-->
-
+	<!--TEST scroll false-->
+	<!--ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false"-->
 	<ion-content class="padding has-tabs-bottom has-footer screen-background">
 		
 		<div class="row">
 			<div class="col col-50">
-				<!--TEST bez scroll-->
-				<!--ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false"-->
-					<div class="list card">
+				<ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false">
+					<div class="list card" ng-if="svjetionik.image != ''">
 						<div id="image-top-item" class="item">
 							<img class="image-top" ng-src="{{svjetionik.image}}">
 						</div>
 					</div>
-				<!--/ion-scroll-->
+				</ion-scroll>
 			</div>
 			
 			<div class="col col-50">
-				<!--TEST bez scroll-->
-				<!--ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false"-->
+				<ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false">
 					<div class="list card">
 						<div class="row item item-divider cust-item-divider sub-header-detail">
 							<!--div class="col">Prethodni svjetionik</div>
@@ -75,7 +69,7 @@
 							</div>
 						</ion-list>
 					</div>
-				<!--/ion-scroll-->
+				</ion-scroll>
 			</div>
 		</div>
 	</ion-content>

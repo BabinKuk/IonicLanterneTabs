@@ -1,9 +1,9 @@
 <nav ng-class="{'pdf-controls fixed': scroll > 100, 'pdf-controls': scroll <= 100, 'padding-top': 20}">
-	<button ng-click="goPrevious()"><</span></button>
-	<button ng-click="goNext()">></span></button>
-	<button ng-click="zoomOut()">-</span></button>
-	<button ng-click="fit()">100%</span></button>
-	<button ng-click="zoomIn()">+</span></button>
+	<button ng-click="goPrevious()" class="button button-calm cust-color-button cust-biblio-button"><</span></button>
+	<button ng-click="goNext()" class="button button-calm cust-color-button cust-biblio-button">></span></button>
+	<button ng-click="zoomOut()" class="button button-calm cust-color-button cust-biblio-button">-</span></button>
+	<button ng-click="fit()" class="button button-calm cust-color-button cust-biblio-button">100%</span></button>
+	<button ng-click="zoomIn()" class="button button-calm cust-color-button cust-biblio-button">+</span></button>
 	<!--span>Page: </span><input type="text" min=1 ng-model="pageNum"><span> / {{pageCount}}</span-->
 </nav>
 {{loading}}

@@ -24,6 +24,11 @@ div>.row{
 	background-color: transparent;
 }
 
+.item-body>p {
+	font-size: 16px;
+	margin-top: 0;
+}
+
 .modal-title {
 	background-color: transparent;
 	color: #fff;
@@ -32,8 +37,18 @@ div>.row{
 .bar-dark .button {
 	border-color: transparent;
 }
-input, button, select, textarea, span, div, h1, h2, h3, h4 {
+input, button, select, textarea, span, div, a, h1, h2, h3, h4, h5, h6 {
 	font-family: "Caslon Antique"; /*custom font*/
+	/*text-transform: uppercase;*/
+}
+
+input, a {
+	text-transform: uppercase;
+}
+
+/*customize exit popup*/
+.popup-title, .popup-sub-title, .popup-body, .popup-buttons>button {
+	font-size: 24px;
 }
 
 /*customize card class */
@@ -49,6 +64,14 @@ input, button, select, textarea, span, div, h1, h2, h3, h4 {
     color: #fff;
 }
 
+.bar-dark .button.button-clear {
+	font-size: 26px;
+}
+
+.bar .button.back-button, .bar button.back-button {
+	padding:10px;
+}
+
 ion-scroll[direction=y] {
 	height: calc(100vh - 33px - 33px - 90px - 15px);
 	padding: 10px;
@@ -60,6 +83,9 @@ ion-scroll[direction=y] {
 .home-background.scroll-content {
     background: url('../img/home_background.jpg') no-repeat;
     background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100%;
 	display:inline-block;
     text-align:center;
 	/* Internet Explorer 10 */
@@ -198,6 +224,13 @@ a.tab-item, i.icon.icon, span.tab-title  {
 .rotate90 {-webkit-transform: rotate(90deg); transform: rotate(90deg); }
 .rotate180 {-webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .rotate270 {-webkit-transform: rotate(270deg); transform: rotate(270deg); }
+
+/* books nav buttons*/
+.cust-biblio-button {
+	font-size: 30px;
+	padding: 10px;
+	margin: 10px 5px;;
+}
 
 /* accordion list */
 .list .item.item-accordion {
@@ -441,12 +474,15 @@ h2{
 #home-div-bottom{
 	/*top: 73%; /*position*/
 	/*position*/
-	position: relative;
-    top: 35%;
-	height: 25%;
+	position: absolute;
+	bottom: 17%;
+	height: 20%;
 	width: 95%;
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 #home-div-top>.row{

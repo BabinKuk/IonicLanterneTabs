@@ -1,50 +1,15 @@
 <ion-modal-view>
-	<!--
-	<div class="modal image-modal transparent">
-		<ion-header-bar class="bar-dark cust-nav-bar background buttons" align-title="center">
-			<div class="buttons button-right">
-				<button class="button icon ion-close-round" ng-click="closeModal()"></button>
-			</div>
-		</ion-header-bar>
-		<ion-pane class="transparent">
-			<ion-slide-box on-slide-changed="slideChanged(index)" show-pager="false">
-				<ion-slide ng-repeat="photo in photos">
-					<img ng-src="{{photo.src}}" class="fullscreen-image"/>
-				</ion-slide>
-			</ion-slide-box>
-		</ion-pane>
-	</div>
-	-->
 	<ion-header-bar class="bar-dark cust-nav-bar background buttons" align-title="center">
 		<div class="navbar-title title title-center header-item modal-title">{{person.ime}} {{person.prezime}}</div>
 		<div class="buttons button-right">
 			<button class="button icon ion-close-round" ng-click="closeModal()"></button>
 		</div>
 	</ion-header-bar>
-	<!--ion-header-bar class="bar bar-header bar-positive">
-		<h1 class="title">{{person.ime}} {{person.prezime}}</h1>
-		<button class="button button-clear button-primary" ng-click="closeModal()">Zatvori</button>
-	</ion-header-bar-->
 	<ion-content class="padding has-header screen-background">
-		<!--div class="card">
-            <div class="item item-text-wrap popuparticle">
-            <ion-scroll class="fixed-card">
-            <h3>Mind like Water: any player</h3>
-            <p>The player has learned to apply martial arts techniques to the sports field without incurring the wrath of the Referee. Instead of battering opponents with physical strength, the player uses leverage and balance to knock down their opponent, turning the other player’s own strength and speed against them.</p>
-            <h3>Can’t feel a thing: any player</h3>
-            <p>The player gets 1 additional automatic success whenever they make an Armour check, in effect ignoring one extra injury each time.</p>
-            </ion-scroll>
-            </div>
-		</div-->
 		<div class="row">
 			<div class="col">
-				<div class="list card" ng-if="itemToDisplay.image != ''">
-					<div id="image-top-item" class="item">
-						<img class="image-top" ng-src="{{itemToDisplay.image}}">
-					</div>
-				</div>
+				<!--ne trebaju ovi podaci
 				<div class="list card">
-					<!-- podaci s linkovima-->
 					<div class="row item item-divider cust-item-divider sub-header-detail">
 						<div class="col col-50 details-grid">Mjesto rođenja</div>
 						<div class="col col-50 details-grid">Godina rođenja</div>
@@ -64,12 +29,27 @@
 					<ion-list>
 						<ion-item class="item-accordion">
 							<div id="birth-row" class="row item-text-wrap button-bar">
-								<!-- nema pretrage po mjestu smrti-->
 								<div class="col col-50">{{person.mjestoPrem}}</div>
 								<div class="col col-50 cell-border">{{person.godPrem}}</div>
 							</div>
 						</ion-item>
 					</ion-list>
+				</div>
+				-->
+				<div ng-show="itemToDisplay">
+					<!--{{itemToDisplay}}-->
+					<div class="list card" ng-if="itemToDisplay.image != ''">
+						<div id="image-top-item" class="item">
+							<img class="image-top" ng-src="{{itemToDisplay.image}}">
+						</div>
+					</div>
+					<div class="list card" ng-if="itemToDisplay.misc != ''">
+						<div class="item item-body">
+							<p>
+							  {{itemToDisplay.misc}}
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

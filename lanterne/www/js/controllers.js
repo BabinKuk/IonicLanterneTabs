@@ -46,8 +46,8 @@ angular.module('lanterna.controllers', [])
 		
 		var myPopup = $ionicPopup.show({
 			template: '<input type="password" ng-model="data.pass">',
-			title: 'Za izlaz iz aplikacije potrebno je unijeti lozinku',
-			subTitle: 'Vrijeme unosa je ograničeno na 10 sekundi',
+			title: 'Za izlaz iz aplikacije potrebno je unijeti lozinku.',
+			subTitle: 'Vrijeme unosa lozinke je ograničeno na 10 sekundi.',
 			scope: $scope,
 			buttons: [
 				{ text: 'Cancel' },
@@ -438,7 +438,7 @@ angular.module('lanterna.controllers', [])
 	* else, select the given group
 	*/
 	$scope.toggleGroup = function(group) {
-		console.log('in toggle ', group);
+		//console.log('in toggle ', group);
 		if ($scope.isGroupShown(group)) {
 			console.log('close');
 			$scope.shownGroup = null;
@@ -470,7 +470,7 @@ angular.module('lanterna.controllers', [])
 		scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
-		console.log('modal', $scope);
+		console.log('modal', $scope.itemToDisplay);
 		$scope.modal = modal;
 	});
 	
