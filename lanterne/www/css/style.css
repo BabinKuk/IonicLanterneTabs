@@ -68,8 +68,8 @@ input, a {
 	font-size: 26px;
 }
 
-.bar .button.back-button, .bar button.back-button {
-	padding:10px;
+.bar .button.back-button, .bar button.back-button>i.icon.ion-android-arrow-back{
+	margin:10px;
 }
 
 ion-scroll[direction=y] {
