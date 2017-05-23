@@ -68,10 +68,6 @@ input, a {
 	font-size: 26px;
 }
 
-.bar .button.back-button, .bar button.back-button>i.icon.ion-android-arrow-back{
-	margin:10px;
-}
-
 ion-scroll[direction=y] {
 	height: calc(100vh - 33px - 33px - 90px - 15px);
 	padding: 10px;
@@ -598,6 +594,11 @@ h2{
 
 /* large screens */
 @media only screen and (min-width : 900px) {
+	
+	.bar .button.back-button, .bar button.back-button>i.icon.ion-android-arrow-back{
+		margin:10px;
+	}
+	
 	#home-div-top{
 		height: 65%;
 	}
