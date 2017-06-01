@@ -1,6 +1,6 @@
 [
-	{"id": 1, "name": "material-design", "source": "pdf/material-design.pdf"},
-	{"id": 2, "name": "22-single-stroke-seven", "source": "pdf/22-single-stroke-seven.pdf"},
-	{"id": 3, "name": "relativity", "source": "pdf/relativity.pdf"},
-	{"id": 4, "name": "online", "source": "http://www.pdf995.com/samples/pdf.pdf"}	
+	{"id": 1, "name": "MATERIAL-DESIGN", "source": "pdf/material-design.pdf"},
+	{"id": 2, "name": "22-SINGLE-STROKE-SEVEN", "source": "pdf/22-single-stroke-seven.pdf"},
+	{"id": 3, "name": "RELATIVITY", "source": "pdf/relativity.pdf"},
+	{"id": 4, "name": "ONLINE", "source": "http://www.pdf995.com/samples/pdf.pdf"}	
 ]
