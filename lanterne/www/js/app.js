@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'lanterna.services' is found in services.js
 // 'lanterna.controllers' is found in controllers.js
-angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services','angular.filter'])
+angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services','angular.filter', 'angular-cache'])
 
 //dev url
 //.value("serverUrl", "http://localhost:8080/")
@@ -31,7 +31,15 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 })
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
-
+	
+	//enable native scrolling
+	$ionicConfigProvider.scrolling.jsScrolling(false);
+ 
+	//Or for only a single platform, use
+	//if( ionic.Platform.isAndroid() ) {
+	//	$ionicConfigProvider.scrolling.jsScrolling(false);
+	//}
+	
 	// Place tabs at the top/bottom of the screen using ionicConfigProvider
 	// Android defaults to top and iOS defaults to bottom.
 	$ionicConfigProvider.tabs.position('bottom');

@@ -87,13 +87,29 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('LanterneCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate) {
+.controller('LanterneCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate, CacheFactory) {
 	//console.log('LanterneCtrl');
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		console.log('LanterneCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
+	
+	if (!CacheFactory.get('postCache')) {
+		CacheFactory.createCache('postCache');
+	}
+	var postCache = CacheFactory.get('postCache');
+	 
+	/*
+	// Cache a post
+	postCache.put(id, data);
+	 
+	// Delete from cache
+	postCache.remove(id);
+	 
+	// Get a post
+	$scope.post = postCache.get(id);
+	*/
 	
 	/*
 	// image swiper
