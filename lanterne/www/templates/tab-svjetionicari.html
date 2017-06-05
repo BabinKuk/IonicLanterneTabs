@@ -51,14 +51,16 @@
 								Svjetioničari
 							</div>
 							<ion-list>
-								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
+								<!--ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}"-->
+								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy:'prezime' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 									<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
 									<div id="item-name">
 										{{svjetionicar.ime}} {{svjetionicar.prezime}}
 									</div>
 									<i class="icon ion-chevron-right icon-accessory"></i>
 								</ion-item>
-							</ion-list>	
+								<ion-infinite-scroll on-infinite="loadMoreData()" distance="1" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
+							</ion-list>
 						</div>
 
 						<!--ne treba div ng-show="showAll" class="clearfix">

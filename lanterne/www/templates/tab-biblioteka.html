@@ -7,12 +7,13 @@
 			</div>
 				
 			<ion-list>
-				<ion-item class="item-remove-animate item-icon-right" ng-repeat="knjiga in knjige | orderBy: 'name'" type="item-text-wrap" href="#/tab/biblioteka-list/{{knjiga.name}}">
+				<ion-item class="item-remove-animate item-icon-right" ng-repeat="knjiga in knjige | orderBy: 'name' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/biblioteka-list/{{knjiga.name}}">
 					<div id="item-name">
 						{{knjiga.name}}
 					</div>
 					<i class="icon ion-chevron-right icon-accessory"></i>
 				</ion-item>
+				<ion-infinite-scroll on-infinite="loadMoreData()" distance="1" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
 			</ion-list>
 		</div>
 		

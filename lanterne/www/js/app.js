@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'lanterna.services' is found in services.js
 // 'lanterna.controllers' is found in controllers.js
-angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services','angular.filter', 'angular-cache'])
+angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services','angular.filter', 'angular-cache', 'ionic.ion.autoListDivider'])
 
 //dev url
 //.value("serverUrl", "http://localhost:8080/")
@@ -14,6 +14,7 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 .value("svjetionicariFilePath", "json/svjetionicari.json")
 .value("svjetioniciFilePath", "json/svjetionici.json")
 .value("bibliotekaFilePath", "json/biblioteka.json")
+.value("noOfItemsToDisplay", 10)
 
 .run(function($ionicPlatform, $ionicPopup) {
 	$ionicPlatform.ready(function() {

@@ -2,5 +2,13 @@
 	{"id": 1, "name": "MATERIAL-DESIGN", "source": "pdf/material-design.pdf"},
 	{"id": 2, "name": "22-SINGLE-STROKE-SEVEN", "source": "pdf/22-single-stroke-seven.pdf"},
 	{"id": 3, "name": "RELATIVITY", "source": "pdf/relativity.pdf"},
-	{"id": 4, "name": "ONLINE", "source": "http://www.pdf995.com/samples/pdf.pdf"}	
+	{"id": 4, "name": "ONLINE", "source": "http://www.pdf995.com/samples/pdf.pdf"},
+	{"id": 5, "name": "MATERIAL-DESIGN 2", "source": "pdf/material-design.pdf"},
+	{"id": 6, "name": "22-SINGLE-STROKE-SEVEN 2", "source": "pdf/22-single-stroke-seven.pdf"},
+	{"id": 7, "name": "RELATIVITY 2", "source": "pdf/relativity.pdf"},
+	{"id": 8, "name": "ONLINE 2", "source": "http://www.pdf995.com/samples/pdf.pdf"},
+	{"id": 9, "name": "MATERIAL-DESIGN 3", "source": "pdf/material-design.pdf"},
+	{"id": 10, "name": "22-SINGLE-STROKE-SEVEN 3", "source": "pdf/22-single-stroke-seven.pdf"},
+	{"id": 11, "name": "RELATIVITY 3", "source": "pdf/relativity.pdf"},
+	{"id": 12, "name": "ONLINE 3", "source": "http://www.pdf995.com/samples/pdf.pdf"}
 ]

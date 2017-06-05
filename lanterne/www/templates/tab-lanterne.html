@@ -53,8 +53,8 @@
 								</ion-item>
 							</ion-list-->
 							<!--ul ng-repeat="group in groups | groupBy:'category' | toArray:true | orderBy:min"-->
-							<ion-list>
-								<ul ng-repeat="(categoryId, value) in lanterne | groupBy:'[categoryId]' | toArray:true | orderBy:'categoryId'">
+							<!--ion-list>
+								<ul ng-repeat="(categoryId, value) in lanterne | groupBy:'[categoryId]' | toArray:true | filter:query | orderBy:'categoryId' | limitTo:numberOfItemsToDisplay">
 									<div class="item item-divider custom-divider">
 										{{value[0].categoryDesc}}
 									</div>
@@ -66,8 +66,20 @@
 										<i class="icon ion-chevron-right icon-accessory"></i>
 									</ion-item>
 								</ul>
-								
+								<ion-infinite-scroll on-infinite="loadMoreData()" distance="1" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
+							</ion-list-->
+							<!--auto list divider-->
+							<ion-list>
+								<!--ion-item auto-divider auto-divider-value="{{svjetionik.categoryDesc}}" auto-divider-function="dividerFunction" class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy:'name' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}"-->
+								<ion-item auto-list-divider auto-list-divider-value="{{svjetionik.name}}" class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy:'name' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
+									<img class="cover-thumbnail" ng-src="{{svjetionik.image}}">
+									<div id="item-name">
+										{{svjetionik.name}}
+									</div>
+									<i class="icon ion-chevron-right icon-accessory"></i>
+								</ion-item>
 							</ion-list>
+							<ion-infinite-scroll on-infinite="loadMoreData()" distance="1" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
 						</div>
 						
 					</div>

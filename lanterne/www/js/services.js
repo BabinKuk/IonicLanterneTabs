@@ -2,18 +2,21 @@ angular.module('lanterna.services', [])
 
 .factory('SvjetionicariList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
 	
+	var items = [];
+	
 	return {
-		//svi svjetionicari
+		//svi svjetionicari (ne koristi se, sve je getPeople)
 		all: getAllPeople,
 		//detalji o svjetionicaru
 		getPerson: getPerson,
 		//lista svjetionika na kojem je svetionicar bio
 		getLanternForPerson: getLanternForPerson,
 		//find by name
-		find: findByName
+		find: getPeople
 	}
 	
 	//handler functions
+	//!!!!!! ne koristi se, sve je getPeople !!!!!!!!!!!!
 	function getAllPeople() {
 		//console.log('svi svjetionicari');
 		
@@ -21,7 +24,7 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath + '?results=10').then(function(response) {
 			//console.log(response.data);
 			deffered.resolve(response.data);
 		})
@@ -96,20 +99,21 @@ angular.module('lanterna.services', [])
 		return deffered.promise; 
 	}
 	
-	function findByName(ime, prezime, mjesto, option) {
+	function getPeople(ime, prezime, mjesto, option) {
 		//console.log('in findByName ' + ime + ', ' + prezime + ', ' + mjesto + ', ' + option);
 		
 		//async function to know when the data has arrived
 		var deffered = $q.defer();
 
 		//get data
-		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath + '?results=10').then(function(response) {
 			//svi svjetionicari
 			var svjetionicari = response.data;
 			//svjetionicari filtrirano
 			var svjetionicariFiltered = [];
 			
 			//opcije kako je upisano na ekranu:
+			//0 - sve prazno
 			//1 - uneseno ime i prezime, mjesto prazno
 			//2 - uneseno samo ime, prezime i mjesto prazno
 			//3 - uneseno samo prezime, ime i mjesto prazno
@@ -121,6 +125,9 @@ angular.module('lanterna.services', [])
 			//u filtrirano idu oni koji zadovoljavaju uvjete sa ekrana (ime, prezime, mjesto)
 			svjetionicariFiltered = svjetionicari.filter(function(el) {
 				//console.log('filtering ' + svjetionikName.toUpperCase());
+				if (option == 0) {
+					return el;
+				}
 				if (option == 1) {
 					return (el.ime.toLowerCase().indexOf(ime.toLowerCase()) > -1) && (el.prezime.toLowerCase().indexOf(prezime.toLowerCase()) > -1);
 				}

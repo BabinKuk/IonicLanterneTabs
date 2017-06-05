@@ -87,7 +87,7 @@ angular.module('lanterna.controllers', [])
 	}
 })
 
-.controller('LanterneCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate, CacheFactory) {
+.controller('LanterneCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate, CacheFactory, noOfItemsToDisplay) {
 	//console.log('LanterneCtrl');
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
@@ -130,20 +130,18 @@ angular.module('lanterna.controllers', [])
 	//get images for swiper
 	getLanterneImages();
 	*/
-
+	//init
 	$scope.svjetionik = {};
-	
-	/* ne koristi se
-	//svi svjetionici
-	$scope.getAll = function() {
-		doGetAll();
-	}
-	*/
+	$scope.lanterne = [];
+	$scope.numberOfItemsToDisplay;
 	
 	//search svjetionik
 	$scope.search = function(){
 		//console.log($scope);
 		var svjetionik = $scope.svjetionik.name;
+		
+		//reset numberOfItemsToDisplay
+		$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
 		
 		//ako je polje prazno, dohvati sve
 		if (svjetionik == '' || svjetionik == null) {
@@ -153,14 +151,39 @@ angular.module('lanterna.controllers', [])
 		}
 	}
 	
+	//load more data into list
+	$scope.loadMoreData = function() {
+		//console.log('loadMoreData ' + ime + ' ' + prezime + ' ' + mjesto);
+		
+		//check to load more data
+		if ($scope.moreDataCanBeLoaded) {
+			//load number of more items
+			$scope.numberOfItemsToDisplay += noOfItemsToDisplay;
+			//need to call this when finish loading more data
+			//done();
+		}
+		
+		$scope.$broadcast('scroll.infiniteScrollComplete');
+	};
+	
+	//check if there is more data to load
+	$scope.moreDataCanBeLoaded = function() {
+		console.log('moreDataCanBeLoaded ' + $scope.lanterne.length + ' ; ' + $scope.numberOfItemsToDisplay);
+		return ($scope.lanterne.length > $scope.numberOfItemsToDisplay) ? true : false;
+	};
+	
+	//list divider
+	$scope.dividerFunction = function(key){
+		console.log('dividerFunction ' + key);
+		return key;
+	}
+	
 	// handler functions
 	function doGetAll() {
-		console.log('in getAll');
 		//call service
 		LanterneList.all()
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
-				console.log($scope.lanterne);
 			},function(error){
 				console.log(error);
 			});
@@ -189,7 +212,6 @@ angular.module('lanterna.controllers', [])
 		LanterneList.all()
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
-				//console.log($scope.lanterne);
 			},function(error){
 				console.log(error);
 			});
@@ -276,20 +298,26 @@ angular.module('lanterna.controllers', [])
 	};
 })
 
-.controller('SvjetionicariCtrl', function($scope, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate) {
-	//console.log('SvjetionicariCtrl');
+.controller('SvjetionicariCtrl', function($scope, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate, noOfItemsToDisplay) {
+	console.log('SvjetionicariCtrl ' + noOfItemsToDisplay);
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		//console.log('SvjetionicariCtrl beforeEnter');
 		viewData.enableBack = true;
 	});
 
-	//set object
+	//init
 	$scope.svjetionicar = {
 		ime: '',
 		prezime: '',
 		mjesto: ''
 	};
+	$scope.people = [];
+	$scope.numberOfItemsToDisplay;
+	var ime = '';
+	var prezime = '';
+	var mjesto = '';
+	var option;
 	
 	/* ne koristi se
 	//svi svjetionicari
@@ -300,13 +328,17 @@ angular.module('lanterna.controllers', [])
 
 	//search svjetionicare
 	$scope.search = function(){
-		console.log($scope);
 		//podaci s ekrana
-		var ime = $scope.svjetionicar.ime;
-		var prezime = $scope.svjetionicar.prezime;
-		var mjesto = $scope.svjetionicar.mjesto;
+		ime = $scope.svjetionicar.ime;
+		prezime = $scope.svjetionicar.prezime;
+		mjesto = $scope.svjetionicar.mjesto;
+		
+		//reset numberOfItemsToDisplay
+		$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
+		
 		//console.log('ime: ' + ime + '; prezime: ' + prezime + '; mjesto: ' + mjesto);
 		//opcije kako je upisano na ekranu:
+		//0 - sve prazno
 		//1 - uneseno ime i prezime, mjesto prazno
 		//2 - uneseno samo ime, prezime i mjesto prazno
 		//3 - uneseno samo prezime, ime i mjesto prazno
@@ -314,11 +346,11 @@ angular.module('lanterna.controllers', [])
 		//5 - uneseno prezime i mjesto, ime prazno
 		//6 - uneseno ime i mjesto, prezime prazno
 		//7 - uneseno ime, prezime i mjesto
-		var option;
 		
 		//ako su polja prazna dohvati sve
 		if ((ime == '' || ime == null) && (prezime == '' || prezime == null) && (mjesto == '' || mjesto == null)){
-			doGetAll();
+			//doGetAll();
+			option = 0;
 		} else {
 			if ((ime != '') && (prezime != '') && (mjesto == '')){
 				option = 1;
@@ -341,9 +373,33 @@ angular.module('lanterna.controllers', [])
 			if ((ime != '') && (prezime != '') && (mjesto != '')){
 				option = 7;
 			}
-			doSearch(ime, prezime, mjesto, option);
-		}		
+		}
+		doSearch(ime, prezime, mjesto, option);
 	}
+	
+	//load more data into list
+	$scope.loadMoreData = function() {
+		//console.log('loadMoreData ' + ime + ' ' + prezime + ' ' + mjesto);
+		//ime = $scope.svjetionicar.ime;
+		//prezime = $scope.svjetionicar.prezime;
+		//mjesto = $scope.svjetionicar.mjesto;
+		
+		//check to load more data
+		if ($scope.moreDataCanBeLoaded) {
+			//load number of more items
+			$scope.numberOfItemsToDisplay += noOfItemsToDisplay;
+			//need to call this when finish loading more data
+			//done();
+		}
+		
+		$scope.$broadcast('scroll.infiniteScrollComplete');
+	};
+	
+	//check if there is more data to load
+	$scope.moreDataCanBeLoaded = function() {
+		console.log('moreDataCanBeLoaded ' + $scope.people.length + ' ; ' + $scope.numberOfItemsToDisplay);
+		return ($scope.people.length > $scope.numberOfItemsToDisplay) ? true : false;
+	};
 	
 	//handler functions
 	function doGetAll() {
@@ -366,8 +422,10 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				//lista svjetionicara (search)
 				$scope.people = response; // assign data here to your $scope object
+				//console.log('people ', $scope.people);
+				//console.log('length people ', $scope.people.length);
 			},function(error){
-				console.log(error);
+				//console.log(error);
 			});
 		
 		// show search results
@@ -376,17 +434,42 @@ angular.module('lanterna.controllers', [])
 })
 
 
-.controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList) {
+.controller('SvjetionicariListCtrl', function($scope, $stateParams, SvjetionicariList, noOfItemsToDisplay) {
 	//console.log('SvjetionicariListCtrl');
 	//console.log($stateParams);
 	
+	//init
+	$scope.people = [];
+	$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
+	
 	//mjesto
 	$scope.mjesto = $stateParams.name;
-	
+		
 	if($stateParams.name != undefined || $stateParams.name != ''){
 		//dohvati listu svjetionicara
 		getPersonList($stateParams.id, $stateParams.name);
 	}
+	
+	//load more data into list
+	$scope.loadMoreData = function() {
+		//console.log('loadMoreData ' + ime + ' ' + prezime + ' ' + mjesto);
+		
+		//check to load more data
+		if ($scope.moreDataCanBeLoaded) {
+			//load number of more items
+			$scope.numberOfItemsToDisplay += noOfItemsToDisplay;
+			//need to call this when finish loading more data
+			//done();
+		}
+		
+		$scope.$broadcast('scroll.infiniteScrollComplete');
+	};
+	
+	//check if there is more data to load
+	$scope.moreDataCanBeLoaded = function() {
+		console.log('moreDataCanBeLoaded ' + $scope.people.length + ' ; ' + $scope.numberOfItemsToDisplay);
+		return ($scope.people.length > $scope.numberOfItemsToDisplay) ? true : false;
+	};
 	
 	//handler function
 	function getPersonList(id, mjesto) {
@@ -495,7 +578,7 @@ angular.module('lanterna.controllers', [])
 	};
 })
 
-.controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList, $ionicHistory, $ionicNavBarDelegate) {
+.controller('BibliotekaCtrl', function($scope, $stateParams, BibliotekaList, $ionicHistory, $ionicNavBarDelegate, noOfItemsToDisplay) {
 	//console.log('BibliotekaCtrl');
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
@@ -503,11 +586,38 @@ angular.module('lanterna.controllers', [])
 		viewData.enableBack = true;
 	});
 
+	//init
+	$scope.numberOfItemsToDisplay;
+	$scope.knjige = [];
+	
 	//dohvati knjige
 	getAll();
 	
+	//load more data into list
+	$scope.loadMoreData = function() {
+		//console.log('loadMoreData ' + ime + ' ' + prezime + ' ' + mjesto);
+		
+		//check to load more data
+		if ($scope.moreDataCanBeLoaded) {
+			//load number of more items
+			$scope.numberOfItemsToDisplay += noOfItemsToDisplay;
+			//need to call this when finish loading more data
+			//done();
+		}
+		
+		$scope.$broadcast('scroll.infiniteScrollComplete');
+	};
+	
+	//check if there is more data to load
+	$scope.moreDataCanBeLoaded = function() {
+		console.log('moreDataCanBeLoaded ' + $scope.knjige.length + ' ; ' + $scope.numberOfItemsToDisplay);
+		return ($scope.knjige.length > $scope.numberOfItemsToDisplay) ? true : false;
+	};
+	
 	//handler function
 	function getAll() {
+		//reset
+		$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
 		//call service
 		BibliotekaList.all()
 			.then(function(response){
