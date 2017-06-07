@@ -299,7 +299,7 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('SvjetionicariCtrl', function($scope, SvjetionicariList, $ionicHistory, $ionicNavBarDelegate, noOfItemsToDisplay) {
-	console.log('SvjetionicariCtrl ' + noOfItemsToDisplay);
+	//console.log('SvjetionicariCtrl ' + noOfItemsToDisplay);
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		//console.log('SvjetionicariCtrl beforeEnter');
