@@ -14,7 +14,7 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 .value("svjetionicariFilePath", "json/svjetionicari.json")
 .value("svjetioniciFilePath", "json/svjetionici.json")
 .value("bibliotekaFilePath", "json/biblioteka.json")
-.value("noOfItemsToDisplay", 10)
+.value("noOfItemsToDisplay", 7)
 
 .run(function($ionicPlatform, $ionicPopup) {
 	$ionicPlatform.ready(function() {
@@ -73,6 +73,33 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 		views: {
 			'tab-lanterne': {
 				templateUrl: 'templates/tab-lanterne.html',
+				controller: 'LanterneCtrl'
+			}
+		}
+	})
+	.state('tab.lazareti', {
+		url: '/lazareti',
+		views: {
+			'tab-lanterne': {
+				templateUrl: 'templates/lazareti.html',
+				controller: 'LanterneCtrl'
+			}
+		}
+	})
+	.state('tab.sig-svjetla', {
+		url: '/sig-svjetla',
+		views: {
+			'tab-lanterne': {
+				templateUrl: 'templates/sig-svjetla.html',
+				controller: 'LanterneCtrl'
+			}
+		}
+	})
+	.state('tab.ostalo', {
+		url: '/ostalo',
+		views: {
+			'tab-lanterne': {
+				templateUrl: 'templates/ostalo.html',
 				controller: 'LanterneCtrl'
 			}
 		}

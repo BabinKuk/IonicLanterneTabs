@@ -168,7 +168,7 @@ angular.module('lanterna.services', [])
 .factory('LanterneList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
 	
 	return {
-		//svi svjetionici
+		//svi svjetionici  (ne koristi se, sve je find)
 		all: getAll,
 		//detalji o svjetioniku
 		getDetails: getDetails,
@@ -178,8 +178,9 @@ angular.module('lanterna.services', [])
 		find: findByName
 	}
 
-	// handler functions
-	function getAll() {
+	// handler functions 
+	//!!!!!! ne koristi se, sve je find !!!!!!!!!!!!
+	function getAll(category) {
 		//console.log('svi svjetionici');
 		
 		//async function to know when the data has arrived
@@ -246,8 +247,8 @@ angular.module('lanterna.services', [])
         return deffered.promise;
 	}
 
-	function findByName(svjetionikName) {
-		//console.log('in findByName ' + name);
+	function findByName(svjetionikName, category) {
+		console.log('in findByName ' + svjetionikName + ' ' + category);
 		
 		//async function to know when the data has arrived
 		var deffered = $q.defer();
@@ -261,8 +262,16 @@ angular.module('lanterna.services', [])
 			
 			//u filtrirano idu oni koji zadovoljavaju uvjete sa ekrana (name)
 			svjetioniciFiltered = svjetionici.filter(function(el) {
-				return el.name.toLowerCase().indexOf(svjetionikName.toLowerCase()) > -1;
+				console.log('categoryId: ' + el.categoryId.toLowerCase());
+				if (svjetionikName == '') {
+					console.log('dohvataj sve');
+					return (el.categoryId.toLowerCase() == category);
+				} else {
+					console.log('dohvataj samo s ' + svjetionikName);
+					return (el.name.toLowerCase().indexOf(svjetionikName.toLowerCase()) > -1) && (el.categoryId.toLowerCase() == category);
+				}
 			});
+			
 			//console.log(svjetioniciFiltered);
 			deffered.resolve(svjetioniciFiltered);
 		})

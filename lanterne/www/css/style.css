@@ -134,6 +134,20 @@ div>.row:last-child{
 	padding-top: 20px;
 }
 
+#cust-lanterne-tabs {
+	background-color: #fff3a1; /* zuta*/
+	text-transform: uppercase;
+}
+#cust-lanterne-tabs a{
+	padding: 0;
+	color: #743000;
+	font-family: "Caslon Antique";
+}
+#cust-lanterne-tabs a.tab-item-active {
+	font-weight: bold;
+	/*border-bottom: 1px solid #743000;*/
+}
+
 .item > div.sub-header-detail, .card > div.sub-header-detail{
 	/*background-color: #eeeeee; /*svjetlo siva*/
 	background-color: #fff3a1; /* zuta*/
@@ -619,6 +633,9 @@ h2{
 	}
 	.tabs a{
 		padding: 10px;
+	}
+	#cust-lanterne-tabs a{
+		padding: 0;
 	}
 	.tabs a> .icon{
 		margin-bottom: 10px;

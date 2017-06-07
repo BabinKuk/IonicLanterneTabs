@@ -88,7 +88,7 @@ angular.module('lanterna.controllers', [])
 })
 
 .controller('LanterneCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate, CacheFactory, noOfItemsToDisplay) {
-	//console.log('LanterneCtrl');
+	console.log('LanterneCtrl', $scope);
 	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		console.log('LanterneCtrl beforeEnter');
@@ -132,12 +132,13 @@ angular.module('lanterna.controllers', [])
 	*/
 	//init
 	$scope.svjetionik = {};
+	$scope.category = '';
 	$scope.lanterne = [];
 	$scope.numberOfItemsToDisplay;
 	
 	//search svjetionik
-	$scope.search = function(){
-		//console.log($scope);
+	$scope.search = function(category){
+		//console.log('search ' + category);
 		var svjetionik = $scope.svjetionik.name;
 		
 		//reset numberOfItemsToDisplay
@@ -145,9 +146,10 @@ angular.module('lanterna.controllers', [])
 		
 		//ako je polje prazno, dohvati sve
 		if (svjetionik == '' || svjetionik == null) {
-			doGetAll()
+			//doGetAll(category)
+			doSearch('', category);
 		} else {
-			doSearch(svjetionik);
+			doSearch(svjetionik, category);
 		}
 	}
 	
@@ -179,9 +181,9 @@ angular.module('lanterna.controllers', [])
 	}
 	
 	// handler functions
-	function doGetAll() {
+	function doGetAll(category) {
 		//call service
-		LanterneList.all()
+		LanterneList.all(category)
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
 			},function(error){
@@ -192,10 +194,10 @@ angular.module('lanterna.controllers', [])
 		$scope.showResults = true;
 	}
 	
-	function doSearch(svjetionik){
-		//console.log('doSearch...', svjetionik);
+	function doSearch(svjetionik, category){
+		console.log('doSearch...' + svjetionik + ' ' + category);
 		//call service
-		LanterneList.find(svjetionik)
+		LanterneList.find(svjetionik, category)
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
 			},function(error){
