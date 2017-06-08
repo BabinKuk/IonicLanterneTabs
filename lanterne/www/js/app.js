@@ -77,33 +77,6 @@ angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.se
 			}
 		}
 	})
-	.state('tab.lazareti', {
-		url: '/lazareti',
-		views: {
-			'tab-lanterne': {
-				templateUrl: 'templates/lazareti.html',
-				controller: 'LanterneCtrl'
-			}
-		}
-	})
-	.state('tab.sig-svjetla', {
-		url: '/sig-svjetla',
-		views: {
-			'tab-lanterne': {
-				templateUrl: 'templates/sig-svjetla.html',
-				controller: 'LanterneCtrl'
-			}
-		}
-	})
-	.state('tab.ostalo', {
-		url: '/ostalo',
-		views: {
-			'tab-lanterne': {
-				templateUrl: 'templates/ostalo.html',
-				controller: 'LanterneCtrl'
-			}
-		}
-	})
 	.state('tab.lanterne-list', {
 		url: '/lanterne-list',
 		views: {

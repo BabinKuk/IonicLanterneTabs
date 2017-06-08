@@ -180,7 +180,7 @@ angular.module('lanterna.services', [])
 
 	// handler functions 
 	//!!!!!! ne koristi se, sve je find !!!!!!!!!!!!
-	function getAll(category) {
+	function getAll() {
 		//console.log('svi svjetionici');
 		
 		//async function to know when the data has arrived

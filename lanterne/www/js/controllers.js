@@ -99,7 +99,23 @@ angular.module('lanterna.controllers', [])
 		CacheFactory.createCache('postCache');
 	}
 	var postCache = CacheFactory.get('postCache');
-	 
+	
+	//init
+	$scope.svjetionik = {};
+	//$scope.category = '';
+	$scope.lanterne = [];
+	$scope.numberOfItemsToDisplay;
+	
+	//test
+	$scope.svjetionici = new Array();
+	
+	// check id first
+	/*if($stateParams.category != undefined || $stateParams.category != ''){
+		// get lantern details
+		setCategory($stateParams.category);
+	} else {
+		setCategory('1');
+	}*/
 	/*
 	// Cache a post
 	postCache.put(id, data);
@@ -130,23 +146,24 @@ angular.module('lanterna.controllers', [])
 	//get images for swiper
 	getLanterneImages();
 	*/
-	//init
-	$scope.svjetionik = {};
-	$scope.category = '';
-	$scope.lanterne = [];
-	$scope.numberOfItemsToDisplay;
+	setCategory('1');
+	doGetAll();
+	
+	
+	//set category
+	$scope.setCategory = function(category) {
+		console.log('click category ' + category);
+		setCategory(category);
+	}
 	
 	//search svjetionik
 	$scope.search = function(category){
 		//console.log('search ' + category);
 		var svjetionik = $scope.svjetionik.name;
 		
-		//reset numberOfItemsToDisplay
-		$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
-		
 		//ako je polje prazno, dohvati sve
 		if (svjetionik == '' || svjetionik == null) {
-			//doGetAll(category)
+			//doGetAll()
 			doSearch('', category);
 		} else {
 			doSearch(svjetionik, category);
@@ -181,9 +198,25 @@ angular.module('lanterna.controllers', [])
 	}
 	
 	// handler functions
-	function doGetAll(category) {
+	function setCategory(category) {
+		console.log('cat: ' + category);
+		if (category != undefined || category != '') {
+			console.log('cat not null ' + category);
+			$scope.svjetionik.categoryId = category;
+		} else {
+			console.log('cat null, set default 1');
+			$scope.svjetionik.categoryId = '1';
+		}
+		console.log('category set: ' + $scope.svjetionik.categoryId);
+	}
+	
+	function doGetAll() {
+		console.log('doGetAll');
+		//reset numberOfItemsToDisplay
+		$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
+		
 		//call service
-		LanterneList.all(category)
+		LanterneList.all()
 			.then(function(response){
 				$scope.lanterne = response; // assign data here to your $scope object
 			},function(error){
@@ -195,7 +228,11 @@ angular.module('lanterna.controllers', [])
 	}
 	
 	function doSearch(svjetionik, category){
-		console.log('doSearch...' + svjetionik + ' ' + category);
+		//console.log('doSearch...' + svjetionik + ' ' + category);
+		
+		//reset numberOfItemsToDisplay
+		$scope.numberOfItemsToDisplay = noOfItemsToDisplay;
+		
 		//call service
 		LanterneList.find(svjetionik, category)
 			.then(function(response){

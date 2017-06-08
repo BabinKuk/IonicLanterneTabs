@@ -46,6 +46,12 @@ input, a {
 	text-transform: uppercase;
 }
 
+/*customize infinite-scroll*/
+.cust-infinite-scroll {
+	/*visibility: hidden;*/
+	height: 0;
+}
+
 /*customize exit popup*/
 .popup-title, .popup-sub-title, .popup-body, .popup-buttons>button {
 	font-size: 24px;
@@ -135,17 +141,21 @@ div>.row:last-child{
 }
 
 #cust-lanterne-tabs {
-	background-color: #fff3a1; /* zuta*/
+	background-color: #743000;
 	text-transform: uppercase;
 }
 #cust-lanterne-tabs a{
 	padding: 0;
-	color: #743000;
+	color: #fff3a1; /* zuta*/
 	font-family: "Caslon Antique";
+	font-size: 17px;
 }
 #cust-lanterne-tabs a.tab-item-active {
 	font-weight: bold;
-	/*border-bottom: 1px solid #743000;*/
+	border-bottom: 3px solid #fff3a1;
+	/*border-width: 0 0 2px 0;
+	border-color: #fff3a1;*/
+	margin-bottom: -2px;
 }
 
 .item > div.sub-header-detail, .card > div.sub-header-detail{
