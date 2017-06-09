@@ -4,9 +4,6 @@
 	src: url("../fonts/CaslonAntique.ttf") format("opentype");
 }
 
-body{
-	border-color: #743000; /*smedja*/
-}
 .background, .background .pane, .background .item, .background .item-complex .item-content, .list .item.item-stable {
     /*background-color: #f8f8f8;*/
 	background-color: transparent;
@@ -155,18 +152,20 @@ div>.row:last-child{
 }
 
 #cust-lanterne-tabs {
-	background-color: #fff3a1; /* zuta*/
+	background-color: #743000; /*smedja*/
 	text-transform: uppercase;
 }
 #cust-lanterne-tabs a{
 	padding: 0;
-	color: #743000; /*smedja*/
+	/*color: #fff3a1; /* zuta*/
+	color: #fff; /* bijela*/
 	font-family: "Caslon Antique";
 	font-size: 17px;
 }
 #cust-lanterne-tabs a.tab-item-active {
 	font-weight: bold;
-	border-bottom: 3px solid #743000; /*smedja*/
+	/*border-bottom: 3px solid #fff3a1; /* zuta*/
+	border-bottom: 3px solid #fff; /* bijela*/
 	/*border-width: 0 0 2px 0;
 	border-color: #fff3a1;*/
 	margin-bottom: -2px;
