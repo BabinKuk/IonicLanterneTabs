@@ -248,6 +248,9 @@ angular.module('lanterna.controllers', [])
 .controller('LanterneDetailCtrl', function($scope, $stateParams, LanterneList, $ionicHistory, $ionicNavBarDelegate) {
 	//console.log($stateParams);
 	
+	//init
+	$scope.naziv;
+	
 	$scope.$on('$ionicView.beforeEnter', function (event, viewData) {
 		//console.log('LanterneDetailCtrl beforeEnter');
 		viewData.enableBack = true;
@@ -255,6 +258,7 @@ angular.module('lanterna.controllers', [])
 
 	// check id first
 	if($stateParams.name != undefined || $stateParams.name != ''){
+		$scope.naziv = $stateParams.name;
 		// get lantern details
 		getDetails($stateParams.name);
 		//get all people asociated with that particular lantern
@@ -413,7 +417,6 @@ angular.module('lanterna.controllers', [])
 			.then(function(response){
 				//lista svjetionicara
 				$scope.people = response; //assign data here to your $scope object
-				console.log($scope.people);
 			},function(error){
 				console.log(error);
 			});
@@ -470,7 +473,7 @@ angular.module('lanterna.controllers', [])
 	
 	//check if there is more data to load
 	$scope.moreDataCanBeLoaded = function() {
-		console.log('moreDataCanBeLoaded ' + $scope.people.length + ' ; ' + $scope.numberOfItemsToDisplay);
+		//console.log('moreDataCanBeLoaded ' + $scope.people.length + ' ; ' + $scope.numberOfItemsToDisplay);
 		return ($scope.people.length > $scope.numberOfItemsToDisplay) ? true : false;
 	};
 	
@@ -502,6 +505,7 @@ angular.module('lanterna.controllers', [])
 		//dohvati detalje o svjetionicaru
 		getPersonDetails($stateParams.id);
 		//dohvati detalje o svjetionicima
+		//!!!!!!!!!!!SAMO AKO SE SVI PODACI NALAZE U svjetionici.json!!!!!!!!!!
 		getLanternForPerson($stateParams.id);
 	}
 	
@@ -542,15 +546,13 @@ angular.module('lanterna.controllers', [])
 	$scope.toggleGroup = function(group) {
 		//console.log('in toggle ', group);
 		if ($scope.isGroupShown(group)) {
-			console.log('close');
+			//console.log('close');
 			$scope.shownGroup = null;
 			$scope.itemToDisplay = null;
 		} else {
-			console.log('open');
 			$scope.shownGroup = group;
 			$scope.itemToDisplay = group;
 		}
-		console.log($scope.itemToDisplay);
 	};
 	
 	$scope.isGroupShown = function(group) {
@@ -572,7 +574,7 @@ angular.module('lanterna.controllers', [])
 		scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
-		console.log('modal', $scope.itemToDisplay);
+		//console.log('modal', $scope.itemToDisplay);
 		$scope.modal = modal;
 	});
 	

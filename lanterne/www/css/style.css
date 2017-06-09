@@ -23,6 +23,10 @@ div>.row{
 	background-color: transparent;
 }
 
+#error-desc {
+	text-transform: uppercase;
+	font-weight: bold;
+}
 .item {
 	background-color: transparent;
 	/*border-color: #743000;*/ /*smedja*/
@@ -168,9 +172,10 @@ div>.row:last-child{
 	border-bottom: 3px solid #fff; /* bijela*/
 	/*border-width: 0 0 2px 0;
 	border-color: #fff3a1;*/
-	margin-bottom: -2px;
+	margin-bottom: 0px;
 	margin-top: -1px;
 }
+
 
 .item > div.sub-header-detail, .card > div.sub-header-detail{
 	/*background-color: #eeeeee; /*svjetlo siva*/
@@ -180,6 +185,10 @@ div>.row:last-child{
 	text-transform: uppercase;
 }
 
+div.sub-header-detail{
+	text-transform: uppercase;
+	padding-left: 20px;
+}
 .item > div.sub-detail, .card > div.sub-detail{
 	padding-left: 20px;
 }
@@ -378,6 +387,11 @@ div>.row:last-child{
 	width: 50%;
 	/*margin-bottom: 0;*/
 }
+
+#mjesto-prem {
+	text-transform: uppercase;;
+}
+
 /*Flexbox vertical height classes*/
 .fill-vertical-space{
 	display: flex;
