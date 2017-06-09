@@ -36,10 +36,8 @@
 						</div-->
 						
 						<div id="cust-lanterne-tabs" class="item tabs">
-						<!--div class="tabs-striped tabs-top tabs-background-stable">
-							<div class="tabs"-->
+							<!--div class="tabs"-->
 								<!--a class="tab-item tab-item-active" ui-sref="tab.lanterne"-->
-								<!--a ng-class="['tab-item', {'tab-item-active': activeButton === '1'}]" ng-click="setCategory(1); activeButton = 'svjetionik';"-->
 								<a ng-class="['tab-item', {'tab-item-active': svjetionik.categoryId === '1'}]" ng-click="setCategory('1')">
 									Svjetionici
 								</a>
@@ -55,14 +53,10 @@
 								<a ng-class="['tab-item', {'tab-item-active': svjetionik.categoryId === '4'}]" ng-click="setCategory('4')">
 									Ostalo
 								</a>
-							<!--/div>
-						<!--/div-->
+							<!--/div-->
 						</div>
 						
 						<div ng-show="showResults">
-							<!--div class="item">
-								<h1>Popis svjetionika</h1>
-							</div-->
 							<ion-list>
 								<!--ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy :'name'| limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}"-->
 								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | filter:svjetionik | orderBy :'name'| limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
@@ -89,18 +83,7 @@
 								</ul>
 								<ion-infinite-scroll on-infinite="loadMoreData()" distance="1" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
 							</ion-list-->
-							<!--auto list divider-->
-							<!--ion-list>
-								<ion-item auto-list-divider auto-list-divider-value="{{svjetionik.name}}" class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionik in lanterne | orderBy:'name' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/lanterne-list/{{svjetionik.name}}">
-									<img class="cover-thumbnail" ng-src="{{svjetionik.image}}">
-									<div id="item-name">
-										{{svjetionik.name}}
-									</div>
-									<i class="icon ion-chevron-right icon-accessory"></i>
-								</ion-item>
-							</ion-list-->
-							<!--ion-infinite-scroll on-infinite="loadMoreData()" distance="1%" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll-->
-							<ion-infinite-scroll on-infinite="loadMoreData()" distance="1%" class="cust-infinite-scroll"></ion-infinite-scroll>
+							<ion-infinite-scroll class="cust-infinite-scroll"on-infinite="loadMoreData()" distance="1%" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
 						</div>
 						
 					</div>

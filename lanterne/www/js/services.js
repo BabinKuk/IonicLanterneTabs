@@ -24,7 +24,7 @@ angular.module('lanterna.services', [])
 		var deffered = $q.defer();
 		
 		//get data
-		$http.get(serverUrl + svjetionicariFilePath + '?results=10').then(function(response) {
+		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//console.log(response.data);
 			deffered.resolve(response.data);
 		})

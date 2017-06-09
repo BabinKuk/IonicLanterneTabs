@@ -25,58 +25,40 @@
 								<input type="text" ng-model="svjetionicar.prezime" placeholder="Prezime">
 							</label>
 							<label id="mjesto" name="mjesto" class="item-input-wrapper">
-								<input type="text" ng-model="svjetionicar.mjesto" placeholder="Mjesto rođenja">
+								<input type="text" ng-model="svjetionicar.mjestoRod" placeholder="Mjesto rođenja">
 							</label>
 						</div>
 						
-						<div class="item">
+						<!--ne koristi se-->
+						<!--div class="item"><div class="item">
 							<div>
 								<center>
 									<div class="">
 										<button class="button ion-search button-calm padding left-col-button cust-color-button cust-button" ng-click="search()">
 											Traži
 										</button>
-										<!-- ne koristi se 
-										<button class="button button-calm padding right-col-button cust-button" ng-click="getAll()">
-											Svi svjetioničari
-										</button>
-										-->
 									</div>
 								</center>
 							</div>
-						</div>
+						</div-->
 
 						<div ng-show="showResults" class="clearfix">
 							<div class="item item-divider custom-divider">
 								Svjetioničari
 							</div>
 							<ion-list>
-								<!--ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}"-->
-								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy:'prezime' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
+								<!--ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy:'prezime' | limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}"-->
+								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | filter:svjetionicar | orderBy:'prezime'| limitTo:numberOfItemsToDisplay" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
 									<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
 									<div id="item-name">
 										{{svjetionicar.ime}} {{svjetionicar.prezime}}
 									</div>
 									<i class="icon ion-chevron-right icon-accessory"></i>
 								</ion-item>
-								<ion-infinite-scroll on-infinite="loadMoreData()" distance="1" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
+								<ion-infinite-scroll class="cust-infinite-scroll"on-infinite="loadMoreData()" distance="1%" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
 							</ion-list>
 						</div>
 
-						<!--ne treba div ng-show="showAll" class="clearfix">
-							<div class="item">
-								<h1>Popis svih svjetioničara</h1>
-							</div>
-							<ion-list>
-								<ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="svjetionicar in people | orderBy: 'prezime'" type="item-text-wrap" href="#/tab/svjetionicari-list/{{svjetionicar.id}}">
-									<img class="contain-thumbnail" ng-src="{{svjetionicar.image}}">
-									<div id="item-name">
-										{{svjetionicar.ime}} {{svjetionicar.prezime}}
-									</div>
-									<i class="icon ion-chevron-right icon-accessory"></i>
-								</ion-item>
-							</ion-list>	
-						</div-->
 					</div>
 				</ion-scroll>
 			</div>

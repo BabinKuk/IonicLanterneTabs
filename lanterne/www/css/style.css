@@ -4,15 +4,21 @@
 	src: url("../fonts/CaslonAntique.ttf") format("opentype");
 }
 
+body{
+	border-color: #743000; /*smedja*/
+}
 .background, .background .pane, .background .item, .background .item-complex .item-content, .list .item.item-stable {
     /*background-color: #f8f8f8;*/
 	background-color: transparent;
 	font-family: "Caslon Antique"; /*custom font*/
+	color: #743000; /*smedja*/
 }
 
 .background .item-divider{
 	/*background-color: #eeeeee; /*svjetlo siva*/
 	background-color: #fff3a1; /*zuta*/
+	color: #743000; /*smedja*/
+	font-weight: bold;
 }
 
 div>.row{
@@ -22,13 +28,21 @@ div>.row{
 
 .item {
 	background-color: transparent;
+	/*border-color: #743000;*/ /*smedja*/
+	color: #743000; /*smedja*/
 }
 
 .item-body>p {
 	font-size: 16px;
+	color: #743000; /*smedja*/
 	margin-top: 0;
 }
 
+/* customize list arrow */
+.item-icon-left .icon-accessory, .item-icon-right .icon-accessory {
+	color: #743000; /*smedja*/
+	font-size: 16px;
+}
 .modal-title {
 	background-color: transparent;
 	color: #fff;
@@ -37,7 +51,7 @@ div>.row{
 .bar-dark .button {
 	border-color: transparent;
 }
-input, button, select, textarea, span, div, a, h1, h2, h3, h4, h5, h6 {
+input, button, select, textarea, span, div, a, p, h1, h2, h3, h4, h5, h6 {
 	font-family: "Caslon Antique"; /*custom font*/
 	/*text-transform: uppercase;*/
 }
@@ -49,7 +63,7 @@ input, a {
 /*customize infinite-scroll*/
 .cust-infinite-scroll {
 	/*visibility: hidden;*/
-	height: 0;
+	height: 0; /*not visible*/
 }
 
 /*customize exit popup*/
@@ -141,21 +155,22 @@ div>.row:last-child{
 }
 
 #cust-lanterne-tabs {
-	background-color: #743000;
+	background-color: #fff3a1; /* zuta*/
 	text-transform: uppercase;
 }
 #cust-lanterne-tabs a{
 	padding: 0;
-	color: #fff3a1; /* zuta*/
+	color: #743000; /*smedja*/
 	font-family: "Caslon Antique";
 	font-size: 17px;
 }
 #cust-lanterne-tabs a.tab-item-active {
 	font-weight: bold;
-	border-bottom: 3px solid #fff3a1;
+	border-bottom: 3px solid #743000; /*smedja*/
 	/*border-width: 0 0 2px 0;
 	border-color: #fff3a1;*/
 	margin-bottom: -2px;
+	margin-top: -1px;
 }
 
 .item > div.sub-header-detail, .card > div.sub-header-detail{
@@ -271,7 +286,6 @@ a.tab-item, i.icon.icon, span.tab-title  {
 .card .item:first-child {
     border-top: 1px solid #ddd;
 }
-
 .list .item.item-accordion.ng-hide {
 	line-height: 0px;
 }
@@ -461,6 +475,7 @@ h2{
 	margin: 25px 50px;
 	font-family: "Caslon Antique"; /*custom font*/
 	font-size: 22px;
+	color: #743000; /*smedja*/
 	text-transform: uppercase;
     max-height: 80px;
 	top: 10px;
