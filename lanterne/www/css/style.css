@@ -303,6 +303,7 @@ a.tab-item, i.icon.icon, span.tab-title  {
 div>.col>a.button{
 	/*height: 100%;*/
 	height: auto;
+	white-space: nowrap;
 }
 div.col {
 	word-wrap: break-word;
