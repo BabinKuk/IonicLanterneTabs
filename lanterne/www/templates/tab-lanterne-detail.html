@@ -11,11 +11,26 @@
 	<!--ion-content class="padding has-tabs-bottom has-footer screen-background" scroll="false"-->
 	<ion-content class="padding has-tabs-bottom has-footer screen-background">
 		
+		<!-- ako NE postoje podaci o svjetioniku!!! -->
+		<div ng-if="svjetionik == undefined">
+			<div class="list card">
+				<div class="item item-body">
+					<p id="error-desc">
+					  Podaci o svjetioniku {{naziv}} nisu dostupni.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ako postoje podaci o svjetioniku-->
 		<div ng-if="svjetionik !== undefined">
 			<div class="row">
-				<div class="col col-50">
+				<!--provjeri class i prikazi samo ako postoji element-->
+				<!--prikazi ako postoji image, ako postoje podaci o svjetionicarima onda col-50-->
+				<!--div class="col col-50"-->
+				<div ng-class="['col', whatClass(svjetionik.svjetionicari)]" ng-if="displayElement(svjetionik.image)">
 					<ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false">
-						<div class="list card" ng-if="svjetionik.image != ''">
+						<div class="list card">
 							<div id="image-top-item" class="item">
 								<img class="image-top" ng-src="{{svjetionik.image}}">
 							</div>
@@ -23,7 +38,9 @@
 					</ion-scroll>
 				</div>
 				
-				<div class="col col-50">
+				<!--prikazi ako postoje podaci o svjetionicarima, ako postoji image onda col-50-->
+				<!--div class="col col-50"-->
+				<div ng-class="['col', whatClass(svjetionik.image)]" ng-if="displayElement(svjetionik.svjetionicari)">
 					<ion-scroll delegate-handle="taskScroll" direction="y" overflow-scroll:"false">
 						<div class="list card">
 							<div class="row item item-divider cust-item-divider sub-header-detail">
@@ -71,16 +88,6 @@
 							</ion-list>
 						</div>
 					</ion-scroll>
-				</div>
-			</div>
-		</div>
-		
-		<div ng-if="svjetionik == undefined">
-			<div class="list card">
-				<div class="item item-body">
-					<p id="error-desc">
-					  Podaci o svjetioniku {{naziv}} nisu dostupni.
-					</p>
 				</div>
 			</div>
 		</div>

@@ -266,6 +266,24 @@ angular.module('lanterna.controllers', [])
 		//getPeopleDetails($stateParams.name);
 	}
 	
+	$scope.whatClass = function(val){
+		//console.log('check class', val);
+		if(val == "" || val == undefined || val == null) {
+			return null;
+		} else {
+			return "col-50";
+		}
+	}
+	
+	$scope.displayElement = function(val){
+		//console.log('displayElement ', val);
+		if(val == "" || val == undefined || val == null) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
 	// handler functions
 	function getDetails(name) {
 		//console.log('in getDetails ' + name);
@@ -507,6 +525,29 @@ angular.module('lanterna.controllers', [])
 		//dohvati detalje o svjetionicima
 		//!!!!!!!!!!!SAMO AKO SE SVI PODACI NALAZE U svjetionici.json!!!!!!!!!!
 		getLanternForPerson($stateParams.id);
+	}
+	
+	$scope.whatClass = function(val){
+		console.log('check class', val);
+		if(val == "" || val == undefined || val == null) {
+		/*if((val.mjestoRod == "" || val.mjestoRod == undefined || val.mjestoRod == null)
+			&& (val.godRod == "" || val.godRod == undefined || val.godRod == null)
+			&& (val.mjestoPrem == "" || val.mjestoPrem == undefined || val.mjestoPrem == null)
+			&& (val.godPrem == "" || val.godPrem == undefined || val.godPrem == null)
+			&& (val.karijera == "" || val.karijera == undefined || val.karijera == null)) {*/
+			return null;
+		} else {
+			return "col-50";
+		}
+	}
+	
+	$scope.displayElement = function(val){
+		//console.log('displayElement ', val);
+		if(val == "" || val == undefined || val == null) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 	
 	//handler function
