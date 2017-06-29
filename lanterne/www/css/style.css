@@ -170,8 +170,6 @@ div>.row:last-child{
 	font-weight: bold;
 	/*border-bottom: 3px solid #fff3a1; /* zuta*/
 	border-bottom: 3px solid #fff; /* bijela*/
-	/*border-width: 0 0 2px 0;
-	border-color: #fff3a1;*/
 	margin-bottom: 0px;
 	margin-top: -1px;
 }

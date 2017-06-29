@@ -12,7 +12,8 @@
 	<ion-content class="padding has-tabs-bottom has-footer screen-background">
 		
 		<!-- ako NE postoje podaci o svjetioniku!!! -->
-		<div ng-if="svjetionik == undefined">
+		<div ng-show="showError" class="clearfix">
+		<!--div ng-if="svjetionik == undefined"-->
 			<div class="list card">
 				<div class="item item-body">
 					<p id="error-desc">
@@ -23,7 +24,8 @@
 		</div>
 		
 		<!-- ako postoje podaci o svjetioniku-->
-		<div ng-if="svjetionik !== undefined">
+		<div ng-show="showResults" class="clearfix">
+		<!--div ng-if="svjetionik !== undefined"-->
 			<div class="row">
 				<!--provjeri class i prikazi samo ako postoji element-->
 				<!--prikazi ako postoji image, ako postoje podaci o svjetionicarima onda col-50-->
