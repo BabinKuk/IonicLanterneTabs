@@ -271,7 +271,8 @@ angular.module('lanterna.controllers', [])
 				//detalji o svjetioniku
 				$scope.svjetionik = response; // assign data here to your $scope object
 
-				//$timeout(function(){
+				$timeout(function(){
+					console.log('in delay...');
 					if ($scope.svjetionik == undefined || $scope.svjetionik == '' || $scope.svjetionik == null) {
 						// show search results
 						$scope.showResults = false;
@@ -281,7 +282,7 @@ angular.module('lanterna.controllers', [])
 						$scope.showResults = true;
 						$scope.showError = false;
 					}
-				//}, 500); //500ms delay
+				}, 200); //200ms delay
 			},function(error){
 				console.log(error);
 			});
@@ -527,7 +528,7 @@ angular.module('lanterna.controllers', [])
 				$scope.person = response; // assign data here to your $scope object
 				console.log('person', $scope.person);
 				
-				//$timeout(function(){
+				$timeout(function(){
 					if ($scope.person == undefined) {
 						console.log('person null timeout');
 						// show search results
@@ -539,7 +540,7 @@ angular.module('lanterna.controllers', [])
 						$scope.showResults = true;
 						$scope.showError = false;
 					}
-				//}, 500); //500ms delay
+				}, 200); //200ms delay
 			},function(error){
 				console.log(error);
 			});

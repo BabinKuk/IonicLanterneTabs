@@ -1,6 +1,6 @@
 angular.module('lanterna.services', [])
 
-.factory('SvjetionicariList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
+.factory('SvjetionicariList', function($http, $timeout, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
 	
 	var items = [];
 	
@@ -39,18 +39,22 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
-			//svi svjetionicari
-			var people = response.data;
-			var person;
-			//loop people
-			for (var i = 0; i < people.length; i++) {
-				//console.log(people[i]);
-				if (people[i].id === parseInt(personId)) {
-					person = people[i];
-					//return person;
+			//delay
+			$timeout(function(){
+				console.log('service delay');
+				//svi svjetionicari
+				var people = response.data;
+				var person;
+				//loop people
+				for (var i = 0; i < people.length; i++) {
+					//console.log(people[i]);
+					if (people[i].id === parseInt(personId)) {
+						person = people[i];
+						//return person;
+					}
 				}
-			}
-			deffered.resolve(person);
+				deffered.resolve(person);
+			}, 200); //delay
 		})
 		return deffered.promise;
 	}
@@ -165,7 +169,7 @@ angular.module('lanterna.services', [])
     }
 })
 
-.factory('LanterneList', function($http, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
+.factory('LanterneList', function($http, $timeout, $q, serverUrl, svjetionicariFilePath, svjetioniciFilePath) {
 	
 	return {
 		//svi svjetionici  (ne koristi se, sve je find)
@@ -202,18 +206,22 @@ angular.module('lanterna.services', [])
 		
 		//get data
 		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
-			//lista svjetionika
-			var svjetionici = response.data;
-			//object svjetionik
-			var svjetionik;
-			
-			//loop svjetionici i nadji svjetionikName
-			for (var i = 0; i < svjetionici.length; i++) {
-				if (svjetionici[i].name == svjetionikName) {
-					svjetionik = svjetionici[i];
+			//delay
+			$timeout(function(){
+				console.log('service delay');
+				//lista svjetionika
+				var svjetionici = response.data;
+				//object svjetionik
+				var svjetionik;
+				
+				//loop svjetionici i nadji svjetionikName
+				for (var i = 0; i < svjetionici.length; i++) {
+					if (svjetionici[i].name == svjetionikName) {
+						svjetionik = svjetionici[i];
+					}
 				}
-			}
-			deffered.resolve(svjetionik);
+				deffered.resolve(svjetionik);
+			}, 200); //delay
 		})
         return deffered.promise;
 	}
