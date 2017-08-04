@@ -41,7 +41,7 @@ angular.module('lanterna.services', [])
 		$http.get(serverUrl + svjetionicariFilePath).then(function(response) {
 			//delay
 			$timeout(function(){
-				console.log('service delay');
+				console.log('service delay 200');
 				//svi svjetionicari
 				var people = response.data;
 				var person;
@@ -208,7 +208,7 @@ angular.module('lanterna.services', [])
 		$http.get(serverUrl + svjetioniciFilePath).then(function(response) {
 			//delay
 			$timeout(function(){
-				console.log('service delay');
+				console.log('service delay 200');
 				//lista svjetionika
 				var svjetionici = response.data;
 				//object svjetionik

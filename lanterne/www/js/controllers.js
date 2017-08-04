@@ -272,7 +272,7 @@ angular.module('lanterna.controllers', [])
 				$scope.svjetionik = response; // assign data here to your $scope object
 
 				$timeout(function(){
-					console.log('in delay...');
+					console.log('in delay...200');
 					if ($scope.svjetionik == undefined || $scope.svjetionik == '' || $scope.svjetionik == null) {
 						// show search results
 						$scope.showResults = false;
@@ -530,12 +530,12 @@ angular.module('lanterna.controllers', [])
 				
 				$timeout(function(){
 					if ($scope.person == undefined) {
-						console.log('person null timeout');
+						console.log('person null timeout 200');
 						// show search results
 						$scope.showResults = false;
 						$scope.showError = true;
 					} else {
-						console.log('person NOT null timeout');
+						console.log('person NOT null timeout 200');
 						// show search results
 						$scope.showResults = true;
 						$scope.showError = false;
