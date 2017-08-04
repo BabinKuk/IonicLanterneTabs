@@ -17,7 +17,8 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="CrosswalkAnimatable" value="true" />
+  <!--xwalk-->
+  <!--preference name="CrosswalkAnimatable" value="true" /-->
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
@@ -28,8 +29,9 @@
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.0"/>
   <plugin name="cordova-plugin-statusbar" spec="~2.2.0"/>
   <plugin name="ionic-plugin-keyboard" spec="~2.2.1"/>
-  <plugin name="cordova-plugin-crosswalk-webview" source="npm" />
-  <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
+  <!--xwalk-->
+  <!--plugin name="cordova-plugin-crosswalk-webview" source="npm" /-->
+  <!--plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" /-->
   <!--preference name="buildArchitecture" value="x86" /-->
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
