@@ -8,9 +8,9 @@
 angular.module('lanterna', ['ionic', 'pdf', 'lanterna.controllers', 'lanterna.services','angular.filter', 'angular-cache', 'ionic.ion.autoListDivider'])
 
 //dev url
-.value("serverUrl", "http://localhost:8080/")
+//.value("serverUrl", "http://localhost:8080/")
 //browser testing url
-//.value("serverUrl", "")
+.value("serverUrl", "")
 .value("svjetionicariFilePath", "json/svjetionicari.json")
 .value("svjetioniciFilePath", "json/svjetionici.json")
 .value("bibliotekaFilePath", "json/biblioteka.json")
