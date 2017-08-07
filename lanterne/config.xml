@@ -17,6 +17,7 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
+  <preference name="loadUrlTimeoutValue" value="700000"/>
   <!--xwalk-->
   <preference name="CrosswalkAnimatable" value="true" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
